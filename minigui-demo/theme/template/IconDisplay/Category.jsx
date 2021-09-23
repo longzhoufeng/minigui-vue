@@ -1,4 +1,4 @@
-import { message } from 'ant-design-vue';
+import { message } from 'minigui-vue';
 import CopyableIcon from './CopyableIcon';
 
 const Category = {

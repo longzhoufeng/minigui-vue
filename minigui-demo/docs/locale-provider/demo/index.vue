@@ -8,13 +8,13 @@ const md = {
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| locale | 语言包配置，语言包可到 \`ant-design-vue/lib/locale-provider/\` 目录下寻找 | object | - |
+| locale | 语言包配置，语言包可到 \`minigui-vue/lib/locale-provider/\` 目录下寻找 | object | - |
 `,
   us: `## API
 
 | Property | Description | Type | Default |
 | -------- | ----------- | ---- | ------- |
-| locale | language package setting, you can find the packages in this path: \`ant-design-vue/lib/locale-provider/\` | object | - |
+| locale | language package setting, you can find the packages in this path: \`minigui-vue/lib/locale-provider/\` | object | - |
 `,
 };
 export default {

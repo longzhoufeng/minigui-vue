@@ -53,7 +53,7 @@ Before v2.0,  The properties of `a-sub-menu` are dynamically changed inside the 
 // export default {
 //   props: ['menuInfo'],
 // };
-import { Menu } from 'ant-design-vue';
+import { Menu } from 'minigui-vue';
 const SubMenu = {
   template: `
       <a-sub-menu :key="menuInfo.key" v-bind="$props" v-on="$listeners">

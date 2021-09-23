@@ -6,8 +6,8 @@ import Footer from './footer';
 import GeektimeAds from './geektime_ads';
 import RightBottomAd from './right_bottom_ad';
 import Sponsors from './sponsors';
-import zhCN from 'ant-design-vue/es/locale-provider/zh_CN';
-import enUS from 'ant-design-vue/es/locale-provider/default';
+import zhCN from 'minigui-vue/es/locale-provider/zh_CN';
+import enUS from 'minigui-vue/es/locale-provider/default';
 import sortBy from 'lodash/sortBy';
 import { isZhCN } from '../utils/util';
 import { Provider, create } from '../../components/_util/store';
@@ -19,7 +19,6 @@ const docsList = [
   { key: 'introduce', enTitle: '使用', title: '使用说明' },
   { key: 'getting-started', enTitle: 'Getting Started', title: '快速上手' },
   { key: 'use-with-vue-cli', enTitle: 'Use in vue-cli', title: '在 vue-cli 中使用' },
-  // { key: 'changelog', enTitle: 'Change Log', title: '更新日志' },
 ];
 
 const showAd = false;
@@ -118,7 +117,7 @@ export default {
       });
       const showApi = this.$route.path.indexOf('/components/') !== -1;
       return (
-        <a-anchor offsetTop={100} class="demo-anchor">
+        <a-anchor offsetTop={68} class="demo-anchor">
           {lis}
           {showApi ? <a-anchor-link key="API" title="API" href="#API" /> : ''}
         </a-anchor>
@@ -138,7 +137,7 @@ export default {
       return docsMenu;
     },
     resetDocumentTitle(component, name, isCN) {
-      let titleStr = 'Ant Design Vue';
+      let titleStr = 'Minigui-Vue';
       if (component) {
         const { subtitle, title } = component;
         const componentName = isCN ? subtitle + ' ' + title : title;
@@ -243,7 +242,7 @@ export default {
                     mode="inline"
                   >
                     {docsMenu}
-                    <a-sub-menu title={`Components(${searchData.length})`} key="Components">
+                    <a-sub-menu title={`組件(${searchData.length})`} key="Components">
                       {MenuGroup}
                     </a-sub-menu>
                   </a-menu>
@@ -270,7 +269,7 @@ export default {
                         mode="inline"
                       >
                         {docsMenu}
-                        <a-sub-menu title={`Components(${searchData.length})`} key="Components">
+                        <a-sub-menu title={`組件(${searchData.length})`} key="Components">
                           {MenuGroup}
                         </a-sub-menu>
                       </a-menu>

@@ -31,14 +31,14 @@
             <img
               width="16"
               alt="expand code"
-              src="https://gw.alipayobjects.com/zos/rmsportal/wSAkBuJFbdxsosKKpqyq.svg"
+              src="/public/expandClose.svg"
               :class="codeExpand ? 'code-expand-icon-hide' : 'code-expand-icon-show'"
               @click="handleCodeExpand"
             />
             <img
               width="16"
               alt="expand code"
-              src="https://gw.alipayobjects.com/zos/rmsportal/OpROPHYqWmrMDBFMZtKF.svg"
+              src="/public/expandOpen.svg"
               :class="codeExpand ? 'code-expand-icon-show' : 'code-expand-icon-hide'"
               @click="handleCodeExpand"
             />
@@ -57,8 +57,8 @@
   </section>
 </template>
 <script>
-import animate from 'ant-design-vue/es/_util/openAnimation';
-import BaseMixin from 'ant-design-vue/es/_util/BaseMixin';
+import animate from 'minigui-vue/es/_util/openAnimation';
+import BaseMixin from 'minigui-vue/es/_util/BaseMixin';
 import { isZhCN } from '../utils/util';
 import { dev } from '../build/config';
 export default {

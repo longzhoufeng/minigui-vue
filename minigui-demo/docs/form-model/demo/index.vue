@@ -34,7 +34,7 @@ const md = {
 ## 组件注册
 
 \`\`\`js
-import { FormModel } from 'ant-design-vue';
+import { FormModel } from 'minigui-vue';
 Vue.use(FormModel);
 \`\`\`
 
@@ -62,7 +62,7 @@ A form consists of one or more form fields whose type includes input, textarea, 
 ## Component Registration
 
 \`\`\`js
-import { FormModel } from 'ant-design-vue';
+import { FormModel } from 'minigui-vue';
 Vue.use(FormModel);
 \`\`\`
 

@@ -42,7 +42,7 @@
 对于双色图标，可以通过使用 `Icon.getTwoToneColor()` 和 `Icon.setTwoToneColor(colorString)` 来全局设置图标主色。
 
 ```jsx
-import { Icon } from 'ant-design-vue';
+import { Icon } from 'minigui-vue';
 
 Icon.setTwoToneColor('#eb2f96');
 Icon.getTwoToneColor(); // #eb2f96

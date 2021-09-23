@@ -13,7 +13,7 @@ You can choose another style of `image` by setting image to `Empty.PRESENTED_IMA
   <a-empty :image="simpleImage" />
 </template>
 <script>
-import { Empty } from 'ant-design-vue';
+import { Empty } from 'minigui-vue';
 export default {
   beforeCreate() {
     this.simpleImage = Empty.PRESENTED_IMAGE_SIMPLE;

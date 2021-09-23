@@ -13,8 +13,8 @@
   </li>
 </template>
 <script>
-import { Badge } from 'ant-design-vue';
-import 'ant-design-vue/es/badge/style';
+import { Badge } from 'minigui-vue';
+import 'minigui-vue/es/badge/style';
 export default {
   components: {
     'a-badge': Badge,

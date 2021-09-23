@@ -74,14 +74,14 @@ We provide `antd.js` `antd.css` and `antd.min.js` `antd.min.css` under `ant-desi
 
 ```jsx
 import Vue from 'vue';
-import { DatePicker } from 'ant-design-vue';
+import { DatePicker } from 'minigui-vue';
 Vue.use(DatePicker);
 ```
 
 And import stylesheets manually:
 
 ```jsx
-import 'ant-design-vue/dist/antd.css'; // or 'ant-design-vue/dist/antd.less'
+import 'minigui-vue/dist/antd.css'; // or 'minigui-vue/dist/antd.less'
 ```
 
 ### Use modularized antd
@@ -103,15 +103,15 @@ import 'ant-design-vue/dist/antd.css'; // or 'ant-design-vue/dist/antd.less'
 
   ```jsx
   // import js and css modularly, parsed by babel-plugin-import
-  import { DatePicker } from 'ant-design-vue';
+  import { DatePicker } from 'minigui-vue';
   ```
 
 - Manually import
 
   ```jsx
-  import DatePicker from 'ant-design-vue/lib/date-picker'; // for js
-  import 'ant-design-vue/lib/date-picker/style/css'; // for css
-  // import 'ant-design-vue/lib/date-picker/style';         // that will import less
+  import DatePicker from 'minigui-vue/lib/date-picker'; // for js
+  import 'minigui-vue/lib/date-picker/style/css'; // for css
+  // import 'minigui-vue/lib/date-picker/style';         // that will import less
   ```
 
 ## Links

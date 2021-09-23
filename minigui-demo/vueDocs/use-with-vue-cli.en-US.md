@@ -62,8 +62,8 @@ Modify `src/main.js`, import Button component from `antd`.
 
 ```jsx
 import Vue from 'vue';
-import Button from 'ant-design-vue/lib/button';
-import 'ant-design-vue/dist/antd.css';
+import Button from 'minigui-vue/lib/button';
+import 'minigui-vue/dist/antd.css';
 import App from './App';
 
 Vue.component(Button.name, Button);
@@ -144,14 +144,14 @@ Modify `babel.config.js`
 };
 ```
 
-Remove the `import 'ant-design-vue/dist/antd.css';` statement added before because `babel-plugin-import` will import styles and import components like below:
+Remove the `import 'minigui-vue/dist/antd.css';` statement added before because `babel-plugin-import` will import styles and import components like below:
 
 ```diff
   // src/main.js
   import Vue from 'vue'
-- import Button from 'ant-design-vue/lib/button';
-+ import { Button } from 'ant-design-vue';
-- import 'ant-design-vue/dist/antd.css'
+- import Button from 'minigui-vue/lib/button';
++ import { Button } from 'minigui-vue';
+- import 'minigui-vue/dist/antd.css'
   import App from './App'
 
   Vue.component(Button.name, Button)

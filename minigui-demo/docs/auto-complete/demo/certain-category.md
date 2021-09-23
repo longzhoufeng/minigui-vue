@@ -40,7 +40,7 @@ Lookup-Patterns - Certain Category
         </a-select-opt-group>
         <a-select-option key="all" disabled class="show-all">
           <a
-            href="https://www.google.com/search?q=ant-design-vue"
+            href="https://www.google.com/search?q=minigui-vue"
             target="_blank"
             rel="noopener noreferrer"
           >

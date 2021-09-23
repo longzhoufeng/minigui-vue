@@ -38,11 +38,11 @@ import Api from '../components/api';
 import demoBox from '../components/demoBox';
 import demoSort from '../components/demoSort';
 import demoContainer from '../components/demoContainer';
-import { message, notification } from 'ant-design-vue';
+import { message, notification } from 'minigui-vue';
 {{importComponents}}
 {{importStyles}}
-import 'ant-design-vue/es/message/style';
-import 'ant-design-vue/es/notification/style';
+import 'minigui-vue/es/message/style';
+import 'minigui-vue/es/notification/style';
 import Test from '../docs/{{name}}/demo/index.vue';
 import zhCN from '../theme/zh-CN';
 import enUS from '../theme/en-US';
@@ -111,12 +111,12 @@ const OUTPUT_PATH = path.join(__dirname, '../site/dev.js');
 
 const generateEntry = components =>
   Object.keys(components)
-    .map(component => `import ${component} from 'ant-design-vue/es/${components[component]}';`)
+    .map(component => `import ${component} from 'minigui-vue/es/${components[component]}';`)
     .join('\n');
 
 const generateStyles = components =>
   Object.keys(components)
-    .map(component => `import 'ant-design-vue/es/${components[component]}/style';`)
+    .map(component => `import 'minigui-vue/es/${components[component]}/style';`)
     .join('\n');
 
 const generateInstall = components =>

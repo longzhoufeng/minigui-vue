@@ -7,7 +7,6 @@
 <script>
 import { isZhCN } from '../utils/util';
 
-const showAd = location.host.indexOf('antdv.com') > -1;
 export default {
   name: 'Api',
   components: {},
@@ -16,7 +15,6 @@ export default {
   },
   data() {
     return {
-      showAd,
       isZhCN: isZhCN(this.demoContext.name),
     };
   },

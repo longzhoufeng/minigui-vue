@@ -62,8 +62,8 @@ $ yarn add ant-design-vue
 
 ```jsx
 import Vue from 'vue';
-import Button from 'ant-design-vue/lib/button';
-import 'ant-design-vue/dist/antd.css';
+import Button from 'minigui-vue/lib/button';
+import 'minigui-vue/dist/antd.css';
 import App from './App';
 
 Vue.component(Button.name, Button);
@@ -143,14 +143,14 @@ $ yarn add babel-plugin-import --dev
 };
 ```
 
-然后移除前面在 `src/main.js` 里全量添加的 `import 'ant-design-vue/dist/antd.css';` 样式代码，并且按下面的格式引入模块。
+然后移除前面在 `src/main.js` 里全量添加的 `import 'minigui-vue/dist/antd.css';` 样式代码，并且按下面的格式引入模块。
 
 ```diff
   // src/main.js
   import Vue from 'vue'
-- import Button from 'ant-design-vue/lib/button';
-+ import { Button } from 'ant-design-vue';
-- import 'ant-design-vue/dist/antd.css'
+- import Button from 'minigui-vue/lib/button';
++ import { Button } from 'minigui-vue';
+- import 'minigui-vue/dist/antd.css'
   import App from './App'
 
   Vue.component(Button.name, Button)

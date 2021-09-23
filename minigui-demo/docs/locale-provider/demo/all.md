@@ -74,9 +74,9 @@ Components which need localization support are listed here, you can toggle the l
   </div>
 </template>
 <script>
-// you should use import zhCN from 'ant-design-vue/es/locale-provider/zh_CN'
-import zhCN from 'ant-design-vue/es/locale-provider/zh_CN';
-import { Modal } from 'ant-design-vue';
+// you should use import zhCN from 'minigui-vue/es/locale-provider/zh_CN'
+import zhCN from 'minigui-vue/es/locale-provider/zh_CN';
+import { Modal } from 'minigui-vue';
 import moment from 'moment';
 import 'moment/locale/zh-cn';
 moment.locale('en');

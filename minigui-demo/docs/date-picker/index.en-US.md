@@ -18,7 +18,7 @@ If there are special needs (only modifying single component language), Please us
   <a-date-picker :locale="locale" />
 </template>
 <script>
-  import locale from 'ant-design-vue/es/date-picker/locale/zh_CN';
+  import locale from 'minigui-vue/es/date-picker/locale/zh_CN';
   export default {
     data() {
       return {

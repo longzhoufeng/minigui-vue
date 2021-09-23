@@ -37,7 +37,6 @@ export default [
         name: 'login',
         component: () =>
           import(
-            /* webpackChunkName: "user" */
             '../views/user/login'
           ),
       },

@@ -13,7 +13,7 @@ LocaleProvider 使用 Vue 的 [provide/inject](https://cn.vuejs.org/v2/api/#prov
   </a-locale-provider>
 </template>
 <script>
-  import zh_CN from 'ant-design-vue/lib/locale-provider/zh_CN';
+  import zh_CN from 'minigui-vue/lib/locale-provider/zh_CN';
   import moment from 'moment';
   import 'moment/locale/zh-cn';
 

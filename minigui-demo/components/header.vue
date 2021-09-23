@@ -3,7 +3,6 @@ import { isZhCN } from '../utils/util';
 import docsearch from 'docsearch.js';
 import packageInfo from '../../package.json';
 import logo from '../public/logo.svg';
-import antDesignVue from '../public/ant-design-vue.svg';
 
 export default {
   inject: {
@@ -73,76 +72,10 @@ export default {
     const selectedKeys = path === '/jobs/list-cn' ? ['jobs'] : ['components'];
     return (
       <header id="header">
-        {visibleAdblockBanner && (
-          <div class="adblock-banner">
-            {isZhCN
-              ? '我们检测到你可能使用了 AdBlock 或 Adblock Plus，它会影响到正常功能的使用（如复制、展开代码等）。'
-              : 'We have detected that you may use AdBlock or Adblock Plus, which will affect the use of normal functions (such as copying, expanding code, etc.)'}
-            <br />
-            {isZhCN
-              ? '你可以将 Ant Design Vue 加入白名单，以便我们更好地提供服务。'
-              : 'You can add Ant Design Vue to the whitelist so that we can provide better services.'}
-
-            <CloseOutlined class="close-icon" onClick={() => (this.visibleAdblockBanner = false)} />
-          </div>
-        )}
-        {isCN && this.showTopBanner && (
-          <div class="global-notification">
-            <span>
-              <a href="https://2x.antdv.com/" target="_blank">
-                2.0 正式版
-              </a>
-              &nbsp;已发布，更快、更小、更易用&nbsp;&nbsp;
-            </span>
-            <br />
-            <span style="padding: 5px 0; display: inline-block;">
-              支持 Vue 3.0，全新 Composition API 文档，TS、JS 双示例
-            </span>
-            <br />
-            <span>
-              <a href="https://store.antdv.com/pro/" target="_blank">
-                Vue3 Admin Pro
-              </a>
-              &nbsp; 同步更新，支持多种布局、多标签页、暗黑主题等
-            </span>
-            <a-icon
-              type="close"
-              style="position: absolute;top: 13px;right: 15px;"
-              onClick={() => this.handleClose('2.0')}
-            />
-          </div>
-        )}
-        {!isCN && this.showTopBanner && (
-          <div class="global-notification">
-            <span>
-              <a href="https://2x.antdv.com/" target="_blank">
-                2.0 release
-              </a>
-              &nbsp; Faster, Smaller, Easier&nbsp;&nbsp;
-            </span>
-            <br />
-            <span style="padding: 5px 0; display: inline-block;">
-              Support Vue 3、New Composition API document、 TS, JS dual examples
-            </span>
-            <br />
-            <span>
-              <a href="https://store.antdv.com/pro/?lang=en" target="_blank">
-                Vue3 Admin Pro
-              </a>
-              &nbsp; is updated synchronously, supports multiple layouts, dark themes, etc.
-            </span>
-            <a-icon
-              type="close"
-              style="position: absolute;top: 8px;right: 15px;"
-              onClick={() => this.handleClose('2.0')}
-            />
-          </div>
-        )}
         <a-row>
           <a-col class="header-left" xxl={4} xl={5} lg={5} md={6} sm={24} xs={24}>
             <router-link to={{ path: '/' }} id="logo">
               <img alt="logo" height="32" src={logo} />
-              <img alt="logo" height="16" src={antDesignVue} />
             </router-link>
             <a-button
               ghost
@@ -164,9 +97,6 @@ export default {
             </div>
             <a-select size="small" defaultValue={packageInfo.version} class="version">
               <a-select-option value={packageInfo.version}>{packageInfo.version}</a-select-option>
-              <a-select-option value="2.x" onClick={() => (location.href = 'https://2x.antdv.com')}>
-                2.x
-              </a-select-option>
             </a-select>
             <a-menu selectedKeys={selectedKeys} mode="horizontal" class="menu-site" id="nav">
               <a-menu-item key="components">

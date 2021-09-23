@@ -15,8 +15,8 @@ Wrap your app with `LocaleProvider`, and apply the corresponding language packag
   </a-locale-provider>
 </template>
 <script>
-// you should use import zhCN from 'ant-design-vue/es/locale-provider/zh_CN';
-import zhCN from 'ant-design-vue/es/locale-provider/zh_CN';
+// you should use import zhCN from 'minigui-vue/es/locale-provider/zh_CN';
+import zhCN from 'minigui-vue/es/locale-provider/zh_CN';
 export default {
   data() {
     return {

@@ -99,10 +99,6 @@ const routes = [
         component: () => import('../vueDocs/sponsor.zh-CN.md'),
       },
       {
-        path: 'docs/vue/changelog',
-        component: () => import('../../CHANGELOG.en-US.md'),
-      },
-      {
         path: 'docs/vue/changelog-cn',
         component: () => import('../../CHANGELOG.zh-CN.md'),
       },

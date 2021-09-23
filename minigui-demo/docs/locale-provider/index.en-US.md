@@ -13,7 +13,7 @@
   </a-locale-provider>
 </template>
 <script>
-  import fr_FR from 'ant-design-vue/lib/locale-provider/fr_FR';
+  import fr_FR from 'minigui-vue/lib/locale-provider/fr_FR';
   import moment from 'moment';
   import 'moment/locale/fr';
 

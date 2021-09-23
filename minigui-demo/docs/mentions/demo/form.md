@@ -65,7 +65,7 @@ Controlled mode, for example, to work with `Form`.
   </a-form>
 </template>
 <script>
-import { Mentions } from 'ant-design-vue';
+import { Mentions } from 'minigui-vue';
 const { getMentions } = Mentions;
 export default {
   data() {

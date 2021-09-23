@@ -49,13 +49,6 @@ Vue.component('tempVar', {
     return ctx.scopedSlots && ctx.scopedSlots.default && ctx.scopedSlots.default(ctx.props);
   },
 });
-// const i18n = new VueI18n({
-//   locale: isZhCN(location.pathname) ? zhCN.locale : enUS.locale,
-//   messages: {
-//     [enUS.locale]: { message: enUS.messages },
-//     [zhCN.locale]: { message: zhCN.messages },
-//   },
-// });
 
 router.beforeEach((to, from, next) => {
   if (to.path !== from.path) {
