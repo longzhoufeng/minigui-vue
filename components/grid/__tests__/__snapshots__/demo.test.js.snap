@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders ./antdv-demo/docs/grid/demo/basic.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/grid/demo/basic.md correctly 1`] = `
 <div>
   <div class="ant-row">
     <div class="ant-col ant-col-12">
@@ -38,7 +38,7 @@ exports[`renders ./antdv-demo/docs/grid/demo/basic.md correctly 1`] = `
 </div>
 `;
 
-exports[`renders ./antdv-demo/docs/grid/demo/flex.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/grid/demo/flex.md correctly 1`] = `
 <div>
   <p>sub-element align left</p>
   <div class="ant-row-flex ant-row-flex-start">
@@ -118,7 +118,7 @@ exports[`renders ./antdv-demo/docs/grid/demo/flex.md correctly 1`] = `
 </div>
 `;
 
-exports[`renders ./antdv-demo/docs/grid/demo/flex-align.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/grid/demo/flex-align.md correctly 1`] = `
 <div>
   <p>Align Top</p>
   <div class="ant-row-flex ant-row-flex-center ant-row-flex-top">
@@ -192,7 +192,7 @@ exports[`renders ./antdv-demo/docs/grid/demo/flex-align.md correctly 1`] = `
 </div>
 `;
 
-exports[`renders ./antdv-demo/docs/grid/demo/flex-fill.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/grid/demo/flex-fill.md correctly 1`] = `
 <div>
   <div role="separator" class="ant-divider ant-divider-horizontal ant-divider-with-text-left"><span class="ant-divider-inner-text">
     Percentage columns
@@ -218,7 +218,7 @@ exports[`renders ./antdv-demo/docs/grid/demo/flex-fill.md correctly 1`] = `
 </div>
 `;
 
-exports[`renders ./antdv-demo/docs/grid/demo/flex-order.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/grid/demo/flex-order.md correctly 1`] = `
 <div>
   <div class="ant-row-flex">
     <div class="ant-col ant-col-6 ant-col-order-4">
@@ -237,7 +237,7 @@ exports[`renders ./antdv-demo/docs/grid/demo/flex-order.md correctly 1`] = `
 </div>
 `;
 
-exports[`renders ./antdv-demo/docs/grid/demo/gutter.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/grid/demo/gutter.md correctly 1`] = `
 <div class="gutter-example">
   <div class="ant-row" style="margin-left: -8px; margin-right: -8px;">
     <div class="gutter-row ant-col ant-col-6" style="padding-left: 8px; padding-right: 8px;">
@@ -264,7 +264,7 @@ exports[`renders ./antdv-demo/docs/grid/demo/gutter.md correctly 1`] = `
 </div>
 `;
 
-exports[`renders ./antdv-demo/docs/grid/demo/offset.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/grid/demo/offset.md correctly 1`] = `
 <div>
   <div class="ant-row">
     <div class="ant-col ant-col-8">
@@ -290,7 +290,7 @@ exports[`renders ./antdv-demo/docs/grid/demo/offset.md correctly 1`] = `
 </div>
 `;
 
-exports[`renders ./antdv-demo/docs/grid/demo/playfround.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/grid/demo/playfround.md correctly 1`] = `
 <div id="components-grid-demo-playground">
   <div style="margin-bottom: 16px;"><span style="margin-right: 6px;">Horizontal Gutter (px): </span>
     <div style="width: 50%;">
@@ -362,7 +362,7 @@ exports[`renders ./antdv-demo/docs/grid/demo/playfround.md correctly 1`] = `
 </div>
 `;
 
-exports[`renders ./antdv-demo/docs/grid/demo/responsive.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/grid/demo/responsive.md correctly 1`] = `
 <div class="ant-row">
   <div class="ant-col ant-col-xs-2 ant-col-sm-4 ant-col-md-6 ant-col-lg-8 ant-col-xl-10">
     Col
@@ -376,7 +376,7 @@ exports[`renders ./antdv-demo/docs/grid/demo/responsive.md correctly 1`] = `
 </div>
 `;
 
-exports[`renders ./antdv-demo/docs/grid/demo/responsive-more.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/grid/demo/responsive-more.md correctly 1`] = `
 <div class="ant-row">
   <div class="ant-col ant-col-xs-5 ant-col-xs-offset-1 ant-col-lg-6 ant-col-lg-offset-2">
     Col
@@ -390,7 +390,7 @@ exports[`renders ./antdv-demo/docs/grid/demo/responsive-more.md correctly 1`] = 
 </div>
 `;
 
-exports[`renders ./antdv-demo/docs/grid/demo/sort.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/grid/demo/sort.md correctly 1`] = `
 <div>
   <div class="ant-row">
     <div class="ant-col ant-col-18 ant-col-push-6">

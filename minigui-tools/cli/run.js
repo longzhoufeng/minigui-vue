@@ -39,7 +39,7 @@ const task = program.args[0];
 if (!task) {
   program.help();
 } else {
-  console.log('antd-tools run', task);
+  console.log('minigui-tools run', task);
 
   require('../gulpfile');
 

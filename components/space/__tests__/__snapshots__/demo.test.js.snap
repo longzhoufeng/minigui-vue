@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders ./antdv-demo/docs/space/demo/align.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/space/demo/align.md correctly 1`] = `
 <div class="space-align-container">
   <div class="space-align-block">
     <div class="ant-space ant-space-horizontal ant-space-align-center">
@@ -41,7 +41,7 @@ exports[`renders ./antdv-demo/docs/space/demo/align.md correctly 1`] = `
 </div>
 `;
 
-exports[`renders ./antdv-demo/docs/space/demo/base.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/space/demo/base.md correctly 1`] = `
 <div class="ant-space ant-space-horizontal ant-space-align-center">
   <div class="ant-space-item" style="margin-right: 8px;">
     Space
@@ -54,7 +54,7 @@ exports[`renders ./antdv-demo/docs/space/demo/base.md correctly 1`] = `
 </div>
 `;
 
-exports[`renders ./antdv-demo/docs/space/demo/customize.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/space/demo/customize.md correctly 1`] = `
 <div>
   <div tabindex="-1" class="ant-slider">
     <div class="ant-slider-rail"></div>
@@ -72,7 +72,7 @@ exports[`renders ./antdv-demo/docs/space/demo/customize.md correctly 1`] = `
 </div>
 `;
 
-exports[`renders ./antdv-demo/docs/space/demo/size.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/space/demo/size.md correctly 1`] = `
 <div>
   <div class="ant-radio-group ant-radio-group-outline ant-radio-group-default"><label class="ant-radio-wrapper ant-radio-wrapper-checked"><span class="ant-radio ant-radio-checked"><input type="radio" class="ant-radio-input" value="small"><span class="ant-radio-inner"></span></span><span>Small</span></label><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" value="middle"><span class="ant-radio-inner"></span></span><span>Middle</span></label><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" value="large"><span class="ant-radio-inner"></span></span><span>Large</span></label></div> <br> <br>
   <div class="ant-space ant-space-horizontal ant-space-align-center">
@@ -84,7 +84,7 @@ exports[`renders ./antdv-demo/docs/space/demo/size.md correctly 1`] = `
 </div>
 `;
 
-exports[`renders ./antdv-demo/docs/space/demo/vertical.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/space/demo/vertical.md correctly 1`] = `
 <div class="ant-space ant-space-vertical">
   <div class="ant-space-item" style="margin-bottom: 8px;">
     <div class="ant-card ant-card-bordered" style="width: 300px;">

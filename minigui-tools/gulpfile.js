@@ -228,7 +228,7 @@ gulp.task(
 );
 
 function publish(tagString, done) {
-  let args = ['publish', '--with-antd-tools'];
+  let args = ['publish', '--with-minigui-tools'];
   if (tagString) {
     args = args.concat(['--tag', tagString]);
   }
@@ -360,7 +360,7 @@ gulp.task(
     const npmArgs = getNpmArgs();
     if (npmArgs) {
       for (let arg = npmArgs.shift(); arg; arg = npmArgs.shift()) {
-        if (/^pu(b(l(i(sh?)?)?)?)?$/.test(arg) && npmArgs.indexOf('--with-antd-tools') < 0) {
+        if (/^pu(b(l(i(sh?)?)?)?)?$/.test(arg) && npmArgs.indexOf('--with-minigui-tools') < 0) {
           reportError();
           done(1);
           return;

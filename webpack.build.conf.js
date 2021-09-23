@@ -1,6 +1,6 @@
 // This config is for building dist files
 const webpack = require('webpack');
-const getWebpackConfig = require('./antd-tools/getWebpackConfig');
+const getWebpackConfig = require('./minigui-tools/getWebpackConfig');
 
 function ignoreMomentLocale(webpackConfig) {
   delete webpackConfig.module.noParse;

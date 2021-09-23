@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders ./antdv-demo/docs/form-model/demo/basic.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/form-model/demo/basic.md correctly 1`] = `
 <form class="ant-form ant-form-horizontal">
   <div class="ant-row ant-form-item">
     <div class="ant-col ant-col-4 ant-form-item-label"><label title="Activity name" class="">Activity name</label></div>
@@ -79,7 +79,7 @@ exports[`renders ./antdv-demo/docs/form-model/demo/basic.md correctly 1`] = `
 </form>
 `;
 
-exports[`renders ./antdv-demo/docs/form-model/demo/custom-validation.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/form-model/demo/custom-validation.md correctly 1`] = `
 <form class="ant-form ant-form-horizontal">
   <div class="ant-row ant-form-item">
     <div class="ant-col ant-col-4 ant-form-item-label"><label title="Password" class="">Password</label></div>
@@ -115,7 +115,7 @@ exports[`renders ./antdv-demo/docs/form-model/demo/custom-validation.md correctl
 </form>
 `;
 
-exports[`renders ./antdv-demo/docs/form-model/demo/dynamic-form-item.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/form-model/demo/dynamic-form-item.md correctly 1`] = `
 <form class="ant-form ant-form-horizontal">
   <div class="ant-row ant-form-item">
     <div class="ant-col ant-col-xs-24 ant-col-xs-offset-0 ant-col-sm-20 ant-col-sm-offset-4 ant-form-item-control-wrapper">
@@ -134,7 +134,7 @@ exports[`renders ./antdv-demo/docs/form-model/demo/dynamic-form-item.md correctl
 </form>
 `;
 
-exports[`renders ./antdv-demo/docs/form-model/demo/horizontal-login.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/form-model/demo/horizontal-login.md correctly 1`] = `
 <form class="ant-form ant-form-inline">
   <div class="ant-row ant-form-item">
     <div class="ant-col ant-form-item-control-wrapper">
@@ -160,7 +160,7 @@ exports[`renders ./antdv-demo/docs/form-model/demo/horizontal-login.md correctly
 </form>
 `;
 
-exports[`renders ./antdv-demo/docs/form-model/demo/layout.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/form-model/demo/layout.md correctly 1`] = `
 <form class="ant-form ant-form-horizontal">
   <div class="ant-row ant-form-item">
     <div class="ant-col ant-col-4 ant-form-item-label"><label title="Form Layout" class="">Form Layout</label></div>
@@ -202,7 +202,7 @@ exports[`renders ./antdv-demo/docs/form-model/demo/layout.md correctly 1`] = `
 </form>
 `;
 
-exports[`renders ./antdv-demo/docs/form-model/demo/validation.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/form-model/demo/validation.md correctly 1`] = `
 <form class="ant-form ant-form-horizontal">
   <div class="ant-row ant-form-item">
     <div class="ant-col ant-col-4 ant-form-item-label"><label title="Activity name" class="ant-form-item-required">Activity name</label></div>

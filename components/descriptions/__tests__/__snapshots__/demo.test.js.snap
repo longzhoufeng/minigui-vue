@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders ./antdv-demo/docs/descriptions/demo/basic.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/descriptions/demo/basic.md correctly 1`] = `
 <div class="ant-descriptions">
   <div class="ant-descriptions-title">User Info</div>
   <div class="ant-descriptions-view">
@@ -31,7 +31,7 @@ exports[`renders ./antdv-demo/docs/descriptions/demo/basic.md correctly 1`] = `
 </div>
 `;
 
-exports[`renders ./antdv-demo/docs/descriptions/demo/border.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/descriptions/demo/border.md correctly 1`] = `
 <div class="ant-descriptions ant-descriptions-bordered">
   <div class="ant-descriptions-title">User Info</div>
   <div class="ant-descriptions-view">
@@ -101,7 +101,7 @@ exports[`renders ./antdv-demo/docs/descriptions/demo/border.md correctly 1`] = `
 </div>
 `;
 
-exports[`renders ./antdv-demo/docs/descriptions/demo/responsive.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/descriptions/demo/responsive.md correctly 1`] = `
 <div>
   <div class="ant-descriptions ant-descriptions-bordered">
     <div class="ant-descriptions-title">Responsive Descriptions</div>
@@ -159,7 +159,7 @@ exports[`renders ./antdv-demo/docs/descriptions/demo/responsive.md correctly 1`]
 </div>
 `;
 
-exports[`renders ./antdv-demo/docs/descriptions/demo/size.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/descriptions/demo/size.md correctly 1`] = `
 <div>
   <div class="ant-radio-group ant-radio-group-outline ant-radio-group-default"><label class="ant-radio-wrapper ant-radio-wrapper-checked"><span class="ant-radio ant-radio-checked"><input type="radio" class="ant-radio-input" value="default"><span class="ant-radio-inner"></span></span><span>
       default
@@ -255,7 +255,7 @@ exports[`renders ./antdv-demo/docs/descriptions/demo/size.md correctly 1`] = `
 </div>
 `;
 
-exports[`renders ./antdv-demo/docs/descriptions/demo/vertical.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/descriptions/demo/vertical.md correctly 1`] = `
 <div class="ant-descriptions">
   <div class="ant-descriptions-title">User Info</div>
   <div class="ant-descriptions-view">
@@ -295,7 +295,7 @@ exports[`renders ./antdv-demo/docs/descriptions/demo/vertical.md correctly 1`] =
 </div>
 `;
 
-exports[`renders ./antdv-demo/docs/descriptions/demo/vertical-border.md correctly 1`] = `
+exports[`renders ./minigui-demo/docs/descriptions/demo/vertical-border.md correctly 1`] = `
 <div class="ant-descriptions ant-descriptions-bordered">
   <div class="ant-descriptions-title">User Info</div>
   <div class="ant-descriptions-view">
