@@ -146,10 +146,10 @@ function tag() {
   execSync(`git config --global user.name ${process.env.GITHUB_USER_NAME}`);
   execSync(`git tag ${version}`);
   execSync(
-    `git push https://${process.env.GITHUB_TOKEN}@github.com/longzhoufeng/minigui-vue.git ${version}:${version}`,
+    `git push git://${process.env.GITHUB_TOKEN}@github.com/longzhoufeng/minigui-vue.git ${version}:${version}`,
   );
   execSync(
-    `git push https://${process.env.GITHUB_TOKEN}@github.com/longzhoufeng/minigui-vue.git master:master`,
+    `git push git://${process.env.GITHUB_TOKEN}@github.com/longzhoufeng/minigui-vue.git master:master`,
   );
   console.log('tagged');
 }
