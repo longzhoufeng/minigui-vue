@@ -21,8 +21,8 @@ You can set a custom text by setting the `format` prop.
   </div>
 </template>
 <style scoped>
-div.ant-progress-circle,
-div.ant-progress-line {
+div.minigui-progress-circle,
+div.minigui-progress-line {
   margin-right: 8px;
   margin-bottom: 8px;
 }

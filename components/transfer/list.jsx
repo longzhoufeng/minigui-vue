@@ -243,7 +243,7 @@ export default {
       }
       this.triggerScrollTimer = setTimeout(() => {
         const transferNode = this.$el;
-        const listNode = transferNode.querySelectorAll('.ant-transfer-list-content')[0];
+        const listNode = transferNode.querySelectorAll('.minigui-transfer-list-content')[0];
         if (listNode) {
           triggerEvent(listNode, 'scroll');
         }

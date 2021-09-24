@@ -63,7 +63,7 @@ The `size` can be set to `large`, `small` or left unset resulting in a default s
 #components-button-demo-button-group > h4:first-child {
   margin-top: 0;
 }
-#components-button-demo-button-group .ant-btn-group {
+#components-button-demo-button-group .minigui-btn-group {
   margin-right: 8px;
 }
 </style>

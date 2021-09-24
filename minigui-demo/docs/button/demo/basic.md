@@ -5,7 +5,7 @@
 
 <us>
 #### Type
-There are `primary` button, `default` button, `dashed` button , `danger` button and `link` button in antd.
+There are `primary` button, `default` button, `dashed` button , `danger` button and `link` button in minigui.
 </us>
 
 ```vue

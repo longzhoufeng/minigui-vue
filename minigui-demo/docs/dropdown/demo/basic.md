@@ -11,7 +11,7 @@ The most basic dropdown menu.
 ```vue
 <template>
   <a-dropdown>
-    <a class="ant-dropdown-link" @click="e => e.preventDefault()">
+    <a class="minigui-dropdown-link" @click="e => e.preventDefault()">
       Hover me <a-icon type="down" />
     </a>
     <a-menu slot="overlay">

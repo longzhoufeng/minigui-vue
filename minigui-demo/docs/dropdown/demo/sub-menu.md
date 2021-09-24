@@ -11,7 +11,7 @@ The menu has multiple levels.
 ```vue
 <template>
   <a-dropdown>
-    <a class="ant-dropdown-link" @click="e => e.preventDefault()">
+    <a class="minigui-dropdown-link" @click="e => e.preventDefault()">
       Cascading menu <a-icon type="down" />
     </a>
     <a-menu slot="overlay">

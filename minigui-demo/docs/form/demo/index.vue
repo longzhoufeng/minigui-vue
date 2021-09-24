@@ -140,7 +140,7 @@ export default {
 };
 </script>
 <style>
-.code-box-demo .ant-form:not(.ant-form-inline):not(.ant-form-vertical) {
+.code-box-demo .minigui-form:not(.minigui-form-inline):not(.minigui-form-vertical) {
   max-width: 600px;
 }
 </style>

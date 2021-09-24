@@ -11,7 +11,7 @@ The default is to close the menu when you click on menu items, this feature can 
 ```vue
 <template>
   <a-dropdown v-model="visible">
-    <a class="ant-dropdown-link" @click="e => e.preventDefault()">
+    <a class="minigui-dropdown-link" @click="e => e.preventDefault()">
       Hover me <a-icon type="down" />
     </a>
     <a-menu slot="overlay" @click="handleMenuClick">

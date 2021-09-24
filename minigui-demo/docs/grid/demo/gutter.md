@@ -42,7 +42,7 @@ You can use a array to set vertical spacing, `[horizontal, vertical]` `[16, { xs
   </div>
 </template>
 <style scoped>
-.gutter-example >>> .ant-row > div {
+.gutter-example >>> .minigui-row > div {
   background: transparent;
   border: 0;
 }

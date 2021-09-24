@@ -66,7 +66,7 @@ import { PageHeader } from './page-header';
 import { Space } from './space';
 
 /**
- * Install all ant-design-vue components into Vue.
+ * Install all minigui-vue components into Vue.
  * Please do not invoke this method directly.
  * Call `Vue.use(Minigui)` to install.
  */

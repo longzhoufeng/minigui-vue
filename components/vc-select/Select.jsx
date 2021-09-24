@@ -160,7 +160,7 @@ const Select = {
     };
     return {
       ...state,
-      _mirrorInputValue: state._inputValue, // https://github.com/vueComponent/ant-design-vue/issues/1458
+      _mirrorInputValue: state._inputValue,
       ...this.getDerivedState(props, state),
     };
   },
@@ -369,7 +369,6 @@ const Select = {
         this.onInputKeydown(event);
       } else if (keyCode === KeyCode.ENTER || keyCode === KeyCode.DOWN) {
         // vue state是同步更新，onKeyDown在onMenuSelect后会再次调用，单选时不在调用setOpenState
-        // https://github.com/vueComponent/ant-design-vue/issues/1142
         if (keyCode === KeyCode.ENTER && !isMultipleOrTags(this.$props)) {
           this.maybeFocus(true);
         } else if (!open) {
@@ -685,9 +684,6 @@ const Select = {
     },
     inputBlur(e) {
       const target = e.relatedTarget || document.activeElement;
-
-      // https://github.com/vueComponent/ant-design-vue/issues/999
-      // https://github.com/vueComponent/ant-design-vue/issues/1223
       if (
         (isIE || isEdge) &&
         (e.relatedTarget === this.$refs.arrow ||
@@ -810,7 +806,7 @@ const Select = {
                 value: this.saveInputRef,
               },
               {
-                name: 'ant-input',
+                name: 'minigui-input',
               },
             ],
             on: {
@@ -1396,7 +1392,7 @@ const Select = {
             const choiceClassName = disabled
               ? `${prefixCls}-selection__choice ${prefixCls}-selection__choice__disabled`
               : `${prefixCls}-selection__choice`;
-            // attrs 放在一起，避免动态title混乱问题，很奇怪的问题 https://github.com/vueComponent/ant-design-vue/issues/588
+            // attrs 放在一起，避免动态title混乱问题，很奇怪的问题
             const attrs = {
               ...UNSELECTABLE_ATTRIBUTE,
               role: 'presentation',

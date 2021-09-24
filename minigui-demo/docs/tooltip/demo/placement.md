@@ -103,7 +103,7 @@ export default {
 };
 </script>
 <style scoped>
-#components-a-tooltip-demo-placement .ant-btn {
+#components-a-tooltip-demo-placement .minigui-btn {
   width: 70px;
   text-align: center;
   padding: 0;

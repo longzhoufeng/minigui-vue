@@ -9,7 +9,7 @@ export declare class Comment extends MiniguiComponent {
   avatar?: any;
   /** The main content of the comment */
   content: any;
-  /** Comment prefix defaults to '.ant-comment' */
+  /** Comment prefix defaults to '.minigui-comment' */
   prefixCls?: string;
   /** A datetime element containing the time to be displayed */
   datetime?: any;

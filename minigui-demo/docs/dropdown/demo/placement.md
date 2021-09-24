@@ -47,7 +47,7 @@ export default {
 };
 </script>
 <style>
-#components-dropdown-demo-placement .ant-btn {
+#components-dropdown-demo-placement .minigui-btn {
   margin-right: 8px;
   margin-bottom: 8px;
 }

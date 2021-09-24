@@ -135,7 +135,7 @@ const ResizableTextArea = {
         on: omit(getListeners(this), 'pressEnter'),
         directives: [
           {
-            name: 'ant-input',
+            name: 'minigui-input',
           },
         ],
       };

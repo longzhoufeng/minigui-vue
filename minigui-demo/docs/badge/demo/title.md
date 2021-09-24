@@ -17,7 +17,7 @@
   </div>
 </template>
 <style scoped>
-#components-badge-demo-title .ant-badge:not(.ant-badge-status) {
+#components-badge-demo-title .minigui-badge:not(.minigui-badge-status) {
   margin-right: 20px;
 }
 .head-example {

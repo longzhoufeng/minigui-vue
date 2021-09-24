@@ -21,8 +21,8 @@ export default {
   },
   props: {
     ...inputProps,
-    prefixCls: PropTypes.string.def('ant-input-password'),
-    inputPrefixCls: PropTypes.string.def('ant-input'),
+    prefixCls: PropTypes.string.def('minigui-input-password'),
+    inputPrefixCls: PropTypes.string.def('minigui-input'),
     action: PropTypes.string.def('click'),
     visibilityToggle: PropTypes.bool.def(true),
   },

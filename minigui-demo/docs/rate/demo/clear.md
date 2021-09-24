@@ -12,10 +12,10 @@ Support set allow to clear star when click again.
 <template>
   <div>
     <a-rate :default-value="3" />
-    <span class="ant-rate-text">allowClear: true</span>
+    <span class="minigui-rate-text">allowClear: true</span>
     <br />
     <a-rate :allow-clear="false" :default-value="3" />
-    <span class="ant-rate-text">allowClear: false</span>
+    <span class="minigui-rate-text">allowClear: false</span>
   </div>
 </template>
 ```

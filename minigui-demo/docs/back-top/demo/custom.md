@@ -12,7 +12,7 @@ You can customize the style of the button, just note the size limit: no more tha
 <template>
   <div id="components-back-top-demo-custom">
     <a-back-top>
-      <div class="ant-back-top-inner">
+      <div class="minigui-back-top-inner">
         UP
       </div>
     </a-back-top>
@@ -22,10 +22,10 @@ You can customize the style of the button, just note the size limit: no more tha
   </div>
 </template>
 <style scoped>
-#components-back-top-demo-custom .ant-back-top {
+#components-back-top-demo-custom .minigui-back-top {
   bottom: 100px;
 }
-#components-back-top-demo-custom .ant-back-top-inner {
+#components-back-top-demo-custom .minigui-back-top-inner {
   height: 40px;
   width: 40px;
   line-height: 40px;

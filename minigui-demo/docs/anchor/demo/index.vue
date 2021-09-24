@@ -44,7 +44,7 @@ export default {
 };
 </script>
 <style>
-#components-anchor-demo .ant-affix {
+#components-anchor-demo .minigui-affix {
   z-index: 11;
 }
 </style>

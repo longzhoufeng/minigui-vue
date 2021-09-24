@@ -50,29 +50,29 @@ Classic page layouts.
 #components-layout-demo-basic {
   text-align: center;
 }
-#components-layout-demo-basic .ant-layout-header,
-#components-layout-demo-basic .ant-layout-footer {
+#components-layout-demo-basic .minigui-layout-header,
+#components-layout-demo-basic .minigui-layout-footer {
   background: #7dbcea;
   color: #fff;
 }
-#components-layout-demo-basic .ant-layout-footer {
+#components-layout-demo-basic .minigui-layout-footer {
   line-height: 1.5;
 }
-#components-layout-demo-basic .ant-layout-sider {
+#components-layout-demo-basic .minigui-layout-sider {
   background: #3ba0e9;
   color: #fff;
   line-height: 120px;
 }
-#components-layout-demo-basic .ant-layout-content {
+#components-layout-demo-basic .minigui-layout-content {
   background: rgba(16, 142, 233, 1);
   color: #fff;
   min-height: 120px;
   line-height: 120px;
 }
-#components-layout-demo-basic > .ant-layout {
+#components-layout-demo-basic > .minigui-layout {
   margin-bottom: 48px;
 }
-#components-layout-demo-basic > .ant-layout:last-child {
+#components-layout-demo-basic > .minigui-layout:last-child {
   margin: 0;
 }
 </style>

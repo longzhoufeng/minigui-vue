@@ -17,8 +17,8 @@ A smaller circular progress bar.
   </div>
 </template>
 <style scoped>
-.ant-progress-circle-wrap,
-.ant-progress-line-wrap {
+.minigui-progress-circle-wrap,
+.minigui-progress-line-wrap {
   margin-right: 8px;
   margin-bottom: 5px;
 }

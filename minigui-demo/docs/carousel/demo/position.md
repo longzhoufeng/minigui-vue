@@ -44,7 +44,7 @@ export default {
 </script>
 <style scoped>
 /* For demo */
-.ant-carousel >>> .slick-slide {
+.minigui-carousel >>> .slick-slide {
   text-align: center;
   height: 160px;
   line-height: 160px;
@@ -52,7 +52,7 @@ export default {
   overflow: hidden;
 }
 
-.ant-carousel >>> .slick-slide h3 {
+.minigui-carousel >>> .slick-slide h3 {
   color: #fff;
 }
 </style>

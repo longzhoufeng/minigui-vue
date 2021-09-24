@@ -79,7 +79,7 @@ module.exports = {
   'app.footer.work_with_us': 'Work with Us',
   'app.footer.more-product': 'More Products',
   'app.footer.company': 'AFX',
-  'app.footer.ant-design': 'UI Design Language',
+  'app.footer.minigui-vue': 'UI Design Language',
   'app.footer.yuque': 'YuQue',
   'app.footer.yuque.slogan': 'Write your document as a team',
   'app.footer.fengdie': 'FengDie',

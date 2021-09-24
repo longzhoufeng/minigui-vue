@@ -197,7 +197,7 @@ const DateInput = {
                   value: this.saveDateInput,
                 },
                 {
-                  name: 'ant-input',
+                  name: 'minigui-input',
                 },
               ],
             }}

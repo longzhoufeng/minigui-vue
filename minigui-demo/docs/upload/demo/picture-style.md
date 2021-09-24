@@ -40,15 +40,13 @@ export default {
           uid: '-1',
           name: 'xxx.png',
           status: 'done',
-          url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
-          thumbUrl: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+          url: '/public/no.png',
         },
         {
           uid: '-2',
           name: 'yyy.png',
           status: 'done',
-          url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
-          thumbUrl: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+          url: '/public/no.png',
         },
       ],
     };
@@ -57,15 +55,15 @@ export default {
 </script>
 <style scoped>
 /* tile uploaded pictures */
-.upload-list-inline >>> .ant-upload-list-item {
+.upload-list-inline >>> .minigui-upload-list-item {
   float: left;
   width: 200px;
   margin-right: 8px;
 }
-.upload-list-inline >>> .ant-upload-animate-enter {
+.upload-list-inline >>> .minigui-upload-animate-enter {
   animation-name: uploadAnimateInlineIn;
 }
-.upload-list-inline >>> .ant-upload-animate-leave {
+.upload-list-inline >>> .minigui-upload-animate-leave {
   animation-name: uploadAnimateInlineOut;
 }
 </style>

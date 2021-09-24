@@ -47,7 +47,7 @@ export default {
 };
 </script>
 <style scoped>
-.code-box-demo .ant-slider {
+.code-box-demo .minigui-slider {
   margin-bottom: 16px;
 }
 </style>

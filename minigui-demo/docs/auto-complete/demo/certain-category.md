@@ -27,7 +27,7 @@ Lookup-Patterns - Certain Category
             {{ group.title }}
             <a
               style="float: right"
-              href="https://www.google.com/search?q=antd"
+              href="https://www.google.com/search?q=minigui"
               target="_blank"
               rel="noopener noreferrer"
               >more
@@ -101,33 +101,33 @@ export default {
 };
 </script>
 <style>
-.certain-category-search-dropdown .ant-select-dropdown-menu-item-group-title {
+.certain-category-search-dropdown .minigui-select-dropdown-menu-item-group-title {
   color: #666;
   font-weight: bold;
 }
 
-.certain-category-search-dropdown .ant-select-dropdown-menu-item-group {
+.certain-category-search-dropdown .minigui-select-dropdown-menu-item-group {
   border-bottom: 1px solid #f6f6f6;
 }
 
-.certain-category-search-dropdown .ant-select-dropdown-menu-item {
+.certain-category-search-dropdown .minigui-select-dropdown-menu-item {
   padding-left: 16px;
 }
 
-.certain-category-search-dropdown .ant-select-dropdown-menu-item.show-all {
+.certain-category-search-dropdown .minigui-select-dropdown-menu-item.show-all {
   text-align: center;
   cursor: default;
 }
 
-.certain-category-search-dropdown .ant-select-dropdown-menu {
+.certain-category-search-dropdown .minigui-select-dropdown-menu {
   max-height: 300px;
 }
 </style>
 <style scoped>
 .certain-category-search-wrapper
-  >>> .certain-category-search.ant-select-auto-complete
-  .ant-input-affix-wrapper
-  .ant-input-suffix {
+  >>> .certain-category-search.minigui-select-auto-complete
+  .minigui-input-affix-wrapper
+  .minigui-input-suffix {
   right: 12px;
 }
 .certain-category-search-wrapper >>> .certain-search-item-count {
@@ -136,7 +136,7 @@ export default {
   right: 16px;
 }
 .certain-category-search-wrapper
-  >>> .certain-category-search.ant-select-focused
+  >>> .certain-category-search.minigui-select-focused
   .certain-category-icon {
   color: #108ee9;
 }

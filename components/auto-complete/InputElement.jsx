@@ -34,7 +34,6 @@ export default {
       newEvent[eventName] = chaining(event, events[eventName]);
     }
     const attrs = { ...$attrs, value };
-    // https://github.com/vueComponent/ant-design-vue/issues/1761
     delete props.placeholder;
     if (placeholder) {
       props.placeholder = placeholder;

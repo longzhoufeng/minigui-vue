@@ -86,7 +86,7 @@ export default {
     collapsedWidth: 80,
   }),
   data() {
-    this.uniqueId = generateId('ant-sider-');
+    this.uniqueId = generateId('minigui-sider-');
     let matchMedia;
     if (typeof window !== 'undefined') {
       matchMedia = window.matchMedia;

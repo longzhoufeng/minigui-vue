@@ -32,10 +32,6 @@
 | --- | --- | --- | --- | --- | --- |
 | IE9, IE10, IE11, Edge | last 2 versions | last 2 versions | last 2 versions | last 2 versions | last 2 versions |
 
-## 版本
-
-- 稳定版：[![npm package](https://img.shields.io/npm/v/ant-design-vue.svg?style=flat-square)](https://www.npmjs.org/package/ant-design-vue)
-
 
 ## 安装
 
@@ -89,7 +85,7 @@ import 'minigui-vue/dist/antd.css'; // or 'minigui-vue/dist/antd.less'
   // .babelrc or babel-loader option
   {
     "plugins": [
-      ["import", { "libraryName": "ant-design-vue", "libraryDirectory": "es", "style": "css" }] // `style: true` 会加载 less 文件
+      ["import", { "libraryName": "minigui-vue", "libraryDirectory": "es", "style": "css" }] // `style: true` 会加载 less 文件
     ]
   }
   ```

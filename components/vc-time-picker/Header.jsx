@@ -169,7 +169,7 @@ const Header = {
           {...{
             directives: [
               {
-                name: 'ant-input',
+                name: 'minigui-input',
               },
             ],
           }}

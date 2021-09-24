@@ -47,7 +47,7 @@ export default {
 };
 </script>
 <style>
-#components-tag-demo .ant-tag {
+#components-tag-demo .minigui-tag {
   margin-bottom: 8px;
 }
 </style>

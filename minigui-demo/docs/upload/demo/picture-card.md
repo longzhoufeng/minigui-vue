@@ -20,7 +20,7 @@ After users upload picture, the thumbnail will be shown in list. The upload butt
     >
       <div v-if="fileList.length < 8">
         <a-icon type="plus" />
-        <div class="ant-upload-text">
+        <div class="minigui-upload-text">
           Upload
         </div>
       </div>
@@ -96,12 +96,12 @@ export default {
 </script>
 <style>
 /* you can make up upload button and sample style by using stylesheets */
-.ant-upload-select-picture-card i {
+.minigui-upload-select-picture-card i {
   font-size: 32px;
   color: #999;
 }
 
-.ant-upload-select-picture-card .ant-upload-text {
+.minigui-upload-select-picture-card .minigui-upload-text {
   margin-top: 8px;
   color: #666;
 }

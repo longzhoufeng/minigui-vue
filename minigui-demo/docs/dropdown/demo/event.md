@@ -11,7 +11,7 @@ An event will be triggered when you click menu items, in which you can make diff
 ```vue
 <template>
   <a-dropdown>
-    <a class="ant-dropdown-link" @click="e => e.preventDefault()">
+    <a class="minigui-dropdown-link" @click="e => e.preventDefault()">
       Hover me, Click menu item <a-icon type="down" />
     </a>
     <a-menu slot="overlay" @click="onClick">

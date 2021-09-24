@@ -46,7 +46,7 @@ export default {
       this.setStretchSize();
     });
   },
-  // 如添加会导致动画失效，如放开会导致快速输入时闪动 https://github.com/vueComponent/ant-design-vue/issues/1327，
+  // 如添加会导致动画失效，如放开会导致快速输入时闪动
   // 目前方案是保留动画，闪动问题(动画多次执行)进一步定位
   // beforeUpdate() {
   //   if (this.domEl && this.domEl.rcEndListener) {

@@ -293,7 +293,7 @@ const icons = [
   'google',
   'codepen-circle',
   'alipay',
-  'ant-design',
+  'minigui-vue',
   'aliyun',
   'zhihu',
   'slack',

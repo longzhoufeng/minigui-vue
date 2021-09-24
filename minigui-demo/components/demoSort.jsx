@@ -33,13 +33,13 @@ export default {
     return (
       <Row gutter={16}>
         <Col
-          span={isSingleCol ? 24 : 12}
+          span={isSingleCol ? 24 : 24}
           class={isSingleCol ? 'code-boxes-col-1-1' : 'code-boxes-col-2-1'}
         >
           {leftChildren}
         </Col>
         {isSingleCol ? null : (
-          <Col class="code-boxes-col-2-1" span={12}>
+          <Col class="code-boxes-col-2-1" span={24}>
             {rightChildren}
           </Col>
         )}

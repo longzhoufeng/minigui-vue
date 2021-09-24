@@ -12,7 +12,7 @@ Show the dynamic switching mode (between 'inline' and 'vertical').
 <template>
   <div>
     <a-switch :default-checked="false" @change="changeMode" /> Change Mode
-    <span className="ant-divider" style="margin: 0 1em" />
+    <span className="minigui-divider" style="margin: 0 1em" />
     <a-switch :default-checked="false" @change="changeTheme" /> Change Theme
     <br />
     <br />

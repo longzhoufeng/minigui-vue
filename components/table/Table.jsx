@@ -409,7 +409,6 @@ export default {
       const sorterFn = this.getSorterFn(currentState);
       if (sorterFn) {
         // 使用新数组，避免改变原数组导致无限循环更新
-        // https://github.com/vueComponent/ant-design-vue/issues/2270
         data = this.recursiveSort([...data], sorterFn);
       }
       // 筛选
@@ -1039,7 +1038,7 @@ export default {
               selectedKeys={colFilters}
               confirmFilter={this.handleFilter}
               prefixCls={`${prefixCls}-filter`}
-              dropdownPrefixCls={dropdownPrefixCls || 'ant-dropdown'}
+              dropdownPrefixCls={dropdownPrefixCls || 'minigui-dropdown'}
               getPopupContainer={this.generatePopupContainerFunc(getPopupContainer)}
               key="filter-dropdown"
             />

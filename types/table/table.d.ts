@@ -240,7 +240,7 @@ export declare class Table extends MiniguiComponent {
   /**
    * Set horizontal or vertical scrolling, can also be used to specify the width and height of the scroll area.
    * It is recommended to set a number for x, if you want to set it to true,
-   * you need to add style .ant-table td { white-space: nowrap; }.
+   * you need to add style .minigui-table td { white-space: nowrap; }.
    * @type object
    */
   scroll: { x: number | true; y: number };

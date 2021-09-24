@@ -20,8 +20,7 @@ Custom paging display
   </a-carousel>
 </template>
 <script>
-const baseUrl =
-  'https://raw.githubusercontent.com/vueComponent/ant-design-vue/master/components/vc-slick/assets/img/react-slick/';
+const baseUrl = '';
 export default {
   data() {
     return {
@@ -37,28 +36,28 @@ export default {
 </script>
 <style scoped>
 /* For demo */
-.ant-carousel >>> .slick-dots {
+.minigui-carousel >>> .slick-dots {
   height: auto;
 }
-.ant-carousel >>> .slick-slide img {
+.minigui-carousel >>> .slick-slide img {
   border: 5px solid #fff;
   display: block;
   margin: auto;
   max-width: 80%;
 }
-.ant-carousel >>> .slick-thumb {
+.minigui-carousel >>> .slick-thumb {
   bottom: -45px;
 }
-.ant-carousel >>> .slick-thumb li {
+.minigui-carousel >>> .slick-thumb li {
   width: 60px;
   height: 45px;
 }
-.ant-carousel >>> .slick-thumb li img {
+.minigui-carousel >>> .slick-thumb li img {
   width: 100%;
   height: 100%;
   filter: grayscale(100%);
 }
-.ant-carousel >>> .slick-thumb li.slick-active img {
+.minigui-carousel >>> .slick-thumb li.slick-active img {
   filter: grayscale(0%);
 }
 </style>

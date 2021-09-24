@@ -124,7 +124,7 @@ const SearchInput = {
                 value: this.inputRef,
               },
               {
-                name: 'ant-input',
+                name: 'minigui-input',
               },
             ],
           }}

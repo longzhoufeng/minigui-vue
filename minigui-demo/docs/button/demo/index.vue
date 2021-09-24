@@ -51,11 +51,11 @@ export default {
 };
 </script>
 <style>
-[id^='components-button-demo-'] .ant-btn {
+[id^='components-button-demo-'] .minigui-btn {
   margin-right: 8px;
   margin-bottom: 12px;
 }
-[id^='components-button-demo-'] .ant-btn-group > .ant-btn {
+[id^='components-button-demo-'] .minigui-btn-group > .minigui-btn {
   margin-right: 0;
 }
 </style>

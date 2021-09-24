@@ -3,7 +3,7 @@ import PropTypes from '../_util/vue-types';
 import { filterEmpty, getComponentFromProp } from '../_util/props-util';
 import defaultRenderEmpty from './renderEmpty';
 import Base from '../base';
-import LocaleProvider, { ANT_MARK } from '../locale-provider';
+import LocaleProvider, { MINIGUI_MARK } from '../locale-provider';
 import LocaleReceiver from '../locale-provider/LocaleReceiver';
 
 function getWatch(keys = []) {
@@ -60,13 +60,13 @@ const ConfigProvider = {
       return renderEmpty(h, name);
     },
     getPrefixCls(suffixCls, customizePrefixCls) {
-      const { prefixCls = 'ant' } = this.$props;
+      const { prefixCls = 'minigui' } = this.$props;
       if (customizePrefixCls) return customizePrefixCls;
       return suffixCls ? `${prefixCls}-${suffixCls}` : prefixCls;
     },
     renderProvider(legacyLocale) {
       return (
-        <LocaleProvider locale={this.locale || legacyLocale} _ANT_MARK__={ANT_MARK}>
+        <LocaleProvider locale={this.locale || legacyLocale} _MINIGUI_MARK__={MINIGUI_MARK}>
           {this.$slots.default ? filterEmpty(this.$slots.default)[0] : null}
         </LocaleProvider>
       );

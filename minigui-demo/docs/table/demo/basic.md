@@ -27,7 +27,7 @@ Simple table with actions.
       <a-divider type="vertical" />
       <a>Delete</a>
       <a-divider type="vertical" />
-      <a class="ant-dropdown-link"> More actions <a-icon type="down" /> </a>
+      <a class="minigui-dropdown-link"> More actions <a-icon type="down" /> </a>
     </span>
   </a-table>
 </template>

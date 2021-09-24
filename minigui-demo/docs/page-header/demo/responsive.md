@@ -83,7 +83,7 @@ tr:last-child td {
 #components-page-header-demo-responsive .content {
   display: flex;
 }
-#components-page-header-demo-responsive .ant-statistic-content {
+#components-page-header-demo-responsive .minigui-statistic-content {
   font-size: 20px;
   line-height: 28px;
 }

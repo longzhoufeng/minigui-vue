@@ -89,7 +89,7 @@ export default {
     },
     setNeverShown(column) {
       const rootNode = this.$el;
-      const filterBelongToScrollBody = !!closest(rootNode, `.ant-table-scroll`);
+      const filterBelongToScrollBody = !!closest(rootNode, `.minigui-table-scroll`);
       if (filterBelongToScrollBody) {
         this.neverShown = !!column.fixed;
       }

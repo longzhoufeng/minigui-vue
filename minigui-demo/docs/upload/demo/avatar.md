@@ -24,7 +24,7 @@ The return value of function `beforeUpload` can be a Promise to check asynchrono
     <img v-if="imageUrl" :src="imageUrl" alt="avatar" />
     <div v-else>
       <a-icon :type="loading ? 'loading' : 'plus'" />
-      <div class="ant-upload-text">
+      <div class="minigui-upload-text">
         Upload
       </div>
     </div>
@@ -72,16 +72,16 @@ export default {
 };
 </script>
 <style>
-.avatar-uploader > .ant-upload {
+.avatar-uploader > .minigui-upload {
   width: 128px;
   height: 128px;
 }
-.ant-upload-select-picture-card i {
+.minigui-upload-select-picture-card i {
   font-size: 32px;
   color: #999;
 }
 
-.ant-upload-select-picture-card .ant-upload-text {
+.minigui-upload-select-picture-card .minigui-upload-text {
   margin-top: 8px;
   color: #666;
 }

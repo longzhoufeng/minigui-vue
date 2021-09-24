@@ -1,6 +1,5 @@
 <script>
 import { isZhCN } from '../utils/util';
-import docsearch from 'docsearch.js';
 import packageInfo from '../../package.json';
 import logo from '../public/logo.svg';
 
@@ -25,29 +24,12 @@ export default {
     },
   },
   mounted() {
-    this.initDocSearch(this.$i18n.locale);
   },
   methods: {
     handleClose(key) {
       localStorage.removeItem(`notification-key-${key}`);
       localStorage.setItem(`notification-key-${key}`, true);
       this.showTopBanner = false;
-    },
-    initDocSearch(locale) {
-      docsearch({
-        apiKey: '92003c1d1d07beef165b08446f4224a3',
-        indexName: 'antdv',
-        inputSelector: '#search-box input',
-        algoliaOptions: { facetFilters: [isZhCN(locale) ? 'cn' : 'en'] },
-        transformData(hits) {
-          hits.forEach(hit => {
-            hit.url = hit.url.replace('www.antdv.com', window.location.host);
-            hit.url = hit.url.replace('https:', window.location.protocol);
-          });
-          return hits;
-        },
-        debug: false, // Set debug to true if you want to inspect the dropdown
-      });
     },
     handleClick() {
       const name = this.name;

@@ -6,7 +6,7 @@ function animate(node, show, done) {
   let height;
   let requestAnimationFrameId;
   let appearRequestAnimationFrameId;
-  return cssAnimation(node, 'ant-motion-collapse-legacy', {
+  return cssAnimation(node, 'minigui-motion-collapse-legacy', {
     start() {
       if (appearRequestAnimationFrameId) {
         raf.cancel(appearRequestAnimationFrameId);

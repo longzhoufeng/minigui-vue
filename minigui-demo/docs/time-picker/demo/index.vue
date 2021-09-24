@@ -45,7 +45,7 @@ export default {
 };
 </script>
 <style>
-#components-timepicker-demo .ant-time-picker {
+#components-timepicker-demo .minigui-time-picker {
   margin: 0 8px 12px 0;
 }
 </style>

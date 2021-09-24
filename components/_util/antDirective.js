@@ -1,13 +1,13 @@
 import ref from 'vue-ref';
-import { antInput } from './antInputDirective';
-import { antDecorator } from './FormDecoratorDirective';
-import { antPortal } from './portalDirective';
+import { miniguiInput } from './antInputDirective';
+import { miniguiDecorator } from './FormDecoratorDirective';
+import { miniguiPortal } from './portalDirective';
 
 export default {
   install: Vue => {
     Vue.use(ref, { name: 'minigui-ref' });
-    antInput(Vue);
-    antDecorator(Vue);
-    antPortal(Vue);
+    miniguiInput(Vue);
+    miniguiDecorator(Vue);
+    miniguiPortal(Vue);
   },
 };

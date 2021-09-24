@@ -114,7 +114,7 @@ const typeToIcon = {
 
 function notice(args) {
   const { icon, type, description, message, btn } = args;
-  const outerPrefixCls = args.prefixCls || 'ant-notification';
+  const outerPrefixCls = args.prefixCls || 'minigui-notification';
   const prefixCls = `${outerPrefixCls}-notice`;
   const duration = args.duration === undefined ? defaultDuration : args.duration;
 

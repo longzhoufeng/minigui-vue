@@ -288,7 +288,7 @@ const Mentions = {
         <textarea
           ref="textarea"
           {...{
-            directives: [{ name: 'ant-input' }],
+            directives: [{ name: 'minigui-input' }],
             attrs: { ...inputProps, ...this.$attrs },
             domProps: {
               value,

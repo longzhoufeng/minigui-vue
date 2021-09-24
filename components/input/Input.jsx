@@ -108,10 +108,6 @@ export default {
         this.$nextTick(() => {
           callback && callback();
         });
-      } else {
-        // 不在严格受控
-        // https://github.com/vueComponent/ant-design-vue/issues/2207，modal 是 新 new 实例，更新队列和当前不在同一个更新队列中
-        // this.$forceUpdate();
       }
     },
     onChange(e) {
@@ -142,7 +138,7 @@ export default {
       ]);
       const { stateValue, handleKeyDown, handleChange, size, disabled } = this;
       const inputProps = {
-        directives: [{ name: 'ant-input' }],
+        directives: [{ name: 'minigui-input' }],
         domProps: {
           value: fixControlledValue(stateValue),
         },
@@ -155,7 +151,7 @@ export default {
         },
         class: getInputClassName(prefixCls, size, disabled),
         ref: 'input',
-        key: 'ant-input',
+        key: 'minigui-input',
       };
       return <input {...inputProps} />;
     },
@@ -173,7 +169,6 @@ export default {
     },
     handleChange(e) {
       const { value, composing } = e.target;
-      // https://github.com/vueComponent/ant-design-vue/issues/2203
       if (((e.isComposing || composing) && this.lazy) || this.stateValue === value) return;
       this.setValue(value, this.clearPasswordValueAttribute);
       resolveOnChange(this.$refs.input, e, this.onChange);

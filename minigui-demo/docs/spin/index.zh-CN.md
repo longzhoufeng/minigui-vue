@@ -16,14 +16,14 @@
   ```jsx
   Spin.setDefaultIndicator({
     indicator: h => {
-      return <i class="anticon anticon-loading anticon-spin ant-spin-dot"></i>;
+      return <i class="anticon anticon-loading anticon-spin minigui-spin-dot"></i>;
     },
   });
   或者;
   Spin.setDefaultIndicator({
     indicator: {
       render() {
-        return <i class="anticon anticon-loading anticon-spin ant-spin-dot"></i>;
+        return <i class="anticon anticon-loading anticon-spin minigui-spin-dot"></i>;
       },
     },
   });

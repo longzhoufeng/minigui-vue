@@ -1,5 +1,5 @@
-export function antPortal(Vue) {
-  return Vue.directive('ant-portal', {
+export function miniguiPortal(Vue) {
+  return Vue.directive('minigui-portal', {
     inserted(el, binding) {
       const { value } = binding;
       const parentNode = typeof value === 'function' ? value(el) : value;
@@ -19,6 +19,6 @@ export function antPortal(Vue) {
 
 export default {
   install: Vue => {
-    antPortal(Vue);
+    miniguiPortal(Vue);
   },
 };

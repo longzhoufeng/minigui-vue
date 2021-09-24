@@ -12,7 +12,7 @@ Add copywriting in rate components.
 <template>
   <span>
     <a-rate v-model="value" :tooltips="desc" />
-    <span class="ant-rate-text">{{ desc[value - 1] }}</span>
+    <span class="minigui-rate-text">{{ desc[value - 1] }}</span>
   </span>
 </template>
 <script>

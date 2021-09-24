@@ -73,7 +73,6 @@ export default {
       if (!hasProp(this, 'value')) {
         this.stateValue = value;
       }
-      // nextTick for https://github.com/vueComponent/ant-design-vue/issues/1280
       if (!this.updatingValue && value !== lastValue) {
         this.updatingValue = true;
         this.$emit('input', value);

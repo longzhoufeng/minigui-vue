@@ -4,7 +4,7 @@ import interopDefault from '../_util/interopDefault';
 import { changeConfirmLocale } from '../modal/locale';
 import Base from '../base';
 import warning from '../_util/warning';
-export const ANT_MARK = 'internalMark';
+export const MINIGUI_MARK = 'internalMark';
 function setMomentLocale(locale) {
   if (locale && locale.locale) {
     interopDefault(moment).locale(locale.locale);
@@ -17,11 +17,11 @@ const LocaleProvider = {
   name: 'ALocaleProvider',
   props: {
     locale: PropTypes.object.def(() => ({})),
-    _ANT_MARK__: PropTypes.string,
+    _MINIGUI_MARK__: PropTypes.string,
   },
   data() {
     warning(
-      this._ANT_MARK__ === ANT_MARK,
+      this._MINIGUI_MARK__ === MINIGUI_MARK,
       'LocaleProvider',
       '`LocaleProvider` is deprecated. Please use `locale` with `ConfigProvider` instead',
     );

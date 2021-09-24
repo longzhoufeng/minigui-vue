@@ -46,7 +46,6 @@ export declare class Calendar extends MiniguiComponent {
    * The calendar's locale
    * @default [default]
    * @type object
-   * @see https://github.com/vueComponent/ant-design-vue/blob/master/components/date-picker/locale/example.json
    */
   locale: object;
 

@@ -90,15 +90,15 @@ export default {
   width: 100%;
 }
 
-.global-search.ant-select-auto-complete .ant-select-selection--single {
+.global-search.minigui-select-auto-complete .minigui-select-selection--single {
   margin-right: -46px;
 }
 
-.global-search.ant-select-auto-complete .ant-input-affix-wrapper .ant-input:not(:last-child) {
+.global-search.minigui-select-auto-complete .minigui-input-affix-wrapper .minigui-input:not(:last-child) {
   padding-right: 62px;
 }
 
-.global-search.ant-select-auto-complete .ant-input-affix-wrapper .ant-input-suffix button {
+.global-search.minigui-select-auto-complete .minigui-input-affix-wrapper .minigui-input-suffix button {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }

@@ -123,7 +123,7 @@ export default {
 };
 </script>
 <style scoped>
-#components-a-popconfirm-demo-placement .ant-btn {
+#components-a-popconfirm-demo-placement .minigui-btn {
   width: 70px;
   text-align: center;
   padding: 0;

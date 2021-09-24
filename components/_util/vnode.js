@@ -62,11 +62,6 @@ export function cloneElement(n, nodeProps = {}, deep) {
     return null;
   }
   const node = cloneVNode(ele, deep);
-  // // 函数式组件不支持clone  https://github.com/vueComponent/ant-design-vue/pull/1947
-  // warning(
-  //   !(node.fnOptions && node.fnOptions.functional),
-  //   `can not use cloneElement for functional component (${node.fnOptions && node.fnOptions.name})`,
-  // );
   const { props = {}, key, on = {}, nativeOn = {}, children, directives = [] } = nodeProps;
   const data = node.data || {};
   let cls = {};

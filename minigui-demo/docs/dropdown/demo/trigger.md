@@ -11,15 +11,15 @@ The default trigger mode is `hover`, you can change it to `click`.
 ```vue
 <template>
   <a-dropdown :trigger="['click']">
-    <a class="ant-dropdown-link" @click="e => e.preventDefault()">
+    <a class="minigui-dropdown-link" @click="e => e.preventDefault()">
       Click me <a-icon type="down" />
     </a>
     <a-menu slot="overlay">
       <a-menu-item key="0">
-        <a href="http://www.alipay.com/">1st menu item</a>
+        <a href="http://www.minigui.com.cn/">1st menu item</a>
       </a-menu-item>
       <a-menu-item key="1">
-        <a href="http://www.taobao.com/">2nd menu item</a>
+        <a href="http://www.minigui.com.cn/">2nd menu item</a>
       </a-menu-item>
       <a-menu-divider />
       <a-menu-item key="3">

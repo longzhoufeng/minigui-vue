@@ -33,7 +33,7 @@ export default {};
 </script>
 <style scoped>
 /* For demo */
-.ant-carousel >>> .slick-slide {
+.minigui-carousel >>> .slick-slide {
   text-align: center;
   height: 160px;
   line-height: 160px;
@@ -41,7 +41,7 @@ export default {};
   overflow: hidden;
 }
 
-.ant-carousel >>> .custom-slick-arrow {
+.minigui-carousel >>> .custom-slick-arrow {
   width: 25px;
   height: 25px;
   font-size: 25px;
@@ -49,14 +49,14 @@ export default {};
   background-color: rgba(31, 45, 61, 0.11);
   opacity: 0.3;
 }
-.ant-carousel >>> .custom-slick-arrow:before {
+.minigui-carousel >>> .custom-slick-arrow:before {
   display: none;
 }
-.ant-carousel >>> .custom-slick-arrow:hover {
+.minigui-carousel >>> .custom-slick-arrow:hover {
   opacity: 0.5;
 }
 
-.ant-carousel >>> .slick-slide h3 {
+.minigui-carousel >>> .slick-slide h3 {
   color: #fff;
 }
 </style>

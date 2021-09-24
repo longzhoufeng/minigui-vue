@@ -17,13 +17,13 @@ Classic mode. File selection dialog pops up when upload button is clicked.
     action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
     @change="handleChange"
   >
-    <p class="ant-upload-drag-icon">
+    <p class="minigui-upload-drag-icon">
       <a-icon type="inbox" />
     </p>
-    <p class="ant-upload-text">
+    <p class="minigui-upload-text">
       Click or drag file to this area to upload
     </p>
-    <p class="ant-upload-hint">
+    <p class="minigui-upload-hint">
       Support for a single or bulk upload. Strictly prohibit from uploading company data or other
       band files
     </p>

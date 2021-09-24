@@ -52,10 +52,10 @@ $ npm run serve
 └── yarn.lock
 ```
 
-现在从 yarn 或 npm 安装并引入 ant-design-vue。
+现在从 yarn 或 npm 安装并引入 minigui-vue。
 
 ```bash
-$ yarn add ant-design-vue
+$ yarn add minigui-vue
 ```
 
 修改 `src/main.js`，引入 antd 的按钮组件以及全部样式文件。
@@ -122,7 +122,7 @@ $ yarn add babel-plugin-import --dev
 +   "plugins": [
 +     "transform-vue-jsx",
 +     "transform-runtime",
-+     ["import", { "libraryName": "ant-design-vue", "libraryDirectory": "es", "style": "css" }]
++     ["import", { "libraryName": "minigui-vue", "libraryDirectory": "es", "style": "css" }]
 +   ]
   }
 ```
@@ -137,7 +137,7 @@ $ yarn add babel-plugin-import --dev
 +  plugins: [
 +    [
 +      "import",
-+      { libraryName: "ant-design-vue", libraryDirectory: "es", style: true }
++      { libraryName: "minigui-vue", libraryDirectory: "es", style: true }
 +    ]
 +  ]
 };

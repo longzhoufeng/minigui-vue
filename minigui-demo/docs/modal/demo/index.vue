@@ -52,7 +52,7 @@ export default {
 </script>
 
 <style>
-#components-modal-demo .ant-btn {
+#components-modal-demo .minigui-btn {
   margin-right: 8px;
 }
 </style>

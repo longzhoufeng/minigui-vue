@@ -16,7 +16,7 @@ Demonstration of validation configuration for form controls which are not shown 
     @submit="handleSubmit"
   >
     <a-form-item label="Plain Text">
-      <span class="ant-form-text">
+      <span class="minigui-form-text">
         China
       </span>
     </a-form-item>
@@ -64,7 +64,7 @@ Demonstration of validation configuration for form controls which are not shown 
 
     <a-form-item label="InputNumber">
       <a-input-number v-decorator="['input-number', { initialValue: 3 }]" :min="1" :max="10" />
-      <span class="ant-form-text">
+      <span class="minigui-form-text">
         machines
       </span>
     </a-form-item>
@@ -177,13 +177,13 @@ Demonstration of validation configuration for form controls which are not shown 
           name="files"
           action="/upload.do"
         >
-          <p class="ant-upload-drag-icon">
+          <p class="minigui-upload-drag-icon">
             <a-icon type="inbox" />
           </p>
-          <p class="ant-upload-text">
+          <p class="minigui-upload-text">
             Click or drag file to this area to upload
           </p>
-          <p class="ant-upload-hint">
+          <p class="minigui-upload-hint">
             Support for a single or bulk upload.
           </p>
         </a-upload-dragger>

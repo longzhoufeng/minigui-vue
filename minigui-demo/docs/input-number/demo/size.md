@@ -26,7 +26,7 @@ export default {
 };
 </script>
 <style scoped>
-.ant-input-number {
+.minigui-input-number {
   margin-right: 10px;
 }
 </style>

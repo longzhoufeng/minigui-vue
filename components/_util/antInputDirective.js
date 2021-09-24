@@ -1,8 +1,3 @@
-/**
- * Not type checking this file because flow doesn't like attaching
- * properties to Elements.
- */
-
 export const inBrowser = typeof window !== 'undefined';
 export const UA = inBrowser && window.navigator.userAgent.toLowerCase();
 export const isIE9 = UA && UA.indexOf('msie 9.0') > 0;
@@ -35,7 +30,6 @@ function trigger(el, type) {
 
 /* istanbul ignore if */
 if (isIE9) {
-  // http://www.matts411.com/post/internet-explorer-9-oninput/
   document.addEventListener('selectionchange', () => {
     const el = document.activeElement;
     if (el && el.vmodel) {
@@ -44,8 +38,8 @@ if (isIE9) {
   });
 }
 
-export function antInput(Vue) {
-  return Vue.directive('ant-input', {
+export function miniguiInput(Vue) {
+  return Vue.directive('minigui-input', {
     inserted(el, binding, vnode) {
       if (vnode.tag === 'textarea' || isTextInputType(el.type)) {
         if (!binding.modifiers || !binding.modifiers.lazy) {
@@ -63,6 +57,6 @@ export function antInput(Vue) {
 
 export default {
   install: Vue => {
-    antInput(Vue);
+    miniguiInput(Vue);
   },
 };

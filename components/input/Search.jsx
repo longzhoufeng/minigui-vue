@@ -18,7 +18,6 @@ export default {
   },
   props: {
     ...inputProps,
-    // 不能设置默认值 https://github.com/vueComponent/ant-design-vue/issues/1916
     enterButton: PropTypes.any,
   },
   inject: {

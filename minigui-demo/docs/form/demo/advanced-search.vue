@@ -12,7 +12,7 @@ Because the width of label is not fixed, you may need to adjust it by customizin
 
 <template>
   <div id="components-form-demo-advanced-search">
-    <a-form class="ant-advanced-search-form" :form="form" @submit="handleSearch">
+    <a-form class="minigui-advanced-search-form" :form="form" @submit="handleSearch">
       <a-row :gutter="24">
         <a-col
           v-for="i in 10"
@@ -93,22 +93,22 @@ export default {
 };
 </script>
 <style>
-.ant-advanced-search-form {
+.minigui-advanced-search-form {
   padding: 24px;
   background: #fbfbfb;
   border: 1px solid #d9d9d9;
   border-radius: 6px;
 }
 
-.ant-advanced-search-form .ant-form-item {
+.minigui-advanced-search-form .minigui-form-item {
   display: flex;
 }
 
-.ant-advanced-search-form .ant-form-item-control-wrapper {
+.minigui-advanced-search-form .minigui-form-item-control-wrapper {
   flex: 1;
 }
 
-#components-form-demo-advanced-search .ant-form {
+#components-form-demo-advanced-search .minigui-form {
   max-width: none;
 }
 #components-form-demo-advanced-search .search-result-list {

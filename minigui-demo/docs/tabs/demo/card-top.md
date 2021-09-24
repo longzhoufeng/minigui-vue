@@ -48,26 +48,26 @@ export default {
   overflow: hidden;
   padding: 24px;
 }
-.card-container > .ant-tabs-card > .ant-tabs-content {
+.card-container > .minigui-tabs-card > .minigui-tabs-content {
   height: 120px;
   margin-top: -16px;
 }
 
-.card-container > .ant-tabs-card > .ant-tabs-content > .ant-tabs-tabpane {
+.card-container > .minigui-tabs-card > .minigui-tabs-content > .minigui-tabs-tabpane {
   background: #fff;
   padding: 16px;
 }
 
-.card-container > .ant-tabs-card > .ant-tabs-bar {
+.card-container > .minigui-tabs-card > .minigui-tabs-bar {
   border-color: #fff;
 }
 
-.card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+.card-container > .minigui-tabs-card > .minigui-tabs-bar .minigui-tabs-tab {
   border-color: transparent;
   background: transparent;
 }
 
-.card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
+.card-container > .minigui-tabs-card > .minigui-tabs-bar .minigui-tabs-tab-active {
   border-color: #fff;
   background: #fff;
 }

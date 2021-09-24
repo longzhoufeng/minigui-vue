@@ -383,7 +383,7 @@ export default {
               {...{
                 directives: [
                   {
-                    name: 'ant-input',
+                    name: 'minigui-input',
                   },
                 ],
               }}

@@ -55,7 +55,7 @@ export default {
 };
 </script>
 <style>
-#components-cascader-demo .ant-cascader-picker {
+#components-cascader-demo .minigui-cascader-picker {
   width: 300px;
 }
 </style>
