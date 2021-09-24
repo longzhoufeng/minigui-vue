@@ -246,7 +246,7 @@ const AjaxUploader = {
           id={$attrs.id}
           type="file"
           ref="fileInputRef"
-          onClick={e => e.stopPropagation()} // https://github.com/ant-design/ant-design/issues/19948
+          onClick={e => e.stopPropagation()}
           key={this.uid}
           style={{ display: 'none' }}
           accept={accept}

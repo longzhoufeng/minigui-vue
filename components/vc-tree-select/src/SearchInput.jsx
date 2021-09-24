@@ -120,7 +120,7 @@ const SearchInput = {
           {...{
             directives: [
               {
-                name: 'ant-ref',
+                name: 'minigui-ref',
                 value: this.inputRef,
               },
               {
@@ -142,7 +142,7 @@ const SearchInput = {
           {...{
             directives: [
               {
-                name: 'ant-ref',
+                name: 'minigui-ref',
                 value: this.mirrorInputRef,
               },
             ],

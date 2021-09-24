@@ -185,7 +185,7 @@ const Slider = {
         style: handleStyle[0] || handleStyle,
         directives: [
           {
-            name: 'ant-ref',
+            name: 'minigui-ref',
             value: h => this.saveHandle(0, h),
           },
         ],

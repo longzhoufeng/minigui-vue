@@ -160,7 +160,6 @@ export default {
       return <input {...inputProps} />;
     },
     clearPasswordValueAttribute() {
-      // https://github.com/ant-design/ant-design/issues/20541
       this.removePasswordTimeout = setTimeout(() => {
         if (
           this.$refs.input &&

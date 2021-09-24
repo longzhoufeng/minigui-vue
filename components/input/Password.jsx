@@ -56,13 +56,9 @@ export default {
         on: {
           [iconTrigger]: this.onVisibleChange,
           mousedown: e => {
-            // Prevent focused state lost
-            // https://github.com/ant-design/ant-design/issues/15173
             e.preventDefault();
           },
           mouseup: e => {
-            // Prevent focused state lost
-            // https://github.com/ant-design/ant-design/pull/23633/files
             e.preventDefault();
           },
         },

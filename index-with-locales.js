@@ -1,11 +1,11 @@
-const antd = require('./components');
+const minigui = require('./components');
 const req = require.context('./components', true, /^\.\/locale-provider\/(?!__tests__).+_.+\.js$/);
 
-antd.locales = {};
+minigui.locales = {};
 
 req.keys().forEach(mod => {
   const match = mod.match(/\/([^/]+).js$/);
-  antd.locales[match[1]] = req(mod).default;
+  minigui.locales[match[1]] = req(mod).default;
 });
 
-module.exports = antd;
+module.exports = minigui;

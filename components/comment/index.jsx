@@ -10,7 +10,7 @@ export const CommentProps = {
   avatar: PropsTypes.any,
   /** The main content of the comment */
   content: PropsTypes.any,
-  /** Comment prefix defaults to '.ant-comment' */
+  /** Comment prefix defaults to '.minigui-comment' */
   prefixCls: PropsTypes.string,
   /** A datetime element containing the time to be displayed */
   datetime: PropsTypes.any,

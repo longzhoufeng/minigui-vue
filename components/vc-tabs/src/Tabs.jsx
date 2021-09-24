@@ -73,7 +73,6 @@ export default {
           _activeKey: nextProps.activeKey,
         });
       } else if (!activeKeyIsValid(nextProps, this.$data._activeKey)) {
-        // https://github.com/ant-design/ant-design/issues/7093
         this.setState({
           _activeKey: getDefaultActiveKey(nextProps),
         });

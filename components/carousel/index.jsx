@@ -22,13 +22,8 @@ if (typeof window !== 'undefined') {
       removeListener() {},
     };
   };
-  // ref: https://github.com/ant-design/ant-design/issues/18774
   if (!window.matchMedia) window.matchMedia = matchMediaPolyfill;
 }
-// Use require over import (will be lifted up)
-// make sure matchMedia polyfill run before require('vc-slick')
-// Fix https://github.com/ant-design/ant-design/issues/6560
-// Fix https://github.com/ant-design/ant-design/issues/3308
 const SlickCarousel = require('../vc-slick/src').default;
 
 export const CarouselEffect = PropTypes.oneOf(['scrollx', 'fade']);
@@ -106,7 +101,6 @@ const Carousel = {
     if (autoplay) {
       window.addEventListener('resize', this.onWindowResized);
     }
-    // https://github.com/ant-design/ant-design/issues/7191
     this.innerSlider = this.$refs.slick && this.$refs.slick.innerSlider;
   },
   beforeDestroy() {
@@ -127,7 +121,6 @@ const Carousel = {
       return 'bottom';
     },
     onWindowResized() {
-      // Fix https://github.com/ant-design/ant-design/issues/2550
       const { autoplay } = this;
       if (
         autoplay &&

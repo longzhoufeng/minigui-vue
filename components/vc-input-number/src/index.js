@@ -146,12 +146,7 @@ export default {
           inputValue: nextInputValue,
         });
       }
-
-      // Trigger onChange when max or min change
-      // https://github.com/ant-design/ant-design/issues/11574
       const nextValue = 'value' in props ? value : this.sValue;
-      // ref: null < 20 === true
-      // https://github.com/ant-design/ant-design/issues/14277
       if (
         'max' in props &&
         prevProps.max !== max &&
@@ -314,8 +309,6 @@ export default {
       return ratio;
     },
     getValueFromEvent(e) {
-      // optimize for chinese input expierence
-      // https://github.com/ant-design/ant-design/issues/8196
       let value = e.target.value.trim().replace(/。/g, '.');
 
       if (isValidProps(this.decimalSeparator)) {
@@ -326,7 +319,6 @@ export default {
     },
     getValidValue(value, min = this.min, max = this.max) {
       let val = parseFloat(value, 10);
-      // https://github.com/ant-design/ant-design/issues/7358
       if (isNaN(val)) {
         return value;
       }
@@ -343,8 +335,6 @@ export default {
       const { precision } = this.$props;
       const newValue = this.isNotCompleteNumber(parseFloat(v, 10)) ? null : parseFloat(v, 10);
       const { sValue: value = null, inputValue = null } = this.$data;
-      // https://github.com/ant-design/ant-design/issues/7363
-      // https://github.com/ant-design/ant-design/issues/16622
       const newValueInString =
         typeof newValue === 'number' ? newValue.toFixed(precision) : `${newValue}`;
       const changed = newValue !== value || newValueInString !== `${inputValue}`;
@@ -511,8 +501,6 @@ export default {
       this.$refs.inputRef.blur();
     },
     formatWrapper(num) {
-      // http://2ality.com/2012/03/signedzero.html
-      // https://github.com/ant-design/ant-design/issues/9439
       if (this.formatter) {
         return this.formatter(num);
       }

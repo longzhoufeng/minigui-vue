@@ -169,10 +169,10 @@
     transition: all 0.3s;
 
     // Reset Select's style in addon
-    .@{ant-prefix}-select {
+    .@{minigui-prefix}-select {
       margin: -(@input-padding-vertical-base + 1px) (-@input-padding-horizontal-base);
 
-      .@{ant-prefix}-select-selection {
+      .@{minigui-prefix}-select-selection {
         margin: -1px;
         background-color: inherit;
         border: @border-width-base @border-style-base transparent;
@@ -181,14 +181,12 @@
 
       &-open,
       &-focused {
-        .@{ant-prefix}-select-selection {
+        .@{minigui-prefix}-select-selection {
           color: @primary-color;
         }
       }
     }
 
-    // Expand addon icon click area
-    // https://github.com/ant-design/ant-design/issues/3714
     > i:only-child::after {
       position: absolute;
       top: 0;
@@ -206,7 +204,7 @@
     border-bottom-right-radius: 0;
 
     // Reset Select's style in addon
-    .@{ant-prefix}-select .@{ant-prefix}-select-selection {
+    .@{minigui-prefix}-select .@{minigui-prefix}-select-selection {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
@@ -238,7 +236,7 @@
     border-bottom-left-radius: 0;
 
     // Reset Select's style in addon
-    .@{ant-prefix}-select .@{ant-prefix}-select-selection {
+    .@{minigui-prefix}-select .@{minigui-prefix}-select-selection {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
@@ -255,12 +253,11 @@
     .input-sm();
   }
 
-  // Fix https://github.com/ant-design/ant-design/issues/5754
-  &-lg .@{ant-prefix}-select-selection--single {
+  &-lg .@{minigui-prefix}-select-selection--single {
     height: @input-height-lg;
   }
 
-  &-sm .@{ant-prefix}-select-selection--single {
+  &-sm .@{minigui-prefix}-select-selection--single {
     height: @input-height-sm;
   }
 
@@ -293,7 +290,7 @@
     & > * {
       display: inline-block;
       float: none;
-      vertical-align: top; // https://github.com/ant-design/ant-design-pro/issues/139
+      vertical-align: top;
       border-radius: 0;
     }
 
@@ -308,13 +305,13 @@
     }
 
     // reset border for Select, DatePicker, AutoComplete, Cascader, Mention, TimePicker, Input
-    & > .@{ant-prefix}-select > .@{ant-prefix}-select-selection,
-    & > .@{ant-prefix}-calendar-picker .@{ant-prefix}-input,
-    & > .@{ant-prefix}-select-auto-complete .@{ant-prefix}-input,
-    & > .@{ant-prefix}-cascader-picker .@{ant-prefix}-input,
-    & > .@{ant-prefix}-mention-wrapper .@{ant-prefix}-mention-editor,
-    & > .@{ant-prefix}-time-picker .@{ant-prefix}-time-picker-input,
-    & > .@{ant-prefix}-input-group-wrapper .@{ant-prefix}-input {
+    & > .@{minigui-prefix}-select > .@{minigui-prefix}-select-selection,
+    & > .@{minigui-prefix}-calendar-picker .@{minigui-prefix}-input,
+    & > .@{minigui-prefix}-select-auto-complete .@{minigui-prefix}-input,
+    & > .@{minigui-prefix}-cascader-picker .@{minigui-prefix}-input,
+    & > .@{minigui-prefix}-mention-wrapper .@{minigui-prefix}-mention-editor,
+    & > .@{minigui-prefix}-time-picker .@{minigui-prefix}-time-picker-input,
+    & > .@{minigui-prefix}-input-group-wrapper .@{minigui-prefix}-input {
       border-right-width: @border-width-base;
       border-radius: 0;
 
@@ -327,36 +324,35 @@
       }
     }
 
-    & > .@{ant-prefix}-select-focused {
+    & > .@{minigui-prefix}-select-focused {
       z-index: 1;
     }
 
     & > *:first-child,
-    & > .@{ant-prefix}-select:first-child > .@{ant-prefix}-select-selection,
-    & > .@{ant-prefix}-calendar-picker:first-child .@{ant-prefix}-input,
-    & > .@{ant-prefix}-select-auto-complete:first-child .@{ant-prefix}-input,
-    & > .@{ant-prefix}-cascader-picker:first-child .@{ant-prefix}-input,
-    & > .@{ant-prefix}-mention-wrapper:first-child .@{ant-prefix}-mention-editor,
-    & > .@{ant-prefix}-time-picker:first-child .@{ant-prefix}-time-picker-input {
+    & > .@{minigui-prefix}-select:first-child > .@{minigui-prefix}-select-selection,
+    & > .@{minigui-prefix}-calendar-picker:first-child .@{minigui-prefix}-input,
+    & > .@{minigui-prefix}-select-auto-complete:first-child .@{minigui-prefix}-input,
+    & > .@{minigui-prefix}-cascader-picker:first-child .@{minigui-prefix}-input,
+    & > .@{minigui-prefix}-mention-wrapper:first-child .@{minigui-prefix}-mention-editor,
+    & > .@{minigui-prefix}-time-picker:first-child .@{minigui-prefix}-time-picker-input {
       border-top-left-radius: @border-radius-base;
       border-bottom-left-radius: @border-radius-base;
     }
 
     & > *:last-child,
-    & > .@{ant-prefix}-select:last-child > .@{ant-prefix}-select-selection,
-    & > .@{ant-prefix}-calendar-picker:last-child .@{ant-prefix}-input,
-    & > .@{ant-prefix}-select-auto-complete:last-child .@{ant-prefix}-input,
-    & > .@{ant-prefix}-cascader-picker:last-child .@{ant-prefix}-input,
-    & > .@{ant-prefix}-cascader-picker-focused:last-child .@{ant-prefix}-input,
-    & > .@{ant-prefix}-mention-wrapper:last-child .@{ant-prefix}-mention-editor,
-    & > .@{ant-prefix}-time-picker:last-child .@{ant-prefix}-time-picker-input {
+    & > .@{minigui-prefix}-select:last-child > .@{minigui-prefix}-select-selection,
+    & > .@{minigui-prefix}-calendar-picker:last-child .@{minigui-prefix}-input,
+    & > .@{minigui-prefix}-select-auto-complete:last-child .@{minigui-prefix}-input,
+    & > .@{minigui-prefix}-cascader-picker:last-child .@{minigui-prefix}-input,
+    & > .@{minigui-prefix}-cascader-picker-focused:last-child .@{minigui-prefix}-input,
+    & > .@{minigui-prefix}-mention-wrapper:last-child .@{minigui-prefix}-mention-editor,
+    & > .@{minigui-prefix}-time-picker:last-child .@{minigui-prefix}-time-picker-input {
       border-right-width: @border-width-base;
       border-top-right-radius: @border-radius-base;
       border-bottom-right-radius: @border-radius-base;
     }
 
-    // https://github.com/ant-design/ant-design/issues/12493
-    & > .@{ant-prefix}-select-auto-complete .@{ant-prefix}-input {
+    & > .@{minigui-prefix}-select-auto-complete .@{minigui-prefix}-input {
       vertical-align: top;
     }
   }
@@ -377,12 +373,6 @@
     text-align: inherit;
   }
 
-  // Should not break align of icon & text
-  // https://github.com/ant-design/ant-design/issues/18087
-  // https://github.com/ant-design/ant-design/issues/17414
-  // https://github.com/ant-design/ant-design/pull/17684
-  // https://codesandbox.io/embed/pensive-paper-di2wk
-  // https://codesandbox.io/embed/nifty-benz-gb7ml
   .@{inputClass}-prefix,
   .@{inputClass}-suffix {
     position: absolute;
@@ -434,8 +424,6 @@
 .clear-icon() {
   color: @disabled-color;
   font-size: @font-size-sm;
-  // https://github.com/ant-design/ant-design/pull/18151
-  // https://codesandbox.io/s/wizardly-sun-u10br
   cursor: pointer;
   transition: color 0.3s;
 

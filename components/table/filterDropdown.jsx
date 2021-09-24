@@ -41,14 +41,6 @@ export default {
       const nextProps = getOptionProps(this);
       const { column } = nextProps;
       const newState = {};
-
-      /**
-       * if the state is visible the component should ignore updates on selectedKeys prop to avoid
-       * that the user selection is lost
-       * this happens frequently when a table is connected on some sort of realtime data
-       * Fixes https://github.com/ant-design/ant-design/issues/10289 and
-       * https://github.com/ant-design/ant-design/issues/10209
-       */
       if (
         'selectedKeys' in nextProps &&
         !shallowequal(this.preProps.selectedKeys, nextProps.selectedKeys)
@@ -99,10 +91,6 @@ export default {
       const rootNode = this.$el;
       const filterBelongToScrollBody = !!closest(rootNode, `.ant-table-scroll`);
       if (filterBelongToScrollBody) {
-        // When fixed column have filters, there will be two dropdown menus
-        // Filter dropdown menu inside scroll body should never be shown
-        // To fix https://github.com/ant-design/ant-design/issues/5010 and
-        // https://github.com/ant-design/ant-design/issues/7909
         this.neverShown = !!column.fixed;
       }
     },
@@ -133,8 +121,6 @@ export default {
     handleConfirm() {
       this.setVisible(false);
       this.confirmFilter2();
-      // Call `setSelectedKeys` & `confirm` in the same time will make filter data not up to date
-      // https://github.com/ant-design/ant-design/issues/12284
       this.$forceUpdate();
       this.$nextTick(() => {
         this.confirmFilter;
@@ -144,7 +130,6 @@ export default {
     onVisibleChange(visible) {
       this.setVisible(visible);
       const { column } = this.$props;
-      // https://github.com/ant-design/ant-design/issues/17833
       if (!visible && !(column.filterDropdown instanceof Function)) {
         this.confirmFilter2();
       }

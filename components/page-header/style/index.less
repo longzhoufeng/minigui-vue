@@ -1,7 +1,7 @@
 @import '../../style/themes/index';
 @import '../../style/mixins/index';
 
-@pageheader-prefix-cls: ~'@{ant-prefix}-page-header';
+@pageheader-prefix-cls: ~'@{minigui-prefix}-page-header';
 
 .@{pageheader-prefix-cls} {
   .reset-component;
@@ -34,13 +34,13 @@
     }
   }
 
-  .@{ant-prefix}-divider-vertical {
+  .@{minigui-prefix}-divider-vertical {
     height: 14px;
     margin: 0 12px;
     vertical-align: middle;
   }
 
-  .@{ant-prefix}-breadcrumb + &-heading {
+  .@{minigui-prefix}-breadcrumb + &-heading {
     margin-top: 8px;
   }
 
@@ -58,7 +58,7 @@
       line-height: 32px;
     }
 
-    .@{ant-prefix}-avatar {
+    .@{minigui-prefix}-avatar {
       float: left;
       margin-right: 12px;
     }
@@ -95,10 +95,10 @@
 
   &-footer {
     margin-top: 16px;
-    .@{ant-prefix}-tabs-bar {
+    .@{minigui-prefix}-tabs-bar {
       margin-bottom: 1px;
       border-bottom: 0;
-      .@{ant-prefix}-tabs-nav .@{ant-prefix}-tabs-tab {
+      .@{minigui-prefix}-tabs-nav .@{minigui-prefix}-tabs-tab {
         padding: 8px;
         font-size: 16px;
       }

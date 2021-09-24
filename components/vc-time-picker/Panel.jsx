@@ -95,7 +95,6 @@ const Panel = {
       this.setState({ currentSelectPanel });
     },
 
-    // https://github.com/ant-design/ant-design/issues/5829
     close() {
       this.__emit('esc');
     },

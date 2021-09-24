@@ -3,6 +3,6 @@ import Vue from 'vue';
 import ref from 'vue-ref';
 import Calendar from './src/';
 
-Vue.use(ref, { name: 'ant-ref' });
+Vue.use(ref, { name: 'minigui-ref' });
 
 export default Calendar;

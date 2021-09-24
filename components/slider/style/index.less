@@ -1,7 +1,7 @@
 @import '../../style/themes/index';
 @import '../../style/mixins/index';
 
-@slider-prefix-cls: ~'@{ant-prefix}-slider';
+@slider-prefix-cls: ~'@{minigui-prefix}-slider';
 
 .@{slider-prefix-cls} {
   .reset-component;
@@ -55,7 +55,7 @@
       box-shadow: 0 0 0 5px @slider-handle-color-focus-shadow;
     }
 
-    &.@{ant-prefix}-tooltip-open {
+    &.@{minigui-prefix}-tooltip-open {
       border-color: @slider-handle-color-tooltip-open;
     }
   }
@@ -67,7 +67,7 @@
     .@{slider-prefix-cls}-track {
       background-color: @slider-track-background-color-hover;
     }
-    .@{slider-prefix-cls}-handle:not(.@{ant-prefix}-tooltip-open) {
+    .@{slider-prefix-cls}-handle:not(.@{minigui-prefix}-tooltip-open) {
       border-color: @slider-handle-color-hover;
     }
   }
@@ -189,8 +189,7 @@
   }
 
   &-tooltip {
-    // https://github.com/ant-design/ant-design/issues/20014
-    .@{ant-prefix}-tooltip-inner {
+    .@{minigui-prefix}-tooltip-inner {
       min-width: unset;
     }
   }

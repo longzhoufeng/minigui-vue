@@ -8,8 +8,6 @@ const path = require('path');
 const packageInfo = require('../package.json');
 
 if (fs.existsSync(path.join(__dirname, '../lib'))) {
-  // Build package.json version to lib/version/index.js
-  // prevent json-loader needing in user-side
   const versionFilePath = path.join(process.cwd(), 'lib', 'version', 'index.js');
   const versionFileContent = fs.readFileSync(versionFilePath).toString();
   fs.writeFileSync(

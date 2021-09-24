@@ -241,8 +241,6 @@ export default {
       if (!filterValue) {
         return;
       }
-      // Manually trigger scroll event for lazy search bug
-      // https://github.com/ant-design/ant-design/issues/5631
       this.triggerScrollTimer = setTimeout(() => {
         const transferNode = this.$el;
         const listNode = transferNode.querySelectorAll('.ant-transfer-list-content')[0];

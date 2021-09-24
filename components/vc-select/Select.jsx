@@ -54,7 +54,7 @@ import { SelectPropTypes } from './PropTypes';
 import contains from '../vc-util/Dom/contains';
 import { isIE, isEdge } from '../_util/env';
 
-Vue.use(ref, { name: 'ant-ref' });
+Vue.use(ref, { name: 'minigui-ref' });
 const SELECT_EMPTY_VALUE_KEY = 'RC_SELECT_EMPTY_VALUE_KEY';
 
 const noop = () => null;
@@ -167,14 +167,9 @@ const Select = {
 
   mounted() {
     this.$nextTick(() => {
-      // when defaultOpen is true, we should auto focus search input
-      // https://github.com/ant-design/ant-design/issues/14254
       if (this.autoFocus || this._open) {
         this.focus();
       }
-      // this.setState({
-      //   _ariaId: generateUUID(),
-      // });
     });
   },
   watch: {
@@ -414,9 +409,6 @@ const Select = {
           return;
         }
       } else if (keyCode === KeyCode.ENTER && state._open) {
-        // Aviod trigger form submit when select item
-        // https://github.com/ant-design/ant-design/issues/10861
-        // https://github.com/ant-design/ant-design/issues/14544
         if (isRealOpen || !combobox) {
           event.preventDefault();
         }
@@ -490,7 +482,6 @@ const Select = {
     onMenuDeselect({ item, domEvent }) {
       if (domEvent.type === 'keydown' && domEvent.keyCode === KeyCode.ENTER) {
         const menuItemDomNode = item.$el;
-        // https://github.com/ant-design/ant-design/issues/20465#issuecomment-569033796
         if (!isHidden(menuItemDomNode)) {
           this.removeSelected(getValuePropValue(item));
         }
@@ -768,13 +759,6 @@ const Select = {
         return;
       }
       this.clearBlurTime();
-
-      // In IE11, onOuterFocus will be trigger twice when focus input
-      // First one: e.target is div
-      // Second one: e.target is input
-      // other browser only trigger second one
-      // https://github.com/ant-design/ant-design/issues/15942
-      // Here we ignore the first one when e.target is div
       const inputNode = this.getInputDOMNode();
       if (inputNode && e.target === this.rootRef) {
         return;
@@ -803,8 +787,6 @@ const Select = {
         [`${props.prefixCls}-search__field`]: true,
       });
       const inputEvents = getEvents(inputElement);
-      // https://github.com/ant-design/ant-design/issues/4992#issuecomment-281542159
-      // Add space to the end of the inputValue as the width measurement tolerance
       inputElement.data = inputElement.data || {};
       return (
         <div class={`${props.prefixCls}-search__field__wrap`} onClick={this.inputClick}>
@@ -824,7 +806,7 @@ const Select = {
             class: inputCls,
             directives: [
               {
-                name: 'ant-ref',
+                name: 'minigui-ref',
                 value: this.saveInputRef,
               },
               {
@@ -846,7 +828,7 @@ const Select = {
             {...{
               directives: [
                 {
-                  name: 'ant-ref',
+                  name: 'minigui-ref',
                   value: this.saveInputMirrorRef,
                 },
               ],
@@ -1183,7 +1165,6 @@ const Select = {
           options.push(menuItem);
           menuItems.push(menuItem);
         });
-        // ref: https://github.com/ant-design/ant-design/issues/14090
         if (inputValue && menuItems.every(option => getValuePropValue(option) !== inputValue)) {
           const p = {
             attrs: UNSELECTABLE_ATTRIBUTE,
@@ -1471,7 +1452,7 @@ const Select = {
           {...{
             directives: [
               {
-                name: 'ant-ref',
+                name: 'minigui-ref',
                 value: this.saveTopCtrlRef,
               },
             ],
@@ -1607,23 +1588,10 @@ const Select = {
         'aria-controls': this.$data._ariaId,
       },
       on: {
-        // click: this.selectionRefClick,
       },
       class: `${prefixCls}-selection ${prefixCls}-selection--${multiple ? 'multiple' : 'single'}`,
-      // directives: [
-      //   {
-      //     name: 'ant-ref',
-      //     value: this.saveSelectionRef,
-      //   },
-      // ],
       key: 'selection',
     };
-    //if (!isMultipleOrTagsOrCombobox(props)) {
-    // selectionProps.on.keydown = this.onKeyDown;
-    // selectionProps.on.focus = this.selectionRefFocus;
-    // selectionProps.on.blur = this.selectionRefBlur;
-    // selectionProps.attrs.tabIndex = props.disabled ? -1 : props.tabIndex;
-    //}
     let extraSelectionProps = { attrs: { tabIndex: -1 } };
     if (!isMultipleOrTagsOrCombobox(props)) {
       extraSelectionProps.attrs.tabIndex = props.disabled ? -1 : props.tabIndex;
@@ -1674,7 +1642,7 @@ const Select = {
         {...{
           directives: [
             {
-              name: 'ant-ref',
+              name: 'minigui-ref',
               value: this.saveSelectTriggerRef,
             },
           ],
@@ -1686,7 +1654,7 @@ const Select = {
           {...{
             directives: [
               {
-                name: 'ant-ref',
+                name: 'minigui-ref',
                 value: chaining(this.saveRootRef, this.saveSelectionRef),
               },
             ],

@@ -34,7 +34,7 @@ export default {
         {...{
           directives: [
             {
-              name: 'ant-ref',
+              name: 'minigui-ref',
               value: setRef,
             },
           ],

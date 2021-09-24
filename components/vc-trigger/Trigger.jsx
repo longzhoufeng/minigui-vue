@@ -18,7 +18,7 @@ import BaseMixin from '../_util/BaseMixin';
 import { cloneElement } from '../_util/vnode';
 import ContainerRender from '../_util/ContainerRender';
 
-Vue.use(ref, { name: 'ant-ref' });
+Vue.use(ref, { name: 'minigui-ref' });
 
 function returnEmptyString() {
   return '';
@@ -145,11 +145,6 @@ export default {
     updatedCal() {
       const props = this.$props;
       const state = this.$data;
-
-      // We must listen to `mousedown` or `touchstart`, edge case:
-      // https://github.com/ant-design/ant-design/issues/5804
-      // https://github.com/react-component/calendar/issues/250
-      // https://github.com/react-component/trigger/issues/50
       if (state.sPopupVisible) {
         let currentDocument;
         if (!this.clickOutsideHandler && (this.isClickToHide() || this.isContextmenuToShow())) {
@@ -285,9 +280,6 @@ export default {
       }
       this.preClickTime = 0;
       this.preTouchTime = 0;
-      // Only prevent default when all the action is click.
-      // https://github.com/ant-design/ant-design/issues/17043
-      // https://github.com/ant-design/ant-design/issues/17291
       if (
         this.isClickToShow() &&
         (this.isClickToHide() || this.isBlurToHide()) &&
@@ -427,7 +419,7 @@ export default {
         },
         directives: [
           {
-            name: 'ant-ref',
+            name: 'minigui-ref',
             value: this.savePopup,
           },
         ],

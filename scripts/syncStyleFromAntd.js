@@ -4,8 +4,8 @@ const fs = require('fs');
 const fse = require('fs-extra');
 const path = require('path');
 
-const owner = 'ant-design';
-const repo = 'ant-design';
+const owner = 'minigui-vue';
+const repo = 'minigui-vue';
 const tag = '3.26.19';
 const clientId = '5f6ccfdc4cdc69f8ba12';
 const clientSecret = process.env.CLIENT_SECRET;

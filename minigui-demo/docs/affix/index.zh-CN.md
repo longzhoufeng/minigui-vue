@@ -25,5 +25,3 @@
 ### Affix 使用 `target` 绑定容器时，元素会跑到容器外。
 
 从性能角度考虑，我们只监听容器滚动事件。
-
-相关 issue：[#3938](https://github.com/ant-design/ant-design/issues/3938) [#5642](https://github.com/ant-design/ant-design/issues/5642) [#16120](https://github.com/ant-design/ant-design/issues/16120)

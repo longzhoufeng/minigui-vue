@@ -381,8 +381,6 @@ export default {
         // Must be set after switchScrollingEffect
         document.body.style.overflow = 'hidden';
       } else if (!openCount) {
-        // IE browser doesn't merge overflow style, need to set it separately
-        // https://github.com/ant-design/ant-design/issues/19393
         if (cacheOverflow.overflow !== undefined) {
           document.body.style.overflow = cacheOverflow.overflow;
         }

@@ -147,8 +147,6 @@ const BaseTable = {
     const tableStyle = {};
 
     if (!fixed && scroll.x) {
-      // 当有固定列时，width auto 会导致 body table 的宽度撑不开，从而固定列无法对齐
-      // 详情见：https://github.com/ant-design/ant-design/issues/22160
       const tableWidthScrollX = isAnyColumnsFixed ? 'max-content' : 'auto';
       // not set width, then use content fixed width
       tableStyle.width = scroll.x === true ? tableWidthScrollX : scroll.x;

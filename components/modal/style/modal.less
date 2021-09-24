@@ -1,5 +1,5 @@
-@dialog-prefix-cls: ~'@{ant-prefix}-modal';
-@table-prefix-cls: ~'@{ant-prefix}-table';
+@dialog-prefix-cls: ~'@{minigui-prefix}-modal';
+@table-prefix-cls: ~'@{minigui-prefix}-table';
 @modal-footer-padding-vertical: 10px;
 @modal-footer-padding-horizontal: 16px;
 
@@ -108,10 +108,10 @@
 
   &.zoom-enter,
   &.zoom-appear {
-    transform: none; // reset scale avoid mousePosition bug
+    transform: none;
     opacity: 0;
     animation-duration: @animation-duration-slow;
-    user-select: none; // https://github.com/ant-design/ant-design/issues/11777
+    user-select: none;
   }
 
   &-mask {

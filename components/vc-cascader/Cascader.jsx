@@ -101,8 +101,6 @@ export default {
         const newValues = {
           sValue: val || [],
         };
-        // allow activeValue diff from value
-        // https://github.com/ant-design/ant-design/issues/2767
         if (!hasProp(this, 'loadData')) {
           newValues.sActiveValue = val || [];
         }
@@ -230,8 +228,6 @@ export default {
     handleKeyDown(e) {
       const { $slots } = this;
       const children = $slots.default && $slots.default[0];
-      // https://github.com/ant-design/ant-design/issues/6717
-      // Don't bind keyboard support when children specify the onKeyDown
       if (children) {
         const keydown = getEvents(children).keydown;
         if (keydown) {

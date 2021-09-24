@@ -81,7 +81,6 @@ const ResizableTextArea = {
         });
       });
     },
-    // https://github.com/ant-design/ant-design/issues/21870
     fixFirefoxAutoScroll() {
       try {
         if (document.activeElement === this.$refs.textArea) {
@@ -119,8 +118,6 @@ const ResizableTextArea = {
         [`${prefixCls}-disabled`]: disabled,
       });
       const domProps = {};
-      // Fix https://github.com/ant-design/ant-design/issues/6776
-      // Make sure it could be reset when using form.getFieldDecorator
       if ('value' in props) {
         domProps.value = props.value || '';
       }

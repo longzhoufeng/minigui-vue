@@ -155,7 +155,7 @@ const MultipleSelector = {
               on: listeners,
               directives: [
                 {
-                  name: 'ant-ref',
+                  name: 'minigui-ref',
                   value: this.inputRef,
                 },
               ],

@@ -425,7 +425,7 @@ const Range = {
           style: handleStyle[i],
           directives: [
             {
-              name: 'ant-ref',
+              name: 'minigui-ref',
               value: h => this.saveHandle(i, h),
             },
           ],

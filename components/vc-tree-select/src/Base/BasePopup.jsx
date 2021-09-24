@@ -273,7 +273,7 @@ const BasePopup = {
         },
         directives: [
           {
-            name: 'ant-ref',
+            name: 'minigui-ref',
             value: this.treeRef,
           },
         ],

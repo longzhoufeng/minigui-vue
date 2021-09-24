@@ -91,8 +91,6 @@ export default {
           ele.data.attrs &&
           ele.data.attrs.disabled !== undefined)
       ) {
-        // Pick some layout related style properties up to span
-        // Prevent layout bugs like https://github.com/ant-design/ant-design/issues/5254
         const { picked, omitted } = splitObject(getStyle(ele), [
           'position',
           'left',

@@ -130,29 +130,18 @@ const Menu = {
         this.$forceUpdate();
       }
     },
-    // Restore vertical mode when menu is collapsed responsively when mounted
-    // https://github.com/ant-design/ant-design/issues/13104
-    // TODO: not a perfect solution, looking a new way to avoid setting switchingModeFromInline in this situation
     handleMouseEnter(e) {
       this.restoreModeVerticalFromInline();
       this.$emit('mouseenter', e);
     },
     handleTransitionEnd(e) {
-      // when inlineCollapsed menu width animation finished
-      // https://github.com/ant-design/ant-design/issues/12864
       const widthCollapsed = e.propertyName === 'width' && e.target === e.currentTarget;
-
-      // Fix SVGElement e.target.className.indexOf is not a function
-      // https://github.com/ant-design/ant-design/issues/15699
       const { className } = e.target;
       // SVGAnimatedString.animVal should be identical to SVGAnimatedString.baseVal, unless during an animation.
       const classNameValue =
         Object.prototype.toString.call(className) === '[object SVGAnimatedString]'
           ? className.animVal
           : className;
-
-      // Fix for <Menu style={{ width: '100%' }} />, the width transition won't trigger when menu is collapsed
-      // https://github.com/ant-design/ant-design-pro/issues/2783
       const iconScaled = e.propertyName === 'font-size' && classNameValue.indexOf('anticon') >= 0;
 
       if (widthCollapsed || iconScaled) {
@@ -267,8 +256,6 @@ const Menu = {
       };
       menuProps.props.openAnimation = menuOpenAnimation;
     }
-
-    // https://github.com/ant-design/ant-design/issues/8587
     const hideMenu =
       this.getInlineCollapsed() &&
       (collapsedWidth === 0 || collapsedWidth === '0' || collapsedWidth === '0px');

@@ -17,7 +17,7 @@ Implement a customized column search example via `filterDropdown`.
       style="padding: 8px"
     >
       <a-input
-        v-ant-ref="c => (searchInput = c)"
+        v-minigui-ref="c => (searchInput = c)"
         :placeholder="`Search ${column.dataIndex}`"
         :value="selectedKeys[0]"
         style="width: 188px; margin-bottom: 8px; display: block;"

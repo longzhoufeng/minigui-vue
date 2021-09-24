@@ -86,7 +86,6 @@ export default {
       tdProps = mergeProps(tdProps, column.customCell(record, index));
     }
 
-    // Fix https://github.com/ant-design/ant-design/issues/1202
     if (isInvalidRenderCellText(text)) {
       text = null;
     }
@@ -111,8 +110,6 @@ export default {
 
     const cellClassName = classNames(className, column.class, {
       [`${prefixCls}-cell-ellipsis`]: !!column.ellipsis,
-      // 如果有宽度，增加断行处理
-      // https://github.com/ant-design/ant-design/issues/13825#issuecomment-449889241
       [`${prefixCls}-cell-break-word`]: !!column.width,
     });
 

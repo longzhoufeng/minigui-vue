@@ -36,7 +36,6 @@ export default {
     if (scroll.x || fixed) {
       bodyStyle.overflowX = bodyStyle.overflowX || 'scroll';
       // Fix weired webkit render bug
-      // https://github.com/ant-design/ant-design/issues/7783
       bodyStyle.WebkitTransform = 'translate3d (0, 0, 0)';
     }
 
@@ -92,7 +91,7 @@ export default {
             {...{
               directives: [
                 {
-                  name: 'ant-ref',
+                  name: 'minigui-ref',
                   value: saveRef(refName),
                 },
               ],
@@ -117,7 +116,7 @@ export default {
         {...{
           directives: [
             {
-              name: 'ant-ref',
+              name: 'minigui-ref',
               value: saveRef('bodyTable'),
             },
           ],

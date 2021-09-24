@@ -27,7 +27,7 @@ const windowIsUndefined = !(
   window.document.createElement
 );
 
-Vue.use(ref, { name: 'ant-ref' });
+Vue.use(ref, { name: 'minigui-ref' });
 const Drawer = {
   mixins: [BaseMixin],
   props: initDefaultProps(IDrawerProps, {
@@ -435,7 +435,7 @@ const Drawer = {
           },
           directives: [
             {
-              name: 'ant-ref',
+              name: 'minigui-ref',
               value: c => {
                 this.handlerdom = c;
               },
@@ -447,7 +447,7 @@ const Drawer = {
         class: wrapperClassname,
         directives: [
           {
-            name: 'ant-ref',
+            name: 'minigui-ref',
             value: c => {
               this.dom = c;
             },
@@ -461,7 +461,7 @@ const Drawer = {
       };
       const directivesMaskDom = [
         {
-          name: 'ant-ref',
+          name: 'minigui-ref',
           value: c => {
             this.maskDom = c;
           },
@@ -469,7 +469,7 @@ const Drawer = {
       ];
       const directivesContentWrapper = [
         {
-          name: 'ant-ref',
+          name: 'minigui-ref',
           value: c => {
             this.contentWrapper = c;
           },
@@ -477,7 +477,7 @@ const Drawer = {
       ];
       const directivesContentDom = [
         {
-          name: 'ant-ref',
+          name: 'minigui-ref',
           value: c => {
             this.contentDom = c;
           },
@@ -620,7 +620,7 @@ const Drawer = {
     if (!getContainer) {
       const directives = [
         {
-          name: 'ant-ref',
+          name: 'minigui-ref',
           value: c => {
             this.container = c;
           },

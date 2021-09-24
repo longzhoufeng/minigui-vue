@@ -51,7 +51,7 @@ export default {
       const directives = [];
       if (activeKey === key) {
         directives.push({
-          name: 'ant-ref',
+          name: 'minigui-ref',
           value: saveRef('activeTab'),
         });
       }
@@ -89,7 +89,7 @@ export default {
         {...{
           directives: [
             {
-              name: 'ant-ref',
+              name: 'minigui-ref',
               value: this.saveRef('navTabsContainer'),
             },
           ],

@@ -83,10 +83,6 @@ const SelectTrigger = {
       open,
     } = this.$props;
 
-    // TODO: [Legacy] Use new action when trigger fixed: https://github.com/react-component/trigger/pull/86
-
-    // When false do nothing with the width
-    // ref: https://github.com/ant-design/ant-design/issues/10927
     let stretch;
     if (dropdownMatchSelectWidth !== false) {
       stretch = dropdownMatchSelectWidth ? 'width' : 'minWidth';
@@ -96,7 +92,7 @@ const SelectTrigger = {
         {...{
           directives: [
             {
-              name: 'ant-ref',
+              name: 'minigui-ref',
               value: this.triggerRef,
             },
           ],

@@ -70,8 +70,6 @@ function createBaseForm(option = {}, mixins = []) {
         this.formItems = {};
         this.renderFields = {};
         this.domFields = {};
-
-        // HACK: https://github.com/ant-design/ant-design/issues/6406
         [
           'getFieldsValue',
           'getFieldValue',
@@ -334,7 +332,7 @@ function createBaseForm(option = {}, mixins = []) {
             },
             directives: [
               {
-                name: 'ant-ref',
+                name: 'minigui-ref',
                 value: this.getCacheBind(name, `${name}__ref`, this.saveRef),
               },
             ],
@@ -541,8 +539,6 @@ function createBaseForm(option = {}, mixins = []) {
                 const errorFieldName = e.field;
                 let fieldName = errorFieldName;
 
-                // Handle using array validation rule.
-                // ref: https://github.com/ant-design/ant-design/issues/14275
                 Object.keys(allRules).some(ruleFieldName => {
                   const rules = allRules[ruleFieldName] || [];
 
@@ -724,7 +720,7 @@ function createBaseForm(option = {}, mixins = []) {
           ref: 'WrappedComponent',
           directives: [
             {
-              name: 'ant-ref',
+              name: 'minigui-ref',
               value: wrappedComponentRef,
             },
           ],

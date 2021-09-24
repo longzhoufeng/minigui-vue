@@ -9,7 +9,7 @@ import defaultProps from './default-props';
 import { canUseDOM } from './utils/innerSliderUtils';
 const enquire = canUseDOM() && require('enquire.js');
 
-Vue.use(ref, { name: 'ant-ref' });
+Vue.use(ref, { name: 'minigui-ref' });
 
 export default {
   props: {
@@ -200,7 +200,7 @@ export default {
       on: getListeners(this),
       directives: [
         {
-          name: 'ant-ref',
+          name: 'minigui-ref',
           value: this.innerSliderRefHandler,
         },
       ],

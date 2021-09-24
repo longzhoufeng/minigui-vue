@@ -32,13 +32,7 @@ export const CalendarProps = () => ({
   defaultValue: TimeType,
   mode: CalendarMode,
   fullscreen: PropTypes.bool,
-  // dateCellRender: PropTypes.func,
-  // monthCellRender: PropTypes.func,
-  // dateFullCellRender: PropTypes.func,
-  // monthFullCellRender: PropTypes.func,
   locale: PropTypes.object,
-  // onPanelChange?: (date?: moment.Moment, mode?: CalendarMode) => void;
-  // onSelect?: (date?: moment.Moment) => void;
   disabledDate: PropTypes.func,
   validRange: PropTypes.custom(isMomentArray),
   headerRender: PropTypes.func,

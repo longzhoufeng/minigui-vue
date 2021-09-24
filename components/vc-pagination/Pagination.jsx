@@ -107,8 +107,6 @@ export default {
       this.setState(newState);
     },
     stateCurrent(val, oldValue) {
-      // When current page change, fix focused style of prev item
-      // A hacky solution of https://github.com/ant-design/ant-design/issues/8948
       this.$nextTick(() => {
         if (this.$refs.paginationNode) {
           const lastCurrentNode = this.$refs.paginationNode.querySelector(

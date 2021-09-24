@@ -966,8 +966,6 @@ const Select = {
     },
 
     delayForcePopupAlign() {
-      // Wait 2 frame to avoid dom update & dom algin in the same time
-      // https://github.com/ant-design/ant-design/issues/12031
       raf(() => {
         raf(this.forcePopupAlign);
       });
@@ -1106,7 +1104,7 @@ const Select = {
       },
       directives: [
         {
-          name: 'ant-ref',
+          name: 'minigui-ref',
           value: this.setPopupRef,
         },
       ],
@@ -1122,7 +1120,7 @@ const Select = {
         {...{
           directives: [
             {
-              name: 'ant-ref',
+              name: 'minigui-ref',
               value: this.selectorRef,
             },
           ],
@@ -1136,7 +1134,7 @@ const Select = {
       },
       directives: [
         {
-          name: 'ant-ref',
+          name: 'minigui-ref',
           value: this.selectTriggerRef,
         },
       ],

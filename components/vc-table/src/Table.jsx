@@ -179,7 +179,6 @@ export default {
         this.handleWindowResize();
         this.resizeEvent = addEventListener(window, 'resize', this.debouncedWindowResize);
       }
-      // https://github.com/ant-design/ant-design/issues/11635
       if (this.ref_headTable) {
         this.ref_headTable.scrollLeft = 0;
       }
@@ -282,8 +281,6 @@ export default {
 
     syncFixedTableRowHeight() {
       const tableRect = this.tableNode.getBoundingClientRect();
-      // If tableNode's height less than 0, suppose it is hidden and don't recalculate rowHeight.
-      // see: https://github.com/ant-design/ant-design/issues/4836
       if (tableRect.height !== undefined && tableRect.height <= 0) {
         return;
       }
@@ -334,7 +331,6 @@ export default {
     },
 
     handleBodyScrollLeft(e) {
-      // Fix https://github.com/ant-design/ant-design/issues/7635
       if (e.currentTarget !== e.target) {
         return;
       }
@@ -355,7 +351,6 @@ export default {
 
     handleBodyScrollTop(e) {
       const target = e.target;
-      // Fix https://github.com/ant-design/ant-design/issues/9033
       if (e.currentTarget !== target) {
         return;
       }
@@ -566,7 +561,7 @@ export default {
               {...{
                 directives: [
                   {
-                    name: 'ant-ref',
+                    name: 'minigui-ref',
                     value: this.saveTableNodeRef,
                   },
                 ],

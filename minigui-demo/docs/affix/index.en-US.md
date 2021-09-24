@@ -26,4 +26,3 @@
 
 We don't listen window scroll for performance consideration.
 
-Related issues：[#3938](https://github.com/ant-design/ant-design/issues/3938) [#5642](https://github.com/ant-design/ant-design/issues/5642) [#16120](https://github.com/ant-design/ant-design/issues/16120)

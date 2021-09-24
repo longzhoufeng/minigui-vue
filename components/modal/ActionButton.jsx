@@ -44,15 +44,10 @@ export default {
           this.setState({ loading: true });
           ret.then(
             (...args) => {
-              // It's unnecessary to set loading=false, for the Modal will be unmounted after close.
-              // this.setState({ loading: false });
               closeModal(...args);
             },
             e => {
-              // Emit error when catch promise reject
-              // eslint-disable-next-line no-console
               console.error(e);
-              // See: https://github.com/ant-design/ant-design/issues/6183
               this.setState({ loading: false });
             },
           );

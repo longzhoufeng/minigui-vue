@@ -348,7 +348,6 @@ const SubPopupMenu = {
           select: this.onSelect,
         },
       };
-      // ref: https://github.com/ant-design/ant-design/issues/13943
       if (props.mode === 'inline' || isMobileDevice()) {
         newChildProps.props.triggerSubMenuAction = 'click';
       }

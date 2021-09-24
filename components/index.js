@@ -7,7 +7,7 @@ if (
   typeof window !== 'undefined'
 ) {
   console.warn(
-    'You are using a whole package of antd, ' +
+    'You are using a whole package of minigui, ' +
       'please use https://www.npmjs.com/package/babel-plugin-import to reduce app bundle size.',
   );
 }

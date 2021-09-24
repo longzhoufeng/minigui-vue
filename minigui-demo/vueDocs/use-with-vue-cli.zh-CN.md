@@ -97,7 +97,7 @@ new Vue({
 
 ### 使用 babel-plugin-import
 
-[babel-plugin-import](https://github.com/ant-design/babel-plugin-import) 是一个用于按需加载组件代码和样式的 babel 插件（[原理](/docs/vue/getting-started-cn/#按需加载)）。
+[babel-plugin-import] 是一个用于按需加载组件代码和样式的 babel 插件（[原理](/docs/vue/getting-started-cn/#按需加载)）。
 
 ```bash
 $ yarn add babel-plugin-import --dev

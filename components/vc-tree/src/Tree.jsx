@@ -503,8 +503,6 @@ const Tree = {
             const newLoadedKeys = arrAdd(currentLoadedKeys, eventKey);
             const newLoadingKeys = arrDel(currentLoadingKeys, eventKey);
 
-            // onLoad should trigger before internal setState to avoid `loadData` trigger twice.
-            // https://github.com/ant-design/ant-design/issues/12464
             this.__emit('load', newLoadedKeys, {
               event: 'load',
               node: treeNode,

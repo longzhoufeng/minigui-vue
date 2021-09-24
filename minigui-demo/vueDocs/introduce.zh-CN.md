@@ -83,7 +83,7 @@ import 'minigui-vue/dist/antd.css'; // or 'minigui-vue/dist/antd.less'
 
 下面两种方式都可以只加载用到的组件。
 
-- 使用 [babel-plugin-import](https://github.com/ant-design/babel-plugin-import)（推荐）。
+- 使用 [babel-plugin-import]（推荐）。
 
   ```js
   // .babelrc or babel-loader option

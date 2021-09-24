@@ -88,24 +88,17 @@ export default function calculateNodeHeight(
     document.body.appendChild(hiddenTextarea);
   }
 
-  // Fix wrap="off" issue
-  // https://github.com/ant-design/ant-design/issues/6577
   if (uiTextNode.getAttribute('wrap')) {
     hiddenTextarea.setAttribute('wrap', uiTextNode.getAttribute('wrap'));
   } else {
     hiddenTextarea.removeAttribute('wrap');
   }
 
-  // Copy all CSS properties that have an impact on the height of the content in
-  // the textbox
   const { paddingSize, borderSize, boxSizing, sizingStyle } = calculateNodeStyling(
     uiTextNode,
     useCache,
   );
 
-  // Need to have the overflow attribute to hide the scrollbar otherwise
-  // text-lines will not calculated properly as the shadow will technically be
-  // narrower for content
   hiddenTextarea.setAttribute('style', `${sizingStyle};${HIDDEN_TEXTAREA_STYLE}`);
   hiddenTextarea.value = uiTextNode.value || uiTextNode.placeholder || '';
 

@@ -264,8 +264,6 @@ export default {
       attrs: { ...this.$attrs },
     };
     const children = this.$slots.default;
-    // Remove id to avoid open by label when trigger is hidden
-    // https://github.com/ant-design/ant-design/issues/14298
     if (!children || disabled) {
       delete vcUploadProps.props.id;
       delete vcUploadProps.attrs.id;

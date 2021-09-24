@@ -142,7 +142,7 @@ export default {
         },
         directives: [
           {
-            name: 'ant-ref',
+            name: 'minigui-ref',
             value: this.saveDropdownMenuRef,
           },
         ],
@@ -238,7 +238,7 @@ export default {
       },
       directives: [
         {
-          name: 'ant-ref',
+          name: 'minigui-ref',
           value: this.saveTriggerRef,
         },
       ],

@@ -16,7 +16,7 @@ const circleDefaultProps = {
   gapPosition: 'top',
 };
 
-Vue.use(ref, { name: 'ant-ref' });
+Vue.use(ref, { name: 'minigui-ref' });
 
 let gradientSeed = 0;
 
@@ -125,7 +125,7 @@ const Circle = {
           style: pathStyle,
           directives: [
             {
-              name: 'ant-ref',
+              name: 'minigui-ref',
               value: c => {
                 this.paths[index] = c;
               },

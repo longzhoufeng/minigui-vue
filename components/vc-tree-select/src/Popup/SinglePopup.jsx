@@ -60,7 +60,7 @@ const SinglePopup = {
           {...{
             directives: [
               {
-                name: 'ant-ref',
+                name: 'minigui-ref',
                 value: this.searchRef,
               },
             ],
@@ -72,7 +72,7 @@ const SinglePopup = {
               on: getListeners(this),
               directives: [
                 {
-                  name: 'ant-ref',
+                  name: 'minigui-ref',
                   value: this.inputRef,
                 },
               ],
@@ -90,7 +90,7 @@ const SinglePopup = {
           on: getListeners(this),
           directives: [
             {
-              name: 'ant-ref',
+              name: 'minigui-ref',
               value: this.popupRef,
             },
           ],

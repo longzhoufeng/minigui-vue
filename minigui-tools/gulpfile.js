@@ -134,7 +134,7 @@ function compile(modules) {
     .src(['components/**/*.@(png|svg)'])
     .pipe(gulp.dest(modules === false ? esDir : libDir));
 
-  const source = ['components/**/*.js', 'components/**/*.jsx', '!components/*/__tests__/*'];
+  const source = ['components/**/*.js', 'components/**/*.jsx'];
   const jsFilesStream = babelify(gulp.src(source), modules);
   return merge2([less, jsFilesStream, assets]);
 }

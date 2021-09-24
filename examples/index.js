@@ -1,10 +1,10 @@
 import 'babel-polyfill';
 import Vue from 'vue';
 import App from './App.vue';
-import Antd from 'ant-design-vue';
-import 'ant-design-vue/style.js';
+import Minigui from 'minigui-vue';
+import 'minigui-vue/style.js';
 
-Vue.use(Antd);
+Vue.use(Minigui);
 
 new Vue({
   el: '#app',

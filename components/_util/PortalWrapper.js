@@ -9,8 +9,6 @@ const windowIsUndefined = !(
   window.document &&
   window.document.createElement
 );
-// https://github.com/ant-design/ant-design/issues/19340
-// https://github.com/ant-design/ant-design/issues/19332
 let cacheOverflow = {};
 
 export default {
@@ -143,7 +141,7 @@ export default {
           {...{
             directives: [
               {
-                name: 'ant-ref',
+                name: 'minigui-ref',
                 value: this.savePortal,
               },
             ],

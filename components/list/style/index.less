@@ -1,7 +1,7 @@
 @import '../../style/themes/index';
 @import '../../style/mixins/index';
 
-@list-prefix-cls: ~'@{ant-prefix}-list';
+@list-prefix-cls: ~'@{minigui-prefix}-list';
 
 .@{list-prefix-cls} {
   .reset-component;
@@ -15,9 +15,7 @@
   &-pagination {
     margin-top: 24px;
     text-align: right;
-
-    // https://github.com/ant-design/ant-design/issues/20037
-    .@{ant-prefix}-pagination-options {
+    .@{minigui-prefix}-pagination-options {
       text-align: left;
     }
   }
@@ -156,7 +154,7 @@
     min-height: 32px;
   }
 
-  &-something-after-last-item .@{ant-prefix}-spin-container > &-items > &-item:last-child {
+  &-something-after-last-item .@{minigui-prefix}-spin-container > &-items > &-item:last-child {
     border-bottom: 1px solid @border-color-split;
   }
 
@@ -206,7 +204,7 @@
     }
   }
 
-  &-grid .@{ant-prefix}-col > &-item {
+  &-grid .@{minigui-prefix}-col > &-item {
     display: block;
     max-width: 100%;
     margin-bottom: 16px;

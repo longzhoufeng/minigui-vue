@@ -236,8 +236,6 @@ export default {
       return '';
     },
 
-    // Resolve duplicated ids bug between different forms
-    // https://github.com/ant-design/ant-design/issues/7351
     onLabelClick() {
       const id = this.id || this.getId();
       if (!id) {

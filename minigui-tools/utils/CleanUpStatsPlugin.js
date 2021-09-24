@@ -28,9 +28,6 @@ class CleanUpStatsPlugin {
       if (Array.isArray(children)) {
         stats.compilation.children = children.filter(child => this.shouldPickStatChild(child));
       }
-      // if (Array.isArray(warnings)) {
-      //   stats.compilation.warnings = warnings.filter(message => this.shouldPickWarning(message));
-      // }
     });
   }
 }

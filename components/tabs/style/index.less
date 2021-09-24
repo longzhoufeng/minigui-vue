@@ -2,7 +2,7 @@
 @import '../../style/mixins/index';
 @import './card-style';
 
-@tab-prefix-cls: ~'@{ant-prefix}-tabs';
+@tab-prefix-cls: ~'@{minigui-prefix}-tabs';
 
 // Hidden content
 .tabs-hidden-content() {
@@ -59,7 +59,6 @@
     }
   }
 
-  // https://github.com/ant-design/ant-design/issues/9104
   &-bottom &-bottom-bar {
     margin-top: 16px;
     margin-bottom: 0;
@@ -243,8 +242,6 @@
     }
   }
 
-  // Create an empty element to avoid margin collapsing
-  // https://github.com/ant-design/ant-design/issues/18103
   &-content::before {
     display: block;
     overflow: hidden;

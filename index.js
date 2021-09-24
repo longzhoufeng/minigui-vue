@@ -18,7 +18,6 @@ req.keys().forEach(mod => {
   const match = mod.match(/^\.\/([^_][\w-]+)\/index\.js?$/);
   if (match && match[1]) {
     if (match[1] === 'message' || match[1] === 'notification') {
-      // message & notification should not be capitalized
       exports[match[1]] = v;
     } else {
       exports[camelCase(match[1])] = v;

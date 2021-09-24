@@ -1,4 +1,4 @@
-export * from './minigui-design-vue';
+export * from './minigui-vue';
 
-import * as Antd from './minigui-design-vue';
-export default Antd;
+import * as Minigui from './minigui-vue';
+export default Minigui;

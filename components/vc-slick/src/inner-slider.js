@@ -28,7 +28,7 @@ import Dots from './dots';
 import { PrevArrow, NextArrow } from './arrows';
 import ResizeObserver from 'resize-observer-polyfill';
 
-Vue.use(ref, { name: 'ant-ref' });
+Vue.use(ref, { name: 'minigui-ref' });
 
 function noop() {}
 
@@ -610,7 +610,7 @@ export default {
       },
       directives: [
         {
-          name: 'ant-ref',
+          name: 'minigui-ref',
           value: this.trackRefHandler,
         },
       ],
@@ -707,7 +707,7 @@ export default {
     let listProps = {
       directives: [
         {
-          name: 'ant-ref',
+          name: 'minigui-ref',
           value: this.listRefHandler,
         },
       ],
@@ -739,7 +739,7 @@ export default {
         class: 'slick-list',
         directives: [
           {
-            name: 'ant-ref',
+            name: 'minigui-ref',
             value: this.listRefHandler,
           },
         ],

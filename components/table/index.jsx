@@ -14,7 +14,7 @@ import {
 } from '../_util/props-util';
 import Base from '../base';
 
-Vue.use(ref, { name: 'ant-ref' });
+Vue.use(ref, { name: 'minigui-ref' });
 
 const Table = {
   name: 'ATable',

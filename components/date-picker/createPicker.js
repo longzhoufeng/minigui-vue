@@ -165,7 +165,6 @@ export default function createPicker(TheCalendar, props) {
       const calendarProps = { props: {}, on: {} };
       const pickerStyle = {};
       if (props.showTime) {
-        // fix https://github.com/ant-design/ant-design/issues/1902
         calendarProps.on.select = this.handleChange;
         pickerStyle.minWidth = '195px';
       } else {

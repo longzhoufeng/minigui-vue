@@ -2,8 +2,8 @@
 @import '../../style/mixins/index';
 @import '../../input/style/mixin';
 
-@input-prefix-cls: ~'@{ant-prefix}-input';
-@select-prefix-cls: ~'@{ant-prefix}-select';
+@input-prefix-cls: ~'@{minigui-prefix}-input';
+@select-prefix-cls: ~'@{minigui-prefix}-select';
 @autocomplete-prefix-cls: ~'@{select-prefix-cls}-auto-complete';
 
 .@{autocomplete-prefix-cls} {
@@ -30,8 +30,6 @@
         }
       }
     }
-
-    // Fix https://github.com/ant-design/ant-design/issues/7800
     .@{select-prefix-cls}-search--inline {
       position: static;
       float: left;
@@ -81,7 +79,6 @@
   }
 }
 
-// https://github.com/ant-design/ant-design/issues/14156
 .@{input-prefix-cls}-group > .@{autocomplete-prefix-cls} {
   .@{select-prefix-cls}-search__field.@{input-prefix-cls}-affix-wrapper {
     display: inline;

@@ -2,7 +2,7 @@
 @import '../../style/mixins/index';
 @import '../../input/style/mixin';
 
-@input-number-prefix-cls: ~'@{ant-prefix}-input-number';
+@input-number-prefix-cls: ~'@{minigui-prefix}-input-number';
 
 .@{input-number-prefix-cls} {
   .reset-component;
@@ -117,9 +117,6 @@
     opacity: 0;
     transition: opacity 0.24s linear 0.1s;
 
-    // Fix input number inside Menu makes icon too large
-    // We arise the selector priority by nest selector here
-    // https://github.com/ant-design/ant-design/issues/14367
     .@{input-number-prefix-cls}-handler {
       .@{input-number-prefix-cls}-handler-up-inner,
       .@{input-number-prefix-cls}-handler-down-inner {

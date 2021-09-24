@@ -95,7 +95,7 @@ const ResizeableTitle = (h, props, children) => {
     draggingState[key] = thDom.getBoundingClientRect().width;
   };
   return (
-    <th {...restProps} v-ant-ref={r => (thDom = r)} width={col.width} class="resize-table-th">
+    <th {...restProps} v-minigui-ref={r => (thDom = r)} width={col.width} class="resize-table-th">
       {children}
       <vue-draggable-resizable
         key={col.key}

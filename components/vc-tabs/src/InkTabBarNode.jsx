@@ -38,9 +38,6 @@ function componentDidUpdate(component, init) {
     if (tabBarPosition === 'top' || tabBarPosition === 'bottom') {
       let left = getLeft(tabNode, wrapNode);
       let width = tabNode.offsetWidth;
-      // If tabNode'width width equal to wrapNode'width when tabBarPosition is top or bottom
-      // It means no css working, then ink bar should not have width until css is loaded
-      // Fix https://github.com/ant-design/ant-design/issues/7564
       if (width === rootNode.offsetWidth) {
         width = 0;
       } else if (styles.inkBar && styles.inkBar.width !== undefined) {
@@ -123,7 +120,7 @@ export default {
         {...{
           directives: [
             {
-              name: 'ant-ref',
+              name: 'minigui-ref',
               value: this.saveRef('inkBar'),
             },
           ],

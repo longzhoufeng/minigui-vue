@@ -79,7 +79,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'ant-design-vue': path.join(__dirname, './components'),
+      'minigui-vue': path.join(__dirname, './components'),
       vue$: 'vue/dist/vue.esm.js',
     },
     extensions: ['.js', '.jsx', '.vue', '.md'],

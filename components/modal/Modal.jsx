@@ -19,7 +19,6 @@ import {
 import { ConfigConsumerProps } from '../config-provider/configConsumerProps';
 
 let mousePosition = null;
-// ref: https://github.com/ant-design/ant-design/issues/15795
 const getClickPosition = e => {
   mousePosition = {
     x: e.pageX,

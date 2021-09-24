@@ -83,8 +83,6 @@ export default {
       if ((!value || value.length === 0) && firstActiveValue) {
         scrollIntoViewOpts.alignWithTop = true;
       }
-      // Delay to scroll since current frame item position is not ready when pre view is by filter
-      // https://github.com/ant-design/ant-design/issues/11268#issuecomment-406634462
       this.rafInstance = raf(() => {
         scrollIntoView(itemComponent, this.$refs.menuRef.$el, scrollIntoViewOpts);
       });
@@ -157,7 +155,7 @@ export default {
               return cloneElement(item, {
                 directives: [
                   {
-                    name: 'ant-ref',
+                    name: 'minigui-ref',
                     value: ref => {
                       this.firstActiveItem = ref;
                     },
@@ -176,9 +174,6 @@ export default {
             return clone(item);
           });
         } else {
-          // Clear firstActiveItem when dropdown menu items was empty
-          // Avoid `Unable to find node on an unmounted component`
-          // https://github.com/ant-design/ant-design/issues/10774
           this.firstActiveItem = null;
         }
 

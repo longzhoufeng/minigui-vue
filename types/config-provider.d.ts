@@ -1,8 +1,6 @@
 import { MiniguiComponent } from './component';
 import Vue from 'vue';
 
-import { Locale } from './locale-provider';
-
 export interface CSPConfig {
   nonce?: string;
 }

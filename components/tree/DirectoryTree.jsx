@@ -187,9 +187,6 @@ export default {
       if (this.$refs.tree.$refs.tree) {
         // Get internal vc-tree
         const internalTree = this.$refs.tree.$refs.tree;
-
-        // Call internal rc-tree expand function
-        // https://github.com/ant-design/ant-design/issues/12567
         internalTree.onNodeExpand(event, node);
       }
     },

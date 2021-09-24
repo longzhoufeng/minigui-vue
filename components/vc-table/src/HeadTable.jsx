@@ -25,15 +25,11 @@ export default {
 
     if (scroll.y) {
       useFixedHeader = true;
-      // https://github.com/ant-design/ant-design/issues/17051
       const scrollbarWidthOfHeader = measureScrollbar({ direction: 'horizontal', prefixCls });
-      // Add negative margin bottom for scroll bar overflow bug
       if (scrollbarWidthOfHeader > 0 && !fixed) {
         headStyle.marginBottom = `-${scrollbarWidthOfHeader}px`;
         headStyle.paddingBottom = '0px';
-        // https://github.com/ant-design/ant-design/pull/19986
         headStyle.minWidth = `${scrollbarWidth}px`;
-        // https://github.com/ant-design/ant-design/issues/17051
         headStyle.overflowX = 'scroll';
         headStyle.overflowY = scrollbarWidth === 0 ? 'hidden' : 'scroll';
       }
@@ -48,7 +44,7 @@ export default {
         {...{
           directives: [
             {
-              name: 'ant-ref',
+              name: 'minigui-ref',
               value: fixed ? () => {} : saveRef('headTable'),
             },
           ],

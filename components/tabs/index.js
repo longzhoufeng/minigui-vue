@@ -7,7 +7,7 @@ import Base from '../base';
 
 Tabs.TabPane = { ...TabPane, name: 'ATabPane', __ANT_TAB_PANE: true };
 Tabs.TabContent = { ...TabContent, name: 'ATabContent' };
-Vue.use(ref, { name: 'ant-ref' });
+Vue.use(ref, { name: 'minigui-ref' });
 
 /* istanbul ignore next */
 Tabs.install = function(Vue) {

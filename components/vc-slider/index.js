@@ -3,5 +3,5 @@ import Vue from 'vue';
 import ref from 'vue-ref';
 import Slider from './src/';
 
-Vue.use(ref, { name: 'ant-ref' });
+Vue.use(ref, { name: 'minigui-ref' });
 export default Slider;

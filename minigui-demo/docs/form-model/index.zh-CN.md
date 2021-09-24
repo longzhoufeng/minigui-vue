@@ -82,8 +82,8 @@ Form.Item 会对唯一子元素进行劫持，并监听 `blur` 和 `change` 事�
 | pattern | 正则表达式校验 | RegExp | - |
 | required | 是否必选 | boolean | `false` |
 | transform | 校验前转换字段值 | function(value) => transformedValue:any | - |
-| type | 内建校验类型，[可选项](https://github.com/yiminghe/async-validator#type) | string | 'string' |
-| validator | 自定义校验（注意，[callback 必须被调用](https://github.com/ant-design/ant-design/issues/5155)） | function(rule, value, callback) | - |
+| type | 内建校验类型，[可选项] | string | 'string' |
+| validator | 自定义校验（注意，[callback 必须被调用]） | function(rule, value, callback) | - |
 | whitespace | 必选时，空格是否会被视为错误 | boolean | `false` |
 
-更多高级用法可研究 [async-validator](https://github.com/yiminghe/async-validator)。
+更多高级用法可研究 [async-validator]。
