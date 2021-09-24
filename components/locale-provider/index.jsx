@@ -4,19 +4,6 @@ import interopDefault from '../_util/interopDefault';
 import { changeConfirmLocale } from '../modal/locale';
 import Base from '../base';
 import warning from '../_util/warning';
-// export interface Locale {
-//   locale: string;
-//   Pagination?: Object;
-//   DatePicker?: Object;
-//   TimePicker?: Object;
-//   Calendar?: Object;
-//   Table?: Object;
-//   Modal?: ModalLocale;
-//   Popconfirm?: Object;
-//   Transfer?: Object;
-//   Select?: Object;
-//   Upload?: Object;
-// }
 export const ANT_MARK = 'internalMark';
 function setMomentLocale(locale) {
   if (locale && locale.locale) {
