@@ -15,7 +15,7 @@
       <slot v-else name="us-description" />
       <div class="code-box-actions">
         <a-tooltip
-          :title="copied ? 'Copied!' : 'Copy code'"
+          :title="copied ? '已复制!' : '复制代码'"
           :visible="copyTooltipVisible"
           @visibleChange="onCopyTooltipVisibleChange"
         >
@@ -23,26 +23,14 @@
             v-clipboard:copy="sourceCode"
             v-clipboard:success="handleCodeCopied"
             :type="copied && copyTooltipVisible ? 'check' : 'copy'"
-            class="code-box-code-copy"
+            class="code-box-code-copy code-copy"
           />
         </a-tooltip>
-        <a-tooltip :title="codeExpand ? 'Hide Code' : 'Show Code'">
-          <span class="code-expand-icon">
-            <img
-              width="16"
-              alt="expand code"
-              src="/public/expandClose.svg"
-              :class="codeExpand ? 'code-expand-icon-hide' : 'code-expand-icon-show'"
-              @click="handleCodeExpand"
-            />
-            <img
-              width="16"
-              alt="expand code"
-              src="/public/expandOpen.svg"
-              :class="codeExpand ? 'code-expand-icon-show' : 'code-expand-icon-hide'"
-              @click="handleCodeExpand"
-            />
-          </span>
+        <a-tooltip :title="codeExpand ? '隐藏源码' : '显示源码'">
+          <a-icon
+            :type="codeExpand?'minus':'plus'"
+            class="code-box-code-copy code-show"
+            @click="handleCodeExpand" />
         </a-tooltip>
       </div>
     </section>

@@ -260,7 +260,7 @@ export default {
                         class="aside-container menu-site"
                         selectedKeys={[name]}
                         defaultOpenKeys={['Components']}
-                        inlineIndent={40}
+                        inlineIndent={25}
                         mode="inline"
                       >
                         {docsMenu}

@@ -161,7 +161,7 @@
   }
 
   &-actions {
-    padding-top: 12px;
+    padding-top: 10px;
     text-align: center;
     border-top: 1px dashed @site-border-color-split;
     opacity: 0.7;
@@ -170,20 +170,26 @@
     &:hover {
       opacity: 1;
     }
-
     > i,
     > form,
     > span {
       position: relative;
       display: inline-block;
-      width: 16px;
-      height: 16px;
+      width: 20px;
+      height: 20px;
       margin-left: 16px;
       vertical-align: top;
 
       &:first-child {
         margin-left: 0;
       }
+    }
+    > .code-show {
+      font-size: 18px;
+      top: -1px;
+    }
+    > .code-copy {
+      font-size: 16px;
     }
 
     > form {
@@ -277,7 +283,7 @@
     width: auto;
     code {
       border: none;
-      background: #fff;
+      background: #1e1e1e;
     }
   }
 }
