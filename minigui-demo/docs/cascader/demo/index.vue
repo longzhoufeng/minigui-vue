@@ -13,7 +13,6 @@ import FieldsName from './fields-name';
 import Suffix from './suffix';
 
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 const md = {
   cn: `# Cascader 级联选择
           级联选择框。
@@ -22,14 +21,6 @@ const md = {
 - 从一个较大的数据集合中进行选择时，用多级分类进行分隔，方便选择。
 - 比起 Select 组件，可以在同一个浮层中完成选择，有较好的体验。
           ## 代码演示`,
-  us: `# Cascader
-          Cascade selection box.
-## When To Use
-- When you need to select from a set of associated data set. Such as province/city/district, company level, things classification.
-- When selecting from a large data set, with multi-stage classification separated for easy selection.
-- Chooses cascade items in one float layer for better user experience.
-## Examples
-          `,
 };
 export default {
   category: 'Components',
@@ -40,7 +31,7 @@ export default {
   render() {
     return (
       <div id="components-cascader-demo">
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort>
           <Basic />
           <ChangeOnSelect />
@@ -57,7 +48,6 @@ export default {
         </demo-sort>
         <api>
           <CN slot="cn" />
-          <US />
         </api>
       </div>
     );

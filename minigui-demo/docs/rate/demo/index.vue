@@ -6,7 +6,6 @@ import Disabled from './disabled.md';
 import Clear from './clear.md';
 import Character from './character.md';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# Rate
@@ -18,16 +17,6 @@ const md = {
   - 对评价进行展示。
   - 对事物进行快速的评级操作。
             ## 代码演示`,
-  us: `# Rate
-
-  Rate component.
-
-  # When To Use
-
-  - Show evaluation.
-  - A quick rating operation on something.
-  ## Examples
-  `,
 };
 export default {
   category: 'Components',
@@ -38,7 +27,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort>
           <Basic />
           <Half />
@@ -51,7 +40,6 @@ export default {
           <template slot="cn">
             <CN />
           </template>
-          <US />
         </api>
       </div>
     );

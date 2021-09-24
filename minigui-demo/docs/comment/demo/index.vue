@@ -4,7 +4,6 @@ import Editor from './editor';
 import List from './list';
 import Nested from './nested';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# Comment评论
@@ -13,12 +12,6 @@ const md = {
 ## 何时使用
 
 评论组件可用于对事物的讨论，例如页面、博客文章、问题等等。`,
-  us: `# Comment
-A comment displays user feedback and discussion to website content.
-
-## When To Use
-
-Comments can be used to enable discussions on an entity such as a page, blog post, issue or other.`,
 };
 export default {
   category: 'Components',
@@ -30,7 +23,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort cols={1}>
           <Basic />
           <List />
@@ -41,7 +34,6 @@ export default {
           <template slot="cn">
             <CN />
           </template>
-          <US />
         </api>
       </div>
     );

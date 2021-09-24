@@ -9,7 +9,6 @@ import WithIcon from './with-icon';
 import Update from './update';
 
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 const md = {
   cn: `# 通知提醒框
 全局展示通知提醒信息。
@@ -20,16 +19,6 @@ const md = {
 - 系统主动推送。
 
 ## 代码演示`,
-  us: `# Notification
-Display a notification message globally.
-## When To Use
-To display a notification message at any of the four corners of the viewport. Typically it can be
-used in the following cases:
-- A notification with complex content.
-- A notification providing a feedback based on the user interaction. Or it may show some details
-  about upcoming steps the user may have to follow.
-- A notification that is pushed by the application.
-## Examples `,
 };
 export default {
   category: 'Components',
@@ -40,7 +29,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort>
           <Basic />
           <CustomIcon />
@@ -53,7 +42,6 @@ export default {
         </demo-sort>
         <api>
           <CN slot="cn" />
-          <US />
         </api>
       </div>
     );

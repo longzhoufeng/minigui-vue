@@ -13,19 +13,12 @@ import Time from './time';
 import Suffix from './suffix';
 import Text from './text';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 const md = {
   cn: `# DatePicker 日期选择框
           输入或选择日期的控件。
 ## 何时使用
 当用户需要输入一个日期，可以点击标准输入框，弹出日期面板进行选择。
           ## 代码演示`,
-  us: `# DatePicker
-          To select or input a date.
-## When To Use
-By clicking the input box, you can select a date from a popup calendar.
-## Examples
-          `,
 };
 export default {
   category: 'Components',
@@ -36,7 +29,7 @@ export default {
   render() {
     return (
       <div id="components-date-picker-demo">
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort>
           <Basic />
           <DateRender />
@@ -54,7 +47,6 @@ export default {
         </demo-sort>
         <api>
           <CN slot="cn" />
-          <US />
         </api>
       </div>
     );

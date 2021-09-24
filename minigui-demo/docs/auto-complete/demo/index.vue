@@ -7,19 +7,12 @@ import Options from './options';
 import UncertainCategory from './uncertain-category';
 
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 const md = {
   cn: `# AutoComplete 自动完成
           输入框自动完成功能。
 ## 何时使用
 需要自动完成时。
           ## 代码演示`,
-  us: `# AutoComplete
-        Autocomplete function of input field.
-## When To Use
-When there is a need for autocomplete functionality.
-## Examples
-`,
 };
 export default {
   category: 'Components',
@@ -31,7 +24,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn}/>
         <demo-sort>
           <Basic />
           <CertainCategory />
@@ -42,7 +35,6 @@ export default {
         </demo-sort>
         <api>
           <CN slot="cn" />
-          <US />
         </api>
       </div>
     );

@@ -7,7 +7,6 @@ import Mix from './mix';
 import Noarrow from './noarrow';
 import Extra from './extra';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# Collapse折叠面板
@@ -20,14 +19,6 @@ const md = {
 - '手风琴' 是一种特殊的折叠面板，只允许单个内容区域展开。
 
           ## 代码演示`,
-  us: `# Collapse
-A content area which can be collapsed and expanded.
-## When To Use
-
-- Can be used to group or hide complex regions to keep the page clean.
-- 'Accordion' is a special kind of 'Collapse', which allows only one panel to be expanded at a time.
-## Examples
-`,
 };
 export default {
   category: 'Components',
@@ -39,7 +30,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort cols={1}>
           <Basic />
           <Accordion />
@@ -53,7 +44,6 @@ export default {
           <template slot="cn">
             <CN />
           </template>
-          <US />
         </api>
       </div>
     );

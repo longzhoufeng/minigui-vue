@@ -16,7 +16,6 @@ import CustomDropdownMenu from './custom-dropdown-menu';
 import OptionLabelProp from './option-label-prop';
 
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 const md = {
   cn: `# Select 选择器
           下拉选择器。
@@ -25,12 +24,6 @@ const md = {
           - 当选项少时（少于 5 项），建议直接将选项平铺，使用 [Radio](/ant-design/components/radio-cn/) 是更好的选择。
 
           ## 代码演示`,
-  us: `# Select
-        Select component to select value from options.
-        ## When To Use
-        - A dropdown menu for displaying choices - an elegant alternative to the native \`<select>\` element.
-        - Utilizing [Radio](/ant-design/components/radio/) is recommended when there are fewer total options (less than 5).
-        ## Examples `,
 };
 export default {
   category: 'Components',
@@ -40,7 +33,7 @@ export default {
   render() {
     return (
       <div id="components-select-demo">
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort>
           <Basic />
           <Size />
@@ -60,7 +53,6 @@ export default {
         </demo-sort>
         <api>
           <CN slot="cn" />
-          <US />
         </api>
       </div>
     );

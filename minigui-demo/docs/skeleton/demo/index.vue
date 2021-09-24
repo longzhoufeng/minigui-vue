@@ -5,7 +5,6 @@ import Children from './children.md';
 import Complex from './complex.md';
 import List from './list.md';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# 加载占位图
@@ -20,19 +19,6 @@ const md = {
 - 可以被 Spin 完全代替，但是在可用的场景下可以比 Spin 提供更好的视觉效果和用户体验。
 
             ## 代码演示`,
-  us: `# Skeleton
-
-  Provide a placeholder while you wait for content to load, or to visualise content that doesn't exist yet.
-
-## When To Use
-
-- When a resource needs long time to load.
-- When the component contains lots of information, such as List or Card.
-- Only works when loading data for the first time.
-- Could be replaced by Spin in any situation, but can provide a better user experience.
-
-  ## Examples
-  `,
 };
 export default {
   category: 'Components',
@@ -43,7 +29,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort cols={1}>
           <Basic />
           <Complex />
@@ -55,7 +41,6 @@ export default {
           <template slot="cn">
             <CN />
           </template>
-          <US />
         </api>
       </div>
     );

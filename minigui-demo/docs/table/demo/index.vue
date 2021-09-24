@@ -24,7 +24,6 @@ import ResizableColumn from './resizable-column';
 import ResizableColumnString from '!raw-loader!./resizable-column';
 import Ellipsis from './ellipsis';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# Table 表格
@@ -40,20 +39,6 @@ const md = {
 
 指定表格的数据源 \`dataSource\` 为一个数组。
     ## 代码演示`,
-  us: `# Table
-
-    A table displays rows of data.
-
-## When To Use
-
-- To display a collection of structured data.
-- To sort, search, paginate, filter data.
-
-## How To Use
-
-Specify \`dataSource\` of Table as an array of data.
-## Examples
-`,
 };
 export default {
   category: 'Components',
@@ -64,7 +49,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort cols={1}>
           <Basic />
           <Ellipsis />
@@ -96,7 +81,6 @@ export default {
           <template slot="cn">
             <CN />
           </template>
-          <US />
         </api>
       </div>
     );

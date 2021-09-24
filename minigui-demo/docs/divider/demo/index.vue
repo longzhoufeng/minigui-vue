@@ -3,7 +3,6 @@ import Horizontal from './horizontal';
 import Vertical from './vertical';
 import WithText from './with-text';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 const md = {
   cn: `# 分割线
         区隔内容的分割线。
@@ -12,13 +11,6 @@ const md = {
         - 对行内文字/链接进行分割，例如表格的操作列。
 
         ## 代码演示`,
-  us: `# Divider
-      A divider line separates different content.
-      ## When To Use
-      - Divide sections of article.
-      - Divide inline text and links such as the operation column of table.
-      ## Examples 
-      `,
 };
 export default {
   category: 'Components',
@@ -29,7 +21,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort cols={1}>
           <Vertical />
           <Horizontal />
@@ -37,7 +29,6 @@ export default {
         </demo-sort>
         <api>
           <CN slot="cn" />
-          <US />
         </api>
       </div>
     );

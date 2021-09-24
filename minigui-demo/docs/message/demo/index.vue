@@ -6,7 +6,6 @@ import Other from './other';
 import Thenable from './thenable';
 import Update from './update';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 const md = {
   cn: `# 全局提示
 全局展示操作反馈信息。
@@ -15,12 +14,6 @@ const md = {
 - 顶部居中显示并自动消失，是一种不打断用户操作的轻量级提示方式。
 
 ## 代码演示`,
-  us: `# Message
-Display global messages as feedback in response to user operations.
-## When To Use
-- To provide feedback such as success, warning, error etc.
-- A message is displayed at top and center and will be dismissed automatically, as a non-interrupting light-weighted prompt.
-## Examples `,
 };
 export default {
   category: 'Components',
@@ -31,7 +24,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort>
           <Info />
           <Duration />
@@ -42,7 +35,6 @@ export default {
         </demo-sort>
         <api>
           <CN slot="cn" />
-          <US />
         </api>
       </div>
     );

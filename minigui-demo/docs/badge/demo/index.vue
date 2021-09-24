@@ -9,7 +9,6 @@ import Title from './title';
 import Colors from './colors';
 
 import CN from './../index.zh-CN.md';
-import US from './../index.en_US.md';
 
 const md = {
   cn: `# Badge徽标数
@@ -17,12 +16,6 @@ const md = {
          ## 何时使用
          一般出现在通知图标或头像的右上角，用于显示需要处理的消息条数，通过醒目视觉形式吸引用户处理。
          ## 代码演示
-        `,
-  us: `# Badge
-         Small numerical value or status descriptor for UI elements.
-         ## When To Use
-         Badge normally appears in proximity to notifications or user avatars with eye-catching appeal, typically displaying unread messages count.
-         ## Examples
         `,
 };
 
@@ -35,7 +28,7 @@ export default {
   render() {
     return (
       <div id="components-badge-demo">
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort>
           <Basic />
           <NoWapper />
@@ -48,7 +41,6 @@ export default {
         </demo-sort>
         <api>
           <CN slot="cn" />
-          <US />
         </api>
       </div>
     );

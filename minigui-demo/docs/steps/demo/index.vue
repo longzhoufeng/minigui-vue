@@ -11,7 +11,6 @@ import Vertical from './vertical';
 import Clickable from './clickable';
 import Nav from './nav';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# Steps
@@ -22,15 +21,6 @@ const md = {
 
   当任务复杂或者存在先后关系时，将其分解成一系列步骤，从而简化任务。
             ## 代码演示`,
-  us: `# Steps
-
-  'Steps' is a navigation bar that guides users through the steps of a task.
-
-  # When To Use
-
-  When the task is complicated or has a certain sequence in the series of subtasks, we can decompose it into several steps to make things easier.
-  ## Examples 
-  `,
 };
 export default {
   category: 'Components',
@@ -41,7 +31,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort cols={1}>
           <Simple />
           <SmallSize />
@@ -59,7 +49,6 @@ export default {
           <template slot="cn">
             <CN />
           </template>
-          <US />
         </api>
       </div>
     );

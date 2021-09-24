@@ -12,7 +12,6 @@ import PreviewFile from './preview-file';
 import TransformFile from './transform-file';
 
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# 上传
@@ -22,19 +21,6 @@ const md = {
   - 当需要展现上传的进度时。
   - 当需要使用拖拽交互时。
         ## 代码演示`,
-  us: `# Upload
-  Upload file by selecting or dragging.
-
-
-## When To Use
-
-  Uploading is the process of publishing information (web pages, text, pictures, video, etc.) to a remote server via a web page or upload tool.
-
-  - When you need to upload one or more files.
-  - When you need to show the process of uploading.
-  - When you need to upload files by dragging and dropping.
-  ## Examples
-  `,
 };
 export default {
   category: 'Components',
@@ -44,7 +30,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort>
           <Basic />
           <Avatar />
@@ -62,7 +48,6 @@ export default {
           <template slot="cn">
             <CN />
           </template>
-          <US />
         </api>
       </div>
     );

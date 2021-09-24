@@ -10,7 +10,6 @@ import More from './more';
 import Simple from './simple';
 import Total from './total';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# Pagination 分页
@@ -23,16 +22,6 @@ const md = {
     - 可切换页码浏览数据。
 
     ## 代码演示`,
-
-  us: `# Pagination
-
-    A long list can be divided into several pages by 'Pagination', and only one page will be loaded at a time.
-
-    ## When To Use
-
-    - When it will take a long time to load/render all items.
-    - If you want to browse the data by navigating through pages.
-    ## Examples `,
 };
 export default {
   category: 'Components',
@@ -43,7 +32,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort cols={1}>
           <Basic />
           <More />
@@ -60,7 +49,6 @@ export default {
           <template slot="cn">
             <CN />
           </template>
-          <US />
         </api>
       </div>
     );

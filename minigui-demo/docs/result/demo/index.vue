@@ -8,7 +8,6 @@ import Result500 from './500.md';
 import Error from './error.md';
 import CustomIcon from './customIcon.md';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# Result 结果 (版本: 1.5.0+)
@@ -19,15 +18,6 @@ const md = {
 
   当有重要操作需告知用户处理结果，且反馈内容较为复杂时使用。
   ## 代码演示`,
-  us: `# Result (Version: 1.5.0+)
-
-  Used to feed back the results of a series of operational tasks.
-
-  # When To Use
-
-  Use when important operations need to inform the user to process the results and the feedback is more complicated.
-  ## Examples
-  `,
 };
 export default {
   category: 'Components',
@@ -38,7 +28,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort>
           <Success />
           <Info />
@@ -53,7 +43,6 @@ export default {
           <template slot="cn">
             <CN />
           </template>
-          <US />
         </api>
       </div>
     );

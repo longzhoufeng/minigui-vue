@@ -10,7 +10,6 @@ import TopSide from './top-side';
 import Top from './top';
 
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# 布局
@@ -65,59 +64,6 @@ const md = {
 > 注意：采用 flex 布局实现，请注意[浏览器兼容性](http://caniuse.com/#search=flex)问题。
 
         ## 代码演示`,
-  us: `# Layout
-  Handling the overall layout of a page.
-
-## Specification
-
-### Size
-
-The first level navigation is inclined left near a logo, and the secondary menu is inclined right.
-
-- Top Navigation (almost systems): the height of the first level navigation \`64px\`, the second level navigation \`48px\`.
-- Top Navigation(contents page): the height of the first level navigation \`80px\`, the second level navigation \`56px\`.
-- Calculation formula of a top navigation: \`48+8n\`.
-- Calculation formula of an aside navigation: \`200+8n\`.
-
-### Interaction rules
-
-- The first level navigation and the last level navigation should be distinguishable by visualization;
-- The current item should have the highest priority of visualization;
-- When the current navigation item is collapsed, the style of the current navigation item is applied to its parent level;
-- The left side navigation bar has support for both the accordion and expanding styles; you can choose the one that fits your case the best.
-
-## Visualization rules
-
- Style of a navigation should conform to its level.
-
-- **Emphasis by colorblock**
-
-  When background color is a deep color, you can use this pattern for the parent level navigation item of the current page.
-
-- **The highlight match stick**
-
-  When background color is a light color, you can use this pattern for the current page navigation item; we recommend using it for the last item of the navigation path.
-
-- **Highlighted font**
-
-  From the visualization aspect, a highlighted font is stronger than colorblock; this pattern is often used for the parent level of the current item.
-
-- **Enlarge the size of the font**
-
-  \`12px\`, \`14px\` is a standard font size of navigations, \`14px\` is used for the first and the second level of the navigation. You can choose an appropriate font size regarding the level of your navigation.
-
-## Component Overview
-
-- \`Layout\`: The layout wrapper, in which \`Header\` \`Sider\` \`Content\` \`Footer\` or \`Layout\` itself can be nested, and can be placed in any parent container.
-- \`Header\`: The top layout with the default style, in which any element can be nested, and must be placed in \`Layout\`.
-- \`Sider\`: The sidebar with default style and basic functions, in which any element can be nested, and must be placed in \`Layout\`.
-- \`Content\`: The content layout with the default style, in which any element can be nested, and must be placed in \`Layout\`.
-- \`Footer\`: The bottom layout with the default style, in which any element can be nested, and must be placed in \`Layout\`.
-
-> Based on \`flex layout\`, please pay attention to the [compatibility](http://caniuse.com/#search=flex).
-
-  ## Examples
-  `,
 };
 export default {
   category: 'Components',
@@ -150,7 +96,7 @@ export default {
     }
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort cols={1}>
           <Basic />
           <CustomTrigger />
@@ -166,7 +112,6 @@ export default {
           <template slot="cn">
             <CN />
           </template>
-          <US />
         </api>
       </div>
     );

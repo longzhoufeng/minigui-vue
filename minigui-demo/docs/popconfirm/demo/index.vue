@@ -5,7 +5,6 @@ import Placement from './placement.md';
 import DynamicTrigger from './dynamic-trigger.md';
 import Icon from './icon.md';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# Popconfirm
@@ -18,17 +17,6 @@ const md = {
 
 和 'confirm' 弹出的全屏居中模态对话框相比，交互形式更轻量。
             ## 代码演示`,
-  us: `# Popconfirm
-
-  A simple and compact confirmation dialog of an action.
-
-  # When To Use
-
-  A simple and compact dialog used for asking for user confirmation.
-
-  The difference with the 'confirm' modal dialog is that it's more lightweight than the static popped full-screen confirm modal.
-  ## Examples
-  `,
 };
 export default {
   category: 'Components',
@@ -38,7 +26,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort>
           <Basic />
           <Local />
@@ -50,7 +38,6 @@ export default {
           <template slot="cn">
             <CN />
           </template>
-          <US />
         </api>
       </div>
     );

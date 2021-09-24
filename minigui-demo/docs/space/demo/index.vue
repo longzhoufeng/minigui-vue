@@ -5,7 +5,6 @@ import Size from './size.md';
 import Align from './align.md';
 import Customize from './customize.md';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# Space 间距
@@ -15,12 +14,6 @@ const md = {
   - 适合行内元素的水平间距。
   - 可以设置各种水平对齐方式。
   ## 代码演示`,
-  us: `# Space
-  Set components spacing.
-  # When To Use
-  Avoid components clinging together and set a unified space.
-  ## Examples
-  `,
 };
 export default {
   category: 'Components',
@@ -30,7 +23,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort>
           <Base />
           <Vertical />
@@ -42,7 +35,6 @@ export default {
           <template slot="cn">
             <CN />
           </template>
-          <US />
         </api>
       </div>
     );

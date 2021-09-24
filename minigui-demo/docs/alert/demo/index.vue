@@ -9,7 +9,6 @@ import Style from './style';
 import SmoothClosed from './smooth-closed';
 
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 const md = {
   cn: `# Alert 警告提示
           警告提示，展现需要关注的信息。
@@ -17,13 +16,6 @@ const md = {
 - 当某个页面需要向用户显示警告的信息时。
 - 非浮层的静态展现形式，始终展现，不会自动消失，用户可以点击关闭。
           ## 代码演示`,
-  us: `# Alert
-          Alert component for feedback.
-## When To Use
-- When you need to show alert messages to users.
-- When you need a persistent static container which is closable by user actions.
-## Examples
-`,
 };
 export default {
   category: 'Components',
@@ -34,7 +26,7 @@ export default {
   render() {
     return (
       <div id="components-alert-demo">
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn}/>
         <demo-sort>
           <Banner />
           <Basic />
@@ -47,7 +39,6 @@ export default {
         </demo-sort>
         <api>
           <CN slot="cn" />
-          <US />
         </api>
       </div>
     );

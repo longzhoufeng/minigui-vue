@@ -7,7 +7,6 @@ import OnChange from './onChange';
 import TargetOffset from './targetOffset';
 
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 const md = {
   cn: `# Anchor 锚点
           用于跳转到页面指定位置。
@@ -16,15 +15,6 @@ const md = {
 
 需要展现当前页面上可供跳转的锚点链接，以及快速在锚点之间跳转。
           ## 代码演示`,
-  us: `# Anchor
-
-Hyperlinks to scroll on one page.
-
-## When To Use
-
-For displaying anchor hyperlinks on page and jumping between them.
-## Examples
-`,
 };
 export default {
   category: 'Components',
@@ -36,7 +26,7 @@ export default {
   render() {
     return (
       <div id="components-anchor-demo">
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort>
           <Basic />
           <Static />
@@ -47,7 +37,6 @@ export default {
         </demo-sort>
         <api>
           <CN slot="cn" />
-          <US />
         </api>
       </div>
     );

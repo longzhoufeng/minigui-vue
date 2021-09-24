@@ -6,7 +6,6 @@ import Description from './description';
 import Simple from './simple';
 
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# 空状态
@@ -21,15 +20,6 @@ const md = {
 
        ## 代码演示
         `,
-  us: `# Empty
-        Empty state placeholder.
-
-        ## When To Use
-
-        - When there is no data provided, display for friendly tips.
-        - User tutorial to create something in fresh new situation.
-       ## Examples
-        `,
 };
 export default {
   category: 'Components',
@@ -39,7 +29,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort cols={1}>
           <Basic />
           <ConfigProvider />
@@ -49,7 +39,6 @@ export default {
         </demo-sort>
         <api>
           <CN slot="cn" />
-          <US />
         </api>
       </div>
     );

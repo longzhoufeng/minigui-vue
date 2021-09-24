@@ -9,7 +9,6 @@ import Vertical from './vertical.md';
 import ShowTooltip from './show-tooltip.md';
 import Reverse from './reverse';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# Slider 滑动输入条
@@ -17,12 +16,6 @@ const md = {
   ## 何时使用
   当用户需要在数值区间/自定义区间内进行选择时，可为连续或离散值。
             ## 代码演示`,
-  us: `# Slider
-  A Slider component for displaying current value and intervals in range.
-  # When To Use
-  To input a value in a range.
-  ## Examples
-  `,
 };
 export default {
   category: 'Components',
@@ -32,7 +25,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort>
           <Basic />
           <InputNumber />
@@ -48,7 +41,6 @@ export default {
           <template slot="cn">
             <CN />
           </template>
-          <US />
         </api>
       </div>
     );

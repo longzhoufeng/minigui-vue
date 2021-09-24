@@ -12,7 +12,6 @@ import PasswordInput from './password-input';
 import Addon from './addon';
 import Tooltip from './tooltip';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 const md = {
   cn: `# Input 输入框
           通过鼠标或键盘输入内容，是最基础的表单域的包装。
@@ -20,13 +19,6 @@ const md = {
 - 需要用户输入表单域内容时。
 - 提供组合型输入框，带搜索的输入框，还可以进行大小选择。
           ## 代码演示`,
-  us: `# Input
-          A basic widget for getting the user input is a text field.
-Keyboard and mouse can be used for providing or changing data.
-## When To Use
-- A user input in a form field is needed.
-- A search input is required.
-## Examples `,
 };
 export default {
   category: 'Components',
@@ -36,7 +28,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort>
           <Basic />
           <AutosizeTextarea />
@@ -53,7 +45,6 @@ export default {
         </demo-sort>
         <api>
           <CN slot="cn" />
-          <US />
         </api>
       </div>
     );

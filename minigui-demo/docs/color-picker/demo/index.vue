@@ -6,7 +6,6 @@ import Alpha from './alpha';
 import Hue from './hue';
 
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# ColorPicker 颜色选择器 (测试版)
@@ -14,12 +13,6 @@ const md = {
       用于颜色选择，支持多种颜色格式，支持颜色预设。
 
       ## 代码演示
-      `,
-  us: `# ColorPicker (Beta)
-
-      For color selection, support for multiple color formats and color presets.
-
-      ## Examples
       `,
 };
 
@@ -32,7 +25,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn}/>
         <demo-sort cols={2}>
           <Basic />
           <Alpha />
@@ -42,7 +35,6 @@ export default {
         </demo-sort>
         <api>
           <CN slot="cn" />
-          <US />
         </api>
       </div>
     );

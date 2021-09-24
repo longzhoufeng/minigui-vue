@@ -6,7 +6,6 @@ import Responsive from './responsive';
 import Ghost from './ghost';
 
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# PageHeader 页头 (版本: 1.5.0+)
@@ -19,16 +18,6 @@ const md = {
 
       ## 代码演示
       `,
-  us: `# PageHeader (Version: 1.5.0+)
-
-      The header can be used to declare the page topic, display important information about the page that the user is interested in, and carry the action items related to the current page (including page-level operations, inter-page navigation, etc.)
-
-      ## When To Use
-
-      It can also be used as inter-page navigation when it is needed to make the user quickly understand what the current page is and to facilitate the user to use the page function.
-      
-      ## Examples
-      `,
 };
 
 export default {
@@ -40,7 +29,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort cols={1}>
           <Basic />
           <Breadcrumb />
@@ -50,7 +39,6 @@ export default {
         </demo-sort>
         <api>
           <CN slot="cn" />
-          <US />
         </api>
       </div>
     );

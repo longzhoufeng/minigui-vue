@@ -6,7 +6,6 @@ import Control from './control';
 import HotTags from './hot-tags';
 import Controlled from './controlled';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# 标签 Tag
@@ -19,16 +18,6 @@ const md = {
 - 进行分类。
 
     ## 代码演示`,
-  us: `# Tag
-
-    Tag for categorizing or markup.
-
-## When To Use
-
-- It can be used to tag by dimension or property.
-
-- When categorizing.
-    ## Examples `,
 };
 export default {
   category: 'Components',
@@ -38,7 +27,7 @@ export default {
   render() {
     return (
       <div id="components-tag-demo">
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort>
           <Basic />
           <Checkable />
@@ -51,7 +40,6 @@ export default {
           <template slot="cn">
             <CN />
           </template>
-          <US />
         </api>
       </div>
     );

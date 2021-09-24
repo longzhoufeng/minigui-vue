@@ -33,7 +33,6 @@ import WithoutFormCreate from './without-form-create';
 import WithoutFormCreateString from '!raw-loader!./without-form-create';
 
 import CN from '../index.zh-CN';
-import US from '../index.en-US';
 
 const md = {
   cn: `# Form 表单
@@ -68,35 +67,6 @@ const md = {
 
 ## 代码演示
         `,
-  us: `# Form
-           Form is used to collect, validate, and submit the user input, usually contains various form items including checkbox, radio, input, select, and etc.
-
-#### If you need to use \`v-model\` verification, you can use new form [\`a-form-model\`](/components/form-model/)。
-
-## When to use
-
-- When you need to create a instance or collect information.
-- When you need to validate fields in certain rules.
-
-## Form Component
-
-You can align the controls of a \`form\` using the \`layout\` prop：
-
-- \`horizontal\`：to horizontally align the \`label\`s and controls of the fields. (Default)
-- \`vertical\`：to vertically align the \`label\`s and controls of the fields.
-- \`inline\`：to render form fields in one line.
-
-## Form Item Component
-
-A form consists of one or more form fields whose type includes input, textarea, checkbox, radio, select, tag, and more. A form field is defined using \`<Form.Item />\`.
-
- ## Note:
-1. If you use \`Form.create\` to process the form to have the ability to automatically collect data and verify it, it is recommended to use \`jsx\`.
-2. If you are not using the \`Form\` component registered in Vue.use(Form) form, you need to mount \`$form\` to the Vue prototype yourself.
-\`Vue.prototype.$form = Form\`
-
-## Examples
-        `,
 };
 
 export default {
@@ -109,7 +79,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort cols={1}>
           <demo-container code={CoordinatedString}>
             <Coordinated />
@@ -163,7 +133,6 @@ export default {
         </demo-sort>
         <api>
           <CN slot="cn" />
-          <US />
         </api>
       </div>
     );

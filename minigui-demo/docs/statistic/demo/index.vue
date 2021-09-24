@@ -4,7 +4,6 @@ import Card from './card';
 import Unit from './unit';
 import Countdown from './countdown';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# Statistic 统计数值
@@ -14,10 +13,6 @@ const md = {
             - 当需要展示带描述的统计类数据时使用
 
           ## 代码演示`,
-  us: `# Statistic
-          Statistics can be used to represent people or objects. It supports images, 'Icon's, or letters.
-          ## Examples
-          `,
 };
 export default {
   category: 'Components',
@@ -28,7 +23,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort>
           <Basic />
           <Unit />
@@ -39,7 +34,6 @@ export default {
           <template slot="cn">
             <CN />
           </template>
-          <US />
         </api>
       </div>
     );

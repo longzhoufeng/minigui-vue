@@ -35,68 +35,24 @@ const routes = [
     },
     children: [
       {
-        path: 'docs/vue/customize-theme',
-        component: () => import('../vueDocs/customize-theme.en-US.md'),
-      },
-      {
-        path: 'docs/vue/customize-theme-cn',
-        component: () => import('../vueDocs/customize-theme.zh-CN.md'),
-      },
-      {
-        path: 'docs/vue/getting-started',
-        component: () => import('../vueDocs/getting-started.en-US.md'),
-      },
-      {
-        path: 'docs/vue/getting-started-cn',
-        component: () => import('../vueDocs/getting-started.zh-CN.md'),
-      },
-      {
-        path: 'docs/vue/i18n',
-        component: () => import('../vueDocs/i18n.en-US.md'),
-      },
-      {
-        path: 'docs/vue/i18n-cn',
-        component: () => import('../vueDocs/i18n.zh-CN.md'),
-      },
-      {
-        path: 'docs/vue/introduce',
-        component: () => import('../vueDocs/introduce.en-US.md'),
+        path: 'docs/vue/theme-zh',
+        component: () => import('../vueDocs/theme-zh.md'),
       },
       {
         path: 'docs/vue/introduce-cn',
         component: () => import('../vueDocs/introduce.zh-CN.md'),
       },
       {
-        path: 'docs/vue/use-with-vue-cli',
-        component: () => import('../vueDocs/use-with-vue-cli.en-US.md'),
+        path: 'docs/vue/getting-started-cn',
+        component: () => import('../vueDocs/getting-started.zh-CN.md'),
       },
       {
         path: 'docs/vue/use-with-vue-cli-cn',
         component: () => import('../vueDocs/use-with-vue-cli.zh-CN.md'),
       },
       {
-        path: 'docs/vue/faq',
-        component: () => import('../vueDocs/faq.en-US.md'),
-      },
-      {
-        path: 'docs/vue/faq-cn',
-        component: () => import('../vueDocs/faq.zh-CN.md'),
-      },
-      {
-        path: 'docs/vue/download',
-        component: () => import('../vueDocs/download.en-US.md'),
-      },
-      {
         path: 'docs/vue/download-cn',
         component: () => import('../vueDocs/download.zh-CN.md'),
-      },
-      {
-        path: 'docs/vue/sponsor',
-        component: () => import('../vueDocs/sponsor.en-US.md'),
-      },
-      {
-        path: 'docs/vue/sponsor-cn',
-        component: () => import('../vueDocs/sponsor.zh-CN.md'),
       },
       {
         path: 'docs/vue/changelog-cn',

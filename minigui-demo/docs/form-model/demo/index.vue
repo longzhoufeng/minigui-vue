@@ -7,7 +7,6 @@ import Layout from './layout.md';
 import Validation from './validation.md';
 
 import CN from '../index.zh-CN';
-import US from '../index.en-US';
 
 const md = {
   cn: `# FormModel 表单 (支持 v-model 检验)(版本：1.5.0+)
@@ -40,34 +39,6 @@ Vue.use(FormModel);
 
 ## 代码演示
         `,
-  us: `# FormModel (Support v-model  validate) (Version: 1.5.0+)
-           Form is used to collect, validate, and submit the user input, usually contains various form items including checkbox, radio, input, select, and etc.
-
-## When to use
-
-- When you need to validate fields in certain rules.
-
-## Form Component
-
-You can align the controls of a \`form\` using the \`layout\` prop：
-
-- \`horizontal\`：to horizontally align the \`label\`s and controls of the fields. (Default)
-- \`vertical\`：to vertically align the \`label\`s and controls of the fields.
-- \`inline\`：to render form fields in one line.
-
-## Form Item Component
-
-A form consists of one or more form fields whose type includes input, textarea, checkbox, radio, select, tag, and more. A form field is defined using \`<Form.Item />\`.
-
-## Component Registration
-
-\`\`\`js
-import { FormModel } from 'minigui-vue';
-Vue.use(FormModel);
-\`\`\`
-
-## Examples
-        `,
 };
 
 export default {
@@ -80,7 +51,7 @@ export default {
   render() {
     return (
       <div class="form-model-demo">
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort cols={1}>
           <Basic />
           <HorizontalLogin />
@@ -91,7 +62,6 @@ export default {
         </demo-sort>
         <api>
           <CN slot="cn" />
-          <US />
         </api>
       </div>
     );

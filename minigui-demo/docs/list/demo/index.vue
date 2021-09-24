@@ -9,7 +9,6 @@ import Simple from './simple';
 import Vertical from './vertical';
 
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# 列表
@@ -17,14 +16,6 @@ const md = {
 ## 何时使用
 最基础的列表展示，可承载文字、列表、图片、段落，常用于后台数据展示页面。
         ## 代码演示`,
-  us: `# List
-  Simple List.
-
-## When To Use
-
-A list can be used to display content related to a single subject. The content can consist of multiple elements of varying type and size.
-  ## Examples
-  `,
 };
 export default {
   category: 'Components',
@@ -35,7 +26,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort cols={1}>
           <Basic />
           <Grid />
@@ -50,7 +41,6 @@ export default {
           <template slot="cn">
             <CN />
           </template>
-          <US />
         </api>
       </div>
     );

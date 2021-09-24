@@ -10,9 +10,7 @@ import Icon from './icon';
 import Position from './position';
 import Size from './size';
 import Slide from './slide';
-// import CustomTabBar from './custom-tab-bar';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# Tabs 标签页
@@ -30,18 +28,6 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 - [RadioButton](/ant-design/components/radio-cn/) 可作为更次级的页签来使用。
 
     ## 代码演示`,
-  us: `# Tabs
-
-Tabs make it easy to switch between different views.
-
-### When To Use
-
-Ant Design has 3 types of Tabs for different situations.
-
-- Card Tabs: for managing too many closeable views.
-- Normal Tabs: for functional aspects of a page.
-- [RadioButton](/ant-design/components/radio/): for secondary tabs.
-    ## Examples `,
 };
 export default {
   category: 'Components',
@@ -52,7 +38,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort cols={1}>
           <Basic />
           <Disabled />
@@ -70,7 +56,6 @@ export default {
           <template slot="cn">
             <CN />
           </template>
-          <US />
         </api>
       </div>
     );

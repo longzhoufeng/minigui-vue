@@ -9,18 +9,12 @@ import Size from './size';
 import Value from './value';
 import Suffix from './suffix';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 const md = {
   cn: `# TimePicker 时间选择框
           输入或选择时间的控件。
 ## 何时使用
 当用户需要输入一个时间，可以点击标准输入框，弹出时间面板进行选择。
           ## 代码演示`,
-  us: `# TimePicker
-          To select/input a time.
-## When To Use
-By clicking the input box, you can select a time from a popup panel.
-## Examples `,
 };
 export default {
   category: 'Components',
@@ -30,7 +24,7 @@ export default {
   render() {
     return (
       <div id="components-timepicker-demo">
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort>
           <Hours />
           <Addon />
@@ -44,7 +38,6 @@ export default {
         </demo-sort>
         <api>
           <CN slot="cn" />
-          <US />
         </api>
       </div>
     );

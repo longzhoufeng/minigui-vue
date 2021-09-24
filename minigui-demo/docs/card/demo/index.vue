@@ -11,7 +11,6 @@ import Simple from './simple.md';
 import Tabs from './tabs.md';
 
 import CN from './../index.zh-CN.md';
-import US from './../index.en-US.md';
 
 const md = {
   cn: `# Card 卡片
@@ -19,12 +18,6 @@ const md = {
        ## 何时使用
          最基础的卡片容器，可承载文字、列表、图片、段落，常用于后台概览页面。
        ## 代码演示
-        `,
-  us: `# Card
-         Simple rectangular container.
-       ## When To Use
-         A card can be used to display content related to a single subject. The content can consist of multiple elements of varying types and sizes.
-       ## Examples
         `,
 };
 export default {
@@ -37,7 +30,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn}/>
         <demo-sort>
           <Basic />
           <BorderLess />
@@ -52,7 +45,6 @@ export default {
         </demo-sort>
         <api>
           <CN slot="cn" />
-          <US />
         </api>
       </div>
     );

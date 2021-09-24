@@ -4,7 +4,6 @@ import Badge from './badge';
 import Type from './type';
 import Dynamic from './dynamic';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# Avatar头像
@@ -13,10 +12,6 @@ const md = {
 安装 [Kitchen Sketch 插件 �](https://kitchen.alipay.com)，一键填充高逼格头像和文本.
 
           ## 代码演示`,
-  us: `# Avatar
-          Avatars can be used to represent people or objects. It supports images, 'Icon's, or letters.
-          ## Examples
-          `,
 };
 export default {
   category: 'Components',
@@ -27,7 +22,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort>
           <Basic />
           <Badge />
@@ -38,7 +33,6 @@ export default {
           <template slot="cn">
             <CN />
           </template>
-          <US />
         </api>
       </div>
     );

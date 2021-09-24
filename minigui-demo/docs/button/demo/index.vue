@@ -9,7 +9,6 @@ import Multiple from './multiple';
 import Size from './size';
 import Block from './block';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 const md = {
   cn: `# Button 按钮
           按钮用于开始一个即时操作。
@@ -21,17 +20,6 @@ const md = {
           Vue.use(Button);
           \`\`\`
           ## 代码演示`,
-  us: `# Button
-          To trigger an operation.
-          ## When To Use
-          A button means an operation (or a series of operations). Clicking a button will trigger corresponding business logic.
-          ## Component Registration
-          \`\`\`js
-          import { Button } from 'minigui-vue';
-          Vue.use(Button);
-          \`\`\`
-          ## Examples
-          `,
 };
 export default {
   category: 'Components',
@@ -42,7 +30,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort>
           <Basic />
           <ButtonGroup />
@@ -56,7 +44,6 @@ export default {
         </demo-sort>
         <api>
           <CN slot="cn" />
-          <US />
         </api>
       </div>
     );

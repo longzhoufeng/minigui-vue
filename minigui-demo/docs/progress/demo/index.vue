@@ -11,7 +11,6 @@ import Segment from './segment.md';
 import Linecap from './linecap.md';
 import GradientLine from './gradient-line';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# Progress 进度条
@@ -22,15 +21,6 @@ const md = {
   - 当一个操作会打断当前界面，或者需要在后台运行，且耗时可能超过2秒时；
   - 当需要显示一个操作完成的百分比时。
         ## 代码演示`,
-  us: `# Progress
-  Display the current progress of an operation flow.
-  ## When To Use
-  If it will take a long time to complete an operation, you can use \`Progress\` to show the current progress and status.
-
-  - When an operation will interrupt the current interface, or it needs to run in the background for more than 2 seconds.
-  - When you need to display the completion percentage of an operation.
-  ## Examples
-  `,
 };
 export default {
   category: 'Components',
@@ -40,7 +30,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort>
           <Line />
           <Circle />
@@ -58,7 +48,6 @@ export default {
           <template slot="cn">
             <CN />
           </template>
-          <US />
         </api>
       </div>
     );

@@ -6,7 +6,6 @@ import Placement from './placement';
 import TriggerType from './triggerType';
 import HoverWithClick from './hover-with-click';
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# Popover
@@ -19,17 +18,6 @@ const md = {
 
 和 \`Tooltip\` 的区别是，用户可以对浮层上的元素进行操作，因此它可以承载更复杂的内容，比如链接或按钮等。
             ## 代码演示`,
-  us: `# Popover
-
-  The floating card popped by clicking or hovering.
-
-## When To Use
-
-A simple popup menu to provide extra information or operations.
-
-Comparing with \`Tooltip\`, besides information \`Popover\` card can also provide action elements like links and buttons.
-## Examples
-  `,
 };
 export default {
   category: 'Components',
@@ -39,7 +27,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort>
           <Basic />
           <ArrowCenter />
@@ -52,7 +40,6 @@ export default {
           <template slot="cn">
             <CN />
           </template>
-          <US />
         </api>
       </div>
     );

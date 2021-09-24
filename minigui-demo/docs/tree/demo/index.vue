@@ -11,7 +11,6 @@ import ReplaceFields from './replaceFields';
 import SwitcherIcon from './switcher-icon';
 
 import CN from '../index.zh-CN.md';
-import US from '../index.en-US.md';
 
 const md = {
   cn: `# 树形控件
@@ -20,13 +19,6 @@ const md = {
 文件夹、组织架构、生物分类、国家地区等等，世间万物的大多数结构都是树形结构。使用\`树控件\`可以完整展现其中的层级关系，并具有展开收起选择等交互功能。
 
         ## 代码演示`,
-  us: `# Tree
-  ## When To Use
-
-Almost anything can be represented in a tree structure.
-Examples include directories, organization hierarchies, biological classifications, countries, etc. The \`Tree\` component is a way of representing the hierarchical relationship between these things. You can also  expand, collapse, and select a treeNode within a \`Tree\`.
-## Examples
-  `,
 };
 export default {
   category: 'Components',
@@ -36,7 +28,7 @@ export default {
   render() {
     return (
       <div>
-        <md cn={md.cn} us={md.us} />
+        <md cn={md.cn} />
         <demo-sort>
           <BasicControlled />
           <Basic />
@@ -53,7 +45,6 @@ export default {
           <template slot="cn">
             <CN />
           </template>
-          <US />
         </api>
       </div>
     );
