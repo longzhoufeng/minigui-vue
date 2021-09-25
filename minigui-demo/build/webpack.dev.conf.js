@@ -32,13 +32,13 @@ module.exports = merge(baseWebpackConfig, {
     open: true,
     headers: { 'Access-Control-Allow-Origin': '*' },
     // 解析body，对接真实服务端环境需要注释掉
-    before(app) {
-      // var bodyParser = require("body-parser");
-      // app.use(bodyParser.json());
-      if (process.env.MOCK !== 'none') {
-        app.use(createMockMiddleware());
-      }
-    },
+    // before(app) {
+    //   // var bodyParser = require("body-parser");
+    //   // app.use(bodyParser.json());
+    //   if (process.env.MOCK !== 'none') {
+    //     app.use(createMockMiddleware());
+    //   }
+    // },
     proxy: {
       '/api': {
         target: 'http://localhost:3000',

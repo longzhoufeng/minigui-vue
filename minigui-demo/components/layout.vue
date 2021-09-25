@@ -159,13 +159,13 @@ export default {
     const isCN = isZhCN(name);
     const titleMap = {};
     const menuConfig = {
-      General: [],
-      Layout: [],
-      Navigation: [],
-      'Data Entry': [],
-      'Data Display': [],
-      Feedback: [],
-      Other: [],
+      '基础': [],
+      '布局': [],
+      '导航': [],
+      '数据输入': [],
+      '数据输出': [],
+      '反馈': [],
+      '其它': [],
     };
     const pagesKey = [];
     let prevPage = null;
@@ -209,6 +209,7 @@ export default {
       });
       MenuGroup.push(<a-menu-item-group title={type}>{MenuItems}</a-menu-item-group>);
     }
+    console.log(MenuGroup)
     pagesKey.forEach((item, index) => {
       if (item.name === name) {
         prevPage = pagesKey[index - 1];
@@ -260,7 +261,7 @@ export default {
                         class="aside-container menu-site"
                         selectedKeys={[name]}
                         defaultOpenKeys={['Components']}
-                        inlineIndent={25}
+                        inlineIndent={12}
                         mode="inline"
                       >
                         {docsMenu}

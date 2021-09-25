@@ -11,23 +11,23 @@
 ```vue
 <template>
   <a-breadcrumb>
-    <a-breadcrumb-item>Ant Design Vue</a-breadcrumb-item>
+    <a-breadcrumb-item>Minigui Vue</a-breadcrumb-item>
     <a-breadcrumb-item><a href="">Component</a></a-breadcrumb-item>
     <a-breadcrumb-item>
       <a href="">General</a>
       <a-menu slot="overlay">
         <a-menu-item>
-          <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
+          <a target="_blank" rel="noopener noreferrer" href="http://www.minigui.com.cn/">
             General
           </a>
         </a-menu-item>
         <a-menu-item>
-          <a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
+          <a target="_blank" rel="noopener noreferrer" href="http://www.minigui.com.cn/">
             Layout
           </a>
         </a-menu-item>
         <a-menu-item>
-          <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+          <a target="_blank" rel="noopener noreferrer" href="http://www.minigui.com.cn/">
             Navigation
           </a>
         </a-menu-item>

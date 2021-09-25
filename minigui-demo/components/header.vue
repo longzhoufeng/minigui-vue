@@ -70,13 +70,7 @@ export default {
             </a-button>
           </a-col>
           <a-col xxl={20} xl={19} lg={19} md={18} sm={0} xs={0}>
-            <div id="search-box">
-              <a-icon type="search" />
-              <a-input
-                placeholder={isCN ? '搜索组件...' : 'input search text'}
-                style="width: 200px"
-              />
-            </div>
+            <div id="search-box"></div>
             <a-select size="small" defaultValue={packageInfo.version} class="version">
               <a-select-option value={packageInfo.version}>{packageInfo.version}</a-select-option>
             </a-select>

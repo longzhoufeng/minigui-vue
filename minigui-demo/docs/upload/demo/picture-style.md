@@ -40,13 +40,13 @@ export default {
           uid: '-1',
           name: 'xxx.png',
           status: 'done',
-          url: '/public/no.png',
+          url: '/no.png',
         },
         {
           uid: '-2',
           name: 'yyy.png',
           status: 'done',
-          url: '/public/no.png',
+          url: '/no.png',
         },
       ],
     };
