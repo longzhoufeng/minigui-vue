@@ -17,7 +17,7 @@ export const CommentProps = {
 };
 
 const Comment = {
-  name: 'AComment',
+  name: 'MComment',
   props: CommentProps,
   inject: {
     configProvider: { default: () => ConfigConsumerProps },

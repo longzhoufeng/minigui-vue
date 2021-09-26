@@ -1,4 +1,3 @@
-// import { TimePickerProps } from '../time-picker'
 import PropTypes from '../_util/vue-types';
 import { TimesType, TimeType } from '../_util/moment-util';
 
@@ -18,7 +17,6 @@ export const PickerProps = () => ({
   size: PropTypes.oneOf(['large', 'small', 'default']),
   getCalendarContainer: PropTypes.func,
   open: PropTypes.bool,
-  // onOpenChange: PropTypes.(status: bool) => void,
   disabledDate: PropTypes.func,
   showToday: PropTypes.bool,
   dateRender: PropTypes.any, // (current: moment.Moment, today: moment.Moment) => React.ReactNode,
@@ -87,9 +85,3 @@ export const WeekPickerProps = () => ({
   ...SinglePickerProps(),
   placeholder: PropTypes.string,
 });
-
-// export interface DatePickerDecorator extends React.ClassicComponentClass<DatePickerProps> {
-//   RangePicker: React.ClassicComponentClass<RangePickerProps>;
-//   MonthPicker: React.ClassicComponentClass<MonthPickerProps>;
-//   WeekPicker: React.ClassicComponentClass<WeexPickerProps>;
-// }

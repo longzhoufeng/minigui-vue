@@ -58,17 +58,6 @@ export default {
       }
       this.preProps = { ...nextProps };
     },
-    // 'column.fixed': function (val) {
-    //   this.setNeverShown(this.column)
-    // },
-    // column (val) {
-    //   if ('filterDropdownVisible' in val) {
-    //     this.sVisible = val.filterDropdownVisible
-    //   }
-    // },
-    // selectedKeys (val) {
-    //   this.sSelectedKeys = val
-    // },
   },
 
   mounted() {

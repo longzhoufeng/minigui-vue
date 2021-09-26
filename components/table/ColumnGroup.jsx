@@ -1,9 +1,9 @@
 import PropTypes from '../_util/vue-types';
 
 export default {
-  name: 'ATableColumnGroup',
+  name: 'MTableColumnGroup',
   props: {
     title: PropTypes.any,
   },
-  __ANT_TABLE_COLUMN_GROUP: true,
+  __MINIGUI_TABLE_COLUMN_GROUP: true,
 };

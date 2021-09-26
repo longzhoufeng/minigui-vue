@@ -7,7 +7,7 @@ import Base from '../base';
 
 const props = abstractTooltipProps();
 const Popover = {
-  name: 'APopover',
+  name: 'MPopover',
   props: {
     ...props,
     prefixCls: PropTypes.string,

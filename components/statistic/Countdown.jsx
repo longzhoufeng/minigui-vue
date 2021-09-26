@@ -11,7 +11,7 @@ function getTime(value) {
 }
 
 export default {
-  name: 'AStatisticCountdown',
+  name: 'MStatisticCountdown',
   props: initDefaultProps(StatisticProps, {
     format: 'HH:mm:ss',
   }),

@@ -62,8 +62,8 @@ export const FormItemProps = {
 };
 
 export default {
-  name: 'AFormModelItem',
-  __ANT_NEW_FORM_ITEM: true,
+  name: 'MFormModelItem',
+  __MINIGUI_NEW_FORM_ITEM: true,
   mixins: [BaseMixin],
   props: initDefaultProps(FormItemProps, {
     hasFeedback: false,

@@ -33,7 +33,7 @@ function getBreadcrumbName(route, params) {
 }
 
 export default {
-  name: 'ABreadcrumb',
+  name: 'MBreadcrumb',
   props: BreadcrumbProps,
   inject: {
     configProvider: { default: () => ConfigConsumerProps },
@@ -121,8 +121,8 @@ export default {
     } else if (children.length) {
       crumbs = children.map((element, index) => {
         warning(
-          getSlotOptions(element).__ANT_BREADCRUMB_ITEM ||
-            getSlotOptions(element).__ANT_BREADCRUMB_SEPARATOR,
+          getSlotOptions(element)._MINIGUI_BREADCRUMB_ITEM ||
+            getSlotOptions(element).__MINIGUI_BREADCRUMB_SEPARATOR,
           'Breadcrumb',
           "Only accepts Breadcrumb.Item and Breadcrumb.Separator as it's children",
         );

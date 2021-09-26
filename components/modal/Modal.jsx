@@ -92,7 +92,7 @@ const modalProps = (defaultProps = {}) => {
 export const destroyFns = [];
 
 export default {
-  name: 'AModal',
+  name: 'MModal',
   inheritAttrs: false,
   model: {
     prop: 'visible',
@@ -119,12 +119,6 @@ export default {
   inject: {
     configProvider: { default: () => ConfigConsumerProps },
   },
-  // static info: ModalFunc;
-  // static success: ModalFunc;
-  // static error: ModalFunc;
-  // static warn: ModalFunc;
-  // static warning: ModalFunc;
-  // static confirm: ModalFunc;
   methods: {
     handleCancel(e) {
       this.$emit('cancel', e);

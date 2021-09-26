@@ -25,7 +25,6 @@ import {
 } from '../_util/moment-util';
 
 export function generateShowHourMinuteSecond(format) {
-  // Ref: http://momentjs.com/docs/#/parsing/string-format/
   return {
     showHour: format.indexOf('H') > -1 || format.indexOf('h') > -1 || format.indexOf('k') > -1,
     showMinute: format.indexOf('m') > -1,
@@ -71,7 +70,7 @@ export const TimePickerProps = () => ({
 });
 
 const TimePicker = {
-  name: 'ATimePicker',
+  name: 'MTimePicker',
   mixins: [BaseMixin],
   props: initDefaultProps(TimePickerProps(), {
     align: {

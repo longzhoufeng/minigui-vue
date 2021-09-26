@@ -9,16 +9,6 @@ import Base from '../base';
 import { ConfigConsumerProps } from '../config-provider/configConsumerProps';
 import abstractTooltipProps from '../tooltip/abstractTooltipProps';
 
-// export interface SliderMarks {
-//   [key]: React.ReactNode | {
-//     style: React.CSSProperties,
-//     label: React.ReactNode,
-//   };
-// }
-// const SliderMarks = PropTypes.shape({
-//   style: PropTypes.object,
-//   label: PropTypes.any,
-// }).loose
 const tooltipProps = abstractTooltipProps();
 export const SliderProps = () => ({
   prefixCls: PropTypes.string,
@@ -42,7 +32,7 @@ export const SliderProps = () => ({
 });
 
 const Slider = {
-  name: 'ASlider',
+  name: 'MSlider',
   model: {
     prop: 'value',
     event: 'change',

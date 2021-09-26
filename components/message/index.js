@@ -91,21 +91,9 @@ function notice(args) {
   return result;
 }
 
-// type ConfigContent = React.ReactNode | string;
-// type ConfigDuration = number | (() => void);
-// export type ConfigOnClose = () => void;
-
 function isArgsProps(content) {
   return Object.prototype.toString.call(content) === '[object Object]' && !!content.content;
 }
-
-// export interface ConfigOptions {
-//   top?: number;
-//   duration?: number;
-//   prefixCls?: string;
-//   getContainer?: () => HTMLElement;
-//   transitionName?: string;
-// }
 
 const api = {
   open: notice,

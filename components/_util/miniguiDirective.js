@@ -1,5 +1,5 @@
 import ref from 'vue-ref';
-import { miniguiInput } from './antInputDirective';
+import { miniguiInput } from './miniguiInputDirective';
 import { miniguiDecorator } from './FormDecoratorDirective';
 import { miniguiPortal } from './portalDirective';
 

@@ -8,31 +8,6 @@ export const UploadFileStatus = PropsTypes.oneOf([
   'removed',
 ]);
 
-// export const HttpRequestHeader {
-//   [key: string]: string;
-// }
-
-// export const UploadFile = PropsTypes.shape({
-//   uid: PropsTypes.oneOfType([
-//     PropsTypes.string,
-//     PropsTypes.number,
-//   ]),
-//   size: PropsTypes.number,
-//   name: PropsTypes.string,
-//   filename: PropsTypes.string,
-//   lastModified: PropsTypes.number,
-//   lastModifiedDate: PropsTypes.any,
-//   url: PropsTypes.string,
-//   status: UploadFileStatus,
-//   percent: PropsTypes.number,
-//   thumbUrl: PropsTypes.string,
-//   originFileObj: PropsTypes.any,
-//   response: PropsTypes.any,
-//   error: PropsTypes.any,
-//   linkProps: PropsTypes.any,
-//   type: PropsTypes.string,
-// }).loose
-
 function UploadFile({ uid, name }) {
   if (!uid && uid !== 0) return false;
   if (!['string', 'number'].includes(typeof uid)) return false;

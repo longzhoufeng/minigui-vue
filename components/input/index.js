@@ -4,10 +4,10 @@ import Group from './Group';
 import Search from './Search';
 import TextArea from './TextArea';
 import Password from './Password';
-import antInputDirective from '../_util/antInputDirective';
+import miniguiInputDirective from '../_util/miniguiInputDirective';
 import Base from '../base';
 
-Vue.use(antInputDirective);
+Vue.use(miniguiInputDirective);
 
 Input.Group = Group;
 Input.Search = Search;

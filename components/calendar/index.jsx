@@ -40,7 +40,7 @@ export const CalendarProps = () => ({
 });
 
 const Calendar = {
-  name: 'ACalendar',
+  name: 'MCalendar',
   mixins: [BaseMixin],
   props: initDefaultProps(CalendarProps(), {
     locale: {},

@@ -83,25 +83,25 @@ const BasicLayout = {
 const Layout = generator({
   suffixCls: 'layout',
   tagName: 'section',
-  name: 'ALayout',
+  name: 'MLayout',
 })(BasicLayout);
 
 const Header = generator({
   suffixCls: 'layout-header',
   tagName: 'header',
-  name: 'ALayoutHeader',
+  name: 'MLayoutHeader',
 })(Basic);
 
 const Footer = generator({
   suffixCls: 'layout-footer',
   tagName: 'footer',
-  name: 'ALayoutFooter',
+  name: 'MLayoutFooter',
 })(Basic);
 
 const Content = generator({
   suffixCls: 'layout-content',
   tagName: 'main',
-  name: 'ALayoutContent',
+  name: 'MLayoutContent',
 })(Basic);
 
 Layout.Header = Header;

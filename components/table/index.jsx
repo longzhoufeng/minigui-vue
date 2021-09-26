@@ -17,7 +17,7 @@ import Base from '../base';
 Vue.use(ref, { name: 'minigui-ref' });
 
 const Table = {
-  name: 'ATable',
+  name: 'MTable',
   Column: T.Column,
   ColumnGroup: T.ColumnGroup,
   props: T.props,
@@ -43,7 +43,7 @@ const Table = {
         if (key) {
           column.key = key;
         }
-        if (getSlotOptions(element).__ANT_TABLE_COLUMN_GROUP) {
+        if (getSlotOptions(element).__MINIGUI_TABLE_COLUMN_GROUP) {
           column.children = this.normalize(typeof children === 'function' ? children() : children);
         } else {
           const customRender =

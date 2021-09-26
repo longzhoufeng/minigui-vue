@@ -57,7 +57,7 @@ export default {
     isContainGrid(obj = []) {
       let containGrid;
       obj.forEach(element => {
-        if (element && getSlotOptions(element).__ANT_CARD_GRID) {
+        if (element && getSlotOptions(element).__MINIGUI_CARD_GRID) {
           containGrid = true;
         }
       });

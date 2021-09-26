@@ -7,9 +7,9 @@ import warning from '../_util/warning';
 function noop() {}
 
 export default {
-  name: 'ACheckbox',
+  name: 'MCheckbox',
   inheritAttrs: false,
-  __ANT_CHECKBOX: true,
+  __MINIGUI_CHECKBOX: true,
   model: {
     prop: 'checked',
   },

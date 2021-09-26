@@ -30,7 +30,7 @@ export const ProgressProps = {
 };
 
 export default {
-  name: 'AProgress',
+  name: 'MProgress',
   props: initDefaultProps(ProgressProps, {
     type: 'line',
     percent: 0,

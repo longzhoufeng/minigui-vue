@@ -12,7 +12,7 @@ const ButtonGroupProps = {
 };
 export { ButtonGroupProps };
 export default {
-  name: 'AButtonGroup',
+  name: 'MButtonGroup',
   props: ButtonGroupProps,
   inject: {
     configProvider: { default: () => ConfigConsumerProps },

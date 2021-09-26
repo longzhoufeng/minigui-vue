@@ -8,8 +8,8 @@ import Base from '../base';
 import warning from '../_util/warning';
 
 const Switch = {
-  name: 'ASwitch',
-  __ANT_SWITCH: true,
+  name: 'MSwitch',
+  __MINIGUI_SWITCH: true,
   model: {
     prop: 'checked',
     event: 'change',

@@ -16,7 +16,7 @@ import TabBar from './TabBar';
 
 export default {
   TabPane,
-  name: 'ATabs',
+  name: 'MTabs',
   model: {
     prop: 'activeKey',
     event: 'change',

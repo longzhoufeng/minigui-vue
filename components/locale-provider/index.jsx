@@ -14,7 +14,7 @@ function setMomentLocale(locale) {
 }
 
 const LocaleProvider = {
-  name: 'ALocaleProvider',
+  name: 'MLocaleProvider',
   props: {
     locale: PropTypes.object.def(() => ({})),
     _MINIGUI_MARK__: PropTypes.string,

@@ -44,26 +44,6 @@ export function flatFilter(tree, callback) {
   }, []);
 }
 
-// export function normalizeColumns (elements) {
-//   const columns = []
-//   React.Children.forEach(elements, (element) => {
-//     if (!React.isValidElement(element)) {
-//       return
-//     }
-//     const column = {
-//       ...element.props,
-//     }
-//     if (element.key) {
-//       column.key = element.key
-//     }
-//     if (element.type && element.type.__ANT_TABLE_COLUMN_GROUP) {
-//       column.children = normalizeColumns(column.children)
-//     }
-//     columns.push(column)
-//   })
-//   return columns
-// }
-
 export function generateValueMaps(items, maps = {}) {
   (items || []).forEach(({ value, children }) => {
     maps[value.toString()] = value;

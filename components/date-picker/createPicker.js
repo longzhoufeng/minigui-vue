@@ -19,10 +19,6 @@ import {
 import { cloneElement } from '../_util/vnode';
 import { formatDate } from './utils';
 
-// export const PickerProps = {
-//   value?: moment.Moment;
-//   prefixCls: string;
-// }
 function noop() {}
 export default function createPicker(TheCalendar, props) {
   return {

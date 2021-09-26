@@ -2,7 +2,7 @@ import Tree from './Tree';
 import DirectoryTree from './DirectoryTree';
 import Base from '../base';
 
-Tree.TreeNode.name = 'ATreeNode';
+Tree.TreeNode.name = 'MTreeNode';
 Tree.DirectoryTree = DirectoryTree;
 /* istanbul ignore next */
 Tree.install = function(Vue) {

@@ -19,7 +19,7 @@ export const StatisticProps = {
 };
 
 export default {
-  name: 'AStatistic',
+  name: 'MStatistic',
   props: initDefaultProps(StatisticProps, {
     decimalSeparator: '.',
     groupSeparator: ',',

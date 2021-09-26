@@ -1,4 +1,4 @@
-export const injectExtraPropsKey = 'ANT_MENU_PROVIDER_PROPS_KEY';
+export const injectExtraPropsKey = 'MINIGUI_MENU_PROVIDER_PROPS_KEY';
 const FunctionProvider = {
   inheritAttrs: false,
   provide() {

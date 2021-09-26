@@ -8,9 +8,9 @@ const rxTwoCNChar = /^[\u4e00-\u9fa5]{2}$/;
 const isTwoCNChar = rxTwoCNChar.test.bind(rxTwoCNChar);
 const props = buttonTypes();
 export default {
-  name: 'AButton',
+  name: 'MButton',
   inheritAttrs: false,
-  __ANT_BUTTON: true,
+  __MINIGUI_BUTTON: true,
   props,
   inject: {
     configProvider: { default: () => ConfigConsumerProps },

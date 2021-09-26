@@ -4,7 +4,7 @@ import { getListeners } from '../_util/props-util';
 
 export default {
   name: 'MCardGrid',
-  __ANT_CARD_GRID: true,
+  __MINIGUI_CARD_GRID: true,
   props: {
     prefixCls: PropTypes.string,
     hoverable: PropTypes.bool,

@@ -30,7 +30,7 @@ function toArray(value) {
 }
 
 export const DescriptionsItem = {
-  name: 'ADescriptionsItem',
+  name: 'MDescriptionsItem',
   props: initDefaultProps(DescriptionsItemProps, { span: 1 }),
 };
 
@@ -106,7 +106,7 @@ const defaultColumnMap = {
 };
 
 const Descriptions = {
-  name: 'ADescriptions',
+  name: 'MDescriptions',
   Item: DescriptionsItem,
   mixins: [BaseMixin],
   inject: {

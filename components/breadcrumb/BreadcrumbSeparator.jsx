@@ -2,8 +2,8 @@ import { ConfigConsumerProps } from '../config-provider/configConsumerProps';
 import PropTypes from '../_util/vue-types';
 
 export default {
-  name: 'ABreadcrumbSeparator',
-  __ANT_BREADCRUMB_SEPARATOR: true,
+  name: 'MBreadcrumbSeparator',
+  __MINIGUI_BREADCRUMB_SEPARATOR: true,
   props: {
     prefixCls: PropTypes.string,
   },

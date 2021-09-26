@@ -38,7 +38,7 @@ export const PaginationConfig = () => ({
 });
 
 export default {
-  name: 'APagination',
+  name: 'MPagination',
   model: {
     prop: 'current',
     event: 'change.current',

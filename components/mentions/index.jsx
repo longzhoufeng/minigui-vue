@@ -50,14 +50,14 @@ function getMentions(value = '', config) {
 }
 
 const Mentions = {
-  name: 'AMentions',
+  name: 'MMentions',
   mixins: [BaseMixin],
   inheritAttrs: false,
   model: {
     prop: 'value',
     event: 'change',
   },
-  Option: { ...Option, name: 'AMentionsOption' },
+  Option: { ...Option, name: 'MMentionsOption' },
   getMentions,
   props: {
     ...mentionsProps,
@@ -115,7 +115,7 @@ const Mentions = {
 
       if (loading) {
         return (
-          <Option value="ANTD_SEARCHING" disabled>
+          <Option value="MINIGUI_SEARCHING" disabled>
             <Spin size="small" />
           </Option>
         );

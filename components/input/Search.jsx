@@ -10,7 +10,7 @@ import { getOptionProps, getComponentFromProp, getListeners } from '../_util/pro
 import { ConfigConsumerProps } from '../config-provider/configConsumerProps';
 
 export default {
-  name: 'AInputSearch',
+  name: 'MInputSearch',
   inheritAttrs: false,
   model: {
     prop: 'value',
@@ -102,7 +102,7 @@ export default {
       let button;
       const isAntdButton =
         enterButtonAsElement.componentOptions &&
-        enterButtonAsElement.componentOptions.Ctor.extendOptions.__ANT_BUTTON;
+        enterButtonAsElement.componentOptions.Ctor.extendOptions.__MINIGUI_BUTTON;
       if (enterButtonAsElement.tag === 'button' || isAntdButton) {
         button = cloneElement(enterButtonAsElement, {
           key: 'enterButton',

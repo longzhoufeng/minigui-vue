@@ -1,8 +1,8 @@
-import antDirective from '../_util/antDirective';
+import miniguiDirective from '../_util/miniguiDirective';
 const base = {};
 const install = function(Vue) {
   base.Vue = Vue;
-  Vue.use(antDirective);
+  Vue.use(miniguiDirective);
 };
 base.install = install;
 

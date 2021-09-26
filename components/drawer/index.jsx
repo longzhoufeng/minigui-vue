@@ -9,7 +9,7 @@ import { ConfigConsumerProps } from '../config-provider/configConsumerProps';
 import Base from '../base';
 
 const Drawer = {
-  name: 'ADrawer',
+  name: 'MDrawer',
   props: {
     closable: PropTypes.bool.def(true),
     destroyOnClose: PropTypes.bool,
@@ -88,12 +88,6 @@ const Drawer = {
     close(e) {
       this.$emit('close', e);
     },
-    // onMaskClick(e) {
-    //   if (!this.maskClosable) {
-    //     return;
-    //   }
-    //   this.close(e);
-    // },
     push() {
       this.setState({
         _push: true,

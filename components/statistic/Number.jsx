@@ -1,7 +1,7 @@
 import padEnd from 'lodash/padEnd';
 
 export default {
-  name: 'AStatisticNumber',
+  name: 'MStatisticNumber',
   functional: true,
   render(h, context) {
     const {

@@ -15,7 +15,7 @@ import Base from '../base';
 const tooltipProps = abstractTooltipProps();
 const btnProps = buttonTypes();
 const Popconfirm = {
-  name: 'APopconfirm',
+  name: 'MPopconfirm',
   props: {
     ...tooltipProps,
     prefixCls: PropTypes.string,

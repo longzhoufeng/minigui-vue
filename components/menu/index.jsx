@@ -10,7 +10,6 @@ import BaseMixin from '../_util/BaseMixin';
 import commonPropsType from '../vc-menu/commonPropsType';
 import { ConfigConsumerProps } from '../config-provider/configConsumerProps';
 import Base from '../base';
-// import raf from '../_util/raf';
 
 export const MenuMode = PropTypes.oneOf([
   'vertical',
@@ -40,12 +39,12 @@ export const menuProps = {
 };
 
 const Menu = {
-  name: 'AMenu',
+  name: 'MMenu',
   props: menuProps,
-  Divider: { ...Divider, name: 'AMenuDivider' },
-  Item: { ...Item, name: 'AMenuItem' },
-  SubMenu: { ...SubMenu, name: 'ASubMenu' },
-  ItemGroup: { ...ItemGroup, name: 'AMenuItemGroup' },
+  Divider: { ...Divider, name: 'MMenuDivider' },
+  Item: { ...Item, name: 'MMenuItem' },
+  SubMenu: { ...SubMenu, name: 'MSubMenu' },
+  ItemGroup: { ...ItemGroup, name: 'MMenuItemGroup' },
   provide() {
     return {
       getInlineCollapsed: this.getInlineCollapsed,
@@ -64,9 +63,6 @@ const Menu = {
   updated() {
     this.propsUpdating = false;
   },
-  // beforeDestroy() {
-  //   raf.cancel(this.mountRafId);
-  // },
   watch: {
     mode(val, oldVal) {
       if (oldVal === 'inline' && val !== 'inline') {

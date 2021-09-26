@@ -22,7 +22,7 @@ const getStepsProps = (defaultProps = {}) => {
 };
 
 const Steps = {
-  name: 'ASteps',
+  name: 'MSteps',
   props: getStepsProps({
     current: 0,
   }),
@@ -33,7 +33,7 @@ const Steps = {
     prop: 'current',
     event: 'change',
   },
-  Step: { ...VcSteps.Step, name: 'AStep' },
+  Step: { ...VcSteps.Step, name: 'MStep' },
   render() {
     const props = getOptionProps(this);
     const { prefixCls: customizePrefixCls, iconPrefix: customizeIconPrefixCls } = props;

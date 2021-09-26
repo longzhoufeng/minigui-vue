@@ -39,25 +39,7 @@ export const ColumnProps = {
   defaultFilteredValue: PropTypes.array,
   sortOrder: PropTypes.oneOfType([PropTypes.bool, PropTypes.oneOf(['ascend', 'descend'])]),
   sortDirections: PropTypes.array,
-  // children?: ColumnProps<T>[];
-  // onCellClick?: (record: T, event: any) => void;
-  // onCell?: (record: T) => any;
-  // onHeaderCell?: (props: ColumnProps<T>) => any;
 };
-
-// export interface TableComponents {
-//   table?: any;
-//   header?: {
-//     wrapper?: any;
-//     row?: any;
-//     cell?: any;
-//   };
-//   body?: {
-//     wrapper?: any;
-//     row?: any;
-//     cell?: any;
-//   };
-// }
 
 export const TableLocale = PropTypes.shape({
   filterTitle: PropTypes.string,
@@ -140,25 +122,6 @@ export const TableProps = {
   // style?: React.CSSProperties;
   // children?: React.ReactNode;
 };
-
-// export interface TableStateFilters {
-//   [key: string]: string[];
-// }
-
-// export interface TableState<T> {
-//   pagination: PaginationProps;
-//   filters: TableStateFilters;
-//   sortColumn: ColumnProps<T> | null;
-//   sortOrder: PropTypes.string,
-// }
-
-// export type SelectionItemSelectFn = (key: string[]) => any;
-
-// export interface SelectionItem {
-//   key: PropTypes.string,
-//   text: PropTypes.any,
-//   onSelect: SelectionItemSelectFn;
-// }
 
 export const SelectionCheckboxAllProps = {
   store: PropTypes.any,

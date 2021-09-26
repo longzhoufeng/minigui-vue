@@ -21,7 +21,7 @@ export const RateProps = {
 };
 
 const Rate = {
-  name: 'ARate',
+  name: 'MRate',
   model: {
     prop: 'value',
     event: 'change',

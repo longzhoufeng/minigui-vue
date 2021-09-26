@@ -137,7 +137,7 @@ const defaultDisplayRender = ({ labels }) => labels.join(' / ');
 
 const Cascader = {
   inheritAttrs: false,
-  name: 'ACascader',
+  name: 'MCascader',
   mixins: [BaseMixin],
   props: CascaderProps,
   model: {
@@ -351,7 +351,7 @@ const Cascader = {
       return [
         {
           [names.label]: notFoundContent || renderEmpty(h, 'Cascader'),
-          [names.value]: 'ANT_CASCADER_NOT_FOUND',
+          [names.value]: 'MINIGUI_CASCADER_NOT_FOUND',
           disabled: true,
         },
       ];
@@ -454,7 +454,7 @@ const Cascader = {
       options = [
         {
           [names.label]: notFoundContent || renderEmpty(h, 'Cascader'),
-          [names.value]: 'ANT_CASCADER_NOT_FOUND',
+          [names.value]: 'MINIGUI_CASCADER_NOT_FOUND',
           disabled: true,
         },
       ];
@@ -469,7 +469,7 @@ const Cascader = {
 
     const dropdownMenuColumnStyle = {};
     const isNotFound =
-      (options || []).length === 1 && options[0].value === 'ANT_CASCADER_NOT_FOUND';
+      (options || []).length === 1 && options[0].value === 'MINIGUI_CASCADER_NOT_FOUND';
     if (isNotFound) {
       dropdownMenuColumnStyle.height = 'auto'; // Height of one row.
     }

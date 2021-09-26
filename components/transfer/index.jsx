@@ -54,7 +54,7 @@ export const TransferLocale = {
 };
 
 const Transfer = {
-  name: 'ATransfer',
+  name: 'MTransfer',
   mixins: [BaseMixin],
   props: initDefaultProps(TransferProps, {
     dataSource: [],
@@ -67,11 +67,6 @@ const Transfer = {
   },
   data() {
     // vue 中 通过slot，不方便传递，保留notFoundContent及searchPlaceholder
-    // warning(
-    //   !(getComponentFromProp(this, 'notFoundContent') || hasProp(this, 'searchPlaceholder')),
-    //   'Transfer[notFoundContent] and Transfer[searchPlaceholder] will be removed, ' +
-    //   'please use Transfer[locale] instead.',
-    // )
     const { selectedKeys = [], targetKeys = [] } = this;
     return {
       leftFilter: '',

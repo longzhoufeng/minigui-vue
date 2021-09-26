@@ -13,20 +13,6 @@ import {
 } from '../_util/props-util';
 import Base from '../base';
 
-// const DataSourceItemObject = PropTypes.shape({
-//   value: String,
-//   text: String,
-// }).loose
-// const DataSourceItemType = PropTypes.oneOfType([
-//   PropTypes.string,
-//   DataSourceItemObject,
-// ]).isRequired
-
-// export interface AutoCompleteInputProps {
-//   onChange?: React.FormEventHandler<any>;
-//   value: any;
-// }
-
 const AutoCompleteProps = {
   ...AbstractSelectProps(),
   value: SelectValue,
@@ -40,7 +26,7 @@ const AutoCompleteProps = {
 };
 
 const AutoComplete = {
-  name: 'AAutoComplete',
+  name: 'MAutoComplete',
   props: {
     ...AutoCompleteProps,
     prefixCls: PropTypes.string.def('minigui-select'),
@@ -53,8 +39,8 @@ const AutoComplete = {
     filterOption: PropTypes.oneOfType([PropTypes.bool, PropTypes.func]).def(false),
     defaultActiveFirstOption: PropTypes.bool.def(true),
   },
-  Option: { ...Option, name: 'AAutoCompleteOption' },
-  OptGroup: { ...OptGroup, name: 'AAutoCompleteOptGroup' },
+  Option: { ...Option, name: 'MAutoCompleteOption' },
+  OptGroup: { ...OptGroup, name: 'MAutoCompleteOptGroup' },
   model: {
     prop: 'value',
     event: 'change',

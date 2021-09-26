@@ -17,7 +17,7 @@ function getWatch(keys = []) {
 }
 
 const ConfigProvider = {
-  name: 'AConfigProvider',
+  name: 'MConfigProvider',
   props: {
     getPopupContainer: PropTypes.func,
     prefixCls: PropTypes.string,

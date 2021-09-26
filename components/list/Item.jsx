@@ -27,8 +27,8 @@ export const ListItemMetaProps = {
 
 export const Meta = {
   functional: true,
-  name: 'AListItemMeta',
-  __ANT_LIST_ITEM_META: true,
+  name: 'MListItemMeta',
+  __MINIGUI_LIST_ITEM_META: true,
   inject: {
     configProvider: { default: () => ConfigConsumerProps },
   },
@@ -62,7 +62,7 @@ function getGrid(grid, t) {
 }
 
 export default {
-  name: 'AListItem',
+  name: 'MListItem',
   Meta,
   props: ListItemProps,
   inject: {

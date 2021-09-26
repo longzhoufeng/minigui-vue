@@ -21,13 +21,8 @@ function formatValue(value, format) {
 function noop() {}
 
 export default {
-  // static defaultProps = {
-  //   format: 'YYYY-wo',
-  //   allowClear: true,
-  // };
-
   // private input: any;
-  name: 'AWeekPicker',
+  name: 'MWeekPicker',
   mixins: [BaseMixin],
   model: {
     prop: 'value',

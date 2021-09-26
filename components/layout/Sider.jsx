@@ -52,16 +52,6 @@ export const SiderProps = {
   theme: PropTypes.oneOf(['light', 'dark']).def('dark'),
 };
 
-// export interface SiderState {
-//   collapsed?: boolean;
-//   below: boolean;
-//   belowShow?: boolean;
-// }
-
-// export interface SiderContext {
-//   siderCollapsed: boolean;
-// }
-
 const generateId = (() => {
   let i = 0;
   return (prefix = '') => {
@@ -71,8 +61,8 @@ const generateId = (() => {
 })();
 
 export default {
-  name: 'ALayoutSider',
-  __ANT_LAYOUT_SIDER: true,
+  name: 'MLayoutSider',
+  __MINIGUI_LAYOUT_SIDER: true,
   mixins: [BaseMixin],
   model: {
     prop: 'collapsed',
@@ -116,12 +106,6 @@ export default {
     siderHook: { default: () => ({}) },
     configProvider: { default: () => ConfigConsumerProps },
   },
-  // getChildContext() {
-  //   return {
-  //     siderCollapsed: this.state.collapsed,
-  //     collapsedWidth: this.props.collapsedWidth,
-  //   };
-  // }
   watch: {
     collapsed(val) {
       this.setState({

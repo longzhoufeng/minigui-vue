@@ -26,7 +26,7 @@ const splitObject = (obj, keys) => {
 };
 const props = abstractTooltipProps();
 export default {
-  name: 'ATooltip',
+  name: 'MTooltip',
   model: {
     prop: 'visible',
     event: 'visibleChange',
@@ -74,16 +74,13 @@ export default {
       );
     },
 
-    // Fix Tooltip won't hide at disabled button
-    // mouse events don't trigger at disabled button in Chrome
-    // https://github.com/react-component/tooltip/issues/18
     getDisabledCompatibleChildren(ele) {
       const options = (ele.componentOptions && ele.componentOptions.Ctor.options) || {};
 
       if (
-        ((options.__ANT_BUTTON === true ||
-          options.__ANT_SWITCH === true ||
-          options.__ANT_CHECKBOX === true) &&
+        ((options.__MINIGUI_BUTTON === true ||
+          options.__MINIGUI_SWITCH === true ||
+          options.__MINIGUI_CHECKBOX === true) &&
           (ele.componentOptions.propsData.disabled ||
             ele.componentOptions.propsData.disabled === '')) ||
         (ele.tag === 'button' &&

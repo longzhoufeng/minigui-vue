@@ -11,8 +11,6 @@ import Base from '../base';
 import warning from '../_util/warning';
 import classNames from 'classnames';
 
-// matchMedia polyfill for
-// https://github.com/WickyNilliams/enquire.js/issues/82
 if (typeof window !== 'undefined') {
   const matchMediaPolyfill = mediaQuery => {
     return {
@@ -73,7 +71,7 @@ export const CarouselProps = {
 };
 
 const Carousel = {
-  name: 'ACarousel',
+  name: 'MCarousel',
   props: initDefaultProps(CarouselProps, {
     dots: true,
     arrows: false,

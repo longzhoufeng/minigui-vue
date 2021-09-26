@@ -31,7 +31,6 @@ const AbstractSelectProps = () => ({
   dropdownStyle: PropTypes.any,
   dropdownMenuStyle: PropTypes.any,
   dropdownMatchSelectWidth: PropTypes.bool,
-  // onSearch: (value: string) => any,
   filterOption: PropTypes.oneOfType([PropTypes.bool, PropTypes.func]),
   autoFocus: PropTypes.bool,
   backfill: PropTypes.bool,
@@ -93,9 +92,9 @@ export { AbstractSelectProps, SelectValue, SelectProps };
 const SECRET_COMBOBOX_MODE_DO_NOT_USE = 'SECRET_COMBOBOX_MODE_DO_NOT_USE';
 const Select = {
   SECRET_COMBOBOX_MODE_DO_NOT_USE,
-  Option: { ...Option, name: 'ASelectOption' },
-  OptGroup: { ...OptGroup, name: 'ASelectOptGroup' },
-  name: 'ASelect',
+  Option: { ...Option, name: 'MSelectOption' },
+  OptGroup: { ...OptGroup, name: 'MSelectOptGroup' },
+  name: 'MSelect',
   props: {
     ...SelectProps,
     showSearch: PropTypes.bool.def(false),

@@ -79,24 +79,8 @@ export default {
       filterValue: '',
     };
   },
-  // mounted() {
-  //   this.timer = setTimeout(() => {
-  //     this.setState({
-  //       mounted: true,
-  //     });
-  //   }, 0);
-  //   this.$nextTick(() => {
-  //     if (this.$refs.listContentWrapper) {
-  //       const listContentWrapperDom = this.$refs.listContentWrapper.$el;
-  //       this.scrollEvent = addEventListener(listContentWrapperDom, 'scroll', this.handleScroll);
-  //     }
-  //   });
-  // },
   beforeDestroy() {
     clearTimeout(this.triggerScrollTimer);
-    // if (this.scrollEvent) {
-    //   this.scrollEvent.remove();
-    // }
   },
   updated() {
     this.$nextTick(() => {

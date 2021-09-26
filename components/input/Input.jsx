@@ -50,7 +50,7 @@ export function getInputClassName(prefixCls, size, disabled) {
 }
 
 export default {
-  name: 'AInput',
+  name: 'MInput',
   inheritAttrs: false,
   model: {
     prop: 'value',

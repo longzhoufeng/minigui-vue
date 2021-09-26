@@ -20,11 +20,6 @@ import {
 } from '../_util/props-util';
 import { ConfigConsumerProps } from '../config-provider/configConsumerProps';
 
-// export type ExpandAction = false | 'click' | 'dblclick'; export interface
-// DirectoryTreeProps extends TreeProps {   expandAction?: ExpandAction; }
-// export interface DirectoryTreeState {   expandedKeys?: string[];
-// selectedKeys?: string[]; }
-
 function getIcon(props, h) {
   const { isLeaf, expanded } = props;
   if (isLeaf) {
@@ -34,7 +29,7 @@ function getIcon(props, h) {
 }
 
 export default {
-  name: 'ADirectoryTree',
+  name: 'MDirectoryTree',
   mixins: [BaseMixin],
   model: {
     prop: 'checkedKeys',
@@ -51,9 +46,6 @@ export default {
     },
   ),
 
-  // state: DirectoryTreeState; onDebounceExpand: (event, node: AntTreeNode) =>
-  // void; // Shift click usage lastSelectedKey?: string; cachedSelectedKeys?:
-  // string[];
   inject: {
     configProvider: {
       default: () => ConfigConsumerProps,

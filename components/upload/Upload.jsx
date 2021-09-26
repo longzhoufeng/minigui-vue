@@ -16,7 +16,7 @@ import { T, fileToObject, genPercentAdd, getFileItem, removeFileItem } from './u
 export { UploadProps };
 
 export default {
-  name: 'AUpload',
+  name: 'MUpload',
   mixins: [BaseMixin],
   inheritAttrs: false,
   Dragger,

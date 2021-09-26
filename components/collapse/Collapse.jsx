@@ -12,7 +12,7 @@ import Icon from '../icon';
 import { ConfigConsumerProps } from '../config-provider/configConsumerProps';
 
 export default {
-  name: 'ACollapse',
+  name: 'MCollapse',
   model: {
     prop: 'activeKey',
     event: 'change',

@@ -40,7 +40,7 @@ export function setDefaultIndicator(Content) {
 }
 
 export default {
-  name: 'ASpin',
+  name: 'MSpin',
   mixins: [BaseMixin],
   props: initDefaultProps(SpinProps(), {
     size: 'default',

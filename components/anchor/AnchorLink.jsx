@@ -11,7 +11,7 @@ export const AnchorLinkProps = {
 };
 
 export default {
-  name: 'AAnchorLink',
+  name: 'MAnchorLink',
   props: initDefaultProps(AnchorLinkProps, {
     href: '#',
   }),

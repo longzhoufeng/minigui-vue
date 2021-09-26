@@ -15,12 +15,6 @@ export default {
   readOnly: PropTypes.bool,
   addonBefore: PropTypes.any,
   addonAfter: PropTypes.any,
-  // onPressEnter?: React.FormEventHandler<any>;
-  // onKeyDown?: React.FormEventHandler<any>;
-  // onChange?: React.ChangeEventHandler<HTMLInputElement>;
-  // onClick?: React.FormEventHandler<any>;
-  // onFocus?: React.FormEventHandler<any>;
-  // onBlur?: React.FormEventHandler<any>;
   prefix: PropTypes.any,
   suffix: PropTypes.any,
   // spellCheck: Boolean,

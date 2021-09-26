@@ -49,36 +49,11 @@ function TreeProps() {
     /** 默认选中的树节点 */
     defaultSelectedKeys: PropTypes.array,
     selectable: PropTypes.bool,
-    /** 展开/收起节点时触发 */
-    // onExpand: (expandedKeys: string[], info: AntTreeNodeExpandedEvent) => void | PromiseLike<any>,
-    /** 点击复选框触发 */
-    // onCheck: (checkedKeys: string[] | { checked: string[]; halfChecked: string[] }, e: AntTreeNodeCheckedEvent) => void,
-    /** 点击树节点触发 */
-    // onSelect: (selectedKeys: string[], e: AntTreeNodeSelectedEvent) => void,
-    /** 单击树节点触发 */
-    // onClick: (e: React.MouseEvent<HTMLElement>, node: AntTreeNode) => void,
-    /** 双击树节点触发 */
-    // onDoubleClick: (e: React.MouseEvent<HTMLElement>, node: AntTreeNode) => void,
-    /** filter some AntTreeNodes as you need. it should return true */
     filterAntTreeNode: PropTypes.func,
     /** 异步加载数据 */
     loadData: PropTypes.func,
     loadedKeys: PropTypes.array,
-    // onLoaded: (loadedKeys: string[], info: { event: 'load', node: AntTreeNode; }) => void,
-    /** 响应右键点击 */
-    // onRightClick: (options: AntTreeNodeMouseEvent) => void,
-    /** 设置节点可拖拽（IE>8）*/
     draggable: PropTypes.bool,
-    // /** 开始拖拽时调用 */
-    // onDragStart: (options: AntTreeNodeMouseEvent) => void,
-    // /** dragenter 触发时调用 */
-    // onDragEnter: (options: AntTreeNodeMouseEvent) => void,
-    // /** dragover 触发时调用 */
-    // onDragOver: (options: AntTreeNodeMouseEvent) => void,
-    // /** dragleave 触发时调用 */
-    // onDragLeave: (options: AntTreeNodeMouseEvent) => void,
-    // /** drop 触发时调用 */
-    // onDrop: (options: AntTreeNodeMouseEvent) => void,
     showIcon: PropTypes.bool,
     icon: PropTypes.func,
     switcherIcon: PropTypes.any,
@@ -99,7 +74,7 @@ function TreeProps() {
 export { TreeProps };
 
 export default {
-  name: 'ATree',
+  name: 'MTree',
   model: {
     prop: 'checkedKeys',
     event: 'check',
