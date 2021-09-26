@@ -291,7 +291,6 @@ export {
   Drawer,
   Skeleton,
   Comment,
-  // ColorPicker,
   ConfigProvider,
   Empty,
   Result,

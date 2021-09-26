@@ -11,6 +11,8 @@ import { isZhCN } from '../utils/util';
 import { Provider, create } from '../../components/_util/store';
 import NProgress from 'nprogress';
 import MobileMenu from '../../components/vc-drawer/src';
+import Minigui from 'minigui-vue/lib';
+import { Button, message } from 'minigui-vue'
 
 const docsList = [
   { key: 'introduce', enTitle: '使用', title: '使用说明' },
@@ -155,6 +157,9 @@ export default {
   },
 
   render() {
+    console.log(Minigui)
+    // console.log(Button)
+    // console.log(message)
     const name = this.name;
     const isCN = isZhCN(name);
     const titleMap = {};
@@ -209,7 +214,6 @@ export default {
       });
       MenuGroup.push(<m-menu-item-group title={type}>{MenuItems}</m-menu-item-group>);
     }
-    console.log(MenuGroup)
     pagesKey.forEach((item, index) => {
       if (item.name === name) {
         prevPage = pagesKey[index - 1];
