@@ -3,12 +3,12 @@ module.exports = {
   // 支持值为 Object 和 Array
   'GET /api/currentUser': {
     name: 'Serati Ma',
-    avatar: 'https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png',
+    avatar: '/img/avatar.png',
     userid: '00000001',
-    email: 'antdesign@alipay.com',
+    email: 'minigui@minigui.com.cn',
     signature: '海纳百川，有容乃大',
     title: '交互专家',
-    group: '蚂蚁金服－某某某事业群－某某平台部－某某技术部－UED',
+    group: '技术部',
   },
   // GET POST 可省略
   'GET /api/users': [
@@ -33,11 +33,11 @@ module.exports = {
   ],
   'POST /api/login/account': (req, res) => {
     const { password, userName, type } = req.body;
-    if (password === 'antdv' && userName === 'admin') {
+    if (password === 'minigui' && userName === 'admin') {
       res.send({ status: 'ok', type });
       return;
     }
-    if (password === 'antdv' && userName === 'user') {
+    if (password === 'minigui' && userName === 'user') {
       res.send({ status: 'ok', type });
       return;
     }

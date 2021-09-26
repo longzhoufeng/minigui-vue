@@ -1,12 +1,6 @@
-@import '~minigui-vue/es/style/themes/default.less';
-
 .main {
   width: 368px;
   margin: 0 auto;
-  @media screen and (max-width: @screen-sm) {
-    width: 95%;
-  }
-
   .icon {
     margin-left: 16px;
     color: rgba(0, 0, 0, 0.2);
@@ -16,7 +10,7 @@
     transition: color 0.3s;
 
     &:hover {
-      color: @primary-color;
+      color: #888;
     }
   }
 
@@ -29,8 +23,4 @@
       float: right;
     }
   }
-}
-.main /deep/ .antd-pro-login-submit {
-  width: 100%;
-  margin-top: 24px;
 }

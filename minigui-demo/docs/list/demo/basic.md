@@ -13,12 +13,12 @@ Basic list.
   <m-list item-layout="horizontal" :data-source="data">
     <m-list-item slot="renderItem" slot-scope="item, index">
       <m-list-item-meta
-        description="minigui vue, a design language for background applications, is refined by Ant UED Team"
+        description="minigui vue, a design language for background applications"
       >
         <a slot="title" href="#">{{ item.title }}</a>
         <m-avatar
           slot="avatar"
-          src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+          src="/img/avatar.png"
         />
       </m-list-item-meta>
     </m-list-item>
@@ -27,16 +27,16 @@ Basic list.
 <script>
 const data = [
   {
-    title: 'Ant Design Title 1',
+    title: 'Minigui Vue Title 1',
   },
   {
-    title: 'Ant Design Title 2',
+    title: 'Minigui Vue Title 2',
   },
   {
-    title: 'Ant Design Title 3',
+    title: 'Minigui Vue Title 3',
   },
   {
-    title: 'Ant Design Title 4',
+    title: 'Minigui Vue Title 4',
   },
 ];
 export default {

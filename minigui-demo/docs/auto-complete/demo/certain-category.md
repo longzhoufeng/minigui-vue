@@ -60,11 +60,11 @@ const dataSource = [
     title: 'Libraries',
     children: [
       {
-        title: 'AntDesign',
+        title: 'MiniguiVue',
         count: 10000,
       },
       {
-        title: 'AntDesign UI',
+        title: 'MiniguiVue',
         count: 10600,
       },
     ],
@@ -73,11 +73,11 @@ const dataSource = [
     title: 'Solutions',
     children: [
       {
-        title: 'AntDesign UI',
+        title: 'MiniguiVue',
         count: 60100,
       },
       {
-        title: 'AntDesign',
+        title: 'MiniguiVue',
         count: 30010,
       },
     ],
@@ -86,7 +86,7 @@ const dataSource = [
     title: 'Articles',
     children: [
       {
-        title: 'AntDesign design language',
+        title: 'MiniguiVue',
         count: 100000,
       },
     ],

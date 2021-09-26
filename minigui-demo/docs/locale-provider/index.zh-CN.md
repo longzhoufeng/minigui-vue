@@ -29,7 +29,7 @@ LocaleProvider 使用 Vue 的 [provide/inject](https://cn.vuejs.org/v2/api/#prov
 ```
 
 
-注意：如果你需要使用 UMD 版的 dist 文件，应该引入 `minigui-vue/dist/antd-with-locales.js`，同时引入 moment 对应的 locale，然后按以下方式使用：
+注意：如果你需要使用 UMD 版的 dist 文件，应该引入 `minigui-vue/dist/minigui-with-locales.js`，同时引入 moment 对应的 locale，然后按以下方式使用：
 
 ```html
 <template>
@@ -38,7 +38,7 @@ LocaleProvider 使用 Vue 的 [provide/inject](https://cn.vuejs.org/v2/api/#prov
   </m-locale-provider>
 </template>
 <script>
-  const { LocaleProvider, locales } = window.antd;
+  const { LocaleProvider, locales } = window.minigui;
 </script>
 ```
 

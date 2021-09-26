@@ -15,8 +15,8 @@ Comments can be nested.
     <a slot="author">Han Solo</a>
     <m-avatar
       slot="avatar"
-      src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
-      alt="Han Solo"
+      src="/img/avatar.png"
+      alt="Hi"
     />
     <p slot="content">
       We supply a series of design principles, practical patterns and high quality design resources
@@ -27,8 +27,8 @@ Comments can be nested.
       <a slot="author">Han Solo</a>
       <m-avatar
         slot="avatar"
-        src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
-        alt="Han Solo"
+        src="/img/avatar.png"
+        alt="Hi"
       />
       <p slot="content">
         We supply a series of design principles, practical patterns and high quality design
@@ -39,8 +39,8 @@ Comments can be nested.
         <a slot="author">Han Solo</a>
         <m-avatar
           slot="avatar"
-          src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
-          alt="Han Solo"
+          src="/img/avatar.pngg"
+          alt="Hi"
         />
         <p slot="content">
           We supply a series of design principles, practical patterns and high quality design
@@ -52,8 +52,8 @@ Comments can be nested.
         <a slot="author">Han Solo</a>
         <m-avatar
           slot="avatar"
-          src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
-          alt="Han Solo"
+          src="/img/avatar.png"
+          alt="Hi"
         />
         <p slot="content">
           We supply a series of design principles, practical patterns and high quality design

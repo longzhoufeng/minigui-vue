@@ -22,7 +22,7 @@ The example of infinite load with [vue-infinite-scroll](https://github.com/Eleme
           <a slot="title" :href="item.href">{{ item.name.last }}</a>
           <m-avatar
             slot="avatar"
-            src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+            src="/img/avatar.png"
           />
         </m-list-item-meta>
         <div>Content</div>

@@ -28,7 +28,7 @@ An example of infinite list & virtualized loading using [vue-virtual-scroller](h
           <a slot="title" :href="item.href">{{ item.name.last }}</a>
           <m-avatar
             slot="avatar"
-            src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+            src="/img/avatar.png"
           />
         </m-list-item-meta>
         <div>Content {{ item.index }}</div>

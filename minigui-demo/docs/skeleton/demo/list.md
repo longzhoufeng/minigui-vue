@@ -26,7 +26,7 @@ Use skeleton in list component.
           slot="extra"
           width="272"
           alt="logo"
-          src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
+          src="/img/logo.png"
         />
         <m-skeleton :loading="loading" active avatar>
           <m-list-item-meta :description="item.description">
@@ -43,11 +43,11 @@ Use skeleton in list component.
 const listData = [];
 for (let i = 0; i < 3; i++) {
   listData.push({
-    href: 'https://www.antdv.com/',
-    title: `ant design vue part ${i}`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+    href: '#',
+    title: `minigui vue part ${i}`,
+    avatar: '/img/avatar.png',
     description:
-      'Ant Design, a design language for background applications, is refined by Ant UED Team.',
+      'Minigui Vue, a design language for background applications.',
     content:
       'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
   });

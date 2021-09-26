@@ -37,8 +37,8 @@ A basic comment with author, avatar, time and actions.
     <a slot="author">Han Solo</a>
     <m-avatar
       slot="avatar"
-      src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
-      alt="Han Solo"
+      src="/img/avatar.png"
+      alt="hi"
     />
     <p slot="content">
       We supply a series of design principles, practical patterns and high quality design resources

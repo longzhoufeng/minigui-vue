@@ -68,7 +68,7 @@ When dealing with long content, a fixed sider can provide a better user experien
         </div>
       </m-layout-content>
       <m-layout-footer :style="{ textAlign: 'center' }">
-        Ant Design ©2018 Created by Ant UED
+        Minigui Vue ©2020 Created by Minigui
       </m-layout-footer>
     </m-layout>
   </m-layout>

@@ -35,7 +35,7 @@ export default {
             ctx.drawImage(img, 0, 0);
             ctx.fillStyle = 'red';
             ctx.textBaseline = 'middle';
-            ctx.fillText('Ant Design', 20, 20);
+            ctx.fillText('Minigui Vue', 20, 20);
             canvas.toBlob(resolve);
           };
         };

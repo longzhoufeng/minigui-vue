@@ -25,10 +25,10 @@ Use Drawer to quickly preview details of an object, such as those in a list.
       <m-list-item slot="renderItem" :key="`a-${item.id}`" slot-scope="item, index">
         <a slot="actions" @click="showDrawer">View Profile</a>
         <m-list-item-meta description="Progresser XTech">
-          <a slot="title" href="https://www.antdv.com/">{{ item.name }}</a>
+          <a slot="title" href="#">{{ item.name }}</a>
           <m-avatar
             slot="avatar"
-            src="https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png"
+            src="/img/avatar.png"
           />
         </m-list-item-meta>
       </m-list-item>
@@ -45,12 +45,12 @@ Use Drawer to quickly preview details of an object, such as those in a list.
           <description-item title="Full Name" content="Lily" />
         </m-col>
         <m-col :span="12">
-          <description-item title="Account" content="AntDesign@example.com" />
+          <description-item title="Account" content="minigui@example.com" />
         </m-col>
       </m-row>
       <m-row>
         <m-col :span="12">
-          <description-item title="City" content="HangZhou" />
+          <description-item title="City" content="GuangZhou" />
         </m-col>
         <m-col :span="12">
           <description-item title="Country" content="China🇨🇳" />

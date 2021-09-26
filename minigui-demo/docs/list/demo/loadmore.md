@@ -30,12 +30,12 @@ Load more list with `loadMore` property.
       <a slot="actions">edit</a>
       <a slot="actions">more</a>
       <m-list-item-meta
-        description="Ant Design, a design language for background applications, is refined by Ant UED Team"
+        description="Minigui Vue, a design language for background applications"
       >
-        <a slot="title" href="https://www.antdv.com/">{{ item.name.last }}</a>
+        <a slot="title" href="#">{{ item.name.last }}</a>
         <m-avatar
           slot="avatar"
-          src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+          src="/img/avatar.png"
         />
       </m-list-item-meta>
       <div>content</div>

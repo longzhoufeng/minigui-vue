@@ -23,7 +23,7 @@
 
 使用方式如下：
 
-#### jsx 使用方式，使用方式和 React 版 antd 一致
+#### jsx 使用方式，使用方式和 React 版 minigui 一致
 
 ```jsx
 const CustomizedForm = {};

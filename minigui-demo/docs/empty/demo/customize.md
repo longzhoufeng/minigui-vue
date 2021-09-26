@@ -11,7 +11,7 @@ Customize image, description and extra content.
 ```vue
 <template>
   <m-empty
-    image="https://gw.alipayobjects.com/mdn/miniapp_social/afts/img/A*pevERLJC9v0AAAAAAAAAAABjAQAAAQ/original"
+    image="/img/cloud.png"
     :image-style="{
       height: '60px',
     }"

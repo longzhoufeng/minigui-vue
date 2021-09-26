@@ -97,7 +97,7 @@ Both the top navigation and the sidebar, commonly used in documentation site.
       </m-layout>
     </m-layout-content>
     <m-layout-footer style="text-align: center">
-      Ant Design ©2018 Created by Ant UED
+      Minigui Vue©2020 Created by Minigui
     </m-layout-footer>
   </m-layout>
 </template>

@@ -39,16 +39,16 @@ export default {
       data: [
         {
           actions: ['Reply to'],
-          author: 'Han Solo',
-          avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+          author: 'hi',
+          avatar: '/img/avatar.png',
           content:
             'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
           datetime: moment().subtract(1, 'days'),
         },
         {
           actions: ['Reply to'],
-          author: 'Han Solo',
-          avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+          author: 'Hi',
+          avatar: '/img/avatar.png',
           content:
             'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
           datetime: moment().subtract(2, 'days'),

@@ -14,11 +14,11 @@
     <img
       slot="cover"
       alt="example"
-      src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+      src="/img/img.png"
     />
     <m-card-meta title="Europe Street beat">
       <template slot="description">
-        www.instagram.com
+        www.minigui.com.cn
       </template>
     </m-card-meta>
   </m-card>

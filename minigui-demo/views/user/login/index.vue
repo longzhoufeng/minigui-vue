@@ -32,8 +32,6 @@
         />
       </tab>
       <div>
-        <!-- <m-checkbox :checked="autoLogin" @change="changeAutoLogin">自动登录</m-checkbox> -->
-        <!-- <a style="float: right" href>忘记密码</a> -->
       </div>
       <submit :loading="submitting">
         {{ $t('userandlogin.login.login') }}

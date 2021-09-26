@@ -45,7 +45,7 @@ Top-bottom structure is conform with the top-bottom viewing habit, it's a classi
       </div>
     </m-layout-content>
     <m-layout-footer style="text-align: center">
-      Ant Design ©2018 Created by Ant UED
+      Minigui Vue©2020 Created by Minigui
     </m-layout-footer>
   </m-layout>
 </template>

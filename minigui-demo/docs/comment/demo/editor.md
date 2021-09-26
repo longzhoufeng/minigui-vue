@@ -29,8 +29,8 @@ Comment can be used as editor, user can customize the editor component.
     <m-comment>
       <m-avatar
         slot="avatar"
-        src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
-        alt="Han Solo"
+        src="/img/avatar.png"
+        alt="hi"
       />
       <div slot="content">
         <m-form-item>
@@ -68,8 +68,8 @@ export default {
         this.submitting = false;
         this.comments = [
           {
-            author: 'Han Solo',
-            avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+            author: 'hi',
+            avatar: '/img/avatar.png',
             content: this.value,
             datetime: moment().fromNow(),
           },

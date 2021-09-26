@@ -36,7 +36,7 @@ Horizontal top navigation menu.
         </m-menu-item-group>
       </m-sub-menu>
       <m-menu-item key="alipay">
-        <a href="https://antdv.com" target="_blank" rel="noopener noreferrer"
+        <a href="#" target="_blank" rel="noopener noreferrer"
           >Navigation Four - Link</a
         >
       </m-menu-item>

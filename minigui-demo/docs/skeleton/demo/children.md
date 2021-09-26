@@ -13,7 +13,7 @@ Skeleton contains sub component.
   <div class="article">
     <m-skeleton :loading="loading">
       <div>
-        <h4>Ant Design Vue, a design language</h4>
+        <h4>Minigui Vue, a design language</h4>
         <p>
           We supply a series of design principles, practical patterns and high quality design
           resources (Sketch and Axure), to help people create their product prototypes beautifully
