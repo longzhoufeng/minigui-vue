@@ -1,10 +1,6 @@
 # Minigui Vue
 
-这里是 minigui-vue 的 Vue 实现的前端组件。
-
-<div class="pic-plus">
-  <img width="160" src="/public/logo.png">
-</div>
+minigui-vue 是以 Vue 实现的前端组件。
 
 <style>
 .pic-plus > * {
@@ -17,10 +13,6 @@
   margin: 0 20px;
 }
 </style>
-
-## 特性
-
-- 高质量 Vue 组件。
 
 ## 支持环境
 

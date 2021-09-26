@@ -331,11 +331,11 @@ export default {
     type: '数据输入',
     title: 'TreeSelect',
   },
-  布局: {
+  Layout: {
     category: 'Components',
     subtitle: '布局',
     type: '布局',
-    title: '布局',
+    title: 'Layout',
     cols: 1,
   },
   form: {
