@@ -13,25 +13,25 @@ If you want specific control over the positioning and placement of the `Icon`, t
 ```vue
 <template>
   <div>
-    <a-button type="primary" shape="circle" icon="search" />
-    <a-button type="primary" shape="circle">
+    <m-button type="primary" shape="circle" icon="search" />
+    <m-button type="primary" shape="circle">
       A
-    </a-button>
-    <a-button type="primary" icon="search">
+    </m-button>
+    <m-button type="primary" icon="search">
       Search
-    </a-button>
-    <a-button shape="circle" icon="search" />
-    <a-button icon="search">
+    </m-button>
+    <m-button shape="circle" icon="search" />
+    <m-button icon="search">
       Search
-    </a-button>
-    <a-button shape="circle" icon="search" />
-    <a-button icon="search">
+    </m-button>
+    <m-button shape="circle" icon="search" />
+    <m-button icon="search">
       Search
-    </a-button>
-    <a-button type="dashed" shape="circle" icon="search" />
-    <a-button type="dashed" icon="search">
+    </m-button>
+    <m-button type="dashed" shape="circle" icon="search" />
+    <m-button type="dashed" icon="search">
       Search
-    </a-button>
+    </m-button>
   </div>
 </template>
 ```

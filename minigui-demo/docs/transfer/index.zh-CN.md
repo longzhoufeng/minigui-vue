@@ -57,7 +57,7 @@
 #### 参考示例
 
 ```html
-<a-transfer>
+<m-transfer>
   <template
     slot="children"
     slot-scope="{
@@ -74,7 +74,7 @@
   >
     <your-component />
   <template>
-</a-transfer>
+</m-transfer>
 ```
 
 ## 注意

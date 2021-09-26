@@ -11,39 +11,39 @@ A button is on the left, and a related functional menu is on the right. You can 
 ```vue
 <template>
   <div>
-    <a-dropdown-button @click="handleButtonClick">
+    <m-dropdown-button @click="handleButtonClick">
       Dropdown
-      <a-menu slot="overlay" @click="handleMenuClick">
-        <a-menu-item key="1"> <a-icon type="user" />1st menu item </a-menu-item>
-        <a-menu-item key="2"> <a-icon type="user" />2nd menu item </a-menu-item>
-        <a-menu-item key="3"> <a-icon type="user" />3rd item </a-menu-item>
-      </a-menu>
-    </a-dropdown-button>
-    <a-dropdown-button>
+      <m-menu slot="overlay" @click="handleMenuClick">
+        <m-menu-item key="1"> <m-icon type="user" />1st menu item </m-menu-item>
+        <m-menu-item key="2"> <m-icon type="user" />2nd menu item </m-menu-item>
+        <m-menu-item key="3"> <m-icon type="user" />3rd item </m-menu-item>
+      </m-menu>
+    </m-dropdown-button>
+    <m-dropdown-button>
       Dropdown
-      <a-menu slot="overlay" @click="handleMenuClick">
-        <a-menu-item key="1"> <a-icon type="user" />1st menu item </a-menu-item>
-        <a-menu-item key="2"> <a-icon type="user" />2nd menu item </a-menu-item>
-        <a-menu-item key="3"> <a-icon type="user" />3rd item </a-menu-item>
-      </a-menu>
-      <a-icon slot="icon" type="user" />
-    </a-dropdown-button>
-    <a-dropdown-button disabled style="margin-left: 8px" @click="handleButtonClick">
+      <m-menu slot="overlay" @click="handleMenuClick">
+        <m-menu-item key="1"> <m-icon type="user" />1st menu item </m-menu-item>
+        <m-menu-item key="2"> <m-icon type="user" />2nd menu item </m-menu-item>
+        <m-menu-item key="3"> <m-icon type="user" />3rd item </m-menu-item>
+      </m-menu>
+      <m-icon slot="icon" type="user" />
+    </m-dropdown-button>
+    <m-dropdown-button disabled style="margin-left: 8px" @click="handleButtonClick">
       Dropdown
-      <a-menu slot="overlay" @click="handleMenuClick">
-        <a-menu-item key="1"> <a-icon type="user" />1st menu item </a-menu-item>
-        <a-menu-item key="2"> <a-icon type="user" />2nd menu item </a-menu-item>
-        <a-menu-item key="3"> <a-icon type="user" />3rd item </a-menu-item>
-      </a-menu>
-    </a-dropdown-button>
-    <a-dropdown>
-      <a-menu slot="overlay" @click="handleMenuClick">
-        <a-menu-item key="1"> <a-icon type="user" />1st menu item </a-menu-item>
-        <a-menu-item key="2"> <a-icon type="user" />2nd menu item </a-menu-item>
-        <a-menu-item key="3"> <a-icon type="user" />3rd item </a-menu-item>
-      </a-menu>
-      <a-button style="margin-left: 8px"> Button <a-icon type="down" /> </a-button>
-    </a-dropdown>
+      <m-menu slot="overlay" @click="handleMenuClick">
+        <m-menu-item key="1"> <m-icon type="user" />1st menu item </m-menu-item>
+        <m-menu-item key="2"> <m-icon type="user" />2nd menu item </m-menu-item>
+        <m-menu-item key="3"> <m-icon type="user" />3rd item </m-menu-item>
+      </m-menu>
+    </m-dropdown-button>
+    <m-dropdown>
+      <m-menu slot="overlay" @click="handleMenuClick">
+        <m-menu-item key="1"> <m-icon type="user" />1st menu item </m-menu-item>
+        <m-menu-item key="2"> <m-icon type="user" />2nd menu item </m-menu-item>
+        <m-menu-item key="3"> <m-icon type="user" />3rd item </m-menu-item>
+      </m-menu>
+      <m-button style="margin-left: 8px"> Button <m-icon type="down" /> </m-button>
+    </m-dropdown>
   </div>
 </template>
 

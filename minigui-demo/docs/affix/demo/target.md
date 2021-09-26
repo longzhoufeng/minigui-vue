@@ -12,11 +12,11 @@ Set a `target` for 'Affix', which is listen to scroll event of target element (d
 <template>
   <div id="components-affix-demo-target" ref="container" class="scrollable-container">
     <div class="background">
-      <a-affix :target="() => this.$refs.container">
-        <a-button type="primary">
+      <m-affix :target="() => this.$refs.container">
+        <m-button type="primary">
           Fixed at the top of container
-        </a-button>
-      </a-affix>
+        </m-button>
+      </m-affix>
     </div>
   </div>
 </template>
@@ -28,7 +28,7 @@ Set a `target` for 'Affix', which is listen to scroll event of target element (d
 #components-affix-demo-target .background {
   padding-top: 60px;
   height: 300px;
-  background-image: url('https://zos.alipayobjects.com/rmsportal/RmjwQiJorKyobvI.jpg');
+  background-image: url('/bg1.jpg');
 }
 </style>
 ```

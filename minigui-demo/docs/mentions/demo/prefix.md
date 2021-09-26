@@ -10,15 +10,15 @@ Customize Trigger Token by `prefix` props. Default to `@`, `Array<string>` also 
 
 ```vue
 <template>
-  <a-mentions
+  <m-mentions
     placeholder="input @ to mention people, # to mention tag"
     :prefix="['@', '#']"
     @search="onSearch"
   >
-    <a-mentions-option v-for="value in MOCK_DATA[prefix] || []" :key="value" :value="value">
+    <m-mentions-option v-for="value in MOCK_DATA[prefix] || []" :key="value" :value="value">
       {{ value }}
-    </a-mentions-option>
-  </a-mentions>
+    </m-mentions-option>
+  </m-mentions>
 </template>
 <script>
 const MOCK_DATA = {

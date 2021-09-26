@@ -10,10 +10,10 @@ Comments can be nested.
 
 ```vue
 <template>
-  <a-comment>
+  <m-comment>
     <span slot="actions" key="comment-nested-reply-to">Reply to</span>
     <a slot="author">Han Solo</a>
-    <a-avatar
+    <m-avatar
       slot="avatar"
       src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
       alt="Han Solo"
@@ -22,10 +22,10 @@ Comments can be nested.
       We supply a series of design principles, practical patterns and high quality design resources
       (Sketch and Axure).
     </p>
-    <a-comment>
+    <m-comment>
       <span slot="actions">Reply to</span>
       <a slot="author">Han Solo</a>
-      <a-avatar
+      <m-avatar
         slot="avatar"
         src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
         alt="Han Solo"
@@ -34,10 +34,10 @@ Comments can be nested.
         We supply a series of design principles, practical patterns and high quality design
         resources (Sketch and Axure).
       </p>
-      <a-comment>
+      <m-comment>
         <span slot="actions">Reply to</span>
         <a slot="author">Han Solo</a>
-        <a-avatar
+        <m-avatar
           slot="avatar"
           src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
           alt="Han Solo"
@@ -46,11 +46,11 @@ Comments can be nested.
           We supply a series of design principles, practical patterns and high quality design
           resources (Sketch and Axure).
         </p>
-      </a-comment>
-      <a-comment>
+      </m-comment>
+      <m-comment>
         <span slot="actions">Reply to</span>
         <a slot="author">Han Solo</a>
-        <a-avatar
+        <m-avatar
           slot="avatar"
           src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
           alt="Han Solo"
@@ -59,8 +59,8 @@ Comments can be nested.
           We supply a series of design principles, practical patterns and high quality design
           resources (Sketch and Axure).
         </p>
-      </a-comment>
-    </a-comment>
-  </a-comment>
+      </m-comment>
+    </m-comment>
+  </m-comment>
 </template>
 ```

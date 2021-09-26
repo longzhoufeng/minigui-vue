@@ -11,12 +11,12 @@
 ```vue
 <template>
   <div>
-    <a-card :loading="loading" title="Card title">
+    <m-card :loading="loading" title="Card title">
       whatever content
-    </a-card>
-    <a-button style="marginTop: 16px" @click="handleClick">
+    </m-card>
+    <m-button style="marginTop: 16px" @click="handleClick">
       Toggle loading
-    </a-button>
+    </m-button>
   </div>
 </template>
 <script>

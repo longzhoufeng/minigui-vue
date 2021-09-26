@@ -10,6 +10,6 @@ Simplest Skeleton usage.
 
 ```vue
 <template>
-  <a-skeleton />
+  <m-skeleton />
 </template>
 ```

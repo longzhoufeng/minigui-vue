@@ -10,6 +10,6 @@ Show stepped options by `hourStep` `minuteStep` `secondStep`.
 
 ```vue
 <template>
-  <a-time-picker :minute-step="15" :second-step="10" />
+  <m-time-picker :minute-step="15" :second-step="10" />
 </template>
 ```

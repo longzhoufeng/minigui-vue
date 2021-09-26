@@ -10,16 +10,16 @@ async.
 
 ```vue
 <template>
-  <a-mentions :loading="loading" @search="onSearch">
-    <a-mentions-option
+  <m-mentions :loading="loading" @search="onSearch">
+    <m-mentions-option
       v-for="({ login, avatar_url: avatar }) in users"
       :key="login"
       :value="login"
     >
       <img :src="avatar" :alt="login" style="width: 20px; margin-right: 8px;">
       <span>{{ login }}</span>
-    </a-mentions-option>
-  </a-mentions>
+    </m-mentions-option>
+  </m-mentions>
 </template>
 
 <script>

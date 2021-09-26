@@ -45,7 +45,7 @@ $ npm i --save minigui-vue
 import Vue from 'vue';
 import Minigui from 'minigui-vue';
 import App from './App';
-import 'minigui-vue/dist/antd.css';
+import 'minigui-vue/dist/minigui.css';
 Vue.config.productionTip = false;
 
 Vue.use(Minigui);

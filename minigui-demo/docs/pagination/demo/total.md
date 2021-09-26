@@ -11,14 +11,14 @@ You can show the total number of data by setting `showTotal`.
 ```vue
 <template>
   <div>
-    <a-pagination
+    <m-pagination
       :total="85"
       :show-total="total => `Total ${total} items`"
       :page-size="20"
       :default-current="1"
     />
     <br />
-    <a-pagination
+    <m-pagination
       :total="85"
       :show-total="(total, range) => `${range[0]}-${range[1]} of ${total} items`"
       :page-size="20"

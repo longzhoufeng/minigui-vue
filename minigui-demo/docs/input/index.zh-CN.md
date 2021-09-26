@@ -66,10 +66,10 @@
 | size | `Input.Group` 中所有的 `Input` 的大小，可选 `large` `default` `small` | string | `default` |
 
 ```html
-<a-input-group>
-  <a-input />
-  <a-input />
-</a-input-group>
+<m-input-group>
+  <m-input />
+  <m-input />
+</m-input-group>
 ```
 
 #### Input.Password (1.14.0 中新增)

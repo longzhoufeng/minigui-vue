@@ -5,34 +5,34 @@
 
 <us>
   #### Configuring the Separator
-  The separator can be customized by setting the separator preperty: separator=">" or use 
+  The separator can be customized by setting the separator preperty: separator=">" or use
   slot="separator"
 </us>
 
 ```vue
 <template>
   <div>
-    <a-breadcrumb separator=">">
-      <a-breadcrumb-item>Home</a-breadcrumb-item>
-      <a-breadcrumb-item href="">
+    <m-breadcrumb separator=">">
+      <m-breadcrumb-item>Home</m-breadcrumb-item>
+      <m-breadcrumb-item href="">
         Application Center
-      </a-breadcrumb-item>
-      <a-breadcrumb-item href="">
+      </m-breadcrumb-item>
+      <m-breadcrumb-item href="">
         Application List
-      </a-breadcrumb-item>
-      <a-breadcrumb-item>An Application</a-breadcrumb-item>
-    </a-breadcrumb>
-    <a-breadcrumb>
+      </m-breadcrumb-item>
+      <m-breadcrumb-item>An Application</m-breadcrumb-item>
+    </m-breadcrumb>
+    <m-breadcrumb>
       <span slot="separator" style="color: red">></span>
-      <a-breadcrumb-item>Home</a-breadcrumb-item>
-      <a-breadcrumb-item href="">
+      <m-breadcrumb-item>Home</m-breadcrumb-item>
+      <m-breadcrumb-item href="">
         Application Center
-      </a-breadcrumb-item>
-      <a-breadcrumb-item href="">
+      </m-breadcrumb-item>
+      <m-breadcrumb-item href="">
         Application List
-      </a-breadcrumb-item>
-      <a-breadcrumb-item>An Application</a-breadcrumb-item>
-    </a-breadcrumb>
+      </m-breadcrumb-item>
+      <m-breadcrumb-item>An Application</m-breadcrumb-item>
+    </m-breadcrumb>
   </div>
 </template>
 ```

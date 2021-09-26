@@ -11,29 +11,29 @@ Basic use case. Users can select or input a date in panel.
 ```vue
 <template>
   <div>
-    <a-date-picker @change="onChange">
-      <a-icon slot="suffixIcon" type="smile" />
-    </a-date-picker>
+    <m-date-picker @change="onChange">
+      <m-icon slot="suffixIcon" type="smile" />
+    </m-date-picker>
     <br />
-    <a-month-picker placeholder="Select month" @change="onChange">
-      <a-icon slot="suffixIcon" type="smile" />
-    </a-month-picker>
+    <m-month-picker placeholder="Select month" @change="onChange">
+      <m-icon slot="suffixIcon" type="smile" />
+    </m-month-picker>
     <br />
-    <a-range-picker @change="onChange">
-      <a-icon slot="suffixIcon" type="smile" />
-    </a-range-picker>
+    <m-range-picker @change="onChange">
+      <m-icon slot="suffixIcon" type="smile" />
+    </m-range-picker>
     <br />
-    <a-week-picker placeholder="Select week" @change="onChange">
-      <a-icon slot="suffixIcon" type="smile" />
-    </a-week-picker>
+    <m-week-picker placeholder="Select week" @change="onChange">
+      <m-icon slot="suffixIcon" type="smile" />
+    </m-week-picker>
     <br />
-    <a-date-picker suffix-icon="ab" @change="onChange" />
+    <m-date-picker suffix-icon="ab" @change="onChange" />
     <br />
-    <a-month-picker suffix-icon="ab" placeholder="Select month" @change="onChange" />
+    <m-month-picker suffix-icon="ab" placeholder="Select month" @change="onChange" />
     <br />
-    <a-range-picker suffix-icon="ab" @change="onChange" />
+    <m-range-picker suffix-icon="ab" @change="onChange" />
     <br />
-    <a-week-picker suffix-icon="ab" placeholder="Select week" @change="onChange" />
+    <m-week-picker suffix-icon="ab" placeholder="Select week" @change="onChange" />
   </div>
 </template>
 <script>

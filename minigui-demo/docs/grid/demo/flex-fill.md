@@ -11,27 +11,27 @@ Col provides `flex` prop to support fill rest.
 ```vue
 <template>
   <div>
-    <a-divider orientation="left">
+    <m-divider orientation="left">
       Percentage columns
-    </a-divider>
-    <a-row type="flex">
-      <a-col :flex="2">2 / 5</a-col>
-      <a-col :flex="3">3 / 5</a-col>
-    </a-row>
-    <a-divider orientation="left">
+    </m-divider>
+    <m-row type="flex">
+      <m-col :flex="2">2 / 5</m-col>
+      <m-col :flex="3">3 / 5</m-col>
+    </m-row>
+    <m-divider orientation="left">
       Fill rest
-    </a-divider>
-    <a-row type="flex">
-      <a-col flex="100px">100px</a-col>
-      <a-col flex="auto">auto</a-col>
-    </a-row>
-    <a-divider orientation="left">
+    </m-divider>
+    <m-row type="flex">
+      <m-col flex="100px">100px</m-col>
+      <m-col flex="auto">auto</m-col>
+    </m-row>
+    <m-divider orientation="left">
       Raw flex style
-    </a-divider>
-    <a-row type="flex">
-      <a-col flex="1 1 200px">1 1 200px</a-col>
-      <a-col flex="0 1 300px">0 1 300px</a-col>
-    </a-row>
+    </m-divider>
+    <m-row type="flex">
+      <m-col flex="1 1 200px">1 1 200px</m-col>
+      <m-col flex="0 1 300px">0 1 300px</m-col>
+    </m-row>
   </div>
 </template>
 ```

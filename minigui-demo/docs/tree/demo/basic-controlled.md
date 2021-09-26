@@ -10,7 +10,7 @@ Controlled mode lets parent nodes reflect the status of child nodes more intelli
 
 ```vue
 <template>
-  <a-tree
+  <m-tree
     v-model="checkedKeys"
     checkable
     :expanded-keys="expandedKeys"

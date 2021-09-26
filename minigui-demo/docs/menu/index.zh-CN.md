@@ -2,12 +2,12 @@
 
 ```html
 <template>
-  <a-menu>
-    <a-menu-item>菜单项</a-menu-item>
-    <a-sub-menu title="子菜单">
-      <a-menu-item>子菜单项</a-menu-item>
-    </a-sub-menu>
-  </a-menu>
+  <m-menu>
+    <m-menu-item>菜单项</m-menu-item>
+    <m-sub-menu title="子菜单">
+      <m-menu-item>子菜单项</m-menu-item>
+    </m-sub-menu>
+  </m-menu>
 </template>
 ```
 

@@ -15,21 +15,21 @@ Divider with inner title, set `orientation="left/right"` to align it.
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
       probare, quae sunt a te dicta? Refert tamen, quo modo.
     </p>
-    <a-divider>Text</a-divider>
+    <m-divider>Text</m-divider>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
       probare, quae sunt a te dicta? Refert tamen, quo modo.
     </p>
-    <a-divider orientation="left">
+    <m-divider orientation="left">
       Left Text
-    </a-divider>
+    </m-divider>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
       probare, quae sunt a te dicta? Refert tamen, quo modo.
     </p>
-    <a-divider orientation="right">
+    <m-divider orientation="right">
       Right Text
-    </a-divider>
+    </m-divider>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
       probare, quae sunt a te dicta? Refert tamen, quo modo.

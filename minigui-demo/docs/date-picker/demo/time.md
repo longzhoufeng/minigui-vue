@@ -11,9 +11,9 @@ This property provide an additional time selection. When `showTime` is an Object
 ```vue
 <template>
   <div>
-    <a-date-picker show-time placeholder="Select Time" @change="onChange" @ok="onOk" />
+    <m-date-picker show-time placeholder="Select Time" @change="onChange" @ok="onOk" />
     <br />
-    <a-range-picker
+    <m-range-picker
       :show-time="{ format: 'HH:mm' }"
       format="YYYY-MM-DD HH:mm"
       :placeholder="['Start Time', 'End Time']"

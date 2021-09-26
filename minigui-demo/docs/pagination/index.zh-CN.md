@@ -1,7 +1,7 @@
 ## API
 
 ```html
-<a-pagination @change="onChange" :total="50" />
+<m-pagination @change="onChange" :total="50" />
 ```
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |

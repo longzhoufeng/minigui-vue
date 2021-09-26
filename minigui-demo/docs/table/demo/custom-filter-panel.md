@@ -10,13 +10,13 @@ Implement a customized column search example via `filterDropdown`.
 
 ```vue
 <template>
-  <a-table :data-source="data" :columns="columns">
+  <m-table :data-source="data" :columns="columns">
     <div
       slot="filterDropdown"
       slot-scope="{ setSelectedKeys, selectedKeys, confirm, clearFilters, column }"
       style="padding: 8px"
     >
-      <a-input
+      <m-input
         v-minigui-ref="c => (searchInput = c)"
         :placeholder="`Search ${column.dataIndex}`"
         :value="selectedKeys[0]"
@@ -24,7 +24,7 @@ Implement a customized column search example via `filterDropdown`.
         @change="e => setSelectedKeys(e.target.value ? [e.target.value] : [])"
         @pressEnter="() => handleSearch(selectedKeys, confirm, column.dataIndex)"
       />
-      <a-button
+      <m-button
         type="primary"
         icon="search"
         size="small"
@@ -32,12 +32,12 @@ Implement a customized column search example via `filterDropdown`.
         @click="() => handleSearch(selectedKeys, confirm, column.dataIndex)"
       >
         Search
-      </a-button>
-      <a-button size="small" style="width: 90px" @click="() => handleReset(clearFilters)">
+      </m-button>
+      <m-button size="small" style="width: 90px" @click="() => handleReset(clearFilters)">
         Reset
-      </a-button>
+      </m-button>
     </div>
-    <a-icon
+    <m-icon
       slot="filterIcon"
       slot-scope="filtered"
       type="search"
@@ -63,7 +63,7 @@ Implement a customized column search example via `filterDropdown`.
         {{ text }}
       </template>
     </template>
-  </a-table>
+  </m-table>
 </template>
 
 <script>

@@ -4,9 +4,9 @@ ConfigProvider 使用 Vue 的 [provide / inject](https://vuejs.org/v2/api/#provi
 
 ```html
 <template>
-  <a-config-provider :getPopupContainer="getPopupContainer">
+  <m-config-provider :getPopupContainer="getPopupContainer">
     <app />
-  </a-config-provider>
+  </m-config-provider>
 </template>
 <script>
   export default {
@@ -28,9 +28,9 @@ ConfigProvider 使用 Vue 的 [provide / inject](https://vuejs.org/v2/api/#provi
 部分组件为了支持波纹效果，使用了动态样式。如果开启了 Content Security Policy (CSP)，你可以通过 `csp` 属性来进行配置：
 
 ```html
-<a-config-provider :csp="{ nonce: 'YourNonceCode' }">
-  <a-button>My Button</a-button>
-</a-config-provider>
+<m-config-provider :csp="{ nonce: 'YourNonceCode' }">
+  <m-button>My Button</m-button>
+</m-config-provider>
 ```
 
 ## API

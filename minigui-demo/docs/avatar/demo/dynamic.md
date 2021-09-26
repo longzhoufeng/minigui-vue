@@ -11,20 +11,20 @@ For letter type Avatar, when the letters are too long to display, the font size 
 ```vue
 <template>
   <div>
-    <a-avatar
+    <m-avatar
       shape="square"
       size="large"
       :style="{ backgroundColor: color, verticalAlign: 'middle' }"
     >
       {{ avatarValue }}
-    </a-avatar>
-    <a-button
+    </m-avatar>
+    <m-button
       size="small"
       :style="{ marginLeft: 16, verticalAlign: 'middle' }"
       @click="changeValue"
     >
       改变
-    </a-button>
+    </m-button>
   </div>
 </template>
 <script>

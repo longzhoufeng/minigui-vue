@@ -11,10 +11,10 @@ Basic drawer.
 ```vue
 <template>
   <div>
-    <a-button type="primary" @click="showDrawer">
+    <m-button type="primary" @click="showDrawer">
       Open
-    </a-button>
-    <a-drawer
+    </m-button>
+    <m-drawer
       title="Basic Drawer"
       placement="right"
       :closable="false"
@@ -25,7 +25,7 @@ Basic drawer.
       <p>Some contents...</p>
       <p>Some contents...</p>
       <p>Some contents...</p>
-    </a-drawer>
+    </m-drawer>
   </div>
 </template>
 <script>

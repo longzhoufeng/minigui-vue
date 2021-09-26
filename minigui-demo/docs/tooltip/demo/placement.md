@@ -12,84 +12,84 @@ There are 12 placement options available.
 <template>
   <div id="components-a-tooltip-demo-placement">
     <div :style="{ marginLeft: `${buttonWidth}px`, whiteSpace: 'nowrap' }">
-      <a-tooltip placement="topLeft">
+      <m-tooltip placement="topLeft">
         <template slot="title">
           <span>prompt text</span>
         </template>
-        <a-button>TL</a-button>
-      </a-tooltip>
-      <a-tooltip placement="top">
+        <m-button>TL</m-button>
+      </m-tooltip>
+      <m-tooltip placement="top">
         <template slot="title">
           <span>prompt text</span>
         </template>
-        <a-button>Top</a-button>
-      </a-tooltip>
-      <a-tooltip placement="topRight">
+        <m-button>Top</m-button>
+      </m-tooltip>
+      <m-tooltip placement="topRight">
         <template slot="title">
           <span>prompt text</span>
         </template>
-        <a-button>TR</a-button>
-      </a-tooltip>
+        <m-button>TR</m-button>
+      </m-tooltip>
     </div>
     <div :style="{ width: `${buttonWidth}px`, float: 'left' }">
-      <a-tooltip placement="leftTop">
+      <m-tooltip placement="leftTop">
         <template slot="title">
           <span>prompt text</span>
         </template>
-        <a-button>LT</a-button>
-      </a-tooltip>
-      <a-tooltip placement="left">
+        <m-button>LT</m-button>
+      </m-tooltip>
+      <m-tooltip placement="left">
         <template slot="title">
           <span>prompt text</span>
         </template>
-        <a-button>Left</a-button>
-      </a-tooltip>
-      <a-tooltip placement="leftBottom">
+        <m-button>Left</m-button>
+      </m-tooltip>
+      <m-tooltip placement="leftBottom">
         <template slot="title">
           <span>prompt text</span>
         </template>
-        <a-button>LB</a-button>
-      </a-tooltip>
+        <m-button>LB</m-button>
+      </m-tooltip>
     </div>
     <div :style="{ width: `${buttonWidth}px`, marginLeft: `${buttonWidth * 4 + 24}px` }">
-      <a-tooltip placement="rightTop">
+      <m-tooltip placement="rightTop">
         <template slot="title">
           <span>prompt text</span>
         </template>
-        <a-button>RT</a-button>
-      </a-tooltip>
-      <a-tooltip placement="right">
+        <m-button>RT</m-button>
+      </m-tooltip>
+      <m-tooltip placement="right">
         <template slot="title">
           <span>prompt text</span>
         </template>
-        <a-button>Right</a-button>
-      </a-tooltip>
-      <a-tooltip placement="rightBottom">
+        <m-button>Right</m-button>
+      </m-tooltip>
+      <m-tooltip placement="rightBottom">
         <template slot="title">
           <span>prompt text</span>
         </template>
-        <a-button>RB</a-button>
-      </a-tooltip>
+        <m-button>RB</m-button>
+      </m-tooltip>
     </div>
     <div :style="{ marginLeft: `${buttonWidth}px`, clear: 'both', whiteSpace: 'nowrap' }">
-      <a-tooltip placement="bottomLeft">
+      <m-tooltip placement="bottomLeft">
         <template slot="title">
           <span>prompt text</span>
         </template>
-        <a-button>BL</a-button>
-      </a-tooltip>
-      <a-tooltip placement="bottom">
+        <m-button>BL</m-button>
+      </m-tooltip>
+      <m-tooltip placement="bottom">
         <template slot="title">
           <span>prompt text</span>
         </template>
-        <a-button>Bottom</a-button>
-      </a-tooltip>
-      <a-tooltip placement="bottomRight">
+        <m-button>Bottom</m-button>
+      </m-tooltip>
+      <m-tooltip placement="bottomRight">
         <template slot="title">
           <span>prompt text</span>
         </template>
-        <a-button>BR</a-button>
-      </a-tooltip>
+        <m-button>BR</m-button>
+      </m-tooltip>
     </div>
   </div>
 </template>

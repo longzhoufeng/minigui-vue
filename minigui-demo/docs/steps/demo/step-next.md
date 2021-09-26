@@ -11,26 +11,26 @@ Cooperate with the content and buttons, to represent the progress of a process.
 ```vue
 <template>
   <div>
-    <a-steps :current="current">
-      <a-step v-for="item in steps" :key="item.title" :title="item.title" />
-    </a-steps>
+    <m-steps :current="current">
+      <m-step v-for="item in steps" :key="item.title" :title="item.title" />
+    </m-steps>
     <div class="steps-content">
       {{ steps[current].content }}
     </div>
     <div class="steps-action">
-      <a-button v-if="current < steps.length - 1" type="primary" @click="next">
+      <m-button v-if="current < steps.length - 1" type="primary" @click="next">
         Next
-      </a-button>
-      <a-button
+      </m-button>
+      <m-button
         v-if="current == steps.length - 1"
         type="primary"
         @click="$message.success('Processing complete!')"
       >
         Done
-      </a-button>
-      <a-button v-if="current > 0" style="margin-left: 8px" @click="prev">
+      </m-button>
+      <m-button v-if="current > 0" style="margin-left: 8px" @click="prev">
         Previous
-      </a-button>
+      </m-button>
     </div>
   </div>
 </template>

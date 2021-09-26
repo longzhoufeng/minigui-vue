@@ -11,19 +11,19 @@ Steps with progress dot style.
 ```vue
 <template>
   <div>
-    <a-steps progress-dot :current="1">
-      <a-step title="Finished" description="This is a description." />
-      <a-step title="In Progress" description="This is a description." />
-      <a-step title="Waiting" description="This is a description." />
-    </a-steps>
-    <a-divider />
-    <a-steps progress-dot :current="1" direction="vertical">
-      <a-step title="Finished" description="This is a description. This is a description." />
-      <a-step title="Finished" description="This is a description. This is a description." />
-      <a-step title="In Progress" description="This is a description. This is a description." />
-      <a-step title="Waiting" description="This is a description." />
-      <a-step title="Waiting" description="This is a description." />
-    </a-steps>
+    <m-steps progress-dot :current="1">
+      <m-step title="Finished" description="This is a description." />
+      <m-step title="In Progress" description="This is a description." />
+      <m-step title="Waiting" description="This is a description." />
+    </m-steps>
+    <m-divider />
+    <m-steps progress-dot :current="1" direction="vertical">
+      <m-step title="Finished" description="This is a description. This is a description." />
+      <m-step title="Finished" description="This is a description. This is a description." />
+      <m-step title="In Progress" description="This is a description. This is a description." />
+      <m-step title="Waiting" description="This is a description." />
+      <m-step title="Waiting" description="This is a description." />
+    </m-steps>
   </div>
 </template>
 ```

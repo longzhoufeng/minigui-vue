@@ -11,16 +11,16 @@ Customized bar of tab.
 ```vue
 <template>
   <div>
-    <a-tabs default-active-key="1">
-      <a-tab-pane key="1" tab="Tab 1" style="height: 200px">
+    <m-tabs default-active-key="1">
+      <m-tab-pane key="1" tab="Tab 1" style="height: 200px">
         Content of Tab Pane 1
-      </a-tab-pane>
-      <a-tab-pane key="2" tab="Tab 2" force-render>
+      </m-tab-pane>
+      <m-tab-pane key="2" tab="Tab 2" force-render>
         Content of Tab Pane 2
-      </a-tab-pane>
-      <a-tab-pane key="3" tab="Tab 3">
+      </m-tab-pane>
+      <m-tab-pane key="3" tab="Tab 3">
         Content of Tab Pane 3
-      </a-tab-pane>
+      </m-tab-pane>
       <template slot="renderTabBar" slot-scope="{ props, on, class: cls }, DefaultTabBar">
         <component
           :is="DefaultTabBar"
@@ -30,7 +30,7 @@ Customized bar of tab.
           v-on="on"
         />
       </template>
-    </a-tabs>
+    </m-tabs>
   </div>
 </template>
 <script>

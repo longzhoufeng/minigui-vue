@@ -10,11 +10,11 @@ The simplest usage.
 
 ```vue
 <template>
-  <a-tooltip>
+  <m-tooltip>
     <template slot="title">
       prompt text
     </template>
     Tooltip will show when mouse enter.
-  </a-tooltip>
+  </m-tooltip>
 </template>
 ```

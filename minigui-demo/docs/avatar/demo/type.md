@@ -11,17 +11,17 @@ Image, Icon and letter are supported, and the latter two kinds avatar can have c
 ```vue
 <template>
   <div>
-    <a-avatar icon="user" />
-    <a-avatar>
-      <a-icon slot="icon" type="user" />
-    </a-avatar>
-    <a-avatar>U</a-avatar>
-    <a-avatar>USER</a-avatar>
-    <a-avatar src="/public/avatar.png" />
-    <a-avatar style="color: #f56a00; backgroundColor: #fde3cf">
+    <m-avatar icon="user" />
+    <m-avatar>
+      <m-icon slot="icon" type="user" />
+    </m-avatar>
+    <m-avatar>U</m-avatar>
+    <m-avatar>USER</m-avatar>
+    <m-avatar src="/public/avatar.png" />
+    <m-avatar style="color: #f56a00; backgroundColor: #fde3cf">
       U
-    </a-avatar>
-    <a-avatar style="backgroundColor:#87d068" icon="user" />
+    </m-avatar>
+    <m-avatar style="backgroundColor:#87d068" icon="user" />
   </div>
 </template>
 ```

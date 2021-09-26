@@ -11,15 +11,15 @@ Custom spacing size.
 ```vue
 <template>
   <div>
-    <a-slider v-model="size" />
+    <m-slider v-model="size" />
     <br />
     <br />
-    <a-space :size="size">
-      <a-button type="primary">Primary</a-button>
-      <a-button>Default</a-button>
-      <a-button type="dashed">Dashed</a-button>
-      <a-button type="link">Link</a-button>
-    </a-space>
+    <m-space :size="size">
+      <m-button type="primary">Primary</m-button>
+      <m-button>Default</m-button>
+      <m-button type="dashed">Dashed</m-button>
+      <m-button type="link">Link</m-button>
+    </m-space>
   </div>
 </template>
 <script>

@@ -11,8 +11,8 @@ Searchable Tree.
 ```vue
 <template>
   <div>
-    <a-input-search style="margin-bottom: 8px" placeholder="Search" @change="onChange" />
-    <a-tree
+    <m-input-search style="margin-bottom: 8px" placeholder="Search" @change="onChange" />
+    <m-tree
       :expanded-keys="expandedKeys"
       :auto-expand-parent="autoExpandParent"
       :tree-data="gData"
@@ -26,7 +26,7 @@ Searchable Tree.
         </span>
         <span v-else>{{ title }}</span>
       </template>
-    </a-tree>
+    </m-tree>
   </div>
 </template>
 

@@ -10,22 +10,22 @@ Divider and disabled menu item.
 
 ```vue
 <template>
-  <a-dropdown>
+  <m-dropdown>
     <a class="minigui-dropdown-link" @click="e => e.preventDefault()">
-      Hover me <a-icon type="down" />
+      Hover me <m-icon type="down" />
     </a>
-    <a-menu slot="overlay">
-      <a-menu-item key="0">
+    <m-menu slot="overlay">
+      <m-menu-item key="0">
         <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">1st menu item</a>
-      </a-menu-item>
-      <a-menu-item key="1">
+      </m-menu-item>
+      <m-menu-item key="1">
         <a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">2nd menu item</a>
-      </a-menu-item>
-      <a-menu-divider />
-      <a-menu-item key="3" disabled>
+      </m-menu-item>
+      <m-menu-divider />
+      <m-menu-item key="3" disabled>
         3rd menu item（disabled）
-      </a-menu-item>
-    </a-menu>
-  </a-dropdown>
+      </m-menu-item>
+    </m-menu>
+  </m-dropdown>
 </template>
 ```

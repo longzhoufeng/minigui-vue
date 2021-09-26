@@ -10,16 +10,16 @@ Change the suggestions placement.
 
 ```vue
 <template>
-  <a-mentions placement="top">
-    <a-mentions-option value="afc163">
+  <m-mentions placement="top">
+    <m-mentions-option value="afc163">
       afc163
-    </a-mentions-option>
-    <a-mentions-option value="zombieJ">
+    </m-mentions-option>
+    <m-mentions-option value="zombieJ">
       zombieJ
-    </a-mentions-option>
-    <a-mentions-option value="yesmeck">
+    </m-mentions-option>
+    <m-mentions-option value="yesmeck">
       yesmeck
-    </a-mentions-option>
-  </a-mentions>
+    </m-mentions-option>
+  </m-mentions>
 </template>
 ```

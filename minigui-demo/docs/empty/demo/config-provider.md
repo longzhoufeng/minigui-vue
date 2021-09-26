@@ -11,40 +11,40 @@ Use ConfigProvider set global Empty style.
 ```vue
 <template>
   <div>
-    <a-switch
+    <m-switch
       un-checked-children="default"
       checked-children="customize"
       :checked="customize"
       @change="val => (customize = val)"
     />
 
-    <a-divider />
-    <a-config-provider>
+    <m-divider />
+    <m-config-provider>
       <template v-if="customize" #renderEmpty>
         <div style="text-align: center">
-          <a-icon type="smile" style="font-size: 20px" />
+          <m-icon type="smile" style="font-size: 20px" />
           <p>Data Not Found</p>
         </div>
       </template>
       <div class="config-provider">
         <h3>Select</h3>
-        <a-select :style="style" :options="[]" />
+        <m-select :style="style" :options="[]" />
 
         <h3>TreeSelect</h3>
-        <a-tree-select :style="style" :tree-data="[]" />
+        <m-tree-select :style="style" :tree-data="[]" />
 
         <h3>Cascader</h3>
-        <a-cascader :style="style" :options="[]" :show-search="true" />
+        <m-cascader :style="style" :options="[]" :show-search="true" />
 
         <h3>Transfer</h3>
-        <a-transfer :data-source="[]" />
+        <m-transfer :data-source="[]" />
 
         <h3>Table</h3>
-        <a-table style="margin-top: 8px" :columns="columns" :data-source="[]" />
+        <m-table style="margin-top: 8px" :columns="columns" :data-source="[]" />
         <h3>List</h3>
-        <a-list :data-source="[]" />
+        <m-list :data-source="[]" />
       </div>
-    </a-config-provider>
+    </m-config-provider>
   </div>
 </template>
 <script>

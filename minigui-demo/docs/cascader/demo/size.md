@@ -11,9 +11,9 @@ Cascade selection box of different sizes.
 ```vue
 <template>
   <div>
-    <a-cascader size="large" :options="options" @change="onChange" /><br /><br />
-    <a-cascader :options="options" @change="onChange" /><br /><br />
-    <a-cascader size="small" :options="options" @change="onChange" /><br /><br />
+    <m-cascader size="large" :options="options" @change="onChange" /><br /><br />
+    <m-cascader :options="options" @change="onChange" /><br /><br />
+    <m-cascader size="small" :options="options" @change="onChange" /><br /><br />
   </div>
 </template>
 <script>

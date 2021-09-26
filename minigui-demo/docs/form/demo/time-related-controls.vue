@@ -9,44 +9,44 @@ The `value` of time-related components is a `moment` object, which we need to pr
 </us>
 
 <template>
-  <a-form v-bind="formItemLayout" :form="form" @submit="handleSubmit">
-    <a-form-item label="DatePicker">
-      <a-date-picker v-decorator="['date-picker', config]" />
-    </a-form-item>
-    <a-form-item label="DatePicker[showTime]">
-      <a-date-picker
+  <m-form v-bind="formItemLayout" :form="form" @submit="handleSubmit">
+    <m-form-item label="DatePicker">
+      <m-date-picker v-decorator="['date-picker', config]" />
+    </m-form-item>
+    <m-form-item label="DatePicker[showTime]">
+      <m-date-picker
         v-decorator="['date-time-picker', config]"
         show-time
         format="YYYY-MM-DD HH:mm:ss"
       />
-    </a-form-item>
-    <a-form-item label="MonthPicker">
-      <a-month-picker v-decorator="['month-picker', config]" />
-    </a-form-item>
-    <a-form-item label="RangePicker">
-      <a-range-picker v-decorator="['range-picker', rangeConfig]" />
-    </a-form-item>
-    <a-form-item label="RangePicker[showTime]">
-      <a-range-picker
+    </m-form-item>
+    <m-form-item label="MonthPicker">
+      <m-month-picker v-decorator="['month-picker', config]" />
+    </m-form-item>
+    <m-form-item label="RangePicker">
+      <m-range-picker v-decorator="['range-picker', rangeConfig]" />
+    </m-form-item>
+    <m-form-item label="RangePicker[showTime]">
+      <m-range-picker
         v-decorator="['range-time-picker', rangeConfig]"
         show-time
         format="YYYY-MM-DD HH:mm:ss"
       />
-    </a-form-item>
-    <a-form-item label="TimePicker">
-      <a-time-picker v-decorator="['time-picker', config]" />
-    </a-form-item>
-    <a-form-item
+    </m-form-item>
+    <m-form-item label="TimePicker">
+      <m-time-picker v-decorator="['time-picker', config]" />
+    </m-form-item>
+    <m-form-item
       :wrapper-col="{
         xs: { span: 24, offset: 0 },
         sm: { span: 16, offset: 8 },
       }"
     >
-      <a-button type="primary" html-type="submit">
+      <m-button type="primary" html-type="submit">
         Submit
-      </a-button>
-    </a-form-item>
-  </a-form>
+      </m-button>
+    </m-form-item>
+  </m-form>
 </template>
 <script>
 export default {

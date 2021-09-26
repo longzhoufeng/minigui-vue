@@ -10,7 +10,7 @@ Basic pagination.
 
 ```vue
 <template>
-  <a-pagination v-model="current" :total="50" show-less-items />
+  <m-pagination v-model="current" :total="50" show-less-items />
 </template>
 <script>
 export default {

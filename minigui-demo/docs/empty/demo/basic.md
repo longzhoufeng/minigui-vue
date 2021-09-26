@@ -10,6 +10,6 @@ Simplest Usage.
 
 ```vue
 <template>
-  <a-empty />
+  <m-empty />
 </template>
 ```

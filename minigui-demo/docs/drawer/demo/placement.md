@@ -11,24 +11,24 @@ The Drawer can appear from any edge of the screen.
 ```vue
 <template>
   <div>
-    <a-radio-group style="margin-right: 8px" :default-value="placement" @change="onChange">
-      <a-radio value="top">
+    <m-radio-group style="margin-right: 8px" :default-value="placement" @change="onChange">
+      <m-radio value="top">
         top
-      </a-radio>
-      <a-radio value="right">
+      </m-radio>
+      <m-radio value="right">
         right
-      </a-radio>
-      <a-radio value="bottom">
+      </m-radio>
+      <m-radio value="bottom">
         bottom
-      </a-radio>
-      <a-radio value="left">
+      </m-radio>
+      <m-radio value="left">
         left
-      </a-radio>
-    </a-radio-group>
-    <a-button type="primary" @click="showDrawer">
+      </m-radio>
+    </m-radio-group>
+    <m-button type="primary" @click="showDrawer">
       Open
-    </a-button>
-    <a-drawer
+    </m-button>
+    <m-drawer
       title="Basic Drawer"
       :placement="placement"
       :closable="false"
@@ -38,7 +38,7 @@ The Drawer can appear from any edge of the screen.
       <p>Some contents...</p>
       <p>Some contents...</p>
       <p>Some contents...</p>
-    </a-drawer>
+    </m-drawer>
   </div>
 </template>
 <script>

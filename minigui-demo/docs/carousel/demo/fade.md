@@ -10,12 +10,12 @@ Slides use fade for transition.
 
 ```vue
 <template>
-  <a-carousel effect="fade">
+  <m-carousel effect="fade">
     <div><h3>1</h3></div>
     <div><h3>2</h3></div>
     <div><h3>3</h3></div>
     <div><h3>4</h3></div>
-  </a-carousel>
+  </m-carousel>
 </template>
 <script>
 export default {};

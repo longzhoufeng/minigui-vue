@@ -24,7 +24,7 @@
 
 ## 支持环境
 
-- 现代浏览器和 IE9 及以上（需要 [polyfills](https://www.antdv.com/docs/vue/getting-started-cn/#兼容性)）。
+- 现代浏览器和 IE9 及以上。
 - 支持服务端渲染。
 - [Electron](https://electronjs.org/)
 
@@ -72,7 +72,7 @@ Vue.use(DatePicker);
 引入样式：
 
 ```jsx
-import 'minigui-vue/dist/antd.css'; // or 'minigui-vue/dist/antd.less'
+import 'minigui-vue/dist/minigui.css'; // or 'minigui-vue/dist/antd.less'
 ```
 
 ### 按需加载

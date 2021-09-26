@@ -10,9 +10,9 @@ Display a global loading indicator, which is dismissed by itself asynchronously.
 
 ```vue
 <template>
-  <a-button @click="success">
+  <m-button @click="success">
     Display a loading indicator
-  </a-button>
+  </m-button>
 </template>
 <script>
 export default {

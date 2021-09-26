@@ -11,7 +11,7 @@ A simple loading status.
 ```vue
 <template>
   <div>
-    <a-spin />
+    <m-spin />
   </div>
 </template>
 ```

@@ -11,20 +11,20 @@ A group of radio components.
 ```vue
 <template>
   <div>
-    <a-radio-group v-model="value" @change="onChange">
-      <a-radio :value="1">
+    <m-radio-group v-model="value" @change="onChange">
+      <m-radio :value="1">
         A
-      </a-radio>
-      <a-radio :value="2">
+      </m-radio>
+      <m-radio :value="2">
         B
-      </a-radio>
-      <a-radio :value="3">
+      </m-radio>
+      <m-radio :value="3">
         C
-      </a-radio>
-      <a-radio :value="4">
+      </m-radio>
+      <m-radio :value="4">
         D
-      </a-radio>
-    </a-radio-group>
+      </m-radio>
+    </m-radio-group>
   </div>
 </template>
 <script>

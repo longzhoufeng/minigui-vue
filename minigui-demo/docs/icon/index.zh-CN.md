@@ -25,13 +25,13 @@
 其中 `theme`, `component`, `twoToneColor` 是 `1.2.x` 版本新增加的属性。最佳实践是给使用的 `<Icon />` 组件传入属性 `theme` 以明确图标的主题风格。例如：
 
 ```html
-<a-icon type="star" theme="filled" />
+<m-icon type="star" theme="filled" />
 ```
 
 所有的图标都会以 `<svg>` 标签渲染，可以使用 `style` 和 `class` 设置图标的大小和单色图标的颜色。例如：
 
 ```html
-<a-icon type="message" :style="{ fontSize: '16px', color: '#08c' }" />
+<m-icon type="message" :style="{ fontSize: '16px', color: '#08c' }" />
 ```
 
 ### 双色图标主色
@@ -102,7 +102,7 @@ new Vue({
       MessageSvg,
     };
   },
-  template: '<a-icon :component="MessageSvg" />',
+  template: '<m-icon :component="MessageSvg" />',
 });
 ```
 

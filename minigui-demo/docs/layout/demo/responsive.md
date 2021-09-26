@@ -12,45 +12,45 @@ Layout.Sider supports responsive layout.
 
 ```vue
 <template>
-  <a-layout id="components-layout-demo-responsive">
-    <a-layout-sider
+  <m-layout id="components-layout-demo-responsive">
+    <m-layout-sider
       breakpoint="lg"
       collapsed-width="0"
       @collapse="onCollapse"
       @breakpoint="onBreakpoint"
     >
       <div class="logo" />
-      <a-menu theme="dark" mode="inline" :default-selected-keys="['4']">
-        <a-menu-item key="1">
-          <a-icon type="user" />
+      <m-menu theme="dark" mode="inline" :default-selected-keys="['4']">
+        <m-menu-item key="1">
+          <m-icon type="user" />
           <span class="nav-text">nav 1</span>
-        </a-menu-item>
-        <a-menu-item key="2">
-          <a-icon type="video-camera" />
+        </m-menu-item>
+        <m-menu-item key="2">
+          <m-icon type="video-camera" />
           <span class="nav-text">nav 2</span>
-        </a-menu-item>
-        <a-menu-item key="3">
-          <a-icon type="upload" />
+        </m-menu-item>
+        <m-menu-item key="3">
+          <m-icon type="upload" />
           <span class="nav-text">nav 3</span>
-        </a-menu-item>
-        <a-menu-item key="4">
-          <a-icon type="user" />
+        </m-menu-item>
+        <m-menu-item key="4">
+          <m-icon type="user" />
           <span class="nav-text">nav 4</span>
-        </a-menu-item>
-      </a-menu>
-    </a-layout-sider>
-    <a-layout>
-      <a-layout-header :style="{ background: '#fff', padding: 0 }" />
-      <a-layout-content :style="{ margin: '24px 16px 0' }">
+        </m-menu-item>
+      </m-menu>
+    </m-layout-sider>
+    <m-layout>
+      <m-layout-header :style="{ background: '#fff', padding: 0 }" />
+      <m-layout-content :style="{ margin: '24px 16px 0' }">
         <div :style="{ padding: '24px', background: '#fff', minHeight: '360px' }">
           content
         </div>
-      </a-layout-content>
-      <a-layout-footer style="textAlign: center">
+      </m-layout-content>
+      <m-layout-footer style="textAlign: center">
         Ant Design ©2018 Created by Ant UED
-      </a-layout-footer>
-    </a-layout>
-  </a-layout>
+      </m-layout-footer>
+    </m-layout>
+  </m-layout>
 </template>
 <script>
 export default {

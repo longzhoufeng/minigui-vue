@@ -11,7 +11,7 @@ Smoothly and unaffectedly unmount Alert.
 ```vue
 <template>
   <div>
-    <a-alert
+    <m-alert
       v-if="visible"
       message="Alert Message Text"
       type="success"

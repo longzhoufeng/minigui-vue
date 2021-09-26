@@ -12,20 +12,20 @@ To change the element sort by Flex layout order.
 ```vue
 <template>
   <div>
-    <a-row type="flex">
-      <a-col :span="6" :order="4">
+    <m-row type="flex">
+      <m-col :span="6" :order="4">
         1 col-order-4
-      </a-col>
-      <a-col :span="6" :order="3">
+      </m-col>
+      <m-col :span="6" :order="3">
         2 col-order-3
-      </a-col>
-      <a-col :span="6" :order="2">
+      </m-col>
+      <m-col :span="6" :order="2">
         3 col-order-2
-      </a-col>
-      <a-col :span="6" :order="1">
+      </m-col>
+      <m-col :span="6" :order="1">
         4 col-order-1
-      </a-col>
-    </a-row>
+      </m-col>
+    </m-row>
   </div>
 </template>
 ```

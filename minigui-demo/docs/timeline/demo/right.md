@@ -10,14 +10,14 @@ Right alternate timeline.
 
 ```vue
 <template>
-  <a-timeline mode="right">
-    <a-timeline-item>Create a services site 2015-09-01</a-timeline-item>
-    <a-timeline-item>Solve initial network problems 2015-09-01</a-timeline-item>
-    <a-timeline-item>
-      <a-icon slot="dot" type="clock-circle-o" style="font-size: 16px;" />
+  <m-timeline mode="right">
+    <m-timeline-item>Create a services site 2015-09-01</m-timeline-item>
+    <m-timeline-item>Solve initial network problems 2015-09-01</m-timeline-item>
+    <m-timeline-item>
+      <m-icon slot="dot" type="clock-circle-o" style="font-size: 16px;" />
       Technical testing 2015-09-01
-    </a-timeline-item>
-    <a-timeline-item>Network problems being solved 2015-09-01</a-timeline-item>
-  </a-timeline>
+    </m-timeline-item>
+    <m-timeline-item>Network problems being solved 2015-09-01</m-timeline-item>
+  </m-timeline>
 </template>
 ```

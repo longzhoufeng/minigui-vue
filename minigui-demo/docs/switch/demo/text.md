@@ -11,14 +11,14 @@ With text and icon.
 ```vue
 <template>
   <div>
-    <a-switch checked-children="开" un-checked-children="关" default-checked />
+    <m-switch checked-children="开" un-checked-children="关" default-checked />
     <br />
-    <a-switch checked-children="1" un-checked-children="0" />
+    <m-switch checked-children="1" un-checked-children="0" />
     <br />
-    <a-switch default-checked>
-      <a-icon slot="checkedChildren" type="check" />
-      <a-icon slot="unCheckedChildren" type="close" />
-    </a-switch>
+    <m-switch default-checked>
+      <m-icon slot="checkedChildren" type="check" />
+      <m-icon slot="unCheckedChildren" type="close" />
+    </m-switch>
   </div>
 </template>
 ```

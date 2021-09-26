@@ -10,7 +10,7 @@ Asynchronous loading tree node.
 
 ```vue
 <template>
-  <a-tree-select
+  <m-tree-select
     v-model="value"
     tree-data-simple-mode
     style="width: 100%"

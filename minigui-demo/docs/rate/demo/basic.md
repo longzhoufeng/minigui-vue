@@ -10,7 +10,7 @@ The simplest usage.
 
 ```vue
 <template>
-  <a-rate v-model="value" />
+  <m-rate v-model="value" />
 </template>
 <script>
 export default {

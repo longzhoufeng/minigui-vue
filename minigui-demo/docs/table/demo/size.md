@@ -12,9 +12,9 @@ There are two compacted table sizes: `middle` and `small`. The `small` size is u
 <template>
   <div id="components-table-demo-size">
     <h4>Middle size table</h4>
-    <a-table :columns="columns" :data-source="data" size="middle" />
+    <m-table :columns="columns" :data-source="data" size="middle" />
     <h4>Small size table</h4>
-    <a-table :columns="columns" :data-source="data" size="small" />
+    <m-table :columns="columns" :data-source="data" size="small" />
   </div>
 </template>
 <script>

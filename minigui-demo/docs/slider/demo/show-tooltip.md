@@ -10,6 +10,6 @@ When `tooltipVisible` is `true`, ToolTip will show always, or ToolTip will not s
 
 ```vue
 <template>
-  <a-slider :default-value="30" :tooltip-visible="true" />
+  <m-slider :default-value="30" :tooltip-visible="true" />
 </template>
 ```

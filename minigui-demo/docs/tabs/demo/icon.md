@@ -10,21 +10,21 @@ The Tab with Icon.
 
 ```vue
 <template>
-  <a-tabs default-active-key="2">
-    <a-tab-pane key="1">
+  <m-tabs default-active-key="2">
+    <m-tab-pane key="1">
       <span slot="tab">
-        <a-icon type="apple" />
+        <m-icon type="apple" />
         Tab 1
       </span>
       Tab 1
-    </a-tab-pane>
-    <a-tab-pane key="2">
+    </m-tab-pane>
+    <m-tab-pane key="2">
       <span slot="tab">
-        <a-icon type="android" />
+        <m-icon type="android" />
         Tab 2
       </span>
       Tab 2
-    </a-tab-pane>
-  </a-tabs>
+    </m-tab-pane>
+  </m-tabs>
 </template>
 ```

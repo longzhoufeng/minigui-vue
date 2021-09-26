@@ -12,7 +12,7 @@ The return value of function `beforeUpload` can be a Promise to check asynchrono
 
 ```vue
 <template>
-  <a-upload
+  <m-upload
     name="avatar"
     list-type="picture-card"
     class="avatar-uploader"
@@ -23,12 +23,12 @@ The return value of function `beforeUpload` can be a Promise to check asynchrono
   >
     <img v-if="imageUrl" :src="imageUrl" alt="avatar" />
     <div v-else>
-      <a-icon :type="loading ? 'loading' : 'plus'" />
+      <m-icon :type="loading ? 'loading' : 'plus'" />
       <div class="minigui-upload-text">
         Upload
       </div>
     </div>
-  </a-upload>
+  </m-upload>
 </template>
 <script>
 function getBase64(img, callback) {

@@ -10,7 +10,7 @@ Group table head with `columns[n].children`.
 
 ```vue
 <template>
-  <a-table
+  <m-table
     :columns="columns"
     :data-source="data"
     bordered

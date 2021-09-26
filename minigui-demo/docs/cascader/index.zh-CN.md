@@ -1,7 +1,7 @@
 ## API
 
 ```html
-<a-cascader :options="options" @change="onChange" />
+<m-cascader :options="options" @change="onChange" />
 ```
 
 | 参数 | 说明 | 类型 | 默认值 |

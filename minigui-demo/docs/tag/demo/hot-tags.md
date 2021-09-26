@@ -13,13 +13,13 @@ Select your favourite topics.
   <div>
     <span :style="{ marginRight: 8 }">Categories:</span>
     <template v-for="tag in tags">
-      <a-checkable-tag
+      <m-checkable-tag
         :key="tag"
         :checked="selectedTags.indexOf(tag) > -1"
         @change="checked => handleChange(tag, checked)"
       >
         {{ tag }}
-      </a-checkable-tag>
+      </m-checkable-tag>
     </template>
   </div>
 </template>

@@ -11,15 +11,15 @@ Cascade selection box for selecting province/city/district.
 ```vue
 <template>
   <div>
-    <a-cascader
+    <m-cascader
       style="margin-top: 1rem"
       :options="options"
       placeholder="Please select"
       @change="onChange"
     >
-      <a-icon slot="suffixIcon" type="smile" class="test" />
-    </a-cascader>
-    <a-cascader
+      <m-icon slot="suffixIcon" type="smile" class="test" />
+    </m-cascader>
+    <m-cascader
       suffix-icon="ab"
       style="margin-top: 1rem"
       :options="options"

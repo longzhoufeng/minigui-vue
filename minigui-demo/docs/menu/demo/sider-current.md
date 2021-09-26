@@ -11,55 +11,55 @@ Click the menu and you will see that all the other menus gets collapsed to keep 
 ```vue
 <template>
   <div>
-    <a-menu mode="inline" :open-keys="openKeys" style="width: 256px" @openChange="onOpenChange">
-      <a-sub-menu key="sub1">
-        <span slot="title"><a-icon type="mail" /><span>Navigation One</span></span>
-        <a-menu-item key="1">
+    <m-menu mode="inline" :open-keys="openKeys" style="width: 256px" @openChange="onOpenChange">
+      <m-sub-menu key="sub1">
+        <span slot="title"><m-icon type="mail" /><span>Navigation One</span></span>
+        <m-menu-item key="1">
           Option 1
-        </a-menu-item>
-        <a-menu-item key="2">
+        </m-menu-item>
+        <m-menu-item key="2">
           Option 2
-        </a-menu-item>
-        <a-menu-item key="3">
+        </m-menu-item>
+        <m-menu-item key="3">
           Option 3
-        </a-menu-item>
-        <a-menu-item key="4">
+        </m-menu-item>
+        <m-menu-item key="4">
           Option 4
-        </a-menu-item>
-      </a-sub-menu>
-      <a-sub-menu key="sub2">
-        <span slot="title"><a-icon type="appstore" /><span>Navigation Two</span></span>
-        <a-menu-item key="5">
+        </m-menu-item>
+      </m-sub-menu>
+      <m-sub-menu key="sub2">
+        <span slot="title"><m-icon type="appstore" /><span>Navigation Two</span></span>
+        <m-menu-item key="5">
           Option 5
-        </a-menu-item>
-        <a-menu-item key="6">
+        </m-menu-item>
+        <m-menu-item key="6">
           Option 6
-        </a-menu-item>
-        <a-sub-menu key="sub3" title="Submenu">
-          <a-menu-item key="7">
+        </m-menu-item>
+        <m-sub-menu key="sub3" title="Submenu">
+          <m-menu-item key="7">
             Option 7
-          </a-menu-item>
-          <a-menu-item key="8">
+          </m-menu-item>
+          <m-menu-item key="8">
             Option 8
-          </a-menu-item>
-        </a-sub-menu>
-      </a-sub-menu>
-      <a-sub-menu key="sub4">
-        <span slot="title"><a-icon type="setting" /><span>Navigation Three</span></span>
-        <a-menu-item key="9">
+          </m-menu-item>
+        </m-sub-menu>
+      </m-sub-menu>
+      <m-sub-menu key="sub4">
+        <span slot="title"><m-icon type="setting" /><span>Navigation Three</span></span>
+        <m-menu-item key="9">
           Option 9
-        </a-menu-item>
-        <a-menu-item key="10">
+        </m-menu-item>
+        <m-menu-item key="10">
           Option 10
-        </a-menu-item>
-        <a-menu-item key="11">
+        </m-menu-item>
+        <m-menu-item key="11">
           Option 11
-        </a-menu-item>
-        <a-menu-item key="12">
+        </m-menu-item>
+        <m-menu-item key="12">
           Option 12
-        </a-menu-item>
-      </a-sub-menu>
-    </a-menu>
+        </m-menu-item>
+      </m-sub-menu>
+    </m-menu>
   </div>
 </template>
 <script>

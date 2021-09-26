@@ -11,16 +11,16 @@ We can set the date format by `format`.
 ```vue
 <template>
   <div>
-    <a-date-picker :default-value="moment('2015/01/01', dateFormat)" :format="dateFormat" />
+    <m-date-picker :default-value="moment('2015/01/01', dateFormat)" :format="dateFormat" />
     <br />
-    <a-date-picker
+    <m-date-picker
       :default-value="moment('01/01/2015', dateFormatList[0])"
       :format="dateFormatList"
     />
     <br />
-    <a-month-picker :default-value="moment('2015/01', monthFormat)" :format="monthFormat" />
+    <m-month-picker :default-value="moment('2015/01', monthFormat)" :format="monthFormat" />
     <br />
-    <a-range-picker
+    <m-range-picker
       :default-value="[moment('2015/01/01', dateFormat), moment('2015/01/01', dateFormat)]"
       :format="dateFormat"
     />

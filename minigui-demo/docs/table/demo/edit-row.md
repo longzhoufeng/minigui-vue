@@ -10,14 +10,14 @@ Table with editable rows.
 
 ```vue
 <template>
-  <a-table :columns="columns" :data-source="data" bordered>
+  <m-table :columns="columns" :data-source="data" bordered>
     <template
       v-for="col in ['name', 'age', 'address']"
       :slot="col"
       slot-scope="text, record, index"
     >
       <div :key="col">
-        <a-input
+        <m-input
           v-if="record.editable"
           style="margin: -5px 0"
           :value="text"
@@ -32,16 +32,16 @@ Table with editable rows.
       <div class="editable-row-operations">
         <span v-if="record.editable">
           <a @click="() => save(record.key)">Save</a>
-          <a-popconfirm title="Sure to cancel?" @confirm="() => cancel(record.key)">
+          <m-popconfirm title="Sure to cancel?" @confirm="() => cancel(record.key)">
             <a>Cancel</a>
-          </a-popconfirm>
+          </m-popconfirm>
         </span>
         <span v-else>
           <a :disabled="editingKey !== ''" @click="() => edit(record.key)">Edit</a>
         </span>
       </div>
     </template>
-  </a-table>
+  </m-table>
 </template>
 <script>
 const columns = [

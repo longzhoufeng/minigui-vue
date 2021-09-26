@@ -11,11 +11,11 @@ A dynamic progress bar is better.
 ```vue
 <template>
   <div>
-    <a-progress type="circle" :percent="percent" />
-    <a-button-group>
-      <a-button icon="minus" @click="decline" />
-      <a-button icon="plus" @click="increase" />
-    </a-button-group>
+    <m-progress type="circle" :percent="percent" />
+    <m-button-group>
+      <m-button icon="minus" @click="decline" />
+      <m-button icon="plus" @click="increase" />
+    </m-button-group>
   </div>
 </template>
 <script>

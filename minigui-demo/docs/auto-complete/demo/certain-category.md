@@ -11,7 +11,7 @@ Lookup-Patterns - Certain Category
 ```vue
 <template>
   <div class="certain-category-search-wrapper" style="width: 250px">
-    <a-auto-complete
+    <m-auto-complete
       class="certain-category-search"
       dropdown-class-name="certain-category-search-dropdown"
       :dropdown-match-select-width="false"
@@ -22,7 +22,7 @@ Lookup-Patterns - Certain Category
       option-label-prop="value"
     >
       <template slot="dataSource">
-        <a-select-opt-group v-for="group in dataSource" :key="group.title">
+        <m-select-opt-group v-for="group in dataSource" :key="group.title">
           <span slot="label">
             {{ group.title }}
             <a
@@ -33,12 +33,12 @@ Lookup-Patterns - Certain Category
               >more
             </a>
           </span>
-          <a-select-option v-for="opt in group.children" :key="opt.title" :value="opt.title">
+          <m-select-option v-for="opt in group.children" :key="opt.title" :value="opt.title">
             {{ opt.title }}
             <span class="certain-search-item-count">{{ opt.count }} people</span>
-          </a-select-option>
-        </a-select-opt-group>
-        <a-select-option key="all" disabled class="show-all">
+          </m-select-option>
+        </m-select-opt-group>
+        <m-select-option key="all" disabled class="show-all">
           <a
             href="https://www.google.com/search?q=minigui-vue"
             target="_blank"
@@ -46,12 +46,12 @@ Lookup-Patterns - Certain Category
           >
             View all results
           </a>
-        </a-select-option>
+        </m-select-option>
       </template>
-      <a-input>
-        <a-icon slot="suffix" type="search" class="certain-category-icon" />
-      </a-input>
-    </a-auto-complete>
+      <m-input>
+        <m-icon slot="suffix" type="search" class="certain-category-icon" />
+      </m-input>
+    </m-auto-complete>
   </div>
 </template>
 <script>

@@ -10,7 +10,7 @@ You can customize the labels of the transfer buttons, the width and height of th
 
 ```vue
 <template>
-  <a-transfer
+  <m-transfer
     :data-source="mockData"
     show-search
     :list-style="{
@@ -22,7 +22,7 @@ You can customize the labels of the transfer buttons, the width and height of th
     :render="item => `${item.title}-${item.description}`"
     @change="handleChange"
   >
-    <a-button
+    <m-button
       slot="footer"
       slot-scope="props"
       size="small"
@@ -30,11 +30,11 @@ You can customize the labels of the transfer buttons, the width and height of th
       @click="getMock"
     >
       reload
-    </a-button>
+    </m-button>
     <span slot="notFoundContent">
       没数据
     </span>
-  </a-transfer>
+  </m-transfer>
 </template>
 <script>
 export default {

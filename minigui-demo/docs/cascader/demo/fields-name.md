@@ -10,7 +10,7 @@ Custom Field Names.
 
 ```vue
 <template>
-  <a-cascader
+  <m-cascader
     :field-names="{ label: 'name', value: 'code', children: 'items' }"
     :options="options"
     placeholder="Please select"

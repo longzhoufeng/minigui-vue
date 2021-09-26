@@ -10,12 +10,12 @@ Basic usage.
 
 ```vue
 <template>
-  <a-carousel :after-change="onChange">
+  <m-carousel :after-change="onChange">
     <div><h3>1</h3></div>
     <div><h3>2</h3></div>
     <div><h3>3</h3></div>
     <div><h3>4</h3></div>
-  </a-carousel>
+  </m-carousel>
 </template>
 <script>
 export default {

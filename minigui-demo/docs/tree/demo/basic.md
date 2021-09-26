@@ -10,7 +10,7 @@ The most basic usage, tell you how to use checkable, selectable, disabled, defau
 
 ```vue
 <template>
-  <a-tree
+  <m-tree
     checkable
     :tree-data="treeData"
     :default-expanded-keys="['0-0-0', '0-0-1']"
@@ -20,7 +20,7 @@ The most basic usage, tell you how to use checkable, selectable, disabled, defau
     @check="onCheck"
   >
     <span slot="title0010" style="color: #1890ff">sss</span>
-  </a-tree>
+  </m-tree>
 </template>
 <script>
 const treeData = [

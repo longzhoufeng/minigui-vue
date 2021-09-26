@@ -11,10 +11,10 @@ Display statistic data in Card.
 ```vue
 <template>
   <div style="background: #ECECEC; padding: 30px">
-    <a-row :gutter="16">
-      <a-col :span="12">
-        <a-card>
-          <a-statistic
+    <m-row :gutter="16">
+      <m-col :span="12">
+        <m-card>
+          <m-statistic
             title="Feedback"
             :value="11.28"
             :precision="2"
@@ -23,14 +23,14 @@ Display statistic data in Card.
             style="margin-right: 50px"
           >
             <template #prefix>
-              <a-icon type="arrow-up" />
+              <m-icon type="arrow-up" />
             </template>
-          </a-statistic>
-        </a-card>
-      </a-col>
-      <a-col :span="12">
-        <a-card>
-          <a-statistic
+          </m-statistic>
+        </m-card>
+      </m-col>
+      <m-col :span="12">
+        <m-card>
+          <m-statistic
             title="Idle"
             :value="9.3"
             :precision="2"
@@ -39,12 +39,12 @@ Display statistic data in Card.
             :value-style="{ color: '#cf1322' }"
           >
             <template #prefix>
-              <a-icon type="arrow-down" />
+              <m-icon type="arrow-down" />
             </template>
-          </a-statistic>
-        </a-card>
-      </a-col>
-    </a-row>
+          </m-statistic>
+        </m-card>
+      </m-col>
+    </m-row>
   </div>
 </template>
 ```

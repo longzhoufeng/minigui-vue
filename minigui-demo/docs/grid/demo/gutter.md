@@ -17,28 +17,28 @@ You can use a array to set vertical spacing, `[horizontal, vertical]` `[16, { xs
 ```vue
 <template>
   <div class="gutter-example">
-    <a-row :gutter="16">
-      <a-col class="gutter-row" :span="6">
+    <m-row :gutter="16">
+      <m-col class="gutter-row" :span="6">
         <div class="gutter-box">
           col-6
         </div>
-      </a-col>
-      <a-col class="gutter-row" :span="6">
+      </m-col>
+      <m-col class="gutter-row" :span="6">
         <div class="gutter-box">
           col-6
         </div>
-      </a-col>
-      <a-col class="gutter-row" :span="6">
+      </m-col>
+      <m-col class="gutter-row" :span="6">
         <div class="gutter-box">
           col-6
         </div>
-      </a-col>
-      <a-col class="gutter-row" :span="6">
+      </m-col>
+      <m-col class="gutter-row" :span="6">
         <div class="gutter-box">
           col-6
         </div>
-      </a-col>
-    </a-row>
+      </m-col>
+    </m-row>
   </div>
 </template>
 <style scoped>

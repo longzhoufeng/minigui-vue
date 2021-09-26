@@ -12,10 +12,10 @@ Usually used for reminders and notifications.
 <template>
   <div>
     <span style="margin-right:24px">
-      <a-badge :count="1"><a-avatar shape="square" icon="user"/></a-badge>
+      <m-badge :count="1"><m-avatar shape="square" icon="user"/></m-badge>
     </span>
     <span>
-      <a-badge dot><a-avatar shape="square" icon="user"/></a-badge>
+      <m-badge dot><m-avatar shape="square" icon="user"/></m-badge>
     </span>
   </div>
 </template>

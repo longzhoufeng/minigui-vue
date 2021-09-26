@@ -10,31 +10,31 @@ Grid style card content.
 
 ```vue
 <template>
-  <a-card title="Card Title">
-    <a-card-grid style="width:25%;text-align:center">
+  <m-card title="Card Title">
+    <m-card-grid style="width:25%;text-align:center">
       Content
-    </a-card-grid>
-    <a-card-grid style="width:25%;text-align:center" :hoverable="false">
+    </m-card-grid>
+    <m-card-grid style="width:25%;text-align:center" :hoverable="false">
       Content
-    </a-card-grid>
-    <a-card-grid style="width:25%;text-align:center">
+    </m-card-grid>
+    <m-card-grid style="width:25%;text-align:center">
       Content
-    </a-card-grid>
-    <a-card-grid style="width:25%;text-align:center">
+    </m-card-grid>
+    <m-card-grid style="width:25%;text-align:center">
       Content
-    </a-card-grid>
-    <a-card-grid style="width:25%;text-align:center">
+    </m-card-grid>
+    <m-card-grid style="width:25%;text-align:center">
       Content
-    </a-card-grid>
-    <a-card-grid style="width:25%;text-align:center">
+    </m-card-grid>
+    <m-card-grid style="width:25%;text-align:center">
       Content
-    </a-card-grid>
-    <a-card-grid style="width:25%;text-align:center">
+    </m-card-grid>
+    <m-card-grid style="width:25%;text-align:center">
       Content
-    </a-card-grid>
-    <a-card-grid style="width:25%;text-align:center">
+    </m-card-grid>
+    <m-card-grid style="width:25%;text-align:center">
       Content
-    </a-card-grid>
-  </a-card>
+    </m-card-grid>
+  </m-card>
 </template>
 ```

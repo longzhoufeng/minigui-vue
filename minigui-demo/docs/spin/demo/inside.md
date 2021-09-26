@@ -21,7 +21,7 @@ Spin in a container.
 </style>
 <template>
   <div class="example">
-    <a-spin />
+    <m-spin />
   </div>
 </template>
 ```

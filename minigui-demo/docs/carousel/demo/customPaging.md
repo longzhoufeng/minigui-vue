@@ -10,14 +10,14 @@ Custom paging display
 
 ```vue
 <template>
-  <a-carousel arrows dots-class="slick-dots slick-thumb">
+  <m-carousel arrows dots-class="slick-dots slick-thumb">
     <a slot="customPaging" slot-scope="props">
       <img :src="getImgUrl(props.i)" />
     </a>
     <div v-for="item in 4">
       <img :src="baseUrl + 'abstract0' + item + '.jpg'" />
     </div>
-  </a-carousel>
+  </m-carousel>
 </template>
 <script>
 const baseUrl = '';

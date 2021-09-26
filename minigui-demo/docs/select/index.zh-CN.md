@@ -1,9 +1,9 @@
 ## API
 
 ```html
-<a-select>
-  <a-select-option value="lucy">lucy</a-select-option>
-</a-select>
+<m-select>
+  <m-select-option value="lucy">lucy</m-select-option>
+</m-select>
 ```
 
 ### Select props

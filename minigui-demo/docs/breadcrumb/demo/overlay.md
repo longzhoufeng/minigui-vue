@@ -10,30 +10,30 @@
 
 ```vue
 <template>
-  <a-breadcrumb>
-    <a-breadcrumb-item>Minigui Vue</a-breadcrumb-item>
-    <a-breadcrumb-item><a href="">Component</a></a-breadcrumb-item>
-    <a-breadcrumb-item>
+  <m-breadcrumb>
+    <m-breadcrumb-item>Minigui Vue</m-breadcrumb-item>
+    <m-breadcrumb-item><a href="">Component</a></m-breadcrumb-item>
+    <m-breadcrumb-item>
       <a href="">General</a>
-      <a-menu slot="overlay">
-        <a-menu-item>
+      <m-menu slot="overlay">
+        <m-menu-item>
           <a target="_blank" rel="noopener noreferrer" href="http://www.minigui.com.cn/">
             General
           </a>
-        </a-menu-item>
-        <a-menu-item>
+        </m-menu-item>
+        <m-menu-item>
           <a target="_blank" rel="noopener noreferrer" href="http://www.minigui.com.cn/">
             Layout
           </a>
-        </a-menu-item>
-        <a-menu-item>
+        </m-menu-item>
+        <m-menu-item>
           <a target="_blank" rel="noopener noreferrer" href="http://www.minigui.com.cn/">
             Navigation
           </a>
-        </a-menu-item>
-      </a-menu>
-    </a-breadcrumb-item>
-    <a-breadcrumb-item>Button</a-breadcrumb-item>
-  </a-breadcrumb>
+        </m-menu-item>
+      </m-menu>
+    </m-breadcrumb-item>
+    <m-breadcrumb-item>Button</m-breadcrumb-item>
+  </m-breadcrumb>
 </template>
 ```

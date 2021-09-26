@@ -13,16 +13,16 @@ Using the [Cascader](/components/cascader) component is strongly recommended ins
 ```vue
 <template>
   <div>
-    <a-select :default-value="provinceData[0]" style="width: 120px" @change="handleProvinceChange">
-      <a-select-option v-for="province in provinceData" :key="province">
+    <m-select :default-value="provinceData[0]" style="width: 120px" @change="handleProvinceChange">
+      <m-select-option v-for="province in provinceData" :key="province">
         {{ province }}
-      </a-select-option>
-    </a-select>
-    <a-select v-model="secondCity" style="width: 120px">
-      <a-select-option v-for="city in cities" :key="city">
+      </m-select-option>
+    </m-select>
+    <m-select v-model="secondCity" style="width: 120px">
+      <m-select-option v-for="city in cities" :key="city">
         {{ city }}
-      </a-select-option>
-    </a-select>
+      </m-select-option>
+    </m-select>
   </div>
 </template>
 <script>

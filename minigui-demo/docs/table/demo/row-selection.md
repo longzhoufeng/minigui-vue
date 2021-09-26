@@ -12,9 +12,9 @@ Rows can be selectable by making first column as a selectable column.
 
 ```vue
 <template>
-  <a-table :row-selection="rowSelection" :columns="columns" :data-source="data">
+  <m-table :row-selection="rowSelection" :columns="columns" :data-source="data">
     <a slot="name" slot-scope="text">{{ text }}</a>
-  </a-table>
+  </m-table>
 </template>
 <script>
 const columns = [

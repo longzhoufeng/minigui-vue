@@ -11,10 +11,10 @@ For multi-line input.
 ```vue
 <template>
   <div>
-    <a-button style="margin-bottom: 16px" @click="() => (this.autoResize = !autoResize)">
+    <m-button style="margin-bottom: 16px" @click="() => (this.autoResize = !autoResize)">
       Auto Resize: {{ String(autoResize) }}
-    </a-button>
-    <a-textarea :rows="4" :auto-size="autoResize" :default-value="defaultValue" />
+    </m-button>
+    <m-textarea :rows="4" :auto-size="autoResize" :default-value="defaultValue" />
   </div>
 </template>
 <script>

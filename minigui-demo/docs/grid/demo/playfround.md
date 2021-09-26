@@ -14,7 +14,7 @@ A simple playground for column count and gutter.
     <div style="margin-bottom:16px">
       <span style="margin-right:6px">Horizontal Gutter (px): </span>
       <div style="width:50%">
-        <a-slider
+        <m-slider
           v-model="gutterKey"
           :min="0"
           :max="Object.keys(gutters).length - 1"
@@ -24,7 +24,7 @@ A simple playground for column count and gutter.
       </div>
       <span style="margin-right: 6px">Vertical Gutter (px): </span>
       <div style="width: 50%">
-        <a-slider
+        <m-slider
           v-model="vgutterKey"
           :min="0"
           :max="Object.keys(vgutters).length - 1"
@@ -34,7 +34,7 @@ A simple playground for column count and gutter.
       </div>
       <span style="margin-right:6px">Column Count:</span>
       <div style="width:50%">
-        <a-slider
+        <m-slider
           v-model="colCountKey"
           :min="0"
           :max="Object.keys(colCounts).length - 1"
@@ -43,24 +43,24 @@ A simple playground for column count and gutter.
         />
       </div>
     </div>
-    <a-row :gutter="[gutters[gutterKey], vgutters[vgutterKey]]">
-      <a-col
+    <m-row :gutter="[gutters[gutterKey], vgutters[vgutterKey]]">
+      <m-col
         v-for="(item, index) in colCounts[colCountKey]"
         :key="item.toString()"
         :span="24 / colCounts[colCountKey]"
       >
         <div>Column</div>
-      </a-col>
-    </a-row>
-    <a-row :gutter="[gutters[gutterKey], vgutters[vgutterKey]]">
-      <a-col
+      </m-col>
+    </m-row>
+    <m-row :gutter="[gutters[gutterKey], vgutters[vgutterKey]]">
+      <m-col
         v-for="(item, index) in colCounts[colCountKey]"
         :key="item.toString()"
         :span="24 / colCounts[colCountKey]"
       >
         <div>Column</div>
-      </a-col>
-    </a-row>
+      </m-col>
+    </m-row>
     <pre v-text="rowColHtml" />
     <pre v-text="rowColHtml" />
   </div>
@@ -93,12 +93,12 @@ export default {
     rowColHtml() {
       const colCount = this.colCounts[this.colCountKey];
       const getter = [this.gutters[this.gutterKey], this.vgutters[this.vgutterKey]];
-      let colCode = '<a-row :gutter="[' + getter + ']">\n';
+      let colCode = '<m-row :gutter="[' + getter + ']">\n';
       for (let i = 0; i < colCount; i++) {
         const spanNum = 24 / colCount;
-        colCode += '  <a-col :span="' + spanNum + '"/>\n';
+        colCode += '  <m-col :span="' + spanNum + '"/>\n';
       }
-      colCode += '</a-row>';
+      colCode += '</m-row>';
       return colCode;
     },
   },

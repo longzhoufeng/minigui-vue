@@ -13,49 +13,49 @@ Components which need localization support are listed here, you can toggle the l
   <div>
     <div class="change-locale">
       <span style="margin-right: 16px">Change locale of components: </span>
-      <a-radio-group :value="locale" @change="changeLocale">
-        <a-radio-button key="en" :value="enUS">
+      <m-radio-group :value="locale" @change="changeLocale">
+        <m-radio-button key="en" :value="enUS">
           English
-        </a-radio-button>
-        <a-radio-button key="cn" :value="zhCN">
+        </m-radio-button>
+        <m-radio-button key="cn" :value="zhCN">
           中文
-        </a-radio-button>
-      </a-radio-group>
+        </m-radio-button>
+      </m-radio-group>
     </div>
-    <a-config-provider :locale="locale">
+    <m-config-provider :locale="locale">
       <div :key="locale ? locale.locale : 'en'" class="locale-components">
         <div class="example">
-          <a-pagination :default-current="1" :total="50" show-size-changer />
+          <m-pagination :default-current="1" :total="50" show-size-changer />
         </div>
         <div class="example">
-          <a-select show-search style="width: 200px">
-            <a-select-option value="jack">
+          <m-select show-search style="width: 200px">
+            <m-select-option value="jack">
               jack
-            </a-select-option>
-            <a-select-option value="lucy">
+            </m-select-option>
+            <m-select-option value="lucy">
               lucy
-            </a-select-option>
-          </a-select>
-          <a-date-picker />
-          <a-time-picker />
-          <a-range-picker style="width: 200px" />
+            </m-select-option>
+          </m-select>
+          <m-date-picker />
+          <m-time-picker />
+          <m-range-picker style="width: 200px" />
         </div>
         <div class="example">
-          <a-button type="primary" @click="visible = true">
+          <m-button type="primary" @click="visible = true">
             Show Modal
-          </a-button>
-          <a-button @click="info">
+          </m-button>
+          <m-button @click="info">
             Show info
-          </a-button>
-          <a-button @click="confirm">
+          </m-button>
+          <m-button @click="confirm">
             Show confirm
-          </a-button>
-          <a-popconfirm title="Question?">
+          </m-button>
+          <m-popconfirm title="Question?">
             <a href="#">Click to confirm</a>
-          </a-popconfirm>
+          </m-popconfirm>
         </div>
         <div class="example">
-          <a-transfer
+          <m-transfer
             :data-source="[]"
             show-search
             :target-keys="[]"
@@ -63,16 +63,16 @@ Components which need localization support are listed here, you can toggle the l
           />
         </div>
         <div style="width: 319px; border: 1px solid #d9d9d9; border-radius: 4px">
-          <a-calendar :fullscreen="false" :value="moment()" />
+          <m-calendar :fullscreen="false" :value="moment()" />
         </div>
         <div class="example">
-          <a-table :data-source="[]" :columns="columns" />
+          <m-table :data-source="[]" :columns="columns" />
         </div>
-        <a-modal v-model="visible" title="Locale Modal">
+        <m-modal v-model="visible" title="Locale Modal">
           <p>Locale Modal</p>
-        </a-modal>
+        </m-modal>
       </div>
-    </a-config-provider>
+    </m-config-provider>
   </div>
 </template>
 <script>

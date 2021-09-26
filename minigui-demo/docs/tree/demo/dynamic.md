@@ -10,7 +10,7 @@ To load data asynchronously when click to expand a treeNode.
 
 ```vue
 <template>
-  <a-tree :load-data="onLoadData" :tree-data="treeData" />
+  <m-tree :load-data="onLoadData" :tree-data="treeData" />
 </template>
 
 <script>

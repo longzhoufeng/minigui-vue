@@ -13,7 +13,7 @@ An example of infinite list & virtualized loading using [vue-virtual-scroller](h
 
 ```vue
 <template>
-  <a-list>
+  <m-list>
     <RecycleScroller
       v-infinite-scroll="handleInfiniteOnLoad"
       style="height: 400px"
@@ -23,19 +23,19 @@ An example of infinite list & virtualized loading using [vue-virtual-scroller](h
       :infinite-scroll-disabled="busy"
       :infinite-scroll-distance="10"
     >
-      <a-list-item slot-scope="{ item }">
-        <a-list-item-meta :description="item.email">
+      <m-list-item slot-scope="{ item }">
+        <m-list-item-meta :description="item.email">
           <a slot="title" :href="item.href">{{ item.name.last }}</a>
-          <a-avatar
+          <m-avatar
             slot="avatar"
             src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
           />
-        </a-list-item-meta>
+        </m-list-item-meta>
         <div>Content {{ item.index }}</div>
-      </a-list-item>
+      </m-list-item>
     </RecycleScroller>
-    <a-spin v-if="loading" class="demo-loading" />
-  </a-list>
+    <m-spin v-if="loading" class="demo-loading" />
+  </m-list>
 </template>
 <script>
 import reqwest from 'reqwest';

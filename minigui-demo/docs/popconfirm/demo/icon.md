@@ -10,9 +10,9 @@ Set `icon` props to customize the icon.
 
 ```vue
 <template>
-  <a-popconfirm title="Are you sure？">
-    <a-icon slot="icon" type="question-circle-o" style="color: red" />
+  <m-popconfirm title="Are you sure？">
+    <m-icon slot="icon" type="question-circle-o" style="color: red" />
     <a href="#">Delete</a>
-  </a-popconfirm>
+  </m-popconfirm>
 </template>
 ```

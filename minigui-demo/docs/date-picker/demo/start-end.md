@@ -15,7 +15,7 @@ When `RangePicker` does not satisfied your requirements, try to implement simila
 ```vue
 <template>
   <div>
-    <a-date-picker
+    <m-date-picker
       v-model="startValue"
       :disabled-date="disabledStartDate"
       show-time
@@ -23,7 +23,7 @@ When `RangePicker` does not satisfied your requirements, try to implement simila
       placeholder="Start"
       @openChange="handleStartOpenChange"
     />
-    <a-date-picker
+    <m-date-picker
       v-model="endValue"
       :disabled-date="disabledEndDate"
       show-time

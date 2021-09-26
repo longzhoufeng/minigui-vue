@@ -10,9 +10,9 @@ Basic usage of checkbox
 
 ```vue
 <template>
-  <a-checkbox @change="onChange">
+  <m-checkbox @change="onChange">
     Checkbox
-  </a-checkbox>
+  </m-checkbox>
 </template>
 <script>
 export default {

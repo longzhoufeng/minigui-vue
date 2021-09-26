@@ -10,9 +10,9 @@ Controlled mode, for example, to work with `Form`.
 
 ```vue
 <template>
-  <a-form :form="form" layout="horizontal">
-    <a-form-item label="Top coders" :label-col="{ span: 5 }" :wrapper-col="{ span: 12 }">
-      <a-mentions
+  <m-form :form="form" layout="horizontal">
+    <m-form-item label="Top coders" :label-col="{ span: 5 }" :wrapper-col="{ span: 12 }">
+      <m-mentions
         v-decorator="[
           'coders',
           {
@@ -21,19 +21,19 @@ Controlled mode, for example, to work with `Form`.
         ]"
         rows="1"
       >
-        <a-mentions-option value="afc163">
+        <m-mentions-option value="afc163">
           afc163
-        </a-mentions-option>
-        <a-mentions-option value="zombieJ">
+        </m-mentions-option>
+        <m-mentions-option value="zombieJ">
           zombieJ
-        </a-mentions-option>
-        <a-mentions-option value="yesmeck">
+        </m-mentions-option>
+        <m-mentions-option value="yesmeck">
           yesmeck
-        </a-mentions-option>
-      </a-mentions>
-    </a-form-item>
-    <a-form-item label="Bio" :label-col="{ span: 5 }" :wrapper-col="{ span: 12 }">
-      <a-mentions
+        </m-mentions-option>
+      </m-mentions>
+    </m-form-item>
+    <m-form-item label="Bio" :label-col="{ span: 5 }" :wrapper-col="{ span: 12 }">
+      <m-mentions
         v-decorator="[
           'bio',
           {
@@ -43,26 +43,26 @@ Controlled mode, for example, to work with `Form`.
         rows="3"
         placeholder="You can use @ to ref user here"
       >
-        <a-mentions-option value="afc163">
+        <m-mentions-option value="afc163">
           afc163
-        </a-mentions-option>
-        <a-mentions-option value="zombieJ">
+        </m-mentions-option>
+        <m-mentions-option value="zombieJ">
           zombieJ
-        </a-mentions-option>
-        <a-mentions-option value="yesmeck">
+        </m-mentions-option>
+        <m-mentions-option value="yesmeck">
           yesmeck
-        </a-mentions-option>
-      </a-mentions>
-    </a-form-item>
-    <a-form-item :wrapper-col="{ span: 12, offset: 5 }">
-      <a-button type="primary" @click="handleSubmit">
+        </m-mentions-option>
+      </m-mentions>
+    </m-form-item>
+    <m-form-item :wrapper-col="{ span: 12, offset: 5 }">
+      <m-button type="primary" @click="handleSubmit">
         Submit
-      </a-button>
-      <a-button style="margin-left: 8px;" @click="handleReset">
+      </m-button>
+      <m-button style="margin-left: 8px;" @click="handleReset">
         Reset
-      </a-button>
-    </a-form-item>
-  </a-form>
+      </m-button>
+    </m-form-item>
+  </m-form>
 </template>
 <script>
 import { Mentions } from 'minigui-vue';

@@ -11,11 +11,11 @@ Render radios by configuring `options`.
 ```vue
 <template>
   <div>
-    <a-radio-group :options="plainOptions" :default-value="value1" @change="onChange1" />
+    <m-radio-group :options="plainOptions" :default-value="value1" @change="onChange1" />
     <br />
-    <a-radio-group v-model="value2" :options="options" @change="onChange2" />
+    <m-radio-group v-model="value2" :options="options" @change="onChange2" />
     <br />
-    <a-radio-group v-model="value3" :options="optionsWithDisabled" disabled @change="onChange3" />
+    <m-radio-group v-model="value3" :options="optionsWithDisabled" disabled @change="onChange3" />
   </div>
 </template>
 <script>

@@ -11,38 +11,38 @@ Navigation steps.
 ```vue
 <template>
   <div>
-    <a-steps v-model="current" type="navigation" size="small" :style="stepStyle">
-      <a-step
+    <m-steps v-model="current" type="navigation" size="small" :style="stepStyle">
+      <m-step
         title="Step 1"
         sub-title="00:00:05"
         status="finish"
         description="This is a description."
       />
-      <a-step
+      <m-step
         title="Step 2"
         sub-title="00:01:02"
         status="process"
         description="This is a description."
       />
-      <a-step
+      <m-step
         title="Step 3"
         sub-title="waiting for longlong time"
         status="wait"
         description="This is a description."
       />
-    </a-steps>
-    <a-steps v-model="current" type="navigation" :style="stepStyle">
-      <a-step status="finish" title="Step 1" />
-      <a-step status="process" title="Step 2" />
-      <a-step status="wait" title="Step 3" />
-      <a-step status="wait" title="Step 4" />
-    </a-steps>
-    <a-steps v-model="current" type="navigation" size="small" :style="stepStyle">
-      <a-step status="finish" title="finish 1" />
-      <a-step status="finish" title="finish 2" />
-      <a-step status="process" title="current process" />
-      <a-step status="wait" title="wait" disabled />
-    </a-steps>
+    </m-steps>
+    <m-steps v-model="current" type="navigation" :style="stepStyle">
+      <m-step status="finish" title="Step 1" />
+      <m-step status="process" title="Step 2" />
+      <m-step status="wait" title="Step 3" />
+      <m-step status="wait" title="Step 4" />
+    </m-steps>
+    <m-steps v-model="current" type="navigation" size="small" :style="stepStyle">
+      <m-step status="finish" title="finish 1" />
+      <m-step status="finish" title="finish 2" />
+      <m-step status="process" title="current process" />
+      <m-step status="wait" title="wait" disabled />
+    </m-steps>
   </div>
 </template>
 <script>

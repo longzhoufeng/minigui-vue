@@ -10,7 +10,7 @@ Specifies default value by an array.
 
 ```vue
 <template>
-  <a-cascader
+  <m-cascader
     :options="options"
     :default-value="['zhejiang', 'hangzhou', 'xihu']"
     @change="onChange"

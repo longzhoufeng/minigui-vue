@@ -14,7 +14,7 @@ You can control the indent width by setting `indentSize`.
 
 ```vue
 <template>
-  <a-table :columns="columns" :data-source="data" :row-selection="rowSelection" />
+  <m-table :columns="columns" :data-source="data" :row-selection="rowSelection" />
 </template>
 <script>
 const columns = [

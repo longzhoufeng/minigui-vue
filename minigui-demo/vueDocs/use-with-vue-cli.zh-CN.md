@@ -1,6 +1,6 @@
 # 在 vue-cli 3 中使用
 
-[vue-cli](https://github.com/vuejs/vue-cli) 是业界最优秀的 Vue 应用开发工具之一，本文会尝试在 vue-cli 创建的工程中使用 antd 组件，并自定义 webpack 的配置以满足各类工程化需求。
+[vue-cli](https://github.com/vuejs/vue-cli) 是业界最优秀的 Vue 应用开发工具之一，本文会尝试在 vue-cli 创建的工程中使用 minigui 组件，并自定义 webpack 的配置以满足各类工程化需求。
 
 ## 安装和初始化
 
@@ -15,7 +15,7 @@ $ yarn global add @vue/cli
 然后新建一个项目。
 
 ```bash
-$ vue create antd-demo
+$ vue create minigui-demo
 ```
 
 并配置项目。
@@ -25,13 +25,13 @@ $ vue create antd-demo
 然后我们进入项目并启动。
 
 ```bash
-$ cd antd-demo
+$ cd minigui-demo
 $ npm run serve
 ```
 
 此时浏览器会访问 http://localhost:8080/ ，看到 `Welcome to Your Vue.js App` 的界面就算成功了。
 
-## 引入 antd
+## 引入 minigui-vue
 
 这是 vue-cli 生成的默认目录结构。
 
@@ -58,12 +58,12 @@ $ npm run serve
 $ yarn add minigui-vue
 ```
 
-修改 `src/main.js`，引入 antd 的按钮组件以及全部样式文件。
+修改 `src/main.js`，引入 minigui 的按钮组件以及全部样式文件。
 
 ```jsx
 import Vue from 'vue';
 import Button from 'minigui-vue/lib/button';
-import 'minigui-vue/dist/antd.css';
+import 'minigui-vue/dist/minigui.css';
 import App from './App';
 
 Vue.component(Button.name, Button);
@@ -81,17 +81,17 @@ new Vue({
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <a-button type="primary">Button></a-button>
+    <m-button type="primary">Button></m-button>
   </div>
 </template>
 ...
 ```
 
-好了，现在你应该能看到页面上已经有了 antd 的蓝色按钮组件，接下来就可以继续选用其他组件开发应用了。其他开发流程你可以参考 vue-cli 的[官方文档](https://github.com/vuejs/vue-cli/blob/master/README.md)。
+好了，现在你应该能看到页面上已经有了 minigui 的蓝色按钮组件，接下来就可以继续选用其他组件开发应用了。其他开发流程你可以参考 vue-cli 的[官方文档](https://github.com/vuejs/vue-cli/blob/master/README.md)。
 
 ## 高级配置
 
-我们现在已经把组件成功运行起来了，但是在实际开发过程中还有很多问题，例如上面的例子实际上加载了全部的 antd 组件的样式（对前端性能是个隐患）。
+我们现在已经把组件成功运行起来了，但是在实际开发过程中还有很多问题，例如上面的例子实际上加载了全部的 minigui 组件的样式（对前端性能是个隐患）。
 
 此时我们需要对 vue-cli 的默认配置进行自定义。
 
@@ -143,14 +143,14 @@ $ yarn add babel-plugin-import --dev
 };
 ```
 
-然后移除前面在 `src/main.js` 里全量添加的 `import 'minigui-vue/dist/antd.css';` 样式代码，并且按下面的格式引入模块。
+然后移除前面在 `src/main.js` 里全量添加的 `import 'minigui-vue/dist/minigui.css';` 样式代码，并且按下面的格式引入模块。
 
 ```diff
   // src/main.js
   import Vue from 'vue'
 - import Button from 'minigui-vue/lib/button';
 + import { Button } from 'minigui-vue';
-- import 'minigui-vue/dist/antd.css'
+- import 'minigui-vue/dist/minigui.css'
   import App from './App'
 
   Vue.component(Button.name, Button)
@@ -162,7 +162,7 @@ $ yarn add babel-plugin-import --dev
   }).$mount("#app");
 ```
 
-最后重启 `npm run serve` 访问页面，antd 组件的 js 和 css 代码都会按需加载，你在控制台也不会看到这样的[警告信息](https://zos.alipayobjects.com/rmsportal/vgcHJRVZFmPjAawwVoXK.png)。关于按需加载的原理和其他方式可以阅读[这里](/docs/vue/getting-started-cn/#按需加载)。
+最后重启 `npm run serve` 访问页面，minigui 组件的 js 和 css 代码都会按需加载，你在控制台也不会看到这样的[警告信息](https://zos.alipayobjects.com/rmsportal/vgcHJRVZFmPjAawwVoXK.png)。关于按需加载的原理和其他方式可以阅读[这里](/docs/vue/getting-started-cn/#按需加载)。
 
 ### 自定义主题
 

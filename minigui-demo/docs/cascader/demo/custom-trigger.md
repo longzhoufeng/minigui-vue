@@ -12,9 +12,9 @@ Separate trigger button and result.
 <template>
   <span>
     {{ text }} &nbsp;
-    <a-cascader :options="options" @change="onChange">
+    <m-cascader :options="options" @change="onChange">
       <a href="#">Change city</a>
-    </a-cascader>
+    </m-cascader>
   </span>
 </template>
 <script>

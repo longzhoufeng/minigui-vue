@@ -10,7 +10,7 @@ Multiple and checkable.
 
 ```vue
 <template>
-  <a-tree-select
+  <m-tree-select
     v-model="value"
     style="width: 100%"
     :tree-data="treeData"

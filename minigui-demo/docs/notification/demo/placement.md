@@ -11,23 +11,23 @@ A notification box can pop up from `topRight` or `bottomRight` or `bottomLeft` o
 ```vue
 <template>
   <div>
-    <a-button type="primary" @click="openNotification('topLeft')">
-      <a-icon type="radius-upleft" />
+    <m-button type="primary" @click="openNotification('topLeft')">
+      <m-icon type="radius-upleft" />
       topLeft
-    </a-button>
-    <a-button type="primary" @click="openNotification('topRight')">
-      <a-icon type="radius-upright" />
+    </m-button>
+    <m-button type="primary" @click="openNotification('topRight')">
+      <m-icon type="radius-upright" />
       topRight
-    </a-button>
-    <a-divider />
-    <a-button type="primary" @click="openNotification('bottomLeft')">
-      <a-icon type="radius-bottomleft" />
+    </m-button>
+    <m-divider />
+    <m-button type="primary" @click="openNotification('bottomLeft')">
+      <m-icon type="radius-bottomleft" />
       bottomLeft
-    </a-button>
-    <a-button type="primary" @click="openNotification('bottomRight')">
-      <a-icon type="radius-bottomright" />
+    </m-button>
+    <m-button type="primary" @click="openNotification('bottomRight')">
+      <m-icon type="radius-bottomright" />
       bottomRight
-    </a-button>
+    </m-button>
   </div>
 </template>
 <script>

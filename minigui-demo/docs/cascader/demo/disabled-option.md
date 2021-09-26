@@ -10,7 +10,7 @@ Disable option by specifying the `disabled` property in `options`.
 
 ```vue
 <template>
-  <a-cascader :options="options" @change="onChange" />
+  <m-cascader :options="options" @change="onChange" />
 </template>
 <script>
 export default {

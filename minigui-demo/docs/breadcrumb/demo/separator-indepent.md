@@ -10,18 +10,18 @@
 
 ```vue
 <template>
-  <a-breadcrumb separator="">
-    <a-breadcrumb-item>Location</a-breadcrumb-item>
-    <a-breadcrumb-separator>:</a-breadcrumb-separator>
-    <a-breadcrumb-item href="">
+  <m-breadcrumb separator="">
+    <m-breadcrumb-item>Location</m-breadcrumb-item>
+    <m-breadcrumb-separator>:</m-breadcrumb-separator>
+    <m-breadcrumb-item href="">
       Application Center
-    </a-breadcrumb-item>
-    <a-breadcrumb-separator />
-    <a-breadcrumb-item href="">
+    </m-breadcrumb-item>
+    <m-breadcrumb-separator />
+    <m-breadcrumb-item href="">
       Application List
-    </a-breadcrumb-item>
-    <a-breadcrumb-separator />
-    <a-breadcrumb-item>An Application</a-breadcrumb-item>
-  </a-breadcrumb>
+    </m-breadcrumb-item>
+    <m-breadcrumb-separator />
+    <m-breadcrumb-item>An Application</m-breadcrumb-item>
+  </m-breadcrumb>
 </template>
 ```

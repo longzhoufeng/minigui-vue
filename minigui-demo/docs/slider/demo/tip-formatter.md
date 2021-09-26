@@ -11,8 +11,8 @@ Use `tipFormatter` to format content of `Toolip`. If `tipFormatter` is null, hid
 ```vue
 <template>
   <div>
-    <a-slider :tip-formatter="formatter" />
-    <a-slider :tip-formatter="null" />
+    <m-slider :tip-formatter="formatter" />
+    <m-slider :tip-formatter="null" />
   </div>
 </template>
 <script>

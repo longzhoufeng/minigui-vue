@@ -11,13 +11,13 @@ Use skeleton in list component.
 ```vue
 <template>
   <div>
-    <a-switch :checked="!loading" @change="onChange" />
+    <m-switch :checked="!loading" @change="onChange" />
 
-    <a-list item-layout="vertical" size="large" :data-source="listData">
-      <a-list-item slot="renderItem" key="item.title" slot-scope="item, index">
+    <m-list item-layout="vertical" size="large" :data-source="listData">
+      <m-list-item slot="renderItem" key="item.title" slot-scope="item, index">
         <template v-for="{ type, text } in actions" v-if="!loading" slot="actions">
           <span :key="type">
-            <a-icon :type="type" style="margin-right: 8px" />
+            <m-icon :type="type" style="margin-right: 8px" />
             {{ text }}
           </span>
         </template>
@@ -28,15 +28,15 @@ Use skeleton in list component.
           alt="logo"
           src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
         />
-        <a-skeleton :loading="loading" active avatar>
-          <a-list-item-meta :description="item.description">
+        <m-skeleton :loading="loading" active avatar>
+          <m-list-item-meta :description="item.description">
             <a slot="title" :href="item.href">{{ item.title }}</a>
-            <a-avatar slot="avatar" :src="item.avatar" />
-          </a-list-item-meta>
+            <m-avatar slot="avatar" :src="item.avatar" />
+          </m-list-item-meta>
           {{ item.content }}
-        </a-skeleton>
-      </a-list-item>
-    </a-list>
+        </m-skeleton>
+      </m-list-item>
+    </m-list>
   </div>
 </template>
 <script>

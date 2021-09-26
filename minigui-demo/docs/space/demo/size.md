@@ -13,19 +13,19 @@ Set the size to `large` and `middle` by setting size to large and middle respect
 ```vue
 <template>
   <div>
-    <a-radio-group v-model="size">
-      <a-radio value="small">Small</a-radio>
-      <a-radio value="middle">Middle</a-radio>
-      <a-radio value="large">Large</a-radio>
-    </a-radio-group>
+    <m-radio-group v-model="size">
+      <m-radio value="small">Small</m-radio>
+      <m-radio value="middle">Middle</m-radio>
+      <m-radio value="large">Large</m-radio>
+    </m-radio-group>
     <br />
     <br />
-    <a-space :size="size">
-      <a-button type="primary">Primary</a-button>
-      <a-button>Default</a-button>
-      <a-button type="dashed">Dashed</a-button>
-      <a-button type="link">Link</a-button>
-    </a-space>
+    <m-space :size="size">
+      <m-button type="primary">Primary</m-button>
+      <m-button>Default</m-button>
+      <m-button type="dashed">Dashed</m-button>
+      <m-button type="link">Link</m-button>
+    </m-space>
   </div>
 </template>
 <script>

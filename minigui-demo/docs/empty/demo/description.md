@@ -10,6 +10,6 @@ Simplest Usage with no description.
 
 ```vue
 <template>
-  <a-empty :description="false" />
+  <m-empty :description="false" />
 </template>
 ```

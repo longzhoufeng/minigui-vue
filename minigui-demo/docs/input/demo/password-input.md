@@ -10,6 +10,6 @@ Input type of password and added in 1.4.0.
 
 ```vue
 <template>
-  <a-input-password placeholder="input password" />
+  <m-input-password placeholder="input password" />
 </template>
 ```

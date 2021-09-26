@@ -10,17 +10,17 @@ Basic usage.
 
 ```vue
 <template>
-  <a-mentions v-model="value" @change="onChange" @select="onSelect">
-    <a-mentions-option value="afc163">
+  <m-mentions v-model="value" @change="onChange" @select="onSelect">
+    <m-mentions-option value="afc163">
       afc163
-    </a-mentions-option>
-    <a-mentions-option value="zombieJ">
+    </m-mentions-option>
+    <m-mentions-option value="zombieJ">
       zombieJ
-    </a-mentions-option>
-    <a-mentions-option value="yesmeck">
+    </m-mentions-option>
+    <m-mentions-option value="yesmeck">
       yesmeck
-    </a-mentions-option>
-  </a-mentions>
+    </m-mentions-option>
+  </m-mentions>
 </template>
 <script>
 export default {

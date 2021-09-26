@@ -11,17 +11,17 @@ Use custom loading indicator.
 ```vue
 <template>
   <div>
-    <a-spin>
-      <a-icon slot="indicator" type="loading" style="font-size: 24px" spin />
-    </a-spin>
-    <a-spin :indicator="indicator" />
+    <m-spin>
+      <m-icon slot="indicator" type="loading" style="font-size: 24px" spin />
+    </m-spin>
+    <m-spin :indicator="indicator" />
   </div>
 </template>
 <script>
 export default {
   data() {
     return {
-      indicator: <a-icon type="loading" style="font-size: 24px" spin />,
+      indicator: <m-icon type="loading" style="font-size: 24px" spin />,
     };
   },
 };

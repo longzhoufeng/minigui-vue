@@ -14,9 +14,9 @@ A Solution for displaying large amounts of data with long columns.
 
 ```vue
 <template>
-  <a-table :columns="columns" :data-source="data" :scroll="{ x: 1500, y: 300 }">
+  <m-table :columns="columns" :data-source="data" :scroll="{ x: 1500, y: 300 }">
     <a slot="action" slot-scope="text">action</a>
-  </a-table>
+  </m-table>
 </template>
 <script>
 const columns = [

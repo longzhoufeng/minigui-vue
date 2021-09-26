@@ -11,14 +11,14 @@ Classic mode. File selection dialog pops up when upload button is clicked.
 
 ```vue
 <template>
-  <a-upload-dragger
+  <m-upload-dragger
     name="file"
     :multiple="true"
     action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
     @change="handleChange"
   >
     <p class="minigui-upload-drag-icon">
-      <a-icon type="inbox" />
+      <m-icon type="inbox" />
     </p>
     <p class="minigui-upload-text">
       Click or drag file to this area to upload
@@ -27,7 +27,7 @@ Classic mode. File selection dialog pops up when upload button is clicked.
       Support for a single or bulk upload. Strictly prohibit from uploading company data or other
       band files
     </p>
-  </a-upload-dragger>
+  </m-upload-dragger>
 </template>
 <script>
 export default {

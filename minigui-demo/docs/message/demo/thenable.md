@@ -10,9 +10,9 @@
 
 ```vue
 <template>
-  <a-button @click="success">
+  <m-button @click="success">
     Display a sequence of message
-  </a-button>
+  </m-button>
 </template>
 <script>
 export default {

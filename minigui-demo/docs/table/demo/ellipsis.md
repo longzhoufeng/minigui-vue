@@ -12,9 +12,9 @@ Ellipsize cell content via setting `column.ellipsis`.
 
 ```vue
 <template>
-  <a-table :columns="columns" :data-source="data">
+  <m-table :columns="columns" :data-source="data">
     <a slot="name" slot-scope="text">{{ text }}</a>
-  </a-table>
+  </m-table>
 </template>
 <script>
 const columns = [

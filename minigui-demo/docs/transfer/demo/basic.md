@@ -11,7 +11,7 @@ The most basic usage of `Transfer` involves providing the source data and target
 ```vue
 <template>
   <div>
-    <a-transfer
+    <m-transfer
       :data-source="mockData"
       :titles="['Source', 'Target']"
       :target-keys="targetKeys"
@@ -22,7 +22,7 @@ The most basic usage of `Transfer` involves providing the source data and target
       @selectChange="handleSelectChange"
       @scroll="handleScroll"
     />
-    <a-switch
+    <m-switch
       un-checked-children="enabled"
       checked-children="disabled"
       :checked="disabled"

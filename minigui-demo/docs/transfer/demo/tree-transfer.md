@@ -11,7 +11,7 @@ Customize render list with Tree component.
 ```vue
 <template>
   <div>
-    <a-transfer
+    <m-transfer
       class="tree-transfer"
       :data-source="dataSource"
       :target-keys="targetKeys"
@@ -23,7 +23,7 @@ Customize render list with Tree component.
         slot="children"
         slot-scope="{ props: { direction, selectedKeys }, on: { itemSelect } }"
       >
-        <a-tree
+        <m-tree
           v-if="direction === 'left'"
           blockNode
           checkable
@@ -43,7 +43,7 @@ Customize render list with Tree component.
           "
         />
       </template>
-    </a-transfer>
+    </m-transfer>
   </div>
 </template>
 <script>

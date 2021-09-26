@@ -9,17 +9,17 @@
 </us>
 
 <template>
-  <a-form>
-    <a-form-item
+  <m-form>
+    <m-form-item
       :label-col="labelCol"
       :wrapper-col="wrapperCol"
       label="Prime between 8 & 12"
       :validate-status="number.validateStatus"
       :help="number.errorMsg || tips"
     >
-      <a-input-number :min="8" :max="12" :value="number.value" @change="handleNumberChange" />
-    </a-form-item>
-  </a-form>
+      <m-input-number :min="8" :max="12" :value="number.value" @change="handleNumberChange" />
+    </m-form-item>
+  </m-form>
 </template>
 <script>
 function validatePrimeNumber(number) {

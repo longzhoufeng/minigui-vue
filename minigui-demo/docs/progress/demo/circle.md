@@ -11,9 +11,9 @@ A circular progress bar.
 ```vue
 <template>
   <div>
-    <a-progress type="circle" :percent="75" />
-    <a-progress type="circle" :percent="70" status="exception" />
-    <a-progress type="circle" :percent="100" />
+    <m-progress type="circle" :percent="75" />
+    <m-progress type="circle" :percent="70" status="exception" />
+    <m-progress type="circle" :percent="100" />
   </div>
 </template>
 <style scoped>

@@ -11,11 +11,11 @@ Click the button to toggle between available and disabled states.
 ```vue
 <template>
   <div>
-    <a-input-number :min="1" :max="10" :disabled="disabled" :default-value="3" />
+    <m-input-number :min="1" :max="10" :disabled="disabled" :default-value="3" />
     <div style="marginTop:20px">
-      <a-button type="primary" @click="toggle">
+      <m-button type="primary" @click="toggle">
         Toggle disabled
-      </a-button>
+      </m-button>
     </div>
   </div>
 </template>

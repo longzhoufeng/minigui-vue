@@ -11,31 +11,31 @@ Render extra footer in panel for customized requirements.
 ```vue
 <template>
   <div>
-    <a-date-picker>
+    <m-date-picker>
       <template slot="renderExtraFooter">
         extra footer
       </template>
-    </a-date-picker>
-    <a-date-picker show-time>
+    </m-date-picker>
+    <m-date-picker show-time>
       <template slot="renderExtraFooter">
         extra footer
       </template>
-    </a-date-picker>
-    <a-range-picker>
+    </m-date-picker>
+    <m-range-picker>
       <template slot="renderExtraFooter">
         extra footer
       </template>
-    </a-range-picker>
-    <a-range-picker show-time>
+    </m-range-picker>
+    <m-range-picker show-time>
       <template slot="renderExtraFooter">
         extra footer
       </template>
-    </a-range-picker>
-    <a-month-picker placeholder="Select month">
+    </m-range-picker>
+    <m-month-picker placeholder="Select month">
       <template slot="renderExtraFooter">
         extra footer
       </template>
-    </a-month-picker>
+    </m-month-picker>
   </div>
 </template>
 ```

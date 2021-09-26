@@ -11,27 +11,27 @@ Basic Usage
 ```vue
 <template>
   <div>
-    <a-select default-value="lucy" style="width: 120px" @change="handleChange">
-      <a-icon slot="suffixIcon" type="smile" />
-      <a-select-option value="jack">
+    <m-select default-value="lucy" style="width: 120px" @change="handleChange">
+      <m-icon slot="suffixIcon" type="smile" />
+      <m-select-option value="jack">
         Jack
-      </a-select-option>
-      <a-select-option value="lucy">
+      </m-select-option>
+      <m-select-option value="lucy">
         Lucy
-      </a-select-option>
-      <a-select-option value="disabled" disabled>
+      </m-select-option>
+      <m-select-option value="disabled" disabled>
         Disabled
-      </a-select-option>
-      <a-select-option value="Yiminghe">
+      </m-select-option>
+      <m-select-option value="Yiminghe">
         yiminghe
-      </a-select-option>
-    </a-select>
-    <a-select default-value="lucy" style="width: 120px" disabled>
-      <a-icon slot="suffixIcon" type="meh" />
-      <a-select-option value="lucy">
+      </m-select-option>
+    </m-select>
+    <m-select default-value="lucy" style="width: 120px" disabled>
+      <m-icon slot="suffixIcon" type="meh" />
+      <m-select-option value="lucy">
         Lucy
-      </a-select-option>
-    </a-select>
+      </m-select-option>
+    </m-select>
   </div>
 </template>
 <script>

@@ -10,13 +10,13 @@ You could pass `slot="dataSource` as children of `AutoComplete`, instead of usin
 
 ```vue
 <template>
-  <a-auto-complete style="width: 200px" placeholder="input here" @search="handleSearch">
+  <m-auto-complete style="width: 200px" placeholder="input here" @search="handleSearch">
     <template slot="dataSource">
-      <a-select-option v-for="email in result" :key="email">
+      <m-select-option v-for="email in result" :key="email">
         {{ email }}
-      </a-select-option>
+      </m-select-option>
     </template>
-  </a-auto-complete>
+  </m-auto-complete>
 </template>
 <script>
 export default {

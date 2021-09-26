@@ -10,21 +10,21 @@ Vertical RadioGroup, with more radios.
 
 ```vue
 <template>
-  <a-radio-group v-model="value" @change="onChange">
-    <a-radio :style="radioStyle" :value="1">
+  <m-radio-group v-model="value" @change="onChange">
+    <m-radio :style="radioStyle" :value="1">
       Option A
-    </a-radio>
-    <a-radio :style="radioStyle" :value="2">
+    </m-radio>
+    <m-radio :style="radioStyle" :value="2">
       Option B
-    </a-radio>
-    <a-radio :style="radioStyle" :value="3">
+    </m-radio>
+    <m-radio :style="radioStyle" :value="3">
       Option C
-    </a-radio>
-    <a-radio :style="radioStyle" :value="4">
+    </m-radio>
+    <m-radio :style="radioStyle" :value="4">
       More...
-      <a-input v-if="value === 4" :style="{ width: 100, marginLeft: 10 }" />
-    </a-radio>
-  </a-radio-group>
+      <m-input v-if="value === 4" :style="{ width: 100, marginLeft: 10 }" />
+    </m-radio>
+  </m-radio-group>
 </template>
 <script>
 export default {

@@ -11,11 +11,11 @@ Disabled state of `Switch`.
 ```vue
 <template>
   <div>
-    <a-switch default-checked :disabled="disabled" style="margin-bottom:5px" />
+    <m-switch default-checked :disabled="disabled" style="margin-bottom:5px" />
     <br />
-    <a-button type="primary" @click="onToggle">
+    <m-button type="primary" @click="onToggle">
       Toggle disabled
-    </a-button>
+    </m-button>
   </div>
 </template>
 <script>

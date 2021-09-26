@@ -10,7 +10,7 @@ Set property `hue` to false, can hide hue slider.
 
 ```vue
 <template>
-  <a-color-picker v-model="color" :hue="false" />
+  <m-color-picker v-model="color" :hue="false" />
 </template>
 <script>
 export default {

@@ -11,10 +11,10 @@ You can add an icon beside the slider to make it meaningful.
 ```vue
 <template>
   <div class="icon-wrapper">
-    <a-icon :style="{ color: preColor }" type="frown-o" />
-    <a-slider :min="0" :max="20" :value="value" @change="handleChange" />
-    <a-slider v-model="value" :min="0" :max="20" />
-    <a-icon :style="{ color: nextColor }" type="smile-o" />
+    <m-icon :style="{ color: preColor }" type="frown-o" />
+    <m-slider :min="0" :max="20" :value="value" @change="handleChange" />
+    <m-slider v-model="value" :min="0" :max="20" />
+    <m-icon :style="{ color: nextColor }" type="smile-o" />
   </div>
 </template>
 <script>

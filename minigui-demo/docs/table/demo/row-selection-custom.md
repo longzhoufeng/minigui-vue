@@ -10,7 +10,7 @@ Use `rowSelection.selections` custom selections, default no select dropdown, sho
 
 ```vue
 <template>
-  <a-table :row-selection="rowSelection" :columns="columns" :data-source="data" />
+  <m-table :row-selection="rowSelection" :columns="columns" :data-source="data" />
 </template>
 <script>
 const columns = [

@@ -10,17 +10,17 @@ Multiple selection, selecting from existing items (scroll the menu).
 
 ```vue
 <template>
-  <a-select
+  <m-select
     mode="multiple"
     :default-value="['a1', 'b2']"
     style="width: 100%"
     placeholder="Please select"
     @change="handleChange"
   >
-    <a-select-option v-for="i in 25" :key="(i + 9).toString(36) + i">
+    <m-select-option v-for="i in 25" :key="(i + 9).toString(36) + i">
       {{ (i + 9).toString(36) + i }}
-    </a-select-option>
-  </a-select>
+    </m-select-option>
+  </m-select>
 </template>
 <script>
 export default {

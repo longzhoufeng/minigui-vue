@@ -10,13 +10,13 @@ The result of the warning.
 
 ```vue
 <template>
-  <a-result status="warning" title="There are some problems with your operation.">
+  <m-result status="warning" title="There are some problems with your operation.">
     <template #extra>
-      <a-button key="console" type="primary">
+      <m-button key="console" type="primary">
         Go Console
-      </a-button>
+      </m-button>
     </template>
-  </a-result>
+  </m-result>
 </template>
 <script>
 export default {

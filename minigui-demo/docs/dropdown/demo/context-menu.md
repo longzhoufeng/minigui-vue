@@ -10,7 +10,7 @@ The default trigger mode is `hover`, you can change it to `contextMenu`.
 
 ```vue
 <template>
-  <a-dropdown :trigger="['contextmenu']">
+  <m-dropdown :trigger="['contextmenu']">
     <div
       :style="{
         textAlign: 'center',
@@ -22,17 +22,17 @@ The default trigger mode is `hover`, you can change it to `contextMenu`.
     >
       Right Click on here
     </div>
-    <a-menu slot="overlay">
-      <a-menu-item key="1">
+    <m-menu slot="overlay">
+      <m-menu-item key="1">
         1st menu item
-      </a-menu-item>
-      <a-menu-item key="2">
+      </m-menu-item>
+      <m-menu-item key="2">
         2nd menu item
-      </a-menu-item>
-      <a-menu-item key="3">
+      </m-menu-item>
+      <m-menu-item key="3">
         3rd menu item
-      </a-menu-item>
-    </a-menu>
-  </a-dropdown>
+      </m-menu-item>
+    </m-menu>
+  </m-dropdown>
 </template>
 ```

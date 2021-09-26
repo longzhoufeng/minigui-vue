@@ -10,7 +10,7 @@ The basic example.
 
 ```vue
 <template>
-  <a-popconfirm
+  <m-popconfirm
     title="Are you sure delete this task?"
     ok-text="Yes"
     cancel-text="No"
@@ -18,7 +18,7 @@ The basic example.
     @cancel="cancel"
   >
     <a href="#">Delete</a>
-  </a-popconfirm>
+  </m-popconfirm>
 </template>
 <script>
 export default {

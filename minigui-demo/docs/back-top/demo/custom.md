@@ -11,11 +11,11 @@ You can customize the style of the button, just note the size limit: no more tha
 ```vue
 <template>
   <div id="components-back-top-demo-custom">
-    <a-back-top>
+    <m-back-top>
       <div class="minigui-back-top-inner">
         UP
       </div>
-    </a-back-top>
+    </m-back-top>
     Scroll down to see the bottom-right
     <strong style="color: #1088e9"> blue </strong>
     button.

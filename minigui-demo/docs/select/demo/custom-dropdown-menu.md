@@ -10,22 +10,22 @@ Customize the dropdown menu via `dropdownRender`.
 
 ```vue
 <template>
-  <a-select default-value="lucy" style="width: 120px">
+  <m-select default-value="lucy" style="width: 120px">
     <div slot="dropdownRender" slot-scope="menu">
       <v-nodes :vnodes="menu" />
-      <a-divider style="margin: 4px 0;" />
+      <m-divider style="margin: 4px 0;" />
       <div
         style="padding: 4px 8px; cursor: pointer;"
         @mousedown="e => e.preventDefault()"
         @click="addItem"
       >
-        <a-icon type="plus" /> Add item
+        <m-icon type="plus" /> Add item
       </div>
     </div>
-    <a-select-option v-for="item in items" :key="item" :value="item">
+    <m-select-option v-for="item in items" :key="item" :value="item">
       {{ item }}
-    </a-select-option>
-  </a-select>
+    </m-select-option>
+  </m-select>
 </template>
 <script>
 let index = 0;

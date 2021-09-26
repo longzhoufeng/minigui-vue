@@ -11,7 +11,7 @@ Test old icons before `1.2.0`.
 ```vue
 <template>
   <div>
-    <a-icon v-for="icon in icons" :key="icon" :type="icon" />
+    <m-icon v-for="icon in icons" :key="icon" :type="icon" />
   </div>
 </template>
 <script>

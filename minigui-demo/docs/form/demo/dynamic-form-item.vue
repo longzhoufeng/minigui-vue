@@ -9,15 +9,15 @@ Add or remove form items dynamically.
 </us>
 
 <template>
-  <a-form :form="form" @submit="handleSubmit">
-    <a-form-item
+  <m-form :form="form" @submit="handleSubmit">
+    <m-form-item
       v-for="(k, index) in form.getFieldValue('keys')"
       :key="k"
       v-bind="index === 0 ? formItemLayout : formItemLayoutWithOutLabel"
       :label="index === 0 ? 'Passengers' : ''"
       :required="false"
     >
-      <a-input
+      <m-input
         v-decorator="[
           `names[${k}]`,
           {
@@ -34,25 +34,25 @@ Add or remove form items dynamically.
         placeholder="passenger name"
         style="width: 60%; margin-right: 8px"
       />
-      <a-icon
+      <m-icon
         v-if="form.getFieldValue('keys').length > 1"
         class="dynamic-delete-button"
         type="minus-circle-o"
         :disabled="form.getFieldValue('keys').length === 1"
         @click="() => remove(k)"
       />
-    </a-form-item>
-    <a-form-item v-bind="formItemLayoutWithOutLabel">
-      <a-button type="dashed" style="width: 60%" @click="add">
-        <a-icon type="plus" /> Add field
-      </a-button>
-    </a-form-item>
-    <a-form-item v-bind="formItemLayoutWithOutLabel">
-      <a-button type="primary" html-type="submit">
+    </m-form-item>
+    <m-form-item v-bind="formItemLayoutWithOutLabel">
+      <m-button type="dashed" style="width: 60%" @click="add">
+        <m-icon type="plus" /> Add field
+      </m-button>
+    </m-form-item>
+    <m-form-item v-bind="formItemLayoutWithOutLabel">
+      <m-button type="primary" html-type="submit">
         Submit
-      </a-button>
-    </a-form-item>
-  </a-form>
+      </m-button>
+    </m-form-item>
+  </m-form>
 </template>
 
 <script>

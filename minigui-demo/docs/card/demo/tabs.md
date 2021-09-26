@@ -11,19 +11,19 @@
 ```vue
 <template>
   <div>
-    <a-card
+    <m-card
       style="width:100%"
       title="Card title"
       :tab-list="tabList"
       :active-tab-key="key"
       @tabChange="key => onTabChange(key, 'key')"
     >
-      <span slot="customRender" slot-scope="item"> <a-icon type="home" />{{ item.key }} </span>
+      <span slot="customRender" slot-scope="item"> <m-icon type="home" />{{ item.key }} </span>
       <a slot="extra" href="#">More</a>
       {{ contentList[key] }}
-    </a-card>
+    </m-card>
     <br /><br />
-    <a-card
+    <m-card
       style="width:100%"
       :tab-list="tabListNoTitle"
       :active-tab-key="noTitleKey"
@@ -39,7 +39,7 @@
         project content
       </p>
       <a slot="tabBarExtraContent" href="#">More</a>
-    </a-card>
+    </m-card>
   </div>
 </template>
 

@@ -10,22 +10,22 @@ Simplest Usage.
 
 ```vue
 <template>
-  <a-descriptions title="User Info" layout="vertical">
-    <a-descriptions-item label="UserName">
+  <m-descriptions title="User Info" layout="vertical">
+    <m-descriptions-item label="UserName">
       Zhou Maomao
-    </a-descriptions-item>
-    <a-descriptions-item label="Telephone">
+    </m-descriptions-item>
+    <m-descriptions-item label="Telephone">
       1810000000
-    </a-descriptions-item>
-    <a-descriptions-item label="Live">
+    </m-descriptions-item>
+    <m-descriptions-item label="Live">
       Hangzhou, Zhejiang
-    </a-descriptions-item>
-    <a-descriptions-item label="Address" span="2">
+    </m-descriptions-item>
+    <m-descriptions-item label="Address" span="2">
       No. 18, Wantang Road, Xihu District, Hangzhou, Zhejiang, China
-    </a-descriptions-item>
-    <a-descriptions-item label="Remark">
+    </m-descriptions-item>
+    <m-descriptions-item label="Remark">
       empty
-    </a-descriptions-item>
-  </a-descriptions>
+    </m-descriptions-item>
+  </m-descriptions>
 </template>
 ```

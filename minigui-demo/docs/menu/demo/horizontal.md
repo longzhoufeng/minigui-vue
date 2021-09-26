@@ -11,36 +11,36 @@ Horizontal top navigation menu.
 ```vue
 <template>
   <div>
-    <a-menu v-model="current" mode="horizontal">
-      <a-menu-item key="mail"> <a-icon type="mail" />Navigation One </a-menu-item>
-      <a-menu-item key="app" disabled> <a-icon type="appstore" />Navigation Two </a-menu-item>
-      <a-sub-menu>
+    <m-menu v-model="current" mode="horizontal">
+      <m-menu-item key="mail"> <m-icon type="mail" />Navigation One </m-menu-item>
+      <m-menu-item key="app" disabled> <m-icon type="appstore" />Navigation Two </m-menu-item>
+      <m-sub-menu>
         <span slot="title" class="submenu-title-wrapper"
-          ><a-icon type="setting" />Navigation Three - Submenu</span
+          ><m-icon type="setting" />Navigation Three - Submenu</span
         >
-        <a-menu-item-group title="Item 1">
-          <a-menu-item key="setting:1">
+        <m-menu-item-group title="Item 1">
+          <m-menu-item key="setting:1">
             Option 1
-          </a-menu-item>
-          <a-menu-item key="setting:2">
+          </m-menu-item>
+          <m-menu-item key="setting:2">
             Option 2
-          </a-menu-item>
-        </a-menu-item-group>
-        <a-menu-item-group title="Item 2">
-          <a-menu-item key="setting:3">
+          </m-menu-item>
+        </m-menu-item-group>
+        <m-menu-item-group title="Item 2">
+          <m-menu-item key="setting:3">
             Option 3
-          </a-menu-item>
-          <a-menu-item key="setting:4">
+          </m-menu-item>
+          <m-menu-item key="setting:4">
             Option 4
-          </a-menu-item>
-        </a-menu-item-group>
-      </a-sub-menu>
-      <a-menu-item key="alipay">
+          </m-menu-item>
+        </m-menu-item-group>
+      </m-sub-menu>
+      <m-menu-item key="alipay">
         <a href="https://antdv.com" target="_blank" rel="noopener noreferrer"
           >Navigation Four - Link</a
         >
-      </a-menu-item>
-    </a-menu>
+      </m-menu-item>
+    </m-menu>
   </div>
 </template>
 <script>

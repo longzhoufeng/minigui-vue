@@ -11,12 +11,12 @@ Use `transformFile` for transform file before request such as add a watermark.
 ```vue
 <template>
   <div>
-    <a-upload
+    <m-upload
       action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
       :transform-file="transformFile"
     >
-      <a-button> <a-icon type="upload" /> Upload </a-button>
-    </a-upload>
+      <m-button> <m-icon type="upload" /> Upload </m-button>
+    </m-upload>
   </div>
 </template>
 <script>

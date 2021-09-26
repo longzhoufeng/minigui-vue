@@ -11,22 +11,22 @@ Example of creating a search box by grouping a standard input with a search butt
 ```vue
 <template>
   <div>
-    <a-input-search placeholder="input search text" style="width: 200px" @search="onSearch" />
+    <m-input-search placeholder="input search text" style="width: 200px" @search="onSearch" />
     <br /><br />
-    <a-input-search placeholder="input search text" enter-button @search="onSearch" />
+    <m-input-search placeholder="input search text" enter-button @search="onSearch" />
     <br /><br />
-    <a-input-search
+    <m-input-search
       placeholder="input search text"
       enter-button="Search"
       size="large"
       @search="onSearch"
     />
     <br /><br />
-    <a-input-search placeholder="input search text" size="large" @search="onSearch">
-      <a-button slot="enterButton">
+    <m-input-search placeholder="input search text" size="large" @search="onSearch">
+      <m-button slot="enterButton">
         Custom
-      </a-button>
-    </a-input-search>
+      </m-button>
+    </m-input-search>
   </div>
 </template>
 

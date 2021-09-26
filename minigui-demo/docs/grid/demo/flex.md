@@ -13,84 +13,84 @@ Use `row-flex` define `flex` layout, its child elements depending on the value o
 <template>
   <div>
     <p>sub-element align left</p>
-    <a-row type="flex" justify="start">
-      <a-col :span="4">
+    <m-row type="flex" justify="start">
+      <m-col :span="4">
         col-4
-      </a-col>
-      <a-col :span="4">
+      </m-col>
+      <m-col :span="4">
         col-4
-      </a-col>
-      <a-col :span="4">
+      </m-col>
+      <m-col :span="4">
         col-4
-      </a-col>
-      <a-col :span="4">
+      </m-col>
+      <m-col :span="4">
         col-4
-      </a-col>
-    </a-row>
+      </m-col>
+    </m-row>
 
     <p>sub-element align center</p>
-    <a-row type="flex" justify="center">
-      <a-col :span="4">
+    <m-row type="flex" justify="center">
+      <m-col :span="4">
         col-4
-      </a-col>
-      <a-col :span="4">
+      </m-col>
+      <m-col :span="4">
         col-4
-      </a-col>
-      <a-col :span="4">
+      </m-col>
+      <m-col :span="4">
         col-4
-      </a-col>
-      <a-col :span="4">
+      </m-col>
+      <m-col :span="4">
         col-4
-      </a-col>
-    </a-row>
+      </m-col>
+    </m-row>
 
     <p>sub-element align right</p>
-    <a-row type="flex" justify="end">
-      <a-col :span="4">
+    <m-row type="flex" justify="end">
+      <m-col :span="4">
         col-4
-      </a-col>
-      <a-col :span="4">
+      </m-col>
+      <m-col :span="4">
         col-4
-      </a-col>
-      <a-col :span="4">
+      </m-col>
+      <m-col :span="4">
         col-4
-      </a-col>
-      <a-col :span="4">
+      </m-col>
+      <m-col :span="4">
         col-4
-      </a-col>
-    </a-row>
+      </m-col>
+    </m-row>
 
     <p>sub-element monospaced arrangement</p>
-    <a-row type="flex" justify="space-between">
-      <a-col :span="4">
+    <m-row type="flex" justify="space-between">
+      <m-col :span="4">
         col-4
-      </a-col>
-      <a-col :span="4">
+      </m-col>
+      <m-col :span="4">
         col-4
-      </a-col>
-      <a-col :span="4">
+      </m-col>
+      <m-col :span="4">
         col-4
-      </a-col>
-      <a-col :span="4">
+      </m-col>
+      <m-col :span="4">
         col-4
-      </a-col>
-    </a-row>
+      </m-col>
+    </m-row>
 
     <p>sub-element align full</p>
-    <a-row type="flex" justify="space-around">
-      <a-col :span="4">
+    <m-row type="flex" justify="space-around">
+      <m-col :span="4">
         col-4
-      </a-col>
-      <a-col :span="4">
+      </m-col>
+      <m-col :span="4">
         col-4
-      </a-col>
-      <a-col :span="4">
+      </m-col>
+      <m-col :span="4">
         col-4
-      </a-col>
-      <a-col :span="4">
+      </m-col>
+      <m-col :span="4">
         col-4
-      </a-col>
-    </a-row>
+      </m-col>
+    </m-row>
   </div>
 </template>
 ```

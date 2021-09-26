@@ -11,22 +11,22 @@ The arrow points to the center of the target element, which set `arrowPointAtCen
 ```vue
 <template>
   <div>
-    <a-popover placement="topLeft">
+    <m-popover placement="topLeft">
       <template slot="content">
         <p>Content</p>
         <p>Content</p>
       </template>
       <span slot="title">Title</span>
-      <a-button>Align edge / 边缘对齐</a-button>
-    </a-popover>
-    <a-popover placement="topLeft" arrow-point-at-center>
+      <m-button>Align edge / 边缘对齐</m-button>
+    </m-popover>
+    <m-popover placement="topLeft" arrow-point-at-center>
       <template slot="content">
         <p>Content</p>
         <p>Content</p>
       </template>
       <span slot="title">Title</span>
-      <a-button>Arrow points to center / 箭头指向中心</a-button>
-    </a-popover>
+      <m-button>Arrow points to center / 箭头指向中心</m-button>
+    </m-popover>
   </div>
 </template>
 ```

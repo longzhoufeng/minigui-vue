@@ -10,33 +10,33 @@ Showing more detailed info of every row.
 
 ```vue
 <template>
-  <a-table :columns="columns" :data-source="data" class="components-table-demo-nested">
+  <m-table :columns="columns" :data-source="data" class="components-table-demo-nested">
     <a slot="operation" slot-scope="text">Publish</a>
-    <a-table
+    <m-table
       slot="expandedRowRender"
       slot-scope="text"
       :columns="innerColumns"
       :data-source="innerData"
       :pagination="false"
     >
-      <span slot="status" slot-scope="text"> <a-badge status="success" />Finished </span>
+      <span slot="status" slot-scope="text"> <m-badge status="success" />Finished </span>
       <span slot="operation" slot-scope="text" class="table-operation">
         <a>Pause</a>
         <a>Stop</a>
-        <a-dropdown>
-          <a-menu slot="overlay">
-            <a-menu-item>
+        <m-dropdown>
+          <m-menu slot="overlay">
+            <m-menu-item>
               Action 1
-            </a-menu-item>
-            <a-menu-item>
+            </m-menu-item>
+            <m-menu-item>
               Action 2
-            </a-menu-item>
-          </a-menu>
-          <a> More <a-icon type="down" /> </a>
-        </a-dropdown>
+            </m-menu-item>
+          </m-menu>
+          <a> More <m-icon type="down" /> </a>
+        </m-dropdown>
       </span>
-    </a-table>
-  </a-table>
+    </m-table>
+  </m-table>
 </template>
 <script>
 const columns = [

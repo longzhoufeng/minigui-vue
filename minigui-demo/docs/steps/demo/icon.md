@@ -10,19 +10,19 @@ You can use your own custom icons by setting the property `icon` for `Steps.Step
 
 ```vue
 <template>
-  <a-steps>
-    <a-step status="finish" title="Login">
-      <a-icon slot="icon" type="user" />
-    </a-step>
-    <a-step status="finish" title="Verification">
-      <a-icon slot="icon" type="solution" />
-    </a-step>
-    <a-step status="process" title="Pay">
-      <a-icon slot="icon" type="loading" />
-    </a-step>
-    <a-step status="wait" title="Done">
-      <a-icon slot="icon" type="smile-o" />
-    </a-step>
-  </a-steps>
+  <m-steps>
+    <m-step status="finish" title="Login">
+      <m-icon slot="icon" type="user" />
+    </m-step>
+    <m-step status="finish" title="Verification">
+      <m-icon slot="icon" type="solution" />
+    </m-step>
+    <m-step status="process" title="Pay">
+      <m-icon slot="icon" type="loading" />
+    </m-step>
+    <m-step status="wait" title="Done">
+      <m-icon slot="icon" type="smile-o" />
+    </m-step>
+  </m-steps>
 </template>
 ```

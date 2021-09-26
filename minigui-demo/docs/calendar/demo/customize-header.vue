@@ -10,7 +10,7 @@ Customize Calendar header content.
 
 <template>
   <div style="width: 300px; border: 1px solid #d9d9d9; border-radius: 4px">
-    <a-calendar :fullscreen="false" :header-render="headerRender" @panelChange="onPanelChange" />
+    <m-calendar :fullscreen="false" :header-render="headerRender" @panelChange="onPanelChange" />
   </div>
 </template>
 <script>
@@ -35,9 +35,9 @@ export default {
 
       for (let index = start; index < end; index++) {
         monthOptions.push(
-          <a-select-option class="month-item" key={`${index}`}>
+          <m-select-option class="month-item" key={`${index}`}>
             {months[index]}
-          </a-select-option>,
+          </m-select-option>,
         );
       }
       const month = value.month();
@@ -46,23 +46,23 @@ export default {
       const options = [];
       for (let i = year - 10; i < year + 10; i += 1) {
         options.push(
-          <a-select-option key={i} value={i} class="year-item">
+          <m-select-option key={i} value={i} class="year-item">
             {i}
-          </a-select-option>,
+          </m-select-option>,
         );
       }
       return (
         <div style={{ padding: '10px' }}>
           <div style={{ marginBottom: '10px' }}>Custom header </div>
-          <a-row type="flex" justify="space-between">
-            <a-col>
-              <a-radio-group size="small" onChange={e => onTypeChange(e.target.value)} value={type}>
-                <a-radio-button value="month">Month</a-radio-button>
-                <a-radio-button value="year">Year</a-radio-button>
-              </a-radio-group>
-            </a-col>
-            <a-col>
-              <a-select
+          <m-row type="flex" justify="space-between">
+            <m-col>
+              <m-radio-group size="small" onChange={e => onTypeChange(e.target.value)} value={type}>
+                <m-radio-button value="month">Month</m-radio-button>
+                <m-radio-button value="year">Year</m-radio-button>
+              </m-radio-group>
+            </m-col>
+            <m-col>
+              <m-select
                 size="small"
                 dropdownMatchSelectWidth={false}
                 class="my-year-select"
@@ -73,10 +73,10 @@ export default {
                 value={String(year)}
               >
                 {options}
-              </a-select>
-            </a-col>
-            <a-col>
-              <a-select
+              </m-select>
+            </m-col>
+            <m-col>
+              <m-select
                 size="small"
                 dropdownMatchSelectWidth={false}
                 value={String(month)}
@@ -87,9 +87,9 @@ export default {
                 }}
               >
                 {monthOptions}
-              </a-select>
-            </a-col>
-          </a-row>
+              </m-select>
+            </m-col>
+          </m-row>
         </div>
       );
     },

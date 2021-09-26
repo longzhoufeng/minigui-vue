@@ -13,10 +13,10 @@ Before v2.0,  The properties of `a-sub-menu` are dynamically changed inside the 
 ```vue
 <template>
   <div style="width: 256px">
-    <a-button type="primary" style="margin-bottom: 16px" @click="toggleCollapsed">
-      <a-icon :type="collapsed ? 'menu-unfold' : 'menu-fold'" />
-    </a-button>
-    <a-menu
+    <m-button type="primary" style="margin-bottom: 16px" @click="toggleCollapsed">
+      <m-icon :type="collapsed ? 'menu-unfold' : 'menu-fold'" />
+    </m-button>
+    <m-menu
       :default-selected-keys="['1']"
       :default-open-keys="['2']"
       mode="inline"
@@ -24,31 +24,31 @@ Before v2.0,  The properties of `a-sub-menu` are dynamically changed inside the 
       :inline-collapsed="collapsed"
     >
       <template v-for="item in list">
-        <a-menu-item v-if="!item.children" :key="item.key">
-          <a-icon type="pie-chart" />
+        <m-menu-item v-if="!item.children" :key="item.key">
+          <m-icon type="pie-chart" />
           <span>{{ item.title }}</span>
-        </a-menu-item>
+        </m-menu-item>
         <sub-menu v-else :key="item.key" :menu-info="item" />
       </template>
-    </a-menu>
+    </m-menu>
   </div>
 </template>
 
 <script>
 // recommend use functional component
 // <template functional>
-//   <a-sub-menu :key="props.menuInfo.key">
+//   <m-sub-menu :key="props.menuInfo.key">
 //     <span slot="title">
-//       <a-icon type="mail" /><span>{{ props.menuInfo.title }}</span>
+//       <m-icon type="mail" /><span>{{ props.menuInfo.title }}</span>
 //     </span>
 //     <template v-for="item in props.menuInfo.children">
-//       <a-menu-item v-if="!item.children" :key="item.key">
-//         <a-icon type="pie-chart" />
+//       <m-menu-item v-if="!item.children" :key="item.key">
+//         <m-icon type="pie-chart" />
 //         <span>{{ item.title }}</span>
-//       </a-menu-item>
+//       </m-menu-item>
 //       <sub-menu v-else :key="item.key" :menu-info="item" />
 //     </template>
-//   </a-sub-menu>
+//   </m-sub-menu>
 // </template>
 // export default {
 //   props: ['menuInfo'],
@@ -56,18 +56,18 @@ Before v2.0,  The properties of `a-sub-menu` are dynamically changed inside the 
 import { Menu } from 'minigui-vue';
 const SubMenu = {
   template: `
-      <a-sub-menu :key="menuInfo.key" v-bind="$props" v-on="$listeners">
+      <m-sub-menu :key="menuInfo.key" v-bind="$props" v-on="$listeners">
         <span slot="title">
-          <a-icon type="mail" /><span>{{ menuInfo.title }}</span>
+          <m-icon type="mail" /><span>{{ menuInfo.title }}</span>
         </span>
         <template v-for="item in menuInfo.children">
-          <a-menu-item v-if="!item.children" :key="item.key">
-            <a-icon type="pie-chart" />
+          <m-menu-item v-if="!item.children" :key="item.key">
+            <m-icon type="pie-chart" />
             <span>{{ item.title }}</span>
-          </a-menu-item>
+          </m-menu-item>
           <sub-menu v-else :key="item.key" :menu-info="item" />
         </template>
-      </a-sub-menu>
+      </m-sub-menu>
     `,
   name: 'SubMenu',
   // must add isSubMenu: true

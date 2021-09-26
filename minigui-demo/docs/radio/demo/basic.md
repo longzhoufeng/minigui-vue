@@ -10,6 +10,6 @@ The simplest use.
 
 ```vue
 <template>
-  <a-radio>Radio</a-radio>
+  <m-radio>Radio</m-radio>
 </template>
 ```

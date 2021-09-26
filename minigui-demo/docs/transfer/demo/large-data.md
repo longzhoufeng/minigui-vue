@@ -10,7 +10,7 @@
 
 ```vue
 <template>
-  <a-transfer
+  <m-transfer
     :data-source="mockData"
     :target-keys="targetKeys"
     :render="item => item.title"

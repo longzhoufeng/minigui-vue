@@ -10,6 +10,6 @@ The simplest usage for short messages.
 
 ```vue
 <template>
-  <a-alert message="Success Text" type="success" />
+  <m-alert message="Success Text" type="success" />
 </template>
 ```

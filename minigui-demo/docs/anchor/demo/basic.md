@@ -10,18 +10,18 @@ The simplest usage.
 
 ```vue
 <template>
-  <a-anchor>
-    <a-anchor-link href="#components-anchor-demo-basic" title="Basic demo" />
-    <a-anchor-link href="#components-anchor-demo-static" title="Static demo" />
-    <a-anchor-link
+  <m-anchor>
+    <m-anchor-link href="#components-anchor-demo-basic" title="Basic demo" />
+    <m-anchor-link href="#components-anchor-demo-static" title="Static demo" />
+    <m-anchor-link
       href="#components-anchor-demo-basic"
       title="Basic demo with Target"
       target="_blank"
     />
-    <a-anchor-link href="#API" title="API">
-      <a-anchor-link href="#Anchor-Props" title="Anchor Props" />
-      <a-anchor-link href="#Link-Props" title="Link Props" />
-    </a-anchor-link>
-  </a-anchor>
+    <m-anchor-link href="#API" title="API">
+      <m-anchor-link href="#Anchor-Props" title="Anchor Props" />
+      <m-anchor-link href="#Link-Props" title="Link Props" />
+    </m-anchor-link>
+  </m-anchor>
 </template>
 ```

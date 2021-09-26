@@ -10,7 +10,7 @@ Drag treeNode to insert after the other treeNode or insert into the other parent
 
 ```vue
 <template>
-  <a-tree
+  <m-tree
     class="draggable-tree"
     :default-expanded-keys="expandedKeys"
     draggable

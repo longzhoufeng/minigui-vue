@@ -10,19 +10,19 @@ You can add extra actions to the right of Tabs.
 
 ```vue
 <template>
-  <a-tabs>
-    <a-tab-pane key="1" tab="Tab 1">
+  <m-tabs>
+    <m-tab-pane key="1" tab="Tab 1">
       Content of tab 1
-    </a-tab-pane>
-    <a-tab-pane key="2" tab="Tab 2">
+    </m-tab-pane>
+    <m-tab-pane key="2" tab="Tab 2">
       Content of tab 2
-    </a-tab-pane>
-    <a-tab-pane key="3" tab="Tab 3">
+    </m-tab-pane>
+    <m-tab-pane key="3" tab="Tab 3">
       Content of tab 3
-    </a-tab-pane>
-    <a-button slot="tabBarExtraContent">
+    </m-tab-pane>
+    <m-button slot="tabBarExtraContent">
       Extra Action
-    </a-button>
-  </a-tabs>
+    </m-button>
+  </m-tabs>
 </template>
 ```

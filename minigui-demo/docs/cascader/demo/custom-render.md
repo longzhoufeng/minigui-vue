@@ -10,7 +10,7 @@ For instance, add an external link after the selected value.
 
 ```vue
 <template>
-  <a-cascader
+  <m-cascader
     :options="options"
     :default-value="['zhejiang', 'hangzhou', 'xihu']"
     style="width: 100%"
@@ -26,7 +26,7 @@ For instance, add an external link after the selected value.
         <span v-else @click="onChange"> {{ label }} / </span>
       </span>
     </template>
-  </a-cascader>
+  </m-cascader>
 </template>
 <script>
 export default {

@@ -11,9 +11,9 @@
 ```vue
 <template>
   <div id="components-badge-demo-title">
-    <a-badge :count="5" title="Custom hover text">
+    <m-badge :count="5" title="Custom hover text">
       <a href="#" class="head-example" />
-    </a-badge>
+    </m-badge>
   </div>
 </template>
 <style scoped>

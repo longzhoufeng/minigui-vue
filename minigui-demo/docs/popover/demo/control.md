@@ -10,12 +10,12 @@ Use `visible` prop to control the display of the card.
 
 ```vue
 <template>
-  <a-popover v-model="visible" title="Title" trigger="click">
+  <m-popover v-model="visible" title="Title" trigger="click">
     <a slot="content" @click="hide">Close</a>
-    <a-button type="primary">
+    <m-button type="primary">
       Click me
-    </a-button>
-  </a-popover>
+    </m-button>
+  </m-popover>
 </template>
 
 <script>

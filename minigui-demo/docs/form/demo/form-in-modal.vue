@@ -10,9 +10,9 @@ When user visit a page with a list of items, and want to create a new item. The 
 
 <template>
   <div>
-    <a-button type="primary" @click="showModal">
+    <m-button type="primary" @click="showModal">
       New Collection
-    </a-button>
+    </m-button>
     <collection-create-form
       ref="collectionForm"
       :visible="visible"
@@ -29,16 +29,16 @@ const CollectionCreateForm = {
     this.form = this.$form.createForm(this, { name: 'form_in_modal' });
   },
   template: `
-    <a-modal
+    <m-modal
       :visible="visible"
       title='Create a new collection'
       okText='Create'
       @cancel="() => { $emit('cancel') }"
       @ok="() => { $emit('create') }"
     >
-      <a-form layout='vertical' :form="form">
-        <a-form-item label='Title'>
-          <a-input
+      <m-form layout='vertical' :form="form">
+        <m-form-item label='Title'>
+          <m-input
             v-decorator="[
               'title',
               {
@@ -46,15 +46,15 @@ const CollectionCreateForm = {
               }
             ]"
           />
-        </a-form-item>
-        <a-form-item label='Description'>
-          <a-input
+        </m-form-item>
+        <m-form-item label='Description'>
+          <m-input
             type='textarea'
             v-decorator="['description']"
           />
-        </a-form-item>
-        <a-form-item class='collection-create-form_last-form-item'>
-          <a-radio-group
+        </m-form-item>
+        <m-form-item class='collection-create-form_last-form-item'>
+          <m-radio-group
             v-decorator="[
               'modifier',
               {
@@ -62,12 +62,12 @@ const CollectionCreateForm = {
               }
             ]"
           >
-              <a-radio value='public'>Public</a-radio>
-              <a-radio value='private'>Private</a-radio>
-            </a-radio-group>
-        </a-form-item>
-      </a-form>
-    </a-modal>
+              <m-radio value='public'>Public</m-radio>
+              <m-radio value='private'>Private</m-radio>
+            </m-radio-group>
+        </m-form-item>
+      </m-form>
+    </m-modal>
   `,
 };
 

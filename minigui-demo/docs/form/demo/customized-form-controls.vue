@@ -15,8 +15,8 @@ Customized or third-party form controls can be used in Form, too. Controls must 
 </us>
 
 <template>
-  <a-form layout="inline" :form="form" @submit="handleSubmit">
-    <a-form-item label="Price">
+  <m-form layout="inline" :form="form" @submit="handleSubmit">
+    <m-form-item label="Price">
       <price-input
         v-decorator="[
           'price',
@@ -26,13 +26,13 @@ Customized or third-party form controls can be used in Form, too. Controls must 
           },
         ]"
       />
-    </a-form-item>
-    <a-form-item>
-      <a-button type="primary" html-type="submit">
+    </m-form-item>
+    <m-form-item>
+      <m-button type="primary" html-type="submit">
         Submit
-      </a-button>
-    </a-form-item>
-  </a-form>
+      </m-button>
+    </m-form-item>
+  </m-form>
 </template>
 
 <script>
@@ -40,20 +40,20 @@ const PriceInput = {
   props: ['value'],
   template: `
     <span>
-      <a-input
+      <m-input
         type='text'
         :value="number"
         @change="handleNumberChange"
         style="width: 63%; margin-right: 2%;"
       />
-      <a-select
+      <m-select
         :value="currency"
         style="width: 32%"
         @change="handleCurrencyChange"
       >
-        <a-select-option value='rmb'>RMB</a-select-option>
-        <a-select-option value='dollar'>Dollar</a-select-option>
-      </a-select>
+        <m-select-option value='rmb'>RMB</m-select-option>
+        <m-select-option value='dollar'>Dollar</m-select-option>
+      </m-select>
     </span>
   `,
   data() {

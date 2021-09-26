@@ -11,7 +11,7 @@ Add copywriting in rate components.
 ```vue
 <template>
   <span>
-    <a-rate v-model="value" :tooltips="desc" />
+    <m-rate v-model="value" :tooltips="desc" />
     <span class="minigui-rate-text">{{ desc[value - 1] }}</span>
   </span>
 </template>

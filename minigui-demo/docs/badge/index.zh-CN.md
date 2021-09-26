@@ -1,13 +1,13 @@
 ## API
 
 ```html
-<a-badge :count="5">
+<m-badge :count="5">
   <a href="#" class="head-example" />
-</a-badge>
+</m-badge>
 ```
 
 ```html
-<a-badge :count="5" />
+<m-badge :count="5" />
 ```
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |

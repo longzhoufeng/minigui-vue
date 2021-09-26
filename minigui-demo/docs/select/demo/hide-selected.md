@@ -10,17 +10,17 @@ Hide already selected options in the dropdown.
 
 ```vue
 <template>
-  <a-select
+  <m-select
     mode="multiple"
     placeholder="Inserted are removed"
     :value="selectedItems"
     style="width: 100%"
     @change="handleChange"
   >
-    <a-select-option v-for="item in filteredOptions" :key="item" :value="item">
+    <m-select-option v-for="item in filteredOptions" :key="item" :value="item">
       {{ item }}
-    </a-select-option>
-  </a-select>
+    </m-select-option>
+  </m-select>
 </template>
 <script>
 const OPTIONS = ['Apples', 'Nails', 'Bananas', 'Helicopters'];

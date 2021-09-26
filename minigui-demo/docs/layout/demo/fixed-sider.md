@@ -10,47 +10,47 @@ When dealing with long content, a fixed sider can provide a better user experien
 
 ```vue
 <template>
-  <a-layout id="components-layout-demo-fixed-sider">
-    <a-layout-sider :style="{ overflow: 'auto', height: '100vh', position: 'fixed', left: 0 }">
+  <m-layout id="components-layout-demo-fixed-sider">
+    <m-layout-sider :style="{ overflow: 'auto', height: '100vh', position: 'fixed', left: 0 }">
       <div class="logo" />
-      <a-menu theme="dark" mode="inline" :default-selected-keys="['4']">
-        <a-menu-item key="1">
-          <a-icon type="user" />
+      <m-menu theme="dark" mode="inline" :default-selected-keys="['4']">
+        <m-menu-item key="1">
+          <m-icon type="user" />
           <span class="nav-text">nav 1</span>
-        </a-menu-item>
-        <a-menu-item key="2">
-          <a-icon type="video-camera" />
+        </m-menu-item>
+        <m-menu-item key="2">
+          <m-icon type="video-camera" />
           <span class="nav-text">nav 2</span>
-        </a-menu-item>
-        <a-menu-item key="3">
-          <a-icon type="upload" />
+        </m-menu-item>
+        <m-menu-item key="3">
+          <m-icon type="upload" />
           <span class="nav-text">nav 3</span>
-        </a-menu-item>
-        <a-menu-item key="4">
-          <a-icon type="bar-chart" />
+        </m-menu-item>
+        <m-menu-item key="4">
+          <m-icon type="bar-chart" />
           <span class="nav-text">nav 4</span>
-        </a-menu-item>
-        <a-menu-item key="5">
-          <a-icon type="cloud-o" />
+        </m-menu-item>
+        <m-menu-item key="5">
+          <m-icon type="cloud-o" />
           <span class="nav-text">nav 5</span>
-        </a-menu-item>
-        <a-menu-item key="6">
-          <a-icon type="appstore-o" />
+        </m-menu-item>
+        <m-menu-item key="6">
+          <m-icon type="appstore-o" />
           <span class="nav-text">nav 6</span>
-        </a-menu-item>
-        <a-menu-item key="7">
-          <a-icon type="team" />
+        </m-menu-item>
+        <m-menu-item key="7">
+          <m-icon type="team" />
           <span class="nav-text">nav 7</span>
-        </a-menu-item>
-        <a-menu-item key="8">
-          <a-icon type="shop" />
+        </m-menu-item>
+        <m-menu-item key="8">
+          <m-icon type="shop" />
           <span class="nav-text">nav 8</span>
-        </a-menu-item>
-      </a-menu>
-    </a-layout-sider>
-    <a-layout :style="{ marginLeft: '200px' }">
-      <a-layout-header :style="{ background: '#fff', padding: 0 }" />
-      <a-layout-content :style="{ margin: '24px 16px 0', overflow: 'initial' }">
+        </m-menu-item>
+      </m-menu>
+    </m-layout-sider>
+    <m-layout :style="{ marginLeft: '200px' }">
+      <m-layout-header :style="{ background: '#fff', padding: 0 }" />
+      <m-layout-content :style="{ margin: '24px 16px 0', overflow: 'initial' }">
         <div :style="{ padding: '24px', background: '#fff', textAlign: 'center' }">
           ...
           <br />
@@ -66,12 +66,12 @@ When dealing with long content, a fixed sider can provide a better user experien
           <br />...<br />...<br />...<br />...<br />...<br />
           content
         </div>
-      </a-layout-content>
-      <a-layout-footer :style="{ textAlign: 'center' }">
+      </m-layout-content>
+      <m-layout-footer :style="{ textAlign: 'center' }">
         Ant Design ©2018 Created by Ant UED
-      </a-layout-footer>
-    </a-layout>
-  </a-layout>
+      </m-layout-footer>
+    </m-layout>
+  </m-layout>
 </template>
 <style>
 #components-layout-demo-fixed-sider .logo {

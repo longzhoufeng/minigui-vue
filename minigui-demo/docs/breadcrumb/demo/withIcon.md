@@ -10,17 +10,17 @@
 
 ```vue
 <template>
-  <a-breadcrumb>
-    <a-breadcrumb-item href="">
-      <a-icon type="home" />
-    </a-breadcrumb-item>
-    <a-breadcrumb-item href="">
-      <a-icon type="user" />
+  <m-breadcrumb>
+    <m-breadcrumb-item href="">
+      <m-icon type="home" />
+    </m-breadcrumb-item>
+    <m-breadcrumb-item href="">
+      <m-icon type="user" />
       <span>Application List</span>
-    </a-breadcrumb-item>
-    <a-breadcrumb-item>
+    </m-breadcrumb-item>
+    <m-breadcrumb-item>
       Application
-    </a-breadcrumb-item>
-  </a-breadcrumb>
+    </m-breadcrumb-item>
+  </m-breadcrumb>
 </template>
 ```

@@ -11,38 +11,38 @@ Comment can be used as editor, user can customize the editor component.
 ```vue
 <template>
   <div>
-    <a-list
+    <m-list
       v-if="comments.length"
       :data-source="comments"
       :header="`${comments.length} ${comments.length > 1 ? 'replies' : 'reply'}`"
       item-layout="horizontal"
     >
-      <a-list-item slot="renderItem" slot-scope="item, index">
-        <a-comment
+      <m-list-item slot="renderItem" slot-scope="item, index">
+        <m-comment
           :author="item.author"
           :avatar="item.avatar"
           :content="item.content"
           :datetime="item.datetime"
         />
-      </a-list-item>
-    </a-list>
-    <a-comment>
-      <a-avatar
+      </m-list-item>
+    </m-list>
+    <m-comment>
+      <m-avatar
         slot="avatar"
         src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
         alt="Han Solo"
       />
       <div slot="content">
-        <a-form-item>
-          <a-textarea :rows="4" :value="value" @change="handleChange" />
-        </a-form-item>
-        <a-form-item>
-          <a-button html-type="submit" :loading="submitting" type="primary" @click="handleSubmit">
+        <m-form-item>
+          <m-textarea :rows="4" :value="value" @change="handleChange" />
+        </m-form-item>
+        <m-form-item>
+          <m-button html-type="submit" :loading="submitting" type="primary" @click="handleSubmit">
             Add Comment
-          </a-button>
-        </a-form-item>
+          </m-button>
+        </m-form-item>
       </div>
-    </a-comment>
+    </m-comment>
   </div>
 </template>
 <script>

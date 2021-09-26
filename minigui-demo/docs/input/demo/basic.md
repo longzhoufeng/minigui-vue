@@ -10,6 +10,6 @@ Basic usage example.
 
 ```vue
 <template>
-  <a-input placeholder="Basic usage" />
+  <m-input placeholder="Basic usage" />
 </template>
 ```

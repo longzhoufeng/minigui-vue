@@ -11,9 +11,9 @@ TimePicker of 12 hours format, with default format `h:mm:ss a`.
 ```vue
 <template>
   <div>
-    <a-time-picker use12-hours @change="onChange" />
-    <a-time-picker use12-hours format="h:mm:ss A" @change="onChange" />
-    <a-time-picker use12-hours format="h:mm a" @change="onChange" />
+    <m-time-picker use12-hours @change="onChange" />
+    <m-time-picker use12-hours format="h:mm:ss A" @change="onChange" />
+    <m-time-picker use12-hours format="h:mm a" @change="onChange" />
   </div>
 </template>
 <script>

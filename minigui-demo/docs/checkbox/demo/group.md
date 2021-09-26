@@ -11,25 +11,25 @@ Generate a group of checkboxes from an array
 ```vue
 <template>
   <div>
-    <a-checkbox-group
+    <m-checkbox-group
       v-model="value"
       name="checkboxgroup"
       :options="plainOptions"
       @change="onChange"
     />
     <br />
-    <a-checkbox-group :options="plainOptions" :default-value="['Apple']" @change="onChange" />
+    <m-checkbox-group :options="plainOptions" :default-value="['Apple']" @change="onChange" />
     <br />
-    <a-checkbox-group :options="options" :value="['Pear']" @change="onChange" />
+    <m-checkbox-group :options="options" :value="['Pear']" @change="onChange" />
     <br />
-    <a-checkbox-group
+    <m-checkbox-group
       :options="optionsWithDisabled"
       disabled
       :default-value="['Apple']"
       @change="onChange"
     >
       <span slot="label" slot-scope="{ value }" style="color: red">{{ value }}</span>
-    </a-checkbox-group>
+    </m-checkbox-group>
   </div>
 </template>
 <script>

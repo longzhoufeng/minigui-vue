@@ -10,7 +10,7 @@ While part of `format` is omitted, the corresponding column in panel will disapp
 
 ```vue
 <template>
-  <a-time-picker :default-value="moment('12:08', 'HH:mm')" format="HH:mm" />
+  <m-time-picker :default-value="moment('12:08', 'HH:mm')" format="HH:mm" />
 </template>
 <script>
 import moment from 'moment';

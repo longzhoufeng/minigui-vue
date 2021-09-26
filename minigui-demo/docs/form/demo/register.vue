@@ -9,9 +9,9 @@ Fill in this form to create a new account for you.
 </us>
 
 <template>
-  <a-form :form="form" @submit="handleSubmit">
-    <a-form-item v-bind="formItemLayout" label="E-mail">
-      <a-input
+  <m-form :form="form" @submit="handleSubmit">
+    <m-form-item v-bind="formItemLayout" label="E-mail">
+      <m-input
         v-decorator="[
           'email',
           {
@@ -28,9 +28,9 @@ Fill in this form to create a new account for you.
           },
         ]"
       />
-    </a-form-item>
-    <a-form-item v-bind="formItemLayout" label="Password" has-feedback>
-      <a-input
+    </m-form-item>
+    <m-form-item v-bind="formItemLayout" label="Password" has-feedback>
+      <m-input
         v-decorator="[
           'password',
           {
@@ -47,9 +47,9 @@ Fill in this form to create a new account for you.
         ]"
         type="password"
       />
-    </a-form-item>
-    <a-form-item v-bind="formItemLayout" label="Confirm Password" has-feedback>
-      <a-input
+    </m-form-item>
+    <m-form-item v-bind="formItemLayout" label="Confirm Password" has-feedback>
+      <m-input
         v-decorator="[
           'confirm',
           {
@@ -67,15 +67,15 @@ Fill in this form to create a new account for you.
         type="password"
         @blur="handleConfirmBlur"
       />
-    </a-form-item>
-    <a-form-item v-bind="formItemLayout">
+    </m-form-item>
+    <m-form-item v-bind="formItemLayout">
       <span slot="label">
         Nickname&nbsp;
-        <a-tooltip title="What do you want others to call you?">
-          <a-icon type="question-circle-o" />
-        </a-tooltip>
+        <m-tooltip title="What do you want others to call you?">
+          <m-icon type="question-circle-o" />
+        </m-tooltip>
       </span>
-      <a-input
+      <m-input
         v-decorator="[
           'nickname',
           {
@@ -83,9 +83,9 @@ Fill in this form to create a new account for you.
           },
         ]"
       />
-    </a-form-item>
-    <a-form-item v-bind="formItemLayout" label="Habitual Residence">
-      <a-cascader
+    </m-form-item>
+    <m-form-item v-bind="formItemLayout" label="Habitual Residence">
+      <m-cascader
         v-decorator="[
           'residence',
           {
@@ -97,9 +97,9 @@ Fill in this form to create a new account for you.
         ]"
         :options="residences"
       />
-    </a-form-item>
-    <a-form-item v-bind="formItemLayout" label="Phone Number">
-      <a-input
+    </m-form-item>
+    <m-form-item v-bind="formItemLayout" label="Phone Number">
+      <m-input
         v-decorator="[
           'phone',
           {
@@ -108,67 +108,67 @@ Fill in this form to create a new account for you.
         ]"
         style="width: 100%"
       >
-        <a-select
+        <m-select
           slot="addonBefore"
           v-decorator="['prefix', { initialValue: '86' }]"
           style="width: 70px"
         >
-          <a-select-option value="86">
+          <m-select-option value="86">
             +86
-          </a-select-option>
-          <a-select-option value="87">
+          </m-select-option>
+          <m-select-option value="87">
             +87
-          </a-select-option>
-        </a-select>
-      </a-input>
-    </a-form-item>
-    <a-form-item v-bind="formItemLayout" label="Website">
-      <a-auto-complete
+          </m-select-option>
+        </m-select>
+      </m-input>
+    </m-form-item>
+    <m-form-item v-bind="formItemLayout" label="Website">
+      <m-auto-complete
         v-decorator="['website', { rules: [{ required: true, message: 'Please input website!' }] }]"
         placeholder="website"
         @change="handleWebsiteChange"
       >
         <template slot="dataSource">
-          <a-select-option v-for="website in autoCompleteResult" :key="website">
+          <m-select-option v-for="website in autoCompleteResult" :key="website">
             {{ website }}
-          </a-select-option>
+          </m-select-option>
         </template>
-        <a-input />
-      </a-auto-complete>
-    </a-form-item>
-    <a-form-item
+        <m-input />
+      </m-auto-complete>
+    </m-form-item>
+    <m-form-item
       v-bind="formItemLayout"
       label="Captcha"
       extra="We must make sure that your are a human."
     >
-      <a-row :gutter="8">
-        <a-col :span="12">
-          <a-input
+      <m-row :gutter="8">
+        <m-col :span="12">
+          <m-input
             v-decorator="[
               'captcha',
               { rules: [{ required: true, message: 'Please input the captcha you got!' }] },
             ]"
           />
-        </a-col>
-        <a-col :span="12">
-          <a-button>Get captcha</a-button>
-        </a-col>
-      </a-row>
-    </a-form-item>
-    <a-form-item v-bind="tailFormItemLayout">
-      <a-checkbox v-decorator="['agreement', { valuePropName: 'checked' }]">
+        </m-col>
+        <m-col :span="12">
+          <m-button>Get captcha</m-button>
+        </m-col>
+      </m-row>
+    </m-form-item>
+    <m-form-item v-bind="tailFormItemLayout">
+      <m-checkbox v-decorator="['agreement', { valuePropName: 'checked' }]">
         I have read the
         <a href="">
           agreement
         </a>
-      </a-checkbox>
-    </a-form-item>
-    <a-form-item v-bind="tailFormItemLayout">
-      <a-button type="primary" html-type="submit">
+      </m-checkbox>
+    </m-form-item>
+    <m-form-item v-bind="tailFormItemLayout">
+      <m-button type="primary" html-type="submit">
         Register
-      </a-button>
-    </a-form-item>
-  </a-form>
+      </m-button>
+    </m-form-item>
+  </m-form>
 </template>
 
 <script>

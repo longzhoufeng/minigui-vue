@@ -11,7 +11,7 @@ Numeric-only input box.
 ```vue
 <template>
   <div>
-    <a-input-number id="inputNumber" v-model="value" :min="1" :max="10" @change="onChange" />
+    <m-input-number id="inputNumber" v-model="value" :min="1" :max="10" @change="onChange" />
     当前值：{{ value }}
   </div>
 </template>

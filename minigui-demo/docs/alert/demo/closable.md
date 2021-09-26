@@ -11,13 +11,13 @@ To show close button.
 ```vue
 <template>
   <div>
-    <a-alert
+    <m-alert
       message="Warning Text Warning Text Warning TextW arning Text Warning Text Warning TextWarning Text"
       type="warning"
       closable
       @close="onClose"
     />
-    <a-alert
+    <m-alert
       message="Error Text"
       description="Error Description Error Description Error Description Error Description Error Description Error Description"
       type="error"

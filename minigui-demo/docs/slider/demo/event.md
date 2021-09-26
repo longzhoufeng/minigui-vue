@@ -12,8 +12,8 @@ The `onAfterChange` callback function will fire when `onmouseup` fired.
 ```vue
 <template>
   <div class="code-box-demo">
-    <a-slider :default-value="30" @change="onChange" @afterChange="onAfterChange" />
-    <a-slider
+    <m-slider :default-value="30" @change="onChange" @afterChange="onAfterChange" />
+    <m-slider
       range
       :step="10"
       :default-value="[20, 50]"

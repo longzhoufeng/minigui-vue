@@ -14,17 +14,17 @@ when `step` is null, users can only slide the thumbs onto marks.
 <template>
   <div id="components-slider-demo-mark">
     <h4>included=true</h4>
-    <a-slider :marks="marks" :default-value="37" />
-    <a-slider range :marks="marks" :default-value="[26, 37]" />
+    <m-slider :marks="marks" :default-value="37" />
+    <m-slider range :marks="marks" :default-value="[26, 37]" />
 
     <h4>included=false</h4>
-    <a-slider :marks="marks" :included="false" :default-value="37" />
+    <m-slider :marks="marks" :included="false" :default-value="37" />
 
     <h4>marks & step</h4>
-    <a-slider :marks="marks" :step="10" :default-value="37" />
+    <m-slider :marks="marks" :step="10" :default-value="37" />
 
     <h4>step=null</h4>
-    <a-slider :marks="marks" :step="null" :default-value="37" />
+    <m-slider :marks="marks" :step="null" :default-value="37" />
   </div>
 </template>
 <script>

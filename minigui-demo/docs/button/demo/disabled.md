@@ -11,38 +11,38 @@ To mark a button as disabled, add the `disabled` property to the `Button`.
 ```vue
 <template>
   <div>
-    <a-button type="primary">
+    <m-button type="primary">
       Primary
-    </a-button>
-    <a-button type="primary" disabled>
+    </m-button>
+    <m-button type="primary" disabled>
       Primary(disabled)
-    </a-button>
+    </m-button>
     <br />
-    <a-button>Default</a-button>
-    <a-button disabled>
+    <m-button>Default</m-button>
+    <m-button disabled>
       Default(disabled)
-    </a-button>
+    </m-button>
     <br />
-    <a-button type="dashed">
+    <m-button type="dashed">
       Dashed
-    </a-button>
-    <a-button type="dashed" disabled>
+    </m-button>
+    <m-button type="dashed" disabled>
       Dashed(disabled)
-    </a-button>
+    </m-button>
     <br />
-    <a-button type="link">
+    <m-button type="link">
       Link
-    </a-button>
-    <a-button type="link" disabled>
+    </m-button>
+    <m-button type="link" disabled>
       Link(disabled)
-    </a-button>
+    </m-button>
     <div :style="{ padding: '8px 8px 0 8px', background: 'rgb(190, 200, 200)' }">
-      <a-button ghost>
+      <m-button ghost>
         Ghost
-      </a-button>
-      <a-button ghost disabled>
+      </m-button>
+      <m-button ghost disabled>
         Ghost(disabled)
-      </a-button>
+      </m-button>
     </div>
   </div>
 </template>

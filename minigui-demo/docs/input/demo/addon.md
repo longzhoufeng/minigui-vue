@@ -12,38 +12,38 @@ Using pre & post tabs example.
 <template>
   <div>
     <div style="margin-bottom: 16px">
-      <a-input addon-before="Http://" addon-after=".com" default-value="mysite" />
+      <m-input addon-before="Http://" addon-after=".com" default-value="mysite" />
     </div>
     <div style="margin-bottom: 16px">
-      <a-input default-value="mysite">
-        <a-select slot="addonBefore" default-value="Http://" style="width: 90px">
-          <a-select-option value="Http://">
+      <m-input default-value="mysite">
+        <m-select slot="addonBefore" default-value="Http://" style="width: 90px">
+          <m-select-option value="Http://">
             Http://
-          </a-select-option>
-          <a-select-option value="Https://">
+          </m-select-option>
+          <m-select-option value="Https://">
             Https://
-          </a-select-option>
-        </a-select>
-        <a-select slot="addonAfter" default-value=".com" style="width: 80px">
-          <a-select-option value=".com">
+          </m-select-option>
+        </m-select>
+        <m-select slot="addonAfter" default-value=".com" style="width: 80px">
+          <m-select-option value=".com">
             .com
-          </a-select-option>
-          <a-select-option value=".jp">
+          </m-select-option>
+          <m-select-option value=".jp">
             .jp
-          </a-select-option>
-          <a-select-option value=".cn">
+          </m-select-option>
+          <m-select-option value=".cn">
             .cn
-          </a-select-option>
-          <a-select-option value=".org">
+          </m-select-option>
+          <m-select-option value=".org">
             .org
-          </a-select-option>
-        </a-select>
-      </a-input>
+          </m-select-option>
+        </m-select>
+      </m-input>
     </div>
     <div style="margin-bottom: 16px">
-      <a-input default-value="mysite">
-        <a-icon slot="addonAfter" type="setting" />
-      </a-input>
+      <m-input default-value="mysite">
+        <m-icon slot="addonAfter" type="setting" />
+      </m-input>
     </div>
   </div>
 </template>

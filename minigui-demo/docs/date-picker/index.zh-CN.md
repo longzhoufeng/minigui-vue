@@ -15,7 +15,7 @@
 
 ```html
 <template>
-  <a-date-picker :locale="locale" />
+  <m-date-picker :locale="locale" />
 </template>
 <script>
   import locale from 'minigui-vue/es/date-picker/locale/zh_CN';
@@ -33,7 +33,7 @@
 
 ```html
 <template>
-  <a-date-picker :defaultValue="moment('2015-01-01', 'YYYY-MM-DD')" />
+  <m-date-picker :defaultValue="moment('2015-01-01', 'YYYY-MM-DD')" />
 </template>
 <script>
   // 默认语言为 en-US，如果你需要设置其他语言，推荐在入口文件全局设置 locale

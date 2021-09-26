@@ -10,32 +10,32 @@ There are three layout for form: `horizontal`, `vertical`, `inline`.
 
 ```vue
 <template>
-  <a-form-model :layout="form.layout" :model="form" v-bind="formItemLayout">
-    <a-form-model-item label="Form Layout">
-      <a-radio-group v-model="form.layout">
-        <a-radio-button value="horizontal">
+  <m-form-model :layout="form.layout" :model="form" v-bind="formItemLayout">
+    <m-form-model-item label="Form Layout">
+      <m-radio-group v-model="form.layout">
+        <m-radio-button value="horizontal">
           Horizontal
-        </a-radio-button>
-        <a-radio-button value="vertical">
+        </m-radio-button>
+        <m-radio-button value="vertical">
           Vertical
-        </a-radio-button>
-        <a-radio-button value="inline">
+        </m-radio-button>
+        <m-radio-button value="inline">
           Inline
-        </a-radio-button>
-      </a-radio-group>
-    </a-form-model-item>
-    <a-form-model-item label="Field A">
-      <a-input v-model="form.fieldA" placeholder="input placeholder" />
-    </a-form-model-item>
-    <a-form-model-item label="Field B">
-      <a-input v-model="form.fieldB" placeholder="input placeholder" />
-    </a-form-model-item>
-    <a-form-model-item :wrapper-col="buttonItemLayout.wrapperCol">
-      <a-button type="primary">
+        </m-radio-button>
+      </m-radio-group>
+    </m-form-model-item>
+    <m-form-model-item label="Field A">
+      <m-input v-model="form.fieldA" placeholder="input placeholder" />
+    </m-form-model-item>
+    <m-form-model-item label="Field B">
+      <m-input v-model="form.fieldB" placeholder="input placeholder" />
+    </m-form-model-item>
+    <m-form-model-item :wrapper-col="buttonItemLayout.wrapperCol">
+      <m-button type="primary">
         Submit
-      </a-button>
-    </a-form-model-item>
-  </a-form-model>
+      </m-button>
+    </m-form-model-item>
+  </m-form-model>
 </template>
 <script>
 export default {

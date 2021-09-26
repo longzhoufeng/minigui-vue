@@ -11,14 +11,14 @@ Usage of basic Tag, and it could be closable by set `closable` property. Closabl
 ```vue
 <template>
   <div>
-    <a-tag>Tag 1</a-tag>
-    <a-tag><a href="https://github.com/longzhoufeng/minigui-vue">Link</a></a-tag>
-    <a-tag closable @close="log">
+    <m-tag>Tag 1</m-tag>
+    <m-tag><a href="https://github.com/longzhoufeng/minigui-vue">Link</a></m-tag>
+    <m-tag closable @close="log">
       Tag 2
-    </a-tag>
-    <a-tag closable @close="preventDefault">
+    </m-tag>
+    <m-tag closable @close="preventDefault">
       Prevent Default
-    </a-tag>
+    </m-tag>
   </div>
 </template>
 <script>

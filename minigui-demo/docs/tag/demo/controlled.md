@@ -11,13 +11,13 @@ By using the `visible` prop, you can control the close state of Tag.
 ```vue
 <template>
   <div>
-    <a-tag v-model="visible" closable>
+    <m-tag v-model="visible" closable>
       Movies
-    </a-tag>
+    </m-tag>
     <br />
-    <a-button size="small" @click="visible = !visible">
+    <m-button size="small" @click="visible = !visible">
       Toggle
-    </a-button>
+    </m-button>
   </div>
 </template>
 <script>

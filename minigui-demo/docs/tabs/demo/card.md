@@ -10,17 +10,17 @@ Another type Tabs, which doesn't support vertical mode.
 
 ```vue
 <template>
-  <a-tabs type="card" @change="callback">
-    <a-tab-pane key="1" tab="Tab 1">
+  <m-tabs type="card" @change="callback">
+    <m-tab-pane key="1" tab="Tab 1">
       Content of Tab Pane 1
-    </a-tab-pane>
-    <a-tab-pane key="2" tab="Tab 2">
+    </m-tab-pane>
+    <m-tab-pane key="2" tab="Tab 2">
       Content of Tab Pane 2
-    </a-tab-pane>
-    <a-tab-pane key="3" tab="Tab 3">
+    </m-tab-pane>
+    <m-tab-pane key="3" tab="Tab 3">
       Content of Tab Pane 3
-    </a-tab-pane>
-  </a-tabs>
+    </m-tab-pane>
+  </m-tabs>
 </template>
 <script>
 export default {

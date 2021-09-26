@@ -10,14 +10,14 @@ You can use the Input in conjunction with [Tooltip](/components/tooltip/) compon
 
 ```vue
 <template>
-  <a-tooltip :trigger="['focus']" placement="topLeft" overlay-class-name="numeric-input">
+  <m-tooltip :trigger="['focus']" placement="topLeft" overlay-class-name="numeric-input">
     <span v-if="value" slot="title" class="numeric-input-title">
       {{ value !== '-' ? formatNumber(value) : '-' }}
     </span>
     <template v-else slot="title">
       Input a number
     </template>
-    <a-input
+    <m-input
       :value="value"
       placeholder="Input a number"
       :max-length="25"
@@ -25,7 +25,7 @@ You can use the Input in conjunction with [Tooltip](/components/tooltip/) compon
       @change="onChange"
       @blur="onBlur"
     />
-  </a-tooltip>
+  </m-tooltip>
 </template>
 <script>
 function formatNumber(value) {

@@ -9,36 +9,36 @@ Demonstration of validation configuration for form controls which are not shown 
 </us>
 
 <template>
-  <a-form
+  <m-form
     id="components-form-demo-validate-other"
     :form="form"
     v-bind="formItemLayout"
     @submit="handleSubmit"
   >
-    <a-form-item label="Plain Text">
+    <m-form-item label="Plain Text">
       <span class="minigui-form-text">
         China
       </span>
-    </a-form-item>
-    <a-form-item label="Select" has-feedback>
-      <a-select
+    </m-form-item>
+    <m-form-item label="Select" has-feedback>
+      <m-select
         v-decorator="[
           'select',
           { rules: [{ required: true, message: 'Please select your country!' }] },
         ]"
         placeholder="Please select a country"
       >
-        <a-select-option value="china">
+        <m-select-option value="china">
           China
-        </a-select-option>
-        <a-select-option value="usa">
+        </m-select-option>
+        <m-select-option value="usa">
           U.S.A
-        </a-select-option>
-      </a-select>
-    </a-form-item>
+        </m-select-option>
+      </m-select>
+    </m-form-item>
 
-    <a-form-item label="Select[multiple]">
-      <a-select
+    <m-form-item label="Select[multiple]">
+      <m-select
         v-decorator="[
           'select-multiple',
           {
@@ -50,105 +50,105 @@ Demonstration of validation configuration for form controls which are not shown 
         mode="multiple"
         placeholder="Please select favourite colors"
       >
-        <a-select-option value="red">
+        <m-select-option value="red">
           Red
-        </a-select-option>
-        <a-select-option value="green">
+        </m-select-option>
+        <m-select-option value="green">
           Green
-        </a-select-option>
-        <a-select-option value="blue">
+        </m-select-option>
+        <m-select-option value="blue">
           Blue
-        </a-select-option>
-      </a-select>
-    </a-form-item>
+        </m-select-option>
+      </m-select>
+    </m-form-item>
 
-    <a-form-item label="InputNumber">
-      <a-input-number v-decorator="['input-number', { initialValue: 3 }]" :min="1" :max="10" />
+    <m-form-item label="InputNumber">
+      <m-input-number v-decorator="['input-number', { initialValue: 3 }]" :min="1" :max="10" />
       <span class="minigui-form-text">
         machines
       </span>
-    </a-form-item>
+    </m-form-item>
 
-    <a-form-item label="Switch">
-      <a-switch v-decorator="['switch', { valuePropName: 'checked' }]" />
-    </a-form-item>
+    <m-form-item label="Switch">
+      <m-switch v-decorator="['switch', { valuePropName: 'checked' }]" />
+    </m-form-item>
 
-    <a-form-item label="Slider">
-      <a-slider
+    <m-form-item label="Slider">
+      <m-slider
         v-decorator="['slider']"
         :marks="{ 0: 'A', 20: 'B', 40: 'C', 60: 'D', 80: 'E', 100: 'F' }"
       />
-    </a-form-item>
+    </m-form-item>
 
-    <a-form-item label="Radio.Group">
-      <a-radio-group v-decorator="['radio-group']">
-        <a-radio value="a">
+    <m-form-item label="Radio.Group">
+      <m-radio-group v-decorator="['radio-group']">
+        <m-radio value="a">
           item 1
-        </a-radio>
-        <a-radio value="b">
+        </m-radio>
+        <m-radio value="b">
           item 2
-        </a-radio>
-        <a-radio value="c">
+        </m-radio>
+        <m-radio value="c">
           item 3
-        </a-radio>
-      </a-radio-group>
-    </a-form-item>
+        </m-radio>
+      </m-radio-group>
+    </m-form-item>
 
-    <a-form-item label="Radio.Button">
-      <a-radio-group v-decorator="['radio-button']">
-        <a-radio-button value="a">
+    <m-form-item label="Radio.Button">
+      <m-radio-group v-decorator="['radio-button']">
+        <m-radio-button value="a">
           item 1
-        </a-radio-button>
-        <a-radio-button value="b">
+        </m-radio-button>
+        <m-radio-button value="b">
           item 2
-        </a-radio-button>
-        <a-radio-button value="c">
+        </m-radio-button>
+        <m-radio-button value="c">
           item 3
-        </a-radio-button>
-      </a-radio-group>
-    </a-form-item>
+        </m-radio-button>
+      </m-radio-group>
+    </m-form-item>
 
-    <a-form-item label="Checkbox.Group">
-      <a-checkbox-group
+    <m-form-item label="Checkbox.Group">
+      <m-checkbox-group
         v-decorator="['checkbox-group', { initialValue: ['A', 'B'] }]"
         style="width: 100%;"
       >
-        <a-row>
-          <a-col :span="8">
-            <a-checkbox value="A">
+        <m-row>
+          <m-col :span="8">
+            <m-checkbox value="A">
               A
-            </a-checkbox>
-          </a-col>
-          <a-col :span="8">
-            <a-checkbox disabled value="B">
+            </m-checkbox>
+          </m-col>
+          <m-col :span="8">
+            <m-checkbox disabled value="B">
               B
-            </a-checkbox>
-          </a-col>
-          <a-col :span="8">
-            <a-checkbox value="C">
+            </m-checkbox>
+          </m-col>
+          <m-col :span="8">
+            <m-checkbox value="C">
               C
-            </a-checkbox>
-          </a-col>
-          <a-col :span="8">
-            <a-checkbox value="D">
+            </m-checkbox>
+          </m-col>
+          <m-col :span="8">
+            <m-checkbox value="D">
               D
-            </a-checkbox>
-          </a-col>
-          <a-col :span="8">
-            <a-checkbox value="E">
+            </m-checkbox>
+          </m-col>
+          <m-col :span="8">
+            <m-checkbox value="E">
               E
-            </a-checkbox>
-          </a-col>
-        </a-row>
-      </a-checkbox-group>
-    </a-form-item>
+            </m-checkbox>
+          </m-col>
+        </m-row>
+      </m-checkbox-group>
+    </m-form-item>
 
-    <a-form-item label="Rate">
-      <a-rate v-decorator="['rate', { initialValue: 3.5 }]" allow-half />
-    </a-form-item>
+    <m-form-item label="Rate">
+      <m-rate v-decorator="['rate', { initialValue: 3.5 }]" allow-half />
+    </m-form-item>
 
-    <a-form-item label="Upload" extra="longgggggggggggggggggggggggggggggggggg">
-      <a-upload
+    <m-form-item label="Upload" extra="longgggggggggggggggggggggggggggggggggg">
+      <m-upload
         v-decorator="[
           'upload',
           {
@@ -160,13 +160,13 @@ Demonstration of validation configuration for form controls which are not shown 
         action="/upload.do"
         list-type="picture"
       >
-        <a-button> <a-icon type="upload" /> Click to upload </a-button>
-      </a-upload>
-    </a-form-item>
+        <m-button> <m-icon type="upload" /> Click to upload </m-button>
+      </m-upload>
+    </m-form-item>
 
-    <a-form-item label="Dragger">
+    <m-form-item label="Dragger">
       <div class="dropbox">
-        <a-upload-dragger
+        <m-upload-dragger
           v-decorator="[
             'dragger',
             {
@@ -178,7 +178,7 @@ Demonstration of validation configuration for form controls which are not shown 
           action="/upload.do"
         >
           <p class="minigui-upload-drag-icon">
-            <a-icon type="inbox" />
+            <m-icon type="inbox" />
           </p>
           <p class="minigui-upload-text">
             Click or drag file to this area to upload
@@ -186,16 +186,16 @@ Demonstration of validation configuration for form controls which are not shown 
           <p class="minigui-upload-hint">
             Support for a single or bulk upload.
           </p>
-        </a-upload-dragger>
+        </m-upload-dragger>
       </div>
-    </a-form-item>
+    </m-form-item>
 
-    <a-form-item :wrapper-col="{ span: 12, offset: 6 }">
-      <a-button type="primary" html-type="submit">
+    <m-form-item :wrapper-col="{ span: 12, offset: 6 }">
+      <m-button type="primary" html-type="submit">
         Submit
-      </a-button>
-    </a-form-item>
-  </a-form>
+      </m-button>
+    </m-form-item>
+  </m-form>
 </template>
 
 <script>

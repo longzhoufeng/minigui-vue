@@ -18,17 +18,17 @@ Control filters and sorters by `filteredValue` and `sortOrder`.
 <template>
   <div>
     <div class="table-operations">
-      <a-button @click="setAgeSort">
+      <m-button @click="setAgeSort">
         Sort age
-      </a-button>
-      <a-button @click="clearFilters">
+      </m-button>
+      <m-button @click="clearFilters">
         Clear filters
-      </a-button>
-      <a-button @click="clearAll">
+      </m-button>
+      <m-button @click="clearAll">
         Clear filters and sorters
-      </a-button>
+      </m-button>
     </div>
-    <a-table :columns="columns" :data-source="data" @change="handleChange" />
+    <m-table :columns="columns" :data-source="data" @change="handleChange" />
   </div>
 </template>
 <script>

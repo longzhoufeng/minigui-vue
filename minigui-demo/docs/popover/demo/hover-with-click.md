@@ -10,7 +10,7 @@ The following example shows how to create a popover which can be hovered and cli
 
 ```vue
 <template>
-  <a-popover
+  <m-popover
     style="width: 500px"
     title="Hover title"
     trigger="hover"
@@ -20,7 +20,7 @@ The following example shows how to create a popover which can be hovered and cli
     <div slot="content">
       This is hover content.
     </div>
-    <a-popover
+    <m-popover
       title="Click title"
       trigger="click"
       :visible="clicked"
@@ -30,9 +30,9 @@ The following example shows how to create a popover which can be hovered and cli
         <div>This is click content.</div>
         <a @click="hide">Close</a>
       </div>
-      <a-button>Hover and click / 悬停并单击</a-button>
-    </a-popover>
-  </a-popover>
+      <m-button>Hover and click / 悬停并单击</m-button>
+    </m-popover>
+  </m-popover>
 </template>
 <script>
 export default {

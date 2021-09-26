@@ -10,21 +10,21 @@ The most basic dropdown menu.
 
 ```vue
 <template>
-  <a-dropdown>
+  <m-dropdown>
     <a class="minigui-dropdown-link" @click="e => e.preventDefault()">
-      Hover me <a-icon type="down" />
+      Hover me <m-icon type="down" />
     </a>
-    <a-menu slot="overlay">
-      <a-menu-item>
+    <m-menu slot="overlay">
+      <m-menu-item>
         <a href="javascript:;">1st menu item</a>
-      </a-menu-item>
-      <a-menu-item>
+      </m-menu-item>
+      <m-menu-item>
         <a href="javascript:;">2nd menu item</a>
-      </a-menu-item>
-      <a-menu-item>
+      </m-menu-item>
+      <m-menu-item>
         <a href="javascript:;">3rd menu item</a>
-      </a-menu-item>
-    </a-menu>
-  </a-dropdown>
+      </m-menu-item>
+    </m-menu>
+  </m-dropdown>
 </template>
 ```

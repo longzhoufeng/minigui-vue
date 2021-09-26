@@ -10,95 +10,95 @@ Both the top navigation and the sidebar, commonly used in application site.
 
 ```vue
 <template>
-  <a-layout id="components-layout-demo-top-side-2">
-    <a-layout-header class="header">
+  <m-layout id="components-layout-demo-top-side-2">
+    <m-layout-header class="header">
       <div class="logo" />
-      <a-menu
+      <m-menu
         theme="dark"
         mode="horizontal"
         :default-selected-keys="['2']"
         :style="{ lineHeight: '64px' }"
       >
-        <a-menu-item key="1">
+        <m-menu-item key="1">
           nav 1
-        </a-menu-item>
-        <a-menu-item key="2">
+        </m-menu-item>
+        <m-menu-item key="2">
           nav 2
-        </a-menu-item>
-        <a-menu-item key="3">
+        </m-menu-item>
+        <m-menu-item key="3">
           nav 3
-        </a-menu-item>
-      </a-menu>
-    </a-layout-header>
-    <a-layout>
-      <a-layout-sider width="200" style="background: #fff">
-        <a-menu
+        </m-menu-item>
+      </m-menu>
+    </m-layout-header>
+    <m-layout>
+      <m-layout-sider width="200" style="background: #fff">
+        <m-menu
           mode="inline"
           :default-selected-keys="['1']"
           :default-open-keys="['sub1']"
           :style="{ height: '100%', borderRight: 0 }"
         >
-          <a-sub-menu key="sub1">
-            <span slot="title"><a-icon type="user" />subnav 1</span>
-            <a-menu-item key="1">
+          <m-sub-menu key="sub1">
+            <span slot="title"><m-icon type="user" />subnav 1</span>
+            <m-menu-item key="1">
               option1
-            </a-menu-item>
-            <a-menu-item key="2">
+            </m-menu-item>
+            <m-menu-item key="2">
               option2
-            </a-menu-item>
-            <a-menu-item key="3">
+            </m-menu-item>
+            <m-menu-item key="3">
               option3
-            </a-menu-item>
-            <a-menu-item key="4">
+            </m-menu-item>
+            <m-menu-item key="4">
               option4
-            </a-menu-item>
-          </a-sub-menu>
-          <a-sub-menu key="sub2">
-            <span slot="title"><a-icon type="laptop" />subnav 2</span>
-            <a-menu-item key="5">
+            </m-menu-item>
+          </m-sub-menu>
+          <m-sub-menu key="sub2">
+            <span slot="title"><m-icon type="laptop" />subnav 2</span>
+            <m-menu-item key="5">
               option5
-            </a-menu-item>
-            <a-menu-item key="6">
+            </m-menu-item>
+            <m-menu-item key="6">
               option6
-            </a-menu-item>
-            <a-menu-item key="7">
+            </m-menu-item>
+            <m-menu-item key="7">
               option7
-            </a-menu-item>
-            <a-menu-item key="8">
+            </m-menu-item>
+            <m-menu-item key="8">
               option8
-            </a-menu-item>
-          </a-sub-menu>
-          <a-sub-menu key="sub3">
-            <span slot="title"><a-icon type="notification" />subnav 3</span>
-            <a-menu-item key="9">
+            </m-menu-item>
+          </m-sub-menu>
+          <m-sub-menu key="sub3">
+            <span slot="title"><m-icon type="notification" />subnav 3</span>
+            <m-menu-item key="9">
               option9
-            </a-menu-item>
-            <a-menu-item key="10">
+            </m-menu-item>
+            <m-menu-item key="10">
               option10
-            </a-menu-item>
-            <a-menu-item key="11">
+            </m-menu-item>
+            <m-menu-item key="11">
               option11
-            </a-menu-item>
-            <a-menu-item key="12">
+            </m-menu-item>
+            <m-menu-item key="12">
               option12
-            </a-menu-item>
-          </a-sub-menu>
-        </a-menu>
-      </a-layout-sider>
-      <a-layout style="padding: 0 24px 24px">
-        <a-breadcrumb style="margin: 16px 0">
-          <a-breadcrumb-item>Home</a-breadcrumb-item>
-          <a-breadcrumb-item>List</a-breadcrumb-item>
-          <a-breadcrumb-item>App</a-breadcrumb-item>
-        </a-breadcrumb>
-        <a-layout-content
+            </m-menu-item>
+          </m-sub-menu>
+        </m-menu>
+      </m-layout-sider>
+      <m-layout style="padding: 0 24px 24px">
+        <m-breadcrumb style="margin: 16px 0">
+          <m-breadcrumb-item>Home</m-breadcrumb-item>
+          <m-breadcrumb-item>List</m-breadcrumb-item>
+          <m-breadcrumb-item>App</m-breadcrumb-item>
+        </m-breadcrumb>
+        <m-layout-content
           :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
         >
           Content
-        </a-layout-content>
-      </a-layout>
-    </a-layout>
-  </a-layout>
+        </m-layout-content>
+      </m-layout>
+    </m-layout>
+  </m-layout>
 </template>
 <script>
 export default {

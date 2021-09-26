@@ -10,6 +10,6 @@ Simple mode.
 
 ```vue
 <template>
-  <a-pagination simple :default-current="2" :total="50" />
+  <m-pagination simple :default-current="2" :total="50" />
 </template>
 ```

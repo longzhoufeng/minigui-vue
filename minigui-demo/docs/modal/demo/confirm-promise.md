@@ -11,9 +11,9 @@ delay closing the dialog.
 
 ```vue
 <template>
-  <a-button @click="showConfirm">
+  <m-button @click="showConfirm">
     Confirm
-  </a-button>
+  </m-button>
 </template>
 <script>
 export default {

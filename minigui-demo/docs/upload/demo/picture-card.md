@@ -11,7 +11,7 @@ After users upload picture, the thumbnail will be shown in list. The upload butt
 ```vue
 <template>
   <div class="clearfix">
-    <a-upload
+    <m-upload
       action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
       list-type="picture-card"
       :file-list="fileList"
@@ -19,15 +19,15 @@ After users upload picture, the thumbnail will be shown in list. The upload butt
       @change="handleChange"
     >
       <div v-if="fileList.length < 8">
-        <a-icon type="plus" />
+        <m-icon type="plus" />
         <div class="minigui-upload-text">
           Upload
         </div>
       </div>
-    </a-upload>
-    <a-modal :visible="previewVisible" :footer="null" @cancel="handleCancel">
+    </m-upload>
+    <m-modal :visible="previewVisible" :footer="null" @cancel="handleCancel">
       <img alt="example" style="width: 100%" :src="previewImage" />
-    </a-modal>
+    </m-modal>
   </div>
 </template>
 <script>

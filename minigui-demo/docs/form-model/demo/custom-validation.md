@@ -13,25 +13,25 @@ Custom validate callback function must be called. See more advanced usage at [as
 
 ```vue
 <template>
-  <a-form-model ref="ruleForm" :model="ruleForm" :rules="rules" v-bind="layout">
-    <a-form-model-item has-feedback label="Password" prop="pass">
-      <a-input v-model="ruleForm.pass" type="password" autocomplete="off" />
-    </a-form-model-item>
-    <a-form-model-item has-feedback label="Confirm" prop="checkPass">
-      <a-input v-model="ruleForm.checkPass" type="password" autocomplete="off" />
-    </a-form-model-item>
-    <a-form-model-item has-feedback label="Age" prop="age">
-      <a-input v-model.number="ruleForm.age" />
-    </a-form-model-item>
-    <a-form-model-item :wrapper-col="{ span: 14, offset: 4 }">
-      <a-button type="primary" @click="submitForm('ruleForm')">
+  <m-form-model ref="ruleForm" :model="ruleForm" :rules="rules" v-bind="layout">
+    <m-form-model-item has-feedback label="Password" prop="pass">
+      <m-input v-model="ruleForm.pass" type="password" autocomplete="off" />
+    </m-form-model-item>
+    <m-form-model-item has-feedback label="Confirm" prop="checkPass">
+      <m-input v-model="ruleForm.checkPass" type="password" autocomplete="off" />
+    </m-form-model-item>
+    <m-form-model-item has-feedback label="Age" prop="age">
+      <m-input v-model.number="ruleForm.age" />
+    </m-form-model-item>
+    <m-form-model-item :wrapper-col="{ span: 14, offset: 4 }">
+      <m-button type="primary" @click="submitForm('ruleForm')">
         Submit
-      </a-button>
-      <a-button style="margin-left: 10px" @click="resetForm('ruleForm')">
+      </m-button>
+      <m-button style="margin-left: 10px" @click="resetForm('ruleForm')">
         Reset
-      </a-button>
-    </a-form-model-item>
-  </a-form-model>
+      </m-button>
+    </m-form-model-item>
+  </m-form-model>
 </template>
 <script>
 export default {

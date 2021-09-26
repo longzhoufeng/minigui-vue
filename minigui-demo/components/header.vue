@@ -54,12 +54,12 @@ export default {
     const selectedKeys = path === '/jobs/list-cn' ? ['jobs'] : ['components'];
     return (
       <header id="header">
-        <a-row>
-          <a-col class="header-left" xxl={4} xl={5} lg={5} md={6} sm={24} xs={24}>
+        <m-row>
+          <m-col class="header-left" xxl={4} xl={5} lg={5} md={6} sm={24} xs={24}>
             <router-link to={{ path: '/' }} id="logo">
               <img alt="logo" height="32" src={logo} />
             </router-link>
-            <a-button
+            <m-button
               ghost
               size="small"
               onClick={this.handleClick}
@@ -67,20 +67,20 @@ export default {
               key="lang-button"
             >
               {isCN ? 'English' : '中文'}
-            </a-button>
-          </a-col>
-          <a-col xxl={20} xl={19} lg={19} md={18} sm={0} xs={0}>
+            </m-button>
+          </m-col>
+          <m-col xxl={20} xl={19} lg={19} md={18} sm={0} xs={0}>
             <div id="search-box"></div>
-            <a-select size="small" defaultValue={packageInfo.version} class="version">
-              <a-select-option value={packageInfo.version}>{packageInfo.version}</a-select-option>
-            </a-select>
-            <a-menu selectedKeys={selectedKeys} mode="horizontal" class="menu-site" id="nav">
-              <a-menu-item key="components">
+            <m-select size="small" defaultValue={packageInfo.version} class="version">
+              <m-select-option value={packageInfo.version}>{packageInfo.version}</m-select-option>
+            </m-select>
+            <m-menu selectedKeys={selectedKeys} mode="horizontal" class="menu-site" id="nav">
+              <m-menu-item key="components">
                 <router-link to="/docs/vue/introduce">{isCN ? '组件' : 'Components'}</router-link>
-              </a-menu-item>
-            </a-menu>
-          </a-col>
-        </a-row>
+              </m-menu-item>
+            </m-menu>
+          </m-col>
+        </m-row>
       </header>
     );
   },

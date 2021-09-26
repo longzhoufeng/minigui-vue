@@ -9,20 +9,20 @@ Inline login form is often used in navigation bar.
 </us>
 
 <template>
-  <a-form layout="inline" :form="form" @submit="handleSubmit">
-    <a-form-item :validate-status="userNameError() ? 'error' : ''" :help="userNameError() || ''">
-      <a-input
+  <m-form layout="inline" :form="form" @submit="handleSubmit">
+    <m-form-item :validate-status="userNameError() ? 'error' : ''" :help="userNameError() || ''">
+      <m-input
         v-decorator="[
           'userName',
           { rules: [{ required: true, message: 'Please input your username!' }] },
         ]"
         placeholder="Username"
       >
-        <a-icon slot="prefix" type="user" style="color:rgba(0,0,0,.25)" />
-      </a-input>
-    </a-form-item>
-    <a-form-item :validate-status="passwordError() ? 'error' : ''" :help="passwordError() || ''">
-      <a-input
+        <m-icon slot="prefix" type="user" style="color:rgba(0,0,0,.25)" />
+      </m-input>
+    </m-form-item>
+    <m-form-item :validate-status="passwordError() ? 'error' : ''" :help="passwordError() || ''">
+      <m-input
         v-decorator="[
           'password',
           { rules: [{ required: true, message: 'Please input your Password!' }] },
@@ -30,15 +30,15 @@ Inline login form is often used in navigation bar.
         type="password"
         placeholder="Password"
       >
-        <a-icon slot="prefix" type="lock" style="color:rgba(0,0,0,.25)" />
-      </a-input>
-    </a-form-item>
-    <a-form-item>
-      <a-button type="primary" html-type="submit" :disabled="hasErrors(form.getFieldsError())">
+        <m-icon slot="prefix" type="lock" style="color:rgba(0,0,0,.25)" />
+      </m-input>
+    </m-form-item>
+    <m-form-item>
+      <m-button type="primary" html-type="submit" :disabled="hasErrors(form.getFieldsError())">
         Log in
-      </a-button>
-    </a-form-item>
-  </a-form>
+      </m-button>
+    </m-form-item>
+  </m-form>
 </template>
 
 <script>

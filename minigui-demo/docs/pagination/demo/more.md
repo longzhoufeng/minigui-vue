@@ -10,6 +10,6 @@ Mode pages.
 
 ```vue
 <template>
-  <a-pagination :default-current="6" :total="500" />
+  <m-pagination :default-current="6" :total="500" />
 </template>
 ```

@@ -10,14 +10,14 @@ The most basic example. The size of the floating layer depends on the contents r
 
 ```vue
 <template>
-  <a-popover title="Title">
+  <m-popover title="Title">
     <template slot="content">
       <p>Content</p>
       <p>Content</p>
     </template>
-    <a-button type="primary">
+    <m-button type="primary">
       Hover me
-    </a-button>
-  </a-popover>
+    </m-button>
+  </m-popover>
 </template>
 ```

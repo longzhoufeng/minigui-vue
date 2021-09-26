@@ -11,17 +11,17 @@ Radio unavailable.
 ```vue
 <template>
   <div>
-    <a-radio :default-checked="false" :disabled="disabled">
+    <m-radio :default-checked="false" :disabled="disabled">
       Disabled
-    </a-radio>
+    </m-radio>
     <br />
-    <a-radio default-checked :disabled="disabled">
+    <m-radio default-checked :disabled="disabled">
       Disabled
-    </a-radio>
+    </m-radio>
     <div :style="{ marginTop: 20 }">
-      <a-button type="primary" @click="toggleDisabled">
+      <m-button type="primary" @click="toggleDisabled">
         Toggle disabled
-      </a-button>
+      </m-button>
     </div>
   </div>
 </template>

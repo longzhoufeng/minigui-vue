@@ -10,7 +10,7 @@ Use text link for prev and next button.
 
 ```vue
 <template>
-  <a-pagination :total="500" :item-render="itemRender" />
+  <m-pagination :total="500" :item-render="itemRender" />
 </template>
 <script>
 export default {

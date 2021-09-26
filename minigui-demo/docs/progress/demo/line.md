@@ -11,11 +11,11 @@ A standard progress bar.
 ```vue
 <template>
   <div>
-    <a-progress :percent="30" />
-    <a-progress :percent="50" status="active" />
-    <a-progress :percent="70" status="exception" />
-    <a-progress :percent="100" />
-    <a-progress :percent="50" :show-info="false" />
+    <m-progress :percent="30" />
+    <m-progress :percent="50" status="active" />
+    <m-progress :percent="70" status="exception" />
+    <m-progress :percent="100" />
+    <m-progress :percent="50" :show-info="false" />
   </div>
 </template>
 ```

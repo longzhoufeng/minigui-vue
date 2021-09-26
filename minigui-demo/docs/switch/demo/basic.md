@@ -11,7 +11,7 @@ The most basic usage.
 ```vue
 <template>
   <div>
-    <a-switch default-checked @change="onChange" />
+    <m-switch default-checked @change="onChange" />
   </div>
 </template>
 <script>

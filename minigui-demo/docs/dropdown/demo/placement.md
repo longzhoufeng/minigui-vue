@@ -12,26 +12,26 @@ Support 6 placements.
 <template>
   <div id="components-dropdown-demo-placement">
     <template v-for="(placement, index) in placements">
-      <a-dropdown :placement="placement">
-        <a-button>{{ placement }}</a-button>
-        <a-menu slot="overlay">
-          <a-menu-item>
+      <m-dropdown :placement="placement">
+        <m-button>{{ placement }}</m-button>
+        <m-menu slot="overlay">
+          <m-menu-item>
             <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/"
               >1st menu item</a
             >
-          </a-menu-item>
-          <a-menu-item>
+          </m-menu-item>
+          <m-menu-item>
             <a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/"
               >2nd menu item</a
             >
-          </a-menu-item>
-          <a-menu-item>
+          </m-menu-item>
+          <m-menu-item>
             <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/"
               >3rd menu item</a
             >
-          </a-menu-item>
-        </a-menu>
-      </a-dropdown>
+          </m-menu-item>
+        </m-menu>
+      </m-dropdown>
       <br v-if="index === 2" />
     </template>
   </div>

@@ -11,9 +11,9 @@ Basic slider. When `range` is `true`, display as dual thumb mode. When `disable`
 ```vue
 <template>
   <div>
-    <a-slider id="test" :default-value="30" :disabled="disabled" />
-    <a-slider range :default-value="[20, 50]" :disabled="disabled" />
-    Disabled: <a-switch size="small" :checked="disabled" @change="handleDisabledChange" />
+    <m-slider id="test" :default-value="30" :disabled="disabled" />
+    <m-slider range :default-value="[20, 50]" :disabled="disabled" />
+    Disabled: <m-switch size="small" :checked="disabled" @change="handleDisabledChange" />
   </div>
 </template>
 <script>

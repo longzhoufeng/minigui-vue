@@ -11,9 +11,9 @@ Mark a pending state of switch.
 ```vue
 <template>
   <div>
-    <a-switch loading default-checked />
+    <m-switch loading default-checked />
     <br />
-    <a-switch size="small" loading />
+    <m-switch size="small" loading />
   </div>
 </template>
 ```

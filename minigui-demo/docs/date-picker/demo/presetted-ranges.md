@@ -11,12 +11,12 @@ We can set presetted ranges to RangePicker to improve user experience.
 ```vue
 <template>
   <div>
-    <a-range-picker
+    <m-range-picker
       :ranges="{ Today: [moment(), moment()], 'This Month': [moment(), moment().endOf('month')] }"
       @change="onChange"
     />
     <br />
-    <a-range-picker
+    <m-range-picker
       :ranges="{ Today: [moment(), moment()], 'This Month': [moment(), moment().endOf('month')] }"
       show-time
       format="YYYY/MM/DD HH:mm:ss"

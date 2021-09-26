@@ -12,11 +12,11 @@ Table cell supports `colSpan` and `rowSpan` that set in render return object. Wh
 
 ```vue
 <template>
-  <a-table :columns="columns" :data-source="data" bordered>
+  <m-table :columns="columns" :data-source="data" bordered>
     <template slot="name" slot-scope="text">
       <a>{{ text }}</a>
     </template>
-  </a-table>
+  </m-table>
 </template>
 <script>
 // In the fifth row, other columns are merged into first column

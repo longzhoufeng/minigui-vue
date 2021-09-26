@@ -10,7 +10,7 @@ Load more list with `loadMore` property.
 
 ```vue
 <template>
-  <a-list
+  <m-list
     class="demo-loadmore-list"
     :loading="loading"
     item-layout="horizontal"
@@ -21,26 +21,26 @@ Load more list with `loadMore` property.
       slot="loadMore"
       :style="{ textAlign: 'center', marginTop: '12px', height: '32px', lineHeight: '32px' }"
     >
-      <a-spin v-if="loadingMore" />
-      <a-button v-else @click="onLoadMore">
+      <m-spin v-if="loadingMore" />
+      <m-button v-else @click="onLoadMore">
         loading more
-      </a-button>
+      </m-button>
     </div>
-    <a-list-item slot="renderItem" slot-scope="item, index">
+    <m-list-item slot="renderItem" slot-scope="item, index">
       <a slot="actions">edit</a>
       <a slot="actions">more</a>
-      <a-list-item-meta
+      <m-list-item-meta
         description="Ant Design, a design language for background applications, is refined by Ant UED Team"
       >
         <a slot="title" href="https://www.antdv.com/">{{ item.name.last }}</a>
-        <a-avatar
+        <m-avatar
           slot="avatar"
           src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
         />
-      </a-list-item-meta>
+      </m-list-item-meta>
       <div>content</div>
-    </a-list-item>
-  </a-list>
+    </m-list-item>
+  </m-list>
 </template>
 <script>
 import reqwest from 'reqwest';

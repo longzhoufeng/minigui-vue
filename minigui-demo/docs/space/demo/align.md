@@ -12,32 +12,32 @@ Config item align.
 <template>
   <div class="space-align-container">
     <div class="space-align-block">
-      <a-space align="center">
+      <m-space align="center">
         center
-        <a-button type="primary">Primary</a-button>
+        <m-button type="primary">Primary</m-button>
         <span class="mock-block">Block</span>
-      </a-space>
+      </m-space>
     </div>
     <div class="space-align-block">
-      <a-space align="start">
+      <m-space align="start">
         start
-        <a-button type="primary">Primary</a-button>
+        <m-button type="primary">Primary</m-button>
         <span class="mock-block">Block</span>
-      </a-space>
+      </m-space>
     </div>
     <div class="space-align-block">
-      <a-space align="end">
+      <m-space align="end">
         end
-        <a-button type="primary">Primary</a-button>
+        <m-button type="primary">Primary</m-button>
         <span class="mock-block">Block</span>
-      </a-space>
+      </m-space>
     </div>
     <div class="space-align-block">
-      <a-space align="baseline">
+      <m-space align="baseline">
         baseline
-        <a-button type="primary">Primary</a-button>
+        <m-button type="primary">Primary</m-button>
         <span class="mock-block">Block</span>
-      </a-space>
+      </m-space>
     </div>
   </div>
 </template>

@@ -11,9 +11,9 @@ Disabled checkbox
 ```vue
 <template>
   <div>
-    <a-checkbox :default-checked="false" disabled />
+    <m-checkbox :default-checked="false" disabled />
     <br />
-    <a-checkbox default-checked disabled />
+    <m-checkbox default-checked disabled />
   </div>
 </template>
 ```

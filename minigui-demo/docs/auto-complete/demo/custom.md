@@ -10,19 +10,19 @@ Customize Input Component
 
 ```vue
 <template>
-  <a-auto-complete
+  <m-auto-complete
     :data-source="dataSource"
     style="width: 200px"
     @search="handleSearch"
     @select="onSelect"
   >
-    <a-textarea
+    <m-textarea
       placeholder="input here"
       class="custom"
       style="height: 50px"
       @keypress="handleKeyPress"
     />
-  </a-auto-complete>
+  </m-auto-complete>
 </template>
 <script>
 export default {

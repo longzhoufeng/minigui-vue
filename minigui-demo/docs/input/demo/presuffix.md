@@ -11,15 +11,15 @@ Add prefix or suffix icons inside input.
 ```vue
 <template>
   <div class="components-input-demo-presuffix">
-    <a-input ref="userNameInput" v-model="userName" placeholder="Basic usage">
-      <a-icon slot="prefix" type="user" />
-      <a-tooltip slot="suffix" title="Extra information">
-        <a-icon type="info-circle" style="color: rgba(0,0,0,.45)" />
-      </a-tooltip>
-    </a-input>
+    <m-input ref="userNameInput" v-model="userName" placeholder="Basic usage">
+      <m-icon slot="prefix" type="user" />
+      <m-tooltip slot="suffix" title="Extra information">
+        <m-icon type="info-circle" style="color: rgba(0,0,0,.45)" />
+      </m-tooltip>
+    </m-input>
     <br />
     <br />
-    <a-input prefix="￥" suffix="RMB" />
+    <m-input prefix="￥" suffix="RMB" />
   </div>
 </template>
 

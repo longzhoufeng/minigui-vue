@@ -11,27 +11,27 @@ We can customize the rendering of date cells in the calendar by providing a `dat
 ```vue
 <template>
   <div>
-    <a-date-picker>
+    <m-date-picker>
       <template slot="dateRender" slot-scope="current, today">
         <div class="minigui-calendar-date" :style="getCurrentStyle(current, today)">
           {{ current.date() }}
         </div>
       </template>
-    </a-date-picker>
-    <a-range-picker>
+    </m-date-picker>
+    <m-range-picker>
       <template slot="dateRender" slot-scope="current">
         <div class="minigui-calendar-date" :style="getCurrentStyle(current)">
           {{ current.date() }}
         </div>
       </template>
-    </a-range-picker>
-    <a-week-picker>
+    </m-range-picker>
+    <m-week-picker>
       <template slot="dateRender" slot-scope="current">
         <div class="minigui-calendar-date" :style="getCurrentStyle(current)">
           {{ current.date() }}
         </div>
       </template>
-    </a-week-picker>
+    </m-week-picker>
   </div>
 </template>
 <script>

@@ -10,9 +10,9 @@ Wrap your app with `LocaleProvider`, and apply the corresponding language packag
 
 ```vue
 <template>
-  <a-locale-provider :locale="zhCN">
-    <a-pagination :default-current="1" :total="50" show-size-changer />
-  </a-locale-provider>
+  <m-locale-provider :locale="zhCN">
+    <m-pagination :default-current="1" :total="50" show-size-changer />
+  </m-locale-provider>
 </template>
 <script>
 // you should use import zhCN from 'minigui-vue/es/locale-provider/zh_CN';

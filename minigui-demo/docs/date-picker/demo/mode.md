@@ -11,14 +11,14 @@ Determing which panel to show with `mode` and `onPanelChange`.
 ```vue
 <template>
   <div>
-    <a-date-picker
+    <m-date-picker
       :mode="mode1"
       show-time
       @openChange="handleOpenChange1"
       @panelChange="handlePanelChange1"
     />
     <br />
-    <a-range-picker
+    <m-range-picker
       :placeholder="['Start month', 'End month']"
       format="YYYY-MM"
       :value="value"

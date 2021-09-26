@@ -11,38 +11,38 @@ Classic page layouts.
 ```vue
 <template>
   <div id="components-layout-demo-basic">
-    <a-layout>
-      <a-layout-header>Header</a-layout-header>
-      <a-layout-content>Content</a-layout-content>
-      <a-layout-footer>Footer</a-layout-footer>
-    </a-layout>
+    <m-layout>
+      <m-layout-header>Header</m-layout-header>
+      <m-layout-content>Content</m-layout-content>
+      <m-layout-footer>Footer</m-layout-footer>
+    </m-layout>
 
-    <a-layout>
-      <a-layout-header>Header</a-layout-header>
-      <a-layout>
-        <a-layout-sider>Sider</a-layout-sider>
-        <a-layout-content>Content</a-layout-content>
-      </a-layout>
-      <a-layout-footer>Footer</a-layout-footer>
-    </a-layout>
+    <m-layout>
+      <m-layout-header>Header</m-layout-header>
+      <m-layout>
+        <m-layout-sider>Sider</m-layout-sider>
+        <m-layout-content>Content</m-layout-content>
+      </m-layout>
+      <m-layout-footer>Footer</m-layout-footer>
+    </m-layout>
 
-    <a-layout>
-      <a-layout-header>Header</a-layout-header>
-      <a-layout>
-        <a-layout-content>Content</a-layout-content>
-        <a-layout-sider>Sider</a-layout-sider>
-      </a-layout>
-      <a-layout-footer>Footer</a-layout-footer>
-    </a-layout>
+    <m-layout>
+      <m-layout-header>Header</m-layout-header>
+      <m-layout>
+        <m-layout-content>Content</m-layout-content>
+        <m-layout-sider>Sider</m-layout-sider>
+      </m-layout>
+      <m-layout-footer>Footer</m-layout-footer>
+    </m-layout>
 
-    <a-layout>
-      <a-layout-sider>Sider</a-layout-sider>
-      <a-layout>
-        <a-layout-header>Header</a-layout-header>
-        <a-layout-content>Content</a-layout-content>
-        <a-layout-footer>Footer</a-layout-footer>
-      </a-layout>
-    </a-layout>
+    <m-layout>
+      <m-layout-sider>Sider</m-layout-sider>
+      <m-layout>
+        <m-layout-header>Header</m-layout-header>
+        <m-layout-content>Content</m-layout-content>
+        <m-layout-footer>Footer</m-layout-footer>
+      </m-layout>
+    </m-layout>
   </div>
 </template>
 

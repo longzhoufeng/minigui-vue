@@ -4,17 +4,17 @@
 </cn>
 
 <us>
-  #### Basic usage 
+  #### Basic usage
   The simplest use
 </us>
 
 ```vue
 <template>
-  <a-breadcrumb>
-    <a-breadcrumb-item>Home</a-breadcrumb-item>
-    <a-breadcrumb-item><a href="">Application Center</a></a-breadcrumb-item>
-    <a-breadcrumb-item><a href="">Application List</a></a-breadcrumb-item>
-    <a-breadcrumb-item>An Application</a-breadcrumb-item>
-  </a-breadcrumb>
+  <m-breadcrumb>
+    <m-breadcrumb-item>Home</m-breadcrumb-item>
+    <m-breadcrumb-item><a href="">Application Center</a></m-breadcrumb-item>
+    <m-breadcrumb-item><a href="">Application List</a></m-breadcrumb-item>
+    <m-breadcrumb-item>An Application</m-breadcrumb-item>
+  </m-breadcrumb>
 </template>
 ```

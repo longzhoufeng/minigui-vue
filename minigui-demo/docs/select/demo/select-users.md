@@ -10,7 +10,7 @@ A complete multiple select sample with remote search, debounce fetch, ajax callb
 
 ```vue
 <template>
-  <a-select
+  <m-select
     mode="multiple"
     label-in-value
     :value="value"
@@ -21,11 +21,11 @@ A complete multiple select sample with remote search, debounce fetch, ajax callb
     @search="fetchUser"
     @change="handleChange"
   >
-    <a-spin v-if="fetching" slot="notFoundContent" size="small" />
-    <a-select-option v-for="d in data" :key="d.value">
+    <m-spin v-if="fetching" slot="notFoundContent" size="small" />
+    <m-select-option v-for="d in data" :key="d.value">
       {{ d.text }}
-    </a-select-option>
-  </a-select>
+    </m-select-option>
+  </m-select>
 </template>
 <script>
 import debounce from 'lodash/debounce';

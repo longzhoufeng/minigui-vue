@@ -10,6 +10,6 @@ Display active animation.
 
 ```vue
 <template>
-  <a-skeleton active />
+  <m-skeleton active />
 </template>
 ```

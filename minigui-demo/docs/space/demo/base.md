@@ -10,16 +10,16 @@ Crowded components horizontal spacing.
 
 ```vue
 <template>
-  <a-space>
+  <m-space>
     Space
-    <a-button type="primary">Button</a-button>
-    <a-upload>
-      <a-button> <a-icon type="upload" /> Click to Upload </a-button>
-    </a-upload>
-    <a-popconfirm title="Are you sure delete this task?" ok-text="Yes" cancel-text="No">
-      <a-button>Confirm</a-button>
-    </a-popconfirm>
-  </a-space>
+    <m-button type="primary">Button</m-button>
+    <m-upload>
+      <m-button> <m-icon type="upload" /> Click to Upload </m-button>
+    </m-upload>
+    <m-popconfirm title="Are you sure delete this task?" ok-text="Yes" cancel-text="No">
+      <m-button>Confirm</m-button>
+    </m-popconfirm>
+  </m-space>
 </template>
 <script>
 export default {};

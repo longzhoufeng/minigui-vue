@@ -10,7 +10,7 @@ Add border, title and footer for table.
 
 ```vue
 <template>
-  <a-table :columns="columns" :data-source="data" bordered>
+  <m-table :columns="columns" :data-source="data" bordered>
     <template slot="name" slot-scope="text">
       <a>{{ text }}</a>
     </template>
@@ -20,7 +20,7 @@ Add border, title and footer for table.
     <template slot="footer" slot-scope="currentPageData">
       Footer
     </template>
-  </a-table>
+  </m-table>
 </template>
 <script>
 const columns = [

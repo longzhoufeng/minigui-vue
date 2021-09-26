@@ -11,13 +11,13 @@ You can set a custom text by setting the `format` prop.
 ```vue
 <template>
   <div>
-    <a-progress type="circle" :percent="75" :format="percent => `${percent} Days`" />
-    <a-progress type="circle" :percent="100" :format="() => 'Done'" />
-    <a-progress type="circle" :percent="75">
+    <m-progress type="circle" :percent="75" :format="percent => `${percent} Days`" />
+    <m-progress type="circle" :percent="100" :format="() => 'Done'" />
+    <m-progress type="circle" :percent="75">
       <template #format="percent">
         <span style="color: red">{{ percent }}</span>
       </template>
-    </a-progress>
+    </m-progress>
   </div>
 </template>
 <style scoped>

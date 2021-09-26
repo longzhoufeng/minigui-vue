@@ -11,13 +11,13 @@ Customize local preview. Can handle with non-image format files such as video.
 ```vue
 <template>
   <div>
-    <a-upload
+    <m-upload
       list-type="picture"
       action="//jsonplaceholder.typicode.com/posts/"
       :preview-file="previewFile"
     >
-      <a-button> <a-icon type="upload" /> Upload </a-button>
-    </a-upload>
+      <m-button> <m-icon type="upload" /> Upload </m-button>
+    </m-upload>
   </div>
 </template>
 <script>

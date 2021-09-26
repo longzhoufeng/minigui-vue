@@ -11,23 +11,23 @@ Table with editable cells.
 ```vue
 <template>
   <div>
-    <a-button class="editable-add-btn" @click="handleAdd">
+    <m-button class="editable-add-btn" @click="handleAdd">
       Add
-    </a-button>
-    <a-table bordered :data-source="dataSource" :columns="columns">
+    </m-button>
+    <m-table bordered :data-source="dataSource" :columns="columns">
       <template slot="name" slot-scope="text, record">
         <editable-cell :text="text" @change="onCellChange(record.key, 'name', $event)" />
       </template>
       <template slot="operation" slot-scope="text, record">
-        <a-popconfirm
+        <m-popconfirm
           v-if="dataSource.length"
           title="Sure to delete?"
           @confirm="() => onDelete(record.key)"
         >
           <a href="javascript:;">Delete</a>
-        </a-popconfirm>
+        </m-popconfirm>
       </template>
-    </a-table>
+    </m-table>
   </div>
 </template>
 <script>
@@ -35,7 +35,7 @@ const EditableCell = {
   template: `
       <div class="editable-cell">
         <div v-if="editable" class="editable-cell-input-wrapper">
-          <a-input :value="value" @change="handleChange" @pressEnter="check" /><a-icon
+          <m-input :value="value" @change="handleChange" @pressEnter="check" /><m-icon
             type="check"
             class="editable-cell-icon-check"
             @click="check"
@@ -43,7 +43,7 @@ const EditableCell = {
         </div>
         <div v-else class="editable-cell-text-wrapper">
           {{ value || ' ' }}
-          <a-icon type="edit" class="editable-cell-icon" @click="edit" />
+          <m-icon type="edit" class="editable-cell-icon" @click="edit" />
         </div>
       </div>
     `,

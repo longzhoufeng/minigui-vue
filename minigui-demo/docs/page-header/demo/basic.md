@@ -10,7 +10,7 @@ Standard header, suitable for use in scenarios that require a brief description.
 
 ```vue
 <template>
-  <a-page-header
+  <m-page-header
     style="border: 1px solid rgb(235, 237, 240)"
     title="Title"
     sub-title="This is a subtitle"

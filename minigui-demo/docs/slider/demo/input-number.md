@@ -11,28 +11,28 @@ Synchronize with [InputNumber](/components/input-number/) component.
 ```vue
 <template>
   <div>
-    <a-row>
-      <a-col :span="12">
-        <a-slider v-model="inputValue1" :min="1" :max="20" />
-      </a-col>
-      <a-col :span="4">
-        <a-input-number v-model="inputValue1" :min="1" :max="20" style="marginLeft: 16px" />
-      </a-col>
-    </a-row>
-    <a-row>
-      <a-col :span="12">
-        <a-slider v-model="inputValue" :min="0" :max="1" :step="0.01" />
-      </a-col>
-      <a-col :span="4">
-        <a-input-number
+    <m-row>
+      <m-col :span="12">
+        <m-slider v-model="inputValue1" :min="1" :max="20" />
+      </m-col>
+      <m-col :span="4">
+        <m-input-number v-model="inputValue1" :min="1" :max="20" style="marginLeft: 16px" />
+      </m-col>
+    </m-row>
+    <m-row>
+      <m-col :span="12">
+        <m-slider v-model="inputValue" :min="0" :max="1" :step="0.01" />
+      </m-col>
+      <m-col :span="4">
+        <m-input-number
           v-model="inputValue"
           :min="0"
           :max="1"
           :step="0.01"
           style="marginLeft: 16px"
         />
-      </a-col>
-    </a-row>
+      </m-col>
+    </m-row>
   </div>
 </template>
 <script>

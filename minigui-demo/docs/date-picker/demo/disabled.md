@@ -11,11 +11,11 @@ A disabled state of the `DatePicker`.
 ```vue
 <template>
   <div>
-    <a-date-picker :default-value="moment('2015-06-06', dateFormat)" disabled />
+    <m-date-picker :default-value="moment('2015-06-06', dateFormat)" disabled />
     <br />
-    <a-month-picker :default-value="moment('2015-06', 'YYYY-MM')" disabled />
+    <m-month-picker :default-value="moment('2015-06', 'YYYY-MM')" disabled />
     <br />
-    <a-range-picker
+    <m-range-picker
       :default-value="[moment('2015-06-06', dateFormat), moment('2015-06-06', dateFormat)]"
       disabled
     />

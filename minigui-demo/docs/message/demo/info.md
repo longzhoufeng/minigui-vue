@@ -10,9 +10,9 @@ Normal message for information.
 
 ```vue
 <template>
-  <a-button type="primary" @click="info">
+  <m-button type="primary" @click="info">
     Display normal message
-  </a-button>
+  </m-button>
 </template>
 <script>
 export default {

@@ -12,11 +12,11 @@ Only card type Tabs support adding & closable.
 
 ```vue
 <template>
-  <a-tabs v-model="activeKey" type="editable-card" @edit="onEdit">
-    <a-tab-pane v-for="pane in panes" :key="pane.key" :tab="pane.title" :closable="pane.closable">
+  <m-tabs v-model="activeKey" type="editable-card" @edit="onEdit">
+    <m-tab-pane v-for="pane in panes" :key="pane.key" :tab="pane.title" :closable="pane.closable">
       {{ pane.content }}
-    </a-tab-pane>
-  </a-tabs>
+    </m-tab-pane>
+  </m-tabs>
 </template>
 <script>
 export default {

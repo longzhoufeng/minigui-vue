@@ -11,9 +11,9 @@
 ```vue
 <template>
   <div>
-    <a-switch default-checked />
+    <m-switch default-checked />
     <br />
-    <a-switch size="small" default-checked />
+    <m-switch size="small" default-checked />
   </div>
 </template>
 ```

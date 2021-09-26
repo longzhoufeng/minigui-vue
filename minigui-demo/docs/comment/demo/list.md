@@ -10,26 +10,26 @@ Displaying a series of comments using the `antd` List Component.
 
 ```vue
 <template>
-  <a-list
+  <m-list
     class="comment-list"
     :header="`${data.length} replies`"
     item-layout="horizontal"
     :data-source="data"
   >
-    <a-list-item slot="renderItem" slot-scope="item, index">
-      <a-comment :author="item.author" :avatar="item.avatar">
+    <m-list-item slot="renderItem" slot-scope="item, index">
+      <m-comment :author="item.author" :avatar="item.avatar">
         <template slot="actions">
           <span v-for="action in item.actions">{{ action }}</span>
         </template>
         <p slot="content">
           {{ item.content }}
         </p>
-        <a-tooltip slot="datetime" :title="item.datetime.format('YYYY-MM-DD HH:mm:ss')">
+        <m-tooltip slot="datetime" :title="item.datetime.format('YYYY-MM-DD HH:mm:ss')">
           <span>{{ item.datetime.fromNow() }}</span>
-        </a-tooltip>
-      </a-comment>
-    </a-list-item>
-  </a-list>
+        </m-tooltip>
+      </m-comment>
+    </m-list-item>
+  </m-list>
 </template>
 <script>
 import moment from 'moment';

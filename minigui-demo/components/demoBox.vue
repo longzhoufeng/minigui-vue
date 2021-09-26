@@ -14,24 +14,24 @@
       <slot v-if="isZhCN" name="description" />
       <slot v-else name="us-description" />
       <div class="code-box-actions">
-        <a-tooltip
+        <m-tooltip
           :title="copied ? '已复制!' : '复制代码'"
           :visible="copyTooltipVisible"
           @visibleChange="onCopyTooltipVisibleChange"
         >
-          <a-icon
+          <m-icon
             v-clipboard:copy="sourceCode"
             v-clipboard:success="handleCodeCopied"
             :type="copied && copyTooltipVisible ? 'check' : 'copy'"
             class="code-box-code-copy code-copy"
           />
-        </a-tooltip>
-        <a-tooltip :title="codeExpand ? '隐藏源码' : '显示源码'">
-          <a-icon
+        </m-tooltip>
+        <m-tooltip :title="codeExpand ? '隐藏源码' : '显示源码'">
+          <m-icon
             :type="codeExpand?'minus':'plus'"
             class="code-box-code-copy code-show"
             @click="handleCodeExpand" />
-        </a-tooltip>
+        </m-tooltip>
       </div>
     </section>
     <transition appear :css="false" @enter="enter" @leave="leave">

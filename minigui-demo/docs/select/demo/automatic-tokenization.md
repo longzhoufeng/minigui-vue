@@ -10,11 +10,11 @@ Try to copy `Lucy,Jack` to the input. Only available in tags and multiple mode.
 
 ```vue
 <template>
-  <a-select mode="tags" style="width: 100%" :token-separators="[',']" @change="handleChange">
-    <a-select-option v-for="i in 25" :key="(i + 9).toString(36) + i">
+  <m-select mode="tags" style="width: 100%" :token-separators="[',']" @change="handleChange">
+    <m-select-option v-for="i in 25" :key="(i + 9).toString(36) + i">
       {{ (i + 9).toString(36) + i }}
-    </a-select-option>
-  </a-select>
+    </m-select-option>
+  </m-select>
 </template>
 <script>
 export default {

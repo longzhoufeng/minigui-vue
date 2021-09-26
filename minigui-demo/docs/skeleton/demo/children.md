@@ -11,7 +11,7 @@ Skeleton contains sub component.
 ```vue
 <template>
   <div class="article">
-    <a-skeleton :loading="loading">
+    <m-skeleton :loading="loading">
       <div>
         <h4>Ant Design Vue, a design language</h4>
         <p>
@@ -20,10 +20,10 @@ Skeleton contains sub component.
           and efficiently.
         </p>
       </div>
-    </a-skeleton>
-    <a-button :disabled="loading" @click="showSkeleton">
+    </m-skeleton>
+    <m-button :disabled="loading" @click="showSkeleton">
       Show Skeleton
-    </a-button>
+    </m-button>
   </div>
 </template>
 <script>

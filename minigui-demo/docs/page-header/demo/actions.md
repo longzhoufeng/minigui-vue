@@ -11,62 +11,62 @@ Use the operating area and customize the sub-nodes, suitable for use in the need
 ```vue
 <template>
   <div>
-    <a-page-header
+    <m-page-header
       style="border: 1px solid rgb(235, 237, 240)"
       title="Title"
       sub-title="This is a subtitle"
       @back="() => $router.go(-1)"
     >
       <template slot="extra">
-        <a-button key="3">
+        <m-button key="3">
           Operation
-        </a-button>
-        <a-button key="2">
+        </m-button>
+        <m-button key="2">
           Operation
-        </a-button>
-        <a-button key="1" type="primary">
+        </m-button>
+        <m-button key="1" type="primary">
           Primary
-        </a-button>
+        </m-button>
       </template>
-      <a-descriptions size="small" :column="3">
-        <a-descriptions-item label="Created">
+      <m-descriptions size="small" :column="3">
+        <m-descriptions-item label="Created">
           Lili Qu
-        </a-descriptions-item>
-        <a-descriptions-item label="Association">
+        </m-descriptions-item>
+        <m-descriptions-item label="Association">
           <a>421421</a>
-        </a-descriptions-item>
-        <a-descriptions-item label="Creation Time">
+        </m-descriptions-item>
+        <m-descriptions-item label="Creation Time">
           2017-01-10
-        </a-descriptions-item>
-        <a-descriptions-item label="Effective Time">
+        </m-descriptions-item>
+        <m-descriptions-item label="Effective Time">
           2017-10-10
-        </a-descriptions-item>
-        <a-descriptions-item label="Remarks">
+        </m-descriptions-item>
+        <m-descriptions-item label="Remarks">
           Gonghu Road, Xihu District, Hangzhou, Zhejiang, China
-        </a-descriptions-item>
-      </a-descriptions>
-    </a-page-header>
+        </m-descriptions-item>
+      </m-descriptions>
+    </m-page-header>
     <br />
-    <a-page-header title="Title" sub-title="This is a subtitle" @back="() => $router.go(-1)">
+    <m-page-header title="Title" sub-title="This is a subtitle" @back="() => $router.go(-1)">
       <template slot="tags">
-        <a-tag color="blue">
+        <m-tag color="blue">
           Running
-        </a-tag>
+        </m-tag>
       </template>
       <template slot="extra">
-        <a-button key="3">
+        <m-button key="3">
           Operation
-        </a-button>
-        <a-button key="2">
+        </m-button>
+        <m-button key="2">
           Operation
-        </a-button>
-        <a-button key="1" type="primary">
+        </m-button>
+        <m-button key="1" type="primary">
           Primary
-        </a-button>
+        </m-button>
       </template>
-      <a-row type="flex">
-        <a-statistic title="Status" value="Pending" />
-        <a-statistic
+      <m-row type="flex">
+        <m-statistic title="Status" value="Pending" />
+        <m-statistic
           title="Price"
           prefix="$"
           :value="568.08"
@@ -74,9 +74,9 @@ Use the operating area and customize the sub-nodes, suitable for use in the need
             margin: '0 32px',
           }"
         />
-        <a-statistic title="Balance" prefix="$" :value="3345.08" />
-      </a-row>
-    </a-page-header>
+        <m-statistic title="Balance" prefix="$" :value="3345.08" />
+      </m-row>
+    </m-page-header>
   </div>
 </template>
 <style>

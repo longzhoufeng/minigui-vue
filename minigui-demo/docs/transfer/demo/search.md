@@ -10,7 +10,7 @@ Transfer with a search box.
 
 ```vue
 <template>
-  <a-transfer
+  <m-transfer
     :data-source="mockData"
     show-search
     :filter-option="filterOption"

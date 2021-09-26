@@ -10,39 +10,39 @@ If you want to use a customized trigger, you can hide the default one by setting
 
 ```vue
 <template>
-  <a-layout id="components-layout-demo-custom-trigger">
-    <a-layout-sider v-model="collapsed" :trigger="null" collapsible>
+  <m-layout id="components-layout-demo-custom-trigger">
+    <m-layout-sider v-model="collapsed" :trigger="null" collapsible>
       <div class="logo" />
-      <a-menu theme="dark" mode="inline" :default-selected-keys="['1']">
-        <a-menu-item key="1">
-          <a-icon type="user" />
+      <m-menu theme="dark" mode="inline" :default-selected-keys="['1']">
+        <m-menu-item key="1">
+          <m-icon type="user" />
           <span>nav 1</span>
-        </a-menu-item>
-        <a-menu-item key="2">
-          <a-icon type="video-camera" />
+        </m-menu-item>
+        <m-menu-item key="2">
+          <m-icon type="video-camera" />
           <span>nav 2</span>
-        </a-menu-item>
-        <a-menu-item key="3">
-          <a-icon type="upload" />
+        </m-menu-item>
+        <m-menu-item key="3">
+          <m-icon type="upload" />
           <span>nav 3</span>
-        </a-menu-item>
-      </a-menu>
-    </a-layout-sider>
-    <a-layout>
-      <a-layout-header style="background: #fff; padding: 0">
-        <a-icon
+        </m-menu-item>
+      </m-menu>
+    </m-layout-sider>
+    <m-layout>
+      <m-layout-header style="background: #fff; padding: 0">
+        <m-icon
           class="trigger"
           :type="collapsed ? 'menu-unfold' : 'menu-fold'"
           @click="() => (collapsed = !collapsed)"
         />
-      </a-layout-header>
-      <a-layout-content
+      </m-layout-header>
+      <m-layout-content
         :style="{ margin: '24px 16px', padding: '24px', background: '#fff', minHeight: '280px' }"
       >
         Content
-      </a-layout-content>
-    </a-layout>
-  </a-layout>
+      </m-layout-content>
+    </m-layout>
+  </m-layout>
 </template>
 <script>
 export default {

@@ -1,14 +1,14 @@
 <template>
   <div class="login">
-    <a-form :form="form" @submit="handleSubmit">
+    <m-form :form="form" @submit="handleSubmit">
       <div v-if="tabs.length > 0">
-        <a-tabs :animated="false" class="tabs" :active-key="type" @change="onSwitch">
+        <m-tabs :animated="false" class="tabs" :active-key="type" @change="onSwitch">
           <v-nodes :value="children.tabChildren" />
-        </a-tabs>
+        </m-tabs>
         <v-nodes :value="children.otherChildren" />
       </div>
       <slot v-else />
-    </a-form>
+    </m-form>
   </div>
 </template>
 <script>

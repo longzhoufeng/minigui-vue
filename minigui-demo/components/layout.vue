@@ -109,14 +109,14 @@ export default {
       const lis = [];
       currentSubMenu.forEach(({ cnTitle, usTitle, id }, index) => {
         const title = isCN ? cnTitle : usTitle;
-        lis.push(<a-anchor-link key={id + index} href={`#${id}`} title={title} />);
+        lis.push(<m-anchor-link key={id + index} href={`#${id}`} title={title} />);
       });
       const showApi = this.$route.path.indexOf('/components/') !== -1;
       return (
-        <a-anchor offsetTop={68} class="demo-anchor">
+        <m-anchor offsetTop={68} class="demo-anchor">
           {lis}
-          {showApi ? <a-anchor-link key="API" title="API" href="#API" /> : ''}
-        </a-anchor>
+          {showApi ? <m-anchor-link key="API" title="API" href="#API" /> : ''}
+        </m-anchor>
       );
     },
     getDocsMenu(isCN, pagesKey) {
@@ -125,9 +125,9 @@ export default {
         const k = isCN ? `${key}-cn` : key;
         pagesKey.push({ name: k, url: `/docs/vue/${k}/`, title: isCN ? title : enTitle });
         docsMenu.push(
-          <a-menu-item key={k}>
+          <m-menu-item key={k}>
             <router-link to={`/docs/vue/${k}/`}>{isCN ? title : enTitle}</router-link>
-          </a-menu-item>,
+          </m-menu-item>,
         );
       });
       return docsMenu;
@@ -202,12 +202,12 @@ export default {
           url: `/components/${key}/`,
         });
         MenuItems.push(
-          <a-menu-item key={key}>
+          <m-menu-item key={key}>
             <router-link to={`/components/${key}/`}>{linkValue}</router-link>
-          </a-menu-item>,
+          </m-menu-item>,
         );
       });
-      MenuGroup.push(<a-menu-item-group title={type}>{MenuItems}</a-menu-item-group>);
+      MenuGroup.push(<m-menu-item-group title={type}>{MenuItems}</m-menu-item-group>);
     }
     console.log(MenuGroup)
     pagesKey.forEach((item, index) => {
@@ -226,12 +226,12 @@ export default {
     return (
       <div class="page-wrapper">
         <Header searchData={searchData} name={name} />
-        <a-config-provider locale={locale}>
+        <m-config-provider locale={locale}>
           <div class="main-wrapper">
-            <a-row>
+            <m-row>
               {isMobile ? (
                 <MobileMenu ref="sidebar" wrapperClassName="drawer-wrapper">
-                  <a-menu
+                  <m-menu
                     class="aside-container menu-site"
                     selectedKeys={[name]}
                     defaultOpenKeys={['Components']}
@@ -239,13 +239,13 @@ export default {
                     mode="inline"
                   >
                     {docsMenu}
-                    <a-sub-menu title={`組件(${searchData.length})`} key="Components">
+                    <m-sub-menu title={`組件(${searchData.length})`} key="Components">
                       {MenuGroup}
-                    </a-sub-menu>
-                  </a-menu>
+                    </m-sub-menu>
+                  </m-menu>
                 </MobileMenu>
               ) : (
-                <a-col
+                <m-col
                   ref="sidebar"
                   class="site-sidebar main-menu"
                   xxl={4}
@@ -255,9 +255,9 @@ export default {
                   sm={8}
                   xs={12}
                 >
-                  <a-affix>
+                  <m-affix>
                     <section class="main-menu-inner">
-                      <a-menu
+                      <m-menu
                         class="aside-container menu-site"
                         selectedKeys={[name]}
                         defaultOpenKeys={['Components']}
@@ -265,15 +265,15 @@ export default {
                         mode="inline"
                       >
                         {docsMenu}
-                        <a-sub-menu title={`組件(${searchData.length})`} key="Components">
+                        <m-sub-menu title={`組件(${searchData.length})`} key="Components">
                           {MenuGroup}
-                        </a-sub-menu>
-                      </a-menu>
+                        </m-sub-menu>
+                      </m-menu>
                     </section>
-                  </a-affix>
-                </a-col>
+                  </m-affix>
+                </m-col>
               )}
-              <a-col xxl={20} xl={19} lg={19} md={18} sm={24} xs={24}>
+              <m-col xxl={20} xl={19} lg={19} md={18} sm={24} xs={24}>
                 <section class="main-container main-container-component">
                   {!isMobile ? (
                     <div class={['toc-affix', isCN ? 'toc-affix-cn' : '']} style="width: 150px;">
@@ -317,7 +317,7 @@ export default {
                 <section class="prev-next-nav">
                   {prevPage ? (
                     <router-link class="prev-page" to={`${prevPage.url}`}>
-                      <a-icon type="left" />
+                      <m-icon type="left" />
                       &nbsp;&nbsp;{prevPage.title}
                     </router-link>
                   ) : (
@@ -326,18 +326,18 @@ export default {
                   {nextPage ? (
                     <router-link class="next-page" to={`${nextPage.url}`}>
                       {nextPage.title}&nbsp;&nbsp;
-                      <a-icon type="right" />
+                      <m-icon type="right" />
                     </router-link>
                   ) : (
                     ''
                   )}
                 </section>
                 <Footer ref="footer" isCN={isCN} />
-              </a-col>
-            </a-row>
+              </m-col>
+            </m-row>
           </div>
-        </a-config-provider>
-        {name.indexOf('back-top') === -1 ? <a-back-top /> : null}
+        </m-config-provider>
+        {name.indexOf('back-top') === -1 ? <m-back-top /> : null}
         <RightBottomAd isCN={isCN} isMobile={isMobile} />
       </div>
     );

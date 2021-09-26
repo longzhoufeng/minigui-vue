@@ -12,19 +12,19 @@ The label of the selected item will be packed as an object for passing to the on
 
 ```vue
 <template>
-  <a-select
+  <m-select
     label-in-value
     :default-value="{ key: 'lucy' }"
     style="width: 120px"
     @change="handleChange"
   >
-    <a-select-option value="jack">
+    <m-select-option value="jack">
       Jack (100)
-    </a-select-option>
-    <a-select-option value="lucy">
+    </m-select-option>
+    <m-select-option value="lucy">
       Lucy (101)
-    </a-select-option>
-  </a-select>
+    </m-select-option>
+  </m-select>
 </template>
 <script>
 export default {

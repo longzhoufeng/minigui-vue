@@ -11,14 +11,14 @@ Change `pageSize`.
 ```vue
 <template>
   <div>
-    <a-pagination
+    <m-pagination
       show-size-changer
       :default-current="3"
       :total="500"
       @showSizeChange="onShowSizeChange"
     />
     <br />
-    <a-pagination
+    <m-pagination
       v-model="current"
       show-size-changer
       :page-size.sync="pageSize"

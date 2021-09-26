@@ -13,50 +13,50 @@ If a large or small button is desired, set the `size` property to either `large`
 ```vue
 <template>
   <div>
-    <a-radio-group :value="size" @change="handleSizeChange">
-      <a-radio-button value="large">
+    <m-radio-group :value="size" @change="handleSizeChange">
+      <m-radio-button value="large">
         Large
-      </a-radio-button>
-      <a-radio-button value="default">
+      </m-radio-button>
+      <m-radio-button value="default">
         Default
-      </a-radio-button>
-      <a-radio-button value="small">
+      </m-radio-button>
+      <m-radio-button value="small">
         Small
-      </a-radio-button>
-    </a-radio-group>
+      </m-radio-button>
+    </m-radio-group>
     <br><br>
-    <a-button type="primary" :size="size">
+    <m-button type="primary" :size="size">
       Primary
-    </a-button>
-    <a-button :size="size">
+    </m-button>
+    <m-button :size="size">
       Normal
-    </a-button>
-    <a-button type="dashed" :size="size">
+    </m-button>
+    <m-button type="dashed" :size="size">
       Dashed
-    </a-button>
-    <a-button type="danger" :size="size">
+    </m-button>
+    <m-button type="danger" :size="size">
       Danger
-    </a-button>
-    <a-button type="link" :size="size">
+    </m-button>
+    <m-button type="link" :size="size">
       Link
-    </a-button>
+    </m-button>
     <br>
-    <a-button type="primary" icon="download" :size="size" />
-    <a-button type="primary" shape="circle" icon="download" :size="size" />
-    <a-button type="primary" shape="round" icon="download" :size="size" />Download</a-button>
-    <a-button type="primary" shape="round" icon="download" :size="size" />
-    <a-button type="primary" icon="download" :size="size">
+    <m-button type="primary" icon="download" :size="size" />
+    <m-button type="primary" shape="circle" icon="download" :size="size" />
+    <m-button type="primary" shape="round" icon="download" :size="size" />Download</m-button>
+    <m-button type="primary" shape="round" icon="download" :size="size" />
+    <m-button type="primary" icon="download" :size="size">
       Download
-    </a-button>
+    </m-button>
     <br>
-    <a-button-group :size="size">
-      <a-button type="primary">
-        <a-icon type="left" />Backward
-      </a-button>
-      <a-button type="primary">
-        Forward<a-icon type="right" />
-      </a-button>
-    </a-button-group>
+    <m-button-group :size="size">
+      <m-button type="primary">
+        <m-icon type="left" />Backward
+      </m-button>
+      <m-button type="primary">
+        Forward<m-icon type="right" />
+      </m-button>
+    </m-button-group>
   </div>
 </template>
 <script>

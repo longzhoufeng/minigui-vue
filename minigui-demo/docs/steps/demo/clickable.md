@@ -11,17 +11,17 @@ Setting `@change` makes Steps clickable.
 ```vue
 <template>
   <div>
-    <a-steps :current="current" @change="onChange">
-      <a-step title="Step 1" description="This is a description." />
-      <a-step title="Step 2" description="This is a description." />
-      <a-step title="Step 3" description="This is a description." />
-    </a-steps>
-    <a-divider />
-    <a-steps v-model="current" direction="vertical">
-      <a-step title="Step 1" description="This is a description." />
-      <a-step title="Step 2" description="This is a description." />
-      <a-step title="Step 3" description="This is a description." />
-    </a-steps>
+    <m-steps :current="current" @change="onChange">
+      <m-step title="Step 1" description="This is a description." />
+      <m-step title="Step 2" description="This is a description." />
+      <m-step title="Step 3" description="This is a description." />
+    </m-steps>
+    <m-divider />
+    <m-steps v-model="current" direction="vertical">
+      <m-step title="Step 1" description="This is a description." />
+      <m-step title="Step 2" description="This is a description." />
+      <m-step title="Step 3" description="This is a description." />
+    </m-steps>
   </div>
 </template>
 <script>

@@ -11,7 +11,7 @@ Customize render list with Table component.
 ```vue
 <template>
   <div>
-    <a-transfer
+    <m-transfer
       :data-source="mockData"
       :target-keys="targetKeys"
       :disabled="disabled"
@@ -27,7 +27,7 @@ Customize render list with Table component.
           on: { itemSelectAll, itemSelect },
         }"
       >
-        <a-table
+        <m-table
           :row-selection="
             getRowSelection({ disabled: listDisabled, selectedKeys, itemSelectAll, itemSelect })
           "
@@ -47,15 +47,15 @@ Customize render list with Table component.
           "
         />
       </template>
-    </a-transfer>
-    <a-switch
+    </m-transfer>
+    <m-switch
       un-checked-children="disabled"
       checked-children="disabled"
       :checked="disabled"
       style="margin-top: 16px"
       @change="triggerDisable"
     />
-    <a-switch
+    <m-switch
       un-checked-children="showSearch"
       checked-children="showSearch"
       :checked="showSearch"

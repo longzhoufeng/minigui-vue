@@ -15,44 +15,44 @@ We preset a series of colorful tag styles for use in different situations. You c
       Presets:
     </h4>
     <div>
-      <a-tag color="pink">
+      <m-tag color="pink">
         pink
-      </a-tag>
-      <a-tag color="red">
+      </m-tag>
+      <m-tag color="red">
         red
-      </a-tag>
-      <a-tag color="orange">
+      </m-tag>
+      <m-tag color="orange">
         orange
-      </a-tag>
-      <a-tag color="green">
+      </m-tag>
+      <m-tag color="green">
         green
-      </a-tag>
-      <a-tag color="cyan">
+      </m-tag>
+      <m-tag color="cyan">
         cyan
-      </a-tag>
-      <a-tag color="blue">
+      </m-tag>
+      <m-tag color="blue">
         blue
-      </a-tag>
-      <a-tag color="purple">
+      </m-tag>
+      <m-tag color="purple">
         purple
-      </a-tag>
+      </m-tag>
     </div>
     <h4 style="margin: '16px 0'">
       Custom:
     </h4>
     <div>
-      <a-tag color="#f50">
+      <m-tag color="#f50">
         #f50
-      </a-tag>
-      <a-tag color="#2db7f5">
+      </m-tag>
+      <m-tag color="#2db7f5">
         #2db7f5
-      </a-tag>
-      <a-tag color="#87d068">
+      </m-tag>
+      <m-tag color="#87d068">
         #87d068
-      </a-tag>
-      <a-tag color="#108ee9">
+      </m-tag>
+      <m-tag color="#108ee9">
         #108ee9
-      </a-tag>
+      </m-tag>
     </div>
   </div>
 </template>

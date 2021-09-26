@@ -10,7 +10,7 @@ You can choose another style of `image` by setting image to `Empty.PRESENTED_IMA
 
 ```vue
 <template>
-  <a-empty :image="simpleImage" />
+  <m-empty :image="simpleImage" />
 </template>
 <script>
 import { Empty } from 'minigui-vue';

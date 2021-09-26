@@ -11,14 +11,14 @@ A package of `linear-gradient`. It is recommended to only pass two colors.
 ```vue
 <template>
   <div>
-    <a-progress
+    <m-progress
       :stroke-color="{
         '0%': '#108ee9',
         '100%': '#87d068',
       }"
       :percent="99.9"
     />
-    <a-progress
+    <m-progress
       :stroke-color="{
         from: '#108ee9',
         to: '#87d068',
@@ -26,7 +26,7 @@ A package of `linear-gradient`. It is recommended to only pass two colors.
       :percent="99.9"
       status="active"
     />
-    <a-progress
+    <m-progress
       type="circle"
       :stroke-color="{
         '0%': '#108ee9',
@@ -34,7 +34,7 @@ A package of `linear-gradient`. It is recommended to only pass two colors.
       }"
       :percent="90"
     />
-    <a-progress
+    <m-progress
       type="circle"
       :stroke-color="{
         '0%': '#108ee9',

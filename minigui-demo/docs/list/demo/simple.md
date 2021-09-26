@@ -18,45 +18,45 @@ Customizing the header and footer of list by setting `header` and `footer` prope
     <h3 :style="{ marginBottom: '16px' }">
       Default Size
     </h3>
-    <a-list bordered :data-source="data">
-      <a-list-item slot="renderItem" slot-scope="item, index">
+    <m-list bordered :data-source="data">
+      <m-list-item slot="renderItem" slot-scope="item, index">
         {{ item }}
-      </a-list-item>
+      </m-list-item>
       <div slot="header">
         Header
       </div>
       <div slot="footer">
         Footer
       </div>
-    </a-list>
+    </m-list>
     <h3 :style="{ margin: '16px 0' }">
       Small Size
     </h3>
-    <a-list size="small" bordered :data-source="data">
-      <a-list-item slot="renderItem" slot-scope="item, index">
+    <m-list size="small" bordered :data-source="data">
+      <m-list-item slot="renderItem" slot-scope="item, index">
         {{ item }}
-      </a-list-item>
+      </m-list-item>
       <div slot="header">
         Header
       </div>
       <div slot="footer">
         Footer
       </div>
-    </a-list>
+    </m-list>
     <h3 :style="{ margin: '16px 0' }">
       Large Size
     </h3>
-    <a-list size="large" bordered :data-source="data">
-      <a-list-item slot="renderItem" slot-scope="item, index">
+    <m-list size="large" bordered :data-source="data">
+      <m-list-item slot="renderItem" slot-scope="item, index">
         {{ item }}
-      </a-list-item>
+      </m-list-item>
       <div slot="header">
         Header
       </div>
       <div slot="footer">
         Footer
       </div>
-    </a-list>
+    </m-list>
   </div>
 </template>
 <script>

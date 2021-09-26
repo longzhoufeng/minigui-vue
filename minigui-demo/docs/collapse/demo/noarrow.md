@@ -11,18 +11,18 @@ You can hide the arrow icon by passing `showArrow={false}` to `CollapsePanel` co
 ```vue
 <template>
   <div>
-    <a-collapse default-active-key="1" @change="changeActivekey">
-      <a-collapse-panel key="1" header="This is panel header with arrow icon">
+    <m-collapse default-active-key="1" @change="changeActivekey">
+      <m-collapse-panel key="1" header="This is panel header with arrow icon">
         <p>{{ text }}</p>
-      </a-collapse-panel>
-      <a-collapse-panel
+      </m-collapse-panel>
+      <m-collapse-panel
         key="2"
         header="This is panel header with no arrow icon"
         :show-arrow="false"
       >
         <p>{{ text }}</p>
-      </a-collapse-panel>
-    </a-collapse>
+      </m-collapse-panel>
+    </m-collapse>
   </div>
 </template>
 <script>

@@ -11,16 +11,16 @@ Simplest Usage. Badge will be hidden when `count` is `0`, but we can use `showZe
 ```vue
 <template>
   <div>
-    <a-badge count="5">
+    <m-badge count="5">
       <a href="#" class="head-example" />
-    </a-badge>
-    <a-badge count="0" show-zero>
+    </m-badge>
+    <m-badge count="0" show-zero>
       <a href="#" class="head-example" />
-    </a-badge>
-    <a-badge>
-      <a-icon slot="count" type="clock-circle" style="color: #f5222d" />
+    </m-badge>
+    <m-badge>
+      <m-icon slot="count" type="clock-circle" style="color: #f5222d" />
       <a href="#" class="head-example" />
-    </a-badge>
+    </m-badge>
   </div>
 </template>
 ```

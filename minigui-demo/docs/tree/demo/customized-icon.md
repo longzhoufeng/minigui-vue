@@ -10,14 +10,14 @@ You can customize icons for different nodes.
 
 ```vue
 <template>
-  <a-tree :tree-data="treeData" show-icon default-expand-all :default-selected-keys="['0-0-0']">
-    <a-icon slot="switcherIcon" type="down" />
-    <a-icon slot="smile" type="smile-o" />
-    <a-icon slot="meh" type="smile-o" />
+  <m-tree :tree-data="treeData" show-icon default-expand-all :default-selected-keys="['0-0-0']">
+    <m-icon slot="switcherIcon" type="down" />
+    <m-icon slot="smile" type="smile-o" />
+    <m-icon slot="meh" type="smile-o" />
     <template slot="custom" slot-scope="{ selected }">
-      <a-icon :type="selected ? 'frown' : 'frown-o'" />
+      <m-icon :type="selected ? 'frown' : 'frown-o'" />
     </template>
-  </a-tree>
+  </m-tree>
 </template>
 <script>
 const treeData = [

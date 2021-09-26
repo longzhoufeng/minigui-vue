@@ -12,96 +12,96 @@ There are 12 `placement` options available. Use `arrowPointAtCenter` if you want
 <template>
   <div id="components-a-popconfirm-demo-placement">
     <div :style="{ marginLeft: `${buttonWidth}px`, whiteSpace: 'nowrap' }">
-      <a-popconfirm placement="topLeft" ok-text="Yes" cancel-text="No" @confirm="confirm">
+      <m-popconfirm placement="topLeft" ok-text="Yes" cancel-text="No" @confirm="confirm">
         <template slot="title">
           <p>{{ text }}</p>
           <p>{{ text }}</p>
         </template>
-        <a-button>TL</a-button>
-      </a-popconfirm>
-      <a-popconfirm placement="top" ok-text="Yes" cancel-text="No" @confirm="confirm">
+        <m-button>TL</m-button>
+      </m-popconfirm>
+      <m-popconfirm placement="top" ok-text="Yes" cancel-text="No" @confirm="confirm">
         <template slot="title">
           <p>{{ text }}</p>
           <p>{{ text }}</p>
         </template>
-        <a-button>Top</a-button>
-      </a-popconfirm>
-      <a-popconfirm placement="topRight" ok-text="Yes" cancel-text="No" @confirm="confirm">
+        <m-button>Top</m-button>
+      </m-popconfirm>
+      <m-popconfirm placement="topRight" ok-text="Yes" cancel-text="No" @confirm="confirm">
         <template slot="title">
           <p>{{ text }}</p>
           <p>{{ text }}</p>
         </template>
-        <a-button>TR</a-button>
-      </a-popconfirm>
+        <m-button>TR</m-button>
+      </m-popconfirm>
     </div>
     <div :style="{ width: `${buttonWidth}px`, float: 'left' }">
-      <a-popconfirm placement="leftTop" ok-text="Yes" cancel-text="No" @confirm="confirm">
+      <m-popconfirm placement="leftTop" ok-text="Yes" cancel-text="No" @confirm="confirm">
         <template slot="title">
           <p>{{ text }}</p>
           <p>{{ text }}</p>
         </template>
-        <a-button>LT</a-button>
-      </a-popconfirm>
-      <a-popconfirm placement="left" ok-text="Yes" cancel-text="No" @confirm="confirm">
+        <m-button>LT</m-button>
+      </m-popconfirm>
+      <m-popconfirm placement="left" ok-text="Yes" cancel-text="No" @confirm="confirm">
         <template slot="title">
           <p>{{ text }}</p>
           <p>{{ text }}</p>
         </template>
-        <a-button>Left</a-button>
-      </a-popconfirm>
-      <a-popconfirm placement="leftBottom" ok-text="Yes" cancel-text="No" @confirm="confirm">
+        <m-button>Left</m-button>
+      </m-popconfirm>
+      <m-popconfirm placement="leftBottom" ok-text="Yes" cancel-text="No" @confirm="confirm">
         <template slot="title">
           <p>{{ text }}</p>
           <p>{{ text }}</p>
         </template>
-        <a-button>LB</a-button>
-      </a-popconfirm>
+        <m-button>LB</m-button>
+      </m-popconfirm>
     </div>
     <div :style="{ width: `${buttonWidth}px`, marginLeft: `${buttonWidth * 4 + 24}px` }">
-      <a-popconfirm placement="rightTop" ok-text="Yes" cancel-text="No" @confirm="confirm">
+      <m-popconfirm placement="rightTop" ok-text="Yes" cancel-text="No" @confirm="confirm">
         <template slot="title">
           <p>{{ text }}</p>
           <p>{{ text }}</p>
         </template>
-        <a-button>RT</a-button>
-      </a-popconfirm>
-      <a-popconfirm placement="right" ok-text="Yes" cancel-text="No" @confirm="confirm">
+        <m-button>RT</m-button>
+      </m-popconfirm>
+      <m-popconfirm placement="right" ok-text="Yes" cancel-text="No" @confirm="confirm">
         <template slot="title">
           <p>{{ text }}</p>
           <p>{{ text }}</p>
         </template>
-        <a-button>Right</a-button>
-      </a-popconfirm>
-      <a-popconfirm placement="rightBottom" ok-text="Yes" cancel-text="No" @confirm="confirm">
+        <m-button>Right</m-button>
+      </m-popconfirm>
+      <m-popconfirm placement="rightBottom" ok-text="Yes" cancel-text="No" @confirm="confirm">
         <template slot="title">
           <p>{{ text }}</p>
           <p>{{ text }}</p>
         </template>
-        <a-button>RB</a-button>
-      </a-popconfirm>
+        <m-button>RB</m-button>
+      </m-popconfirm>
     </div>
     <div :style="{ marginLeft: `${buttonWidth}px`, clear: 'both', whiteSpace: 'nowrap' }">
-      <a-popconfirm placement="bottomLeft" ok-text="Yes" cancel-text="No" @confirm="confirm">
+      <m-popconfirm placement="bottomLeft" ok-text="Yes" cancel-text="No" @confirm="confirm">
         <template slot="title">
           <p>{{ text }}</p>
           <p>{{ text }}</p>
         </template>
-        <a-button>BL</a-button>
-      </a-popconfirm>
-      <a-popconfirm placement="bottom" ok-text="Yes" cancel-text="No" @confirm="confirm">
+        <m-button>BL</m-button>
+      </m-popconfirm>
+      <m-popconfirm placement="bottom" ok-text="Yes" cancel-text="No" @confirm="confirm">
         <template slot="title">
           <p>{{ text }}</p>
           <p>{{ text }}</p>
         </template>
-        <a-button>Bottom</a-button>
-      </a-popconfirm>
-      <a-popconfirm placement="bottomRight" ok-text="Yes" cancel-text="No" @confirm="confirm">
+        <m-button>Bottom</m-button>
+      </m-popconfirm>
+      <m-popconfirm placement="bottomRight" ok-text="Yes" cancel-text="No" @confirm="confirm">
         <template slot="title">
           <p>{{ text }}</p>
           <p>{{ text }}</p>
         </template>
-        <a-button>BR</a-button>
-      </a-popconfirm>
+        <m-button>BR</m-button>
+      </m-popconfirm>
     </div>
   </div>
 </template>

@@ -10,7 +10,7 @@ Allow only select parent options.
 
 ```vue
 <template>
-  <a-cascader :options="options" change-on-select @change="onChange" />
+  <m-cascader :options="options" change-on-select @change="onChange" />
 </template>
 <script>
 export default {

@@ -11,21 +11,21 @@
 ```vue
 <template>
   <div>
-    <a-collapse @change="changeActivekey">
-      <a-collapse-panel key="1" header="This is panel header 1">
-        <a-collapse default-active-key="4">
-          <a-collapse-panel key="4" header="This is panel nest panel">
+    <m-collapse @change="changeActivekey">
+      <m-collapse-panel key="1" header="This is panel header 1">
+        <m-collapse default-active-key="4">
+          <m-collapse-panel key="4" header="This is panel nest panel">
             <p>{{ text }}</p>
-          </a-collapse-panel>
-        </a-collapse>
-      </a-collapse-panel>
-      <a-collapse-panel key="2" header="This is panel header 2" :disabled="false">
+          </m-collapse-panel>
+        </m-collapse>
+      </m-collapse-panel>
+      <m-collapse-panel key="2" header="This is panel header 2" :disabled="false">
         <p>{{ text }}</p>
-      </a-collapse-panel>
-      <a-collapse-panel key="3" header="This is panel header 3">
+      </m-collapse-panel>
+      <m-collapse-panel key="3" header="This is panel header 3">
         <p>{{ text }}</p>
-      </a-collapse-panel>
-    </a-collapse>
+      </m-collapse-panel>
+    </m-collapse>
   </div>
 </template>
 <script>

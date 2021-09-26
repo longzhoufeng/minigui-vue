@@ -10,7 +10,7 @@ Custom each Transfer Item, and in this way you can render a complex datasource.
 
 ```vue
 <template>
-  <a-transfer
+  <m-transfer
     :data-source="mockData"
     :list-style="{
       width: '300px',

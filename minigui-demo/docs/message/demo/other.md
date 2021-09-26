@@ -11,15 +11,15 @@ Messages of success, error and warning types.
 ```vue
 <template>
   <div>
-    <a-button @click="success">
+    <m-button @click="success">
       Success
-    </a-button>
-    <a-button @click="error">
+    </m-button>
+    <m-button @click="error">
       Error
-    </a-button>
-    <a-button @click="warning">
+    </m-button>
+    <m-button @click="warning">
       Warning
-    </a-button>
+    </m-button>
   </div>
 </template>
 <script>

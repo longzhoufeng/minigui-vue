@@ -2,7 +2,7 @@
   <div id="right-bottom">
     <img v-if="isCN" width="150" alt="官方公众号" src="/public/qrcode.jpg">
     <div v-if="isMobile" class="close" @click="visible = false">
-      <a-icon type="close" />
+      <m-icon type="close" />
     </div>
   </div>
 </template>

@@ -11,23 +11,23 @@ If uploaded file is a picture, the thumbnail can be shown. `IE8/9` do not suppor
 ```vue
 <template>
   <div>
-    <a-upload
+    <m-upload
       action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
       list-type="picture"
       :default-file-list="fileList"
     >
-      <a-button> <a-icon type="upload" /> upload </a-button>
-    </a-upload>
+      <m-button> <m-icon type="upload" /> upload </m-button>
+    </m-upload>
     <br />
     <br />
-    <a-upload
+    <m-upload
       action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
       list-type="picture"
       :default-file-list="fileList"
       class="upload-list-inline"
     >
-      <a-button> <a-icon type="upload" /> upload </a-button>
-    </a-upload>
+      <m-button> <m-icon type="upload" /> upload </m-button>
+    </m-upload>
   </div>
 </template>
 

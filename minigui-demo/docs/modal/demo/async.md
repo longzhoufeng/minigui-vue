@@ -12,10 +12,10 @@ you can use this pattern when you submit a form.
 ```vue
 <template>
   <div>
-    <a-button type="primary" @click="showModal">
+    <m-button type="primary" @click="showModal">
       Open Modal with async logic
-    </a-button>
-    <a-modal
+    </m-button>
+    <m-modal
       title="Title"
       :visible="visible"
       :confirm-loading="confirmLoading"
@@ -23,7 +23,7 @@ you can use this pattern when you submit a form.
       @cancel="handleCancel"
     >
       <p>{{ ModalText }}</p>
-    </a-modal>
+    </m-modal>
   </div>
 </template>
 <script>

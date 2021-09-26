@@ -14,14 +14,14 @@ You can gain full control over filelist by configuring `fileList`. You can accom
 
 ```vue
 <template>
-  <a-upload
+  <m-upload
     action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
     :multiple="true"
     :file-list="fileList"
     @change="handleChange"
   >
-    <a-button> <a-icon type="upload" /> Upload </a-button>
-  </a-upload>
+    <m-button> <m-icon type="upload" /> Upload </m-button>
+  </m-upload>
 </template>
 <script>
 export default {

@@ -10,7 +10,7 @@ Replace the title,key and children fields in treeNode with the corresponding fie
 
 ```vue
 <template>
-  <a-tree
+  <m-tree
     checkable
     :tree-data="treeData"
     :default-expanded-keys="['0-0-0', '0-0-1']"

@@ -11,27 +11,27 @@ There are `primary` button, `default` button, `dashed` button , `danger` button 
 ```vue
 <template>
   <div>
-    <a-button type="primary">
+    <m-button type="primary">
       Primary
-    </a-button>
-    <a-button>Default</a-button>
-    <a-button type="dashed">
+    </m-button>
+    <m-button>Default</m-button>
+    <m-button type="dashed">
       Dashed
-    </a-button>
-    <a-button type="danger">
+    </m-button>
+    <m-button type="danger">
       Danger
-    </a-button>
-    <a-config-provider :auto-insert-space-in-button="false">
-      <a-button type="primary">
+    </m-button>
+    <m-config-provider :auto-insert-space-in-button="false">
+      <m-button type="primary">
         按钮
-      </a-button>
-    </a-config-provider>
-    <a-button type="primary">
+      </m-button>
+    </m-config-provider>
+    <m-button type="primary">
       按钮
-    </a-button>
-    <a-button type="link">
+    </m-button>
+    <m-button type="link">
       Link
-    </a-button>
+    </m-button>
   </div>
 </template>
 ```

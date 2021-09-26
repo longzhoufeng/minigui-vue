@@ -10,12 +10,12 @@ When there's too much information to show and the table can't display all at onc
 
 ```vue
 <template>
-  <a-table :columns="columns" :data-source="data">
+  <m-table :columns="columns" :data-source="data">
     <a slot="action" slot-scope="text" href="javascript:;">Delete</a>
     <p slot="expandedRowRender" slot-scope="record" style="margin: 0">
       {{ record.description }}
     </p>
-  </a-table>
+  </m-table>
 </template>
 <script>
 const columns = [

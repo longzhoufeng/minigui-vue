@@ -10,22 +10,22 @@ The menu has multiple levels.
 
 ```vue
 <template>
-  <a-dropdown>
+  <m-dropdown>
     <a class="minigui-dropdown-link" @click="e => e.preventDefault()">
-      Cascading menu <a-icon type="down" />
+      Cascading menu <m-icon type="down" />
     </a>
-    <a-menu slot="overlay">
-      <a-menu-item>1st menu item</a-menu-item>
-      <a-menu-item>2nd menu item</a-menu-item>
-      <a-sub-menu key="test" title="sub menu">
-        <a-menu-item>3rd menu item</a-menu-item>
-        <a-menu-item>4th menu item</a-menu-item>
-      </a-sub-menu>
-      <a-sub-menu title="disabled sub menu" disabled>
-        <a-menu-item>5d menu item</a-menu-item>
-        <a-menu-item>6th menu item</a-menu-item>
-      </a-sub-menu>
-    </a-menu>
-  </a-dropdown>
+    <m-menu slot="overlay">
+      <m-menu-item>1st menu item</m-menu-item>
+      <m-menu-item>2nd menu item</m-menu-item>
+      <m-sub-menu key="test" title="sub menu">
+        <m-menu-item>3rd menu item</m-menu-item>
+        <m-menu-item>4th menu item</m-menu-item>
+      </m-sub-menu>
+      <m-sub-menu title="disabled sub menu" disabled>
+        <m-menu-item>5d menu item</m-menu-item>
+        <m-menu-item>6th menu item</m-menu-item>
+      </m-sub-menu>
+    </m-menu>
+  </m-dropdown>
 </template>
 ```

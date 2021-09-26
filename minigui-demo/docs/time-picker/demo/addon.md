@@ -11,16 +11,16 @@ Render addon contents to timepicker panel's bottom.
 ```vue
 <template>
   <div>
-    <a-time-picker :open="open" @openChange="handleOpenChange">
-      <a-button slot="addon" slot-scope="panel" size="small" type="primary" @click="handleClose">
+    <m-time-picker :open="open" @openChange="handleOpenChange">
+      <m-button slot="addon" slot-scope="panel" size="small" type="primary" @click="handleClose">
         Ok {{ panel.prefixCls }}
-      </a-button>
-    </a-time-picker>
-    <a-time-picker :open.sync="open2">
-      <a-button slot="addon" size="small" type="primary" @click="handleClose">
+      </m-button>
+    </m-time-picker>
+    <m-time-picker :open.sync="open2">
+      <m-button slot="addon" size="small" type="primary" @click="handleClose">
         Ok
-      </a-button>
-    </a-time-picker>
+      </m-button>
+    </m-time-picker>
   </div>
 </template>
 <script>

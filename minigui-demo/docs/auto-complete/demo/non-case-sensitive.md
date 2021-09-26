@@ -10,7 +10,7 @@ A non-case-sensitive AutoComplete
 
 ```vue
 <template>
-  <a-auto-complete
+  <m-auto-complete
     :data-source="dataSource"
     style="width: 200px"
     placeholder="input here"

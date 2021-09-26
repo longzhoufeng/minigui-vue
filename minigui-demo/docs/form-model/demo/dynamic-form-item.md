@@ -10,12 +10,12 @@ Add or remove form items dynamically.
 
 ```vue
 <template>
-  <a-form-model
+  <m-form-model
     ref="dynamicValidateForm"
     :model="dynamicValidateForm"
     v-bind="formItemLayoutWithOutLabel"
   >
-    <a-form-model-item
+    <m-form-model-item
       v-for="(domain, index) in dynamicValidateForm.domains"
       :key="domain.key"
       v-bind="index === 0 ? formItemLayout : {}"
@@ -27,33 +27,33 @@ Add or remove form items dynamically.
         trigger: 'blur',
       }"
     >
-      <a-input
+      <m-input
         v-model="domain.value"
         placeholder="please input domain"
         style="width: 60%; margin-right: 8px"
       />
-      <a-icon
+      <m-icon
         v-if="dynamicValidateForm.domains.length > 1"
         class="dynamic-delete-button"
         type="minus-circle-o"
         :disabled="dynamicValidateForm.domains.length === 1"
         @click="removeDomain(domain)"
       />
-    </a-form-model-item>
-    <a-form-model-item v-bind="formItemLayoutWithOutLabel">
-      <a-button type="dashed" style="width: 60%" @click="addDomain">
-        <a-icon type="plus" /> Add field
-      </a-button>
-    </a-form-model-item>
-    <a-form-model-item v-bind="formItemLayoutWithOutLabel">
-      <a-button type="primary" html-type="submit" @click="submitForm('dynamicValidateForm')">
+    </m-form-model-item>
+    <m-form-model-item v-bind="formItemLayoutWithOutLabel">
+      <m-button type="dashed" style="width: 60%" @click="addDomain">
+        <m-icon type="plus" /> Add field
+      </m-button>
+    </m-form-model-item>
+    <m-form-model-item v-bind="formItemLayoutWithOutLabel">
+      <m-button type="primary" html-type="submit" @click="submitForm('dynamicValidateForm')">
         Submit
-      </a-button>
-      <a-button style="margin-left: 10px" @click="resetForm('dynamicValidateForm')">
+      </m-button>
+      <m-button style="margin-left: 10px" @click="resetForm('dynamicValidateForm')">
         Reset
-      </a-button>
-    </a-form-model-item>
-  </a-form-model>
+      </m-button>
+    </m-form-model-item>
+  </m-form-model>
 </template>
 
 <script>

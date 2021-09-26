@@ -10,7 +10,7 @@ Search with remote data.
 
 ```vue
 <template>
-  <a-select
+  <m-select
     show-search
     :value="value"
     placeholder="input search text"
@@ -22,10 +22,10 @@ Search with remote data.
     @search="handleSearch"
     @change="handleChange"
   >
-    <a-select-option v-for="d in data" :key="d.value">
+    <m-select-option v-for="d in data" :key="d.value">
       {{ d.text }}
-    </a-select-option>
-  </a-select>
+    </m-select-option>
+  </m-select>
 </template>
 <script>
 import jsonp from 'fetch-jsonp';

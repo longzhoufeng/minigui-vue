@@ -18,12 +18,12 @@ Embedding content into `Spin` will alter it into loading state.
 </style>
 <template>
   <div>
-    <a-spin :spinning="spinning">
+    <m-spin :spinning="spinning">
       <div class="spin-content">
         可以点击‘切换’按钮，控制本区域的spin展示。
       </div>
-    </a-spin>
-    Loading state：<a-switch v-model="spinning" />
+    </m-spin>
+    Loading state：<m-switch v-model="spinning" />
   </div>
 </template>
 <script>

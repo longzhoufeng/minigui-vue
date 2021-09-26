@@ -11,23 +11,23 @@ A loading indicator can be added to a button by setting the `loading` property o
 ```vue
 <template>
   <div>
-    <a-button type="primary" loading>
+    <m-button type="primary" loading>
       Loading
-    </a-button>
-    <a-button type="primary" size="small" loading>
+    </m-button>
+    <m-button type="primary" size="small" loading>
       Loading
-    </a-button>
+    </m-button>
     <br />
-    <a-button type="primary" :loading="loading" @mouseenter="enterLoading">
+    <m-button type="primary" :loading="loading" @mouseenter="enterLoading">
       mouseenter me!
-    </a-button>
-    <a-button type="primary" icon="poweroff" :loading="iconLoading" @click="enterIconLoading">
+    </m-button>
+    <m-button type="primary" icon="poweroff" :loading="iconLoading" @click="enterIconLoading">
       延迟1s
-    </a-button>
+    </m-button>
     <br />
-    <a-button type="primary" loading />
-    <a-button type="primary" shape="circle" loading />
-    <a-button type="danger" shape="round" loading />
+    <m-button type="primary" loading />
+    <m-button type="primary" shape="circle" loading />
+    <m-button type="danger" shape="round" loading />
   </div>
 </template>
 <script>

@@ -12,16 +12,16 @@ To perform operations and clear selections after selecting some rows, use `rowSe
 <template>
   <div>
     <div style="margin-bottom: 16px">
-      <a-button type="primary" :disabled="!hasSelected" :loading="loading" @click="start">
+      <m-button type="primary" :disabled="!hasSelected" :loading="loading" @click="start">
         Reload
-      </a-button>
+      </m-button>
       <span style="margin-left: 8px">
         <template v-if="hasSelected">
           {{ `Selected ${selectedRowKeys.length} items` }}
         </template>
       </span>
     </div>
-    <a-table
+    <m-table
       :row-selection="{ selectedRowKeys: selectedRowKeys, onChange: onSelectChange }"
       :columns="columns"
       :data-source="data"

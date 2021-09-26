@@ -10,22 +10,22 @@ The default is to close the menu when you click on menu items, this feature can 
 
 ```vue
 <template>
-  <a-dropdown v-model="visible">
+  <m-dropdown v-model="visible">
     <a class="minigui-dropdown-link" @click="e => e.preventDefault()">
-      Hover me <a-icon type="down" />
+      Hover me <m-icon type="down" />
     </a>
-    <a-menu slot="overlay" @click="handleMenuClick">
-      <a-menu-item key="1">
+    <m-menu slot="overlay" @click="handleMenuClick">
+      <m-menu-item key="1">
         Clicking me will not close the menu.
-      </a-menu-item>
-      <a-menu-item key="2">
+      </m-menu-item>
+      <m-menu-item key="2">
         Clicking me will not close the menu also.
-      </a-menu-item>
-      <a-menu-item key="3">
+      </m-menu-item>
+      <m-menu-item key="3">
         Clicking me will close the menu
-      </a-menu-item>
-    </a-menu>
-  </a-dropdown>
+      </m-menu-item>
+    </m-menu>
+  </m-dropdown>
 </template>
 
 <script>

@@ -10,10 +10,10 @@ By using `status` of `Steps`, you can specify the state for current step.
 
 ```vue
 <template>
-  <a-steps :current="1" status="error">
-    <a-step title="Finished" description="This is a description." />
-    <a-step title="In Progress" description="This is a description." />
-    <a-step title="Waiting" description="This is a description." />
-  </a-steps>
+  <m-steps :current="1" status="error">
+    <m-step title="Finished" description="This is a description." />
+    <m-step title="In Progress" description="This is a description." />
+    <m-step title="Waiting" description="This is a description." />
+  </m-steps>
 </template>
 ```

@@ -11,9 +11,9 @@ Using `reverse` to render slider reversely.
 ```vue
 <template>
   <div>
-    <a-slider :default-value="30" :reverse="reverse" />
-    <a-slider range :default-value="[20, 50]" :reverse="reverse" />
-    Reversed: <a-switch size="small" :checked="reverse" @change="handleReverseChange" />
+    <m-slider :default-value="30" :reverse="reverse" />
+    <m-slider range :default-value="[20, 50]" :reverse="reverse" />
+    Reversed: <m-switch size="small" :checked="reverse" @change="handleReverseChange" />
   </div>
 </template>
 <script>

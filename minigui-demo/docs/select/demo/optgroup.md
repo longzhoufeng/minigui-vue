@@ -10,22 +10,22 @@ Using `OptGroup` to group the options.
 
 ```vue
 <template>
-  <a-select default-value="lucy" style="width: 200px" @change="handleChange">
-    <a-select-opt-group>
-      <span slot="label"><a-icon type="user" />Manager</span>
-      <a-select-option value="jack">
+  <m-select default-value="lucy" style="width: 200px" @change="handleChange">
+    <m-select-opt-group>
+      <span slot="label"><m-icon type="user" />Manager</span>
+      <m-select-option value="jack">
         Jack
-      </a-select-option>
-      <a-select-option value="lucy">
+      </m-select-option>
+      <m-select-option value="lucy">
         Lucy
-      </a-select-option>
-    </a-select-opt-group>
-    <a-select-opt-group label="Engineer">
-      <a-select-option value="Yiminghe">
+      </m-select-option>
+    </m-select-opt-group>
+    <m-select-opt-group label="Engineer">
+      <m-select-option value="Yiminghe">
         yiminghe
-      </a-select-option>
-    </a-select-opt-group>
-  </a-select>
+      </m-select-option>
+    </m-select-opt-group>
+  </m-select>
 </template>
 <script>
 export default {

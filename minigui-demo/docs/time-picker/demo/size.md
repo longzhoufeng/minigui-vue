@@ -11,9 +11,9 @@ The input box comes in three sizes. large is used in the form, while the medium 
 ```vue
 <template>
   <div>
-    <a-time-picker :default-value="moment('12:08:23', 'HH:mm:ss')" size="large" />
-    <a-time-picker :default-value="moment('12:08:23', 'HH:mm:ss')" />
-    <a-time-picker :default-value="moment('12:08:23', 'HH:mm:ss')" size="small" />
+    <m-time-picker :default-value="moment('12:08:23', 'HH:mm:ss')" size="large" />
+    <m-time-picker :default-value="moment('12:08:23', 'HH:mm:ss')" />
+    <m-time-picker :default-value="moment('12:08:23', 'HH:mm:ss')" size="small" />
   </div>
 </template>
 <script>

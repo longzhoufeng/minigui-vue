@@ -9,14 +9,14 @@ Use `setFieldsValue` to set other control's value programmaticly.
 </us>
 
 <template>
-  <a-form :form="form" :label-col="{ span: 5 }" :wrapper-col="{ span: 12 }" @submit="handleSubmit">
-    <a-form-item label="Note">
-      <a-input
+  <m-form :form="form" :label-col="{ span: 5 }" :wrapper-col="{ span: 12 }" @submit="handleSubmit">
+    <m-form-item label="Note">
+      <m-input
         v-decorator="['note', { rules: [{ required: true, message: 'Please input your note!' }] }]"
       />
-    </a-form-item>
-    <a-form-item label="Gender">
-      <a-select
+    </m-form-item>
+    <m-form-item label="Gender">
+      <m-select
         v-decorator="[
           'gender',
           { rules: [{ required: true, message: 'Please select your gender!' }] },
@@ -24,20 +24,20 @@ Use `setFieldsValue` to set other control's value programmaticly.
         placeholder="Select a option and change input text above"
         @change="handleSelectChange"
       >
-        <a-select-option value="male">
+        <m-select-option value="male">
           male
-        </a-select-option>
-        <a-select-option value="female">
+        </m-select-option>
+        <m-select-option value="female">
           female
-        </a-select-option>
-      </a-select>
-    </a-form-item>
-    <a-form-item :wrapper-col="{ span: 12, offset: 5 }">
-      <a-button type="primary" html-type="submit">
+        </m-select-option>
+      </m-select>
+    </m-form-item>
+    <m-form-item :wrapper-col="{ span: 12, offset: 5 }">
+      <m-button type="primary" html-type="submit">
         Submit
-      </a-button>
-    </a-form-item>
-  </a-form>
+      </m-button>
+    </m-form-item>
+  </m-form>
 </template>
 
 <script>

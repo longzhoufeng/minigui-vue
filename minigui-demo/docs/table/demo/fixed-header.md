@@ -12,7 +12,7 @@ Display large amounts of data in scrollable view.
 
 ```vue
 <template>
-  <a-table
+  <m-table
     :columns="columns"
     :data-source="data"
     :pagination="{ pageSize: 50 }"

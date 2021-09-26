@@ -11,13 +11,13 @@ Display value within it's situation with `formatter`, and we usually use `parser
 ```vue
 <template>
   <div>
-    <a-input-number
+    <m-input-number
       :default-value="1000"
       :formatter="value => `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')"
       :parser="value => value.replace(/\$\s?|(,*)/g, '')"
       @change="onChange"
     />
-    <a-input-number
+    <m-input-number
       :default-value="100"
       :min="0"
       :max="100"

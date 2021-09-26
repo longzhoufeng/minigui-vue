@@ -10,7 +10,7 @@ Controlled page number.
 
 ```vue
 <template>
-  <a-pagination :current="current" :total="50" @change="onChange" />
+  <m-pagination :current="current" :total="50" @change="onChange" />
 </template>
 <script>
 export default {

@@ -11,10 +11,10 @@ Support set allow to clear star when click again.
 ```vue
 <template>
   <div>
-    <a-rate :default-value="3" />
+    <m-rate :default-value="3" />
     <span class="minigui-rate-text">allowClear: true</span>
     <br />
-    <a-rate :allow-clear="false" :default-value="3" />
+    <m-rate :allow-clear="false" :default-value="3" />
     <span class="minigui-rate-text">allowClear: false</span>
   </div>
 </template>

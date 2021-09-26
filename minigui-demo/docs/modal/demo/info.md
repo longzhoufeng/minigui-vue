@@ -11,18 +11,18 @@ In the various types of information modal dialog, only one button to close dialo
 ```vue
 <template>
   <div>
-    <a-button @click="info">
+    <m-button @click="info">
       Info
-    </a-button>
-    <a-button @click="success">
+    </m-button>
+    <m-button @click="success">
       Success
-    </a-button>
-    <a-button @click="error">
+    </m-button>
+    <m-button @click="error">
       Error
-    </a-button>
-    <a-button @click="warning">
+    </m-button>
+    <m-button @click="warning">
       Warning
-    </a-button>
+    </m-button>
   </div>
 </template>
 <script>

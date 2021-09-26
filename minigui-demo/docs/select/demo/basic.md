@@ -11,30 +11,30 @@ Basic Usage
 ```vue
 <template>
   <div>
-    <a-select default-value="lucy" style="width: 120px" @change="handleChange">
-      <a-select-option value="jack">
+    <m-select default-value="lucy" style="width: 120px" @change="handleChange">
+      <m-select-option value="jack">
         Jack
-      </a-select-option>
-      <a-select-option value="lucy">
+      </m-select-option>
+      <m-select-option value="lucy">
         Lucy
-      </a-select-option>
-      <a-select-option value="disabled" disabled>
+      </m-select-option>
+      <m-select-option value="disabled" disabled>
         Disabled
-      </a-select-option>
-      <a-select-option value="Yiminghe">
+      </m-select-option>
+      <m-select-option value="Yiminghe">
         yiminghe
-      </a-select-option>
-    </a-select>
-    <a-select default-value="lucy" style="width: 120px" disabled>
-      <a-select-option value="lucy">
+      </m-select-option>
+    </m-select>
+    <m-select default-value="lucy" style="width: 120px" disabled>
+      <m-select-option value="lucy">
         Lucy
-      </a-select-option>
-    </a-select>
-    <a-select default-value="lucy" style="width: 120px" loading>
-      <a-select-option value="lucy">
+      </m-select-option>
+    </m-select>
+    <m-select default-value="lucy" style="width: 120px" loading>
+      <m-select-option value="lucy">
         Lucy
-      </a-select-option>
-    </a-select>
+      </m-select-option>
+    </m-select>
   </div>
 </template>
 <script>

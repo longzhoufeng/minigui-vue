@@ -12,23 +12,23 @@
 <template>
   <div>
     <div>
-      <a-badge :count="count">
+      <m-badge :count="count">
         <a href="#" class="head-example" />
-      </a-badge>
-      <a-button-group>
-        <a-button @click="decline">
-          <a-icon type="minus" />
-        </a-button>
-        <a-button @click="increase">
-          <a-icon type="plus" />
-        </a-button>
-      </a-button-group>
+      </m-badge>
+      <m-button-group>
+        <m-button @click="decline">
+          <m-icon type="minus" />
+        </m-button>
+        <m-button @click="increase">
+          <m-icon type="plus" />
+        </m-button>
+      </m-button-group>
     </div>
     <div style="margin-top: 10px">
-      <a-badge :dot="show">
+      <m-badge :dot="show">
         <a href="#" class="head-example" />
-      </a-badge>
-      <a-switch v-model="show" />
+      </m-badge>
+      <m-switch v-model="show" />
     </div>
   </div>
 </template>

@@ -11,9 +11,9 @@ There are three sizes available to a numeric input box. By default, the size is 
 ```vue
 <template>
   <div>
-    <a-input-number size="large" :min="1" :max="100000" :default-value="3" @change="onChange" />
-    <a-input-number :min="1" :max="100000" :default-value="3" @change="onChange" />
-    <a-input-number size="small" :min="1" :max="100000" :default-value="3" @change="onChange" />
+    <m-input-number size="large" :min="1" :max="100000" :default-value="3" @change="onChange" />
+    <m-input-number :min="1" :max="100000" :default-value="3" @change="onChange" />
+    <m-input-number size="small" :min="1" :max="100000" :default-value="3" @change="onChange" />
   </div>
 </template>
 <script>

@@ -10,13 +10,13 @@ Responsive grid list. The size property is as same as [Layout Grid](https://www.
 
 ```vue
 <template>
-  <a-list :grid="{ gutter: 16, xs: 1, sm: 2, md: 4, lg: 4, xl: 6, xxl: 3 }" :data-source="data">
-    <a-list-item slot="renderItem" slot-scope="item, index">
-      <a-card :title="item.title">
+  <m-list :grid="{ gutter: 16, xs: 1, sm: 2, md: 4, lg: 4, xl: 6, xxl: 3 }" :data-source="data">
+    <m-list-item slot="renderItem" slot-scope="item, index">
+      <m-card :title="item.title">
         Card content
-      </a-card>
-    </a-list-item>
-  </a-list>
+      </m-card>
+    </m-list-item>
+  </m-list>
 </template>
 <script>
 const data = [

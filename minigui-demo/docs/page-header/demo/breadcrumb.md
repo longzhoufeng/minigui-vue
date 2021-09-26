@@ -10,7 +10,7 @@ With breadcrumbs, it is suitable for deeper pages, allowing users to navigate qu
 
 ```vue
 <template>
-  <a-page-header
+  <m-page-header
     style="border: 1px solid rgb(235, 237, 240)"
     title="Title"
     :breadcrumb="{ props: { routes } }"

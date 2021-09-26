@@ -14,9 +14,9 @@ To fix some columns and scroll inside other columns, and you must set `scroll.x`
 
 ```vue
 <template>
-  <a-table :columns="columns" :data-source="data" :scroll="{ x: 1300 }">
+  <m-table :columns="columns" :data-source="data" :scroll="{ x: 1300 }">
     <a slot="action" slot-scope="text" href="javascript:;">action</a>
-  </a-table>
+  </m-table>
 </template>
 <script>
 const columns = [

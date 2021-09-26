@@ -1,9 +1,9 @@
 <template>
-  <a-form-item>
-    <a-button size="large" class="submit" type="primary" html-type="submit" :loading="loading">
+  <m-form-item>
+    <m-button size="large" class="submit" type="primary" html-type="submit" :loading="loading">
       <slot />
-    </a-button>
-  </a-form-item>
+    </m-button>
+  </m-form-item>
 </template>
 <script>
 export default {

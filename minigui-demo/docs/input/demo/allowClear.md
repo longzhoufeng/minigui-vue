@@ -11,10 +11,10 @@ Input type of password.
 ```vue
 <template>
   <div>
-    <a-input placeholder="input with clear icon" allow-clear @change="onChange" />
+    <m-input placeholder="input with clear icon" allow-clear @change="onChange" />
     <br />
     <br />
-    <a-textarea placeholder="textarea with clear icon" allow-clear @change="onChange" />
+    <m-textarea placeholder="textarea with clear icon" allow-clear @change="onChange" />
   </div>
 </template>
 <script>

@@ -12,15 +12,15 @@ If count equals 0, it won't display the dot.
 ```vue
 <template>
   <div id="components-badge-demo-dot">
-    <a-badge dot>
-      <a-icon type="notification" />
-    </a-badge>
-    <a-badge :count="0" dot>
-      <a-icon type="notification" />
-    </a-badge>
-    <a-badge dot>
+    <m-badge dot>
+      <m-icon type="notification" />
+    </m-badge>
+    <m-badge :count="0" dot>
+      <m-icon type="notification" />
+    </m-badge>
+    <m-badge dot>
       <a href="#">Link something</a>
-    </a-badge>
+    </m-badge>
   </div>
 </template>
 <style scoped>

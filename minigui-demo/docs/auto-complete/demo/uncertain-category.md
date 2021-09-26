@@ -11,7 +11,7 @@ Lookup-Patterns - Uncertain Category
 ```vue
 <template>
   <div class="global-search-wrapper" style="width: 300px">
-    <a-auto-complete
+    <m-auto-complete
       class="global-search"
       size="large"
       style="width: 100%"
@@ -21,7 +21,7 @@ Lookup-Patterns - Uncertain Category
       @search="handleSearch"
     >
       <template slot="dataSource">
-        <a-select-option v-for="item in dataSource" :key="item.category" :title="item.category">
+        <m-select-option v-for="item in dataSource" :key="item.category" :title="item.category">
           Found {{ item.query }} on
           <a
             :href="`https://s.taobao.com/search?q=${item.query}`"
@@ -31,20 +31,20 @@ Lookup-Patterns - Uncertain Category
             {{ item.category }}
           </a>
           <span className="global-search-item-count">{{ item.count }} results</span>
-        </a-select-option>
+        </m-select-option>
       </template>
-      <a-input>
-        <a-button
+      <m-input>
+        <m-button
           slot="suffix"
           style="margin-right: -12px"
           class="search-btn"
           size="large"
           type="primary"
         >
-          <a-icon type="search" />
-        </a-button>
-      </a-input>
-    </a-auto-complete>
+          <m-icon type="search" />
+        </m-button>
+      </m-input>
+    </m-auto-complete>
   </div>
 </template>
 <script>

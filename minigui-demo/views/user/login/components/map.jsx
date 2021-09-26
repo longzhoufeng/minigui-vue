@@ -7,7 +7,7 @@ export default {
       size: 'large',
       id: 'userName',
       // eslint-disable-next-line no-unused-vars
-      prefix: h => <a-icon type="user" class={styles.prefixIcon} />,
+      prefix: h => <m-icon type="user" class={styles.prefixIcon} />,
       placeholder: 'please enter userName',
     },
     rules: [
@@ -22,7 +22,7 @@ export default {
       size: 'large',
       id: 'email',
       // eslint-disable-next-line no-unused-vars
-      prefix: h => <a-icon type="mail" class={styles.prefixIcon} />,
+      prefix: h => <m-icon type="mail" class={styles.prefixIcon} />,
       placeholder: 'please enter email',
     },
     rules: [
@@ -36,7 +36,7 @@ export default {
     props: {
       size: 'large',
       // eslint-disable-next-line no-unused-vars
-      prefix: h => <a-icon type="lock" class={styles.prefixIcon} />,
+      prefix: h => <m-icon type="lock" class={styles.prefixIcon} />,
       type: 'password',
       id: 'password',
       placeholder: 'Please enter password!',
@@ -52,7 +52,7 @@ export default {
     props: {
       size: 'large',
       // eslint-disable-next-line no-unused-vars
-      prefix: h => <a-icon type="mobile" class={styles.prefixIcon} />,
+      prefix: h => <m-icon type="mobile" class={styles.prefixIcon} />,
       placeholder: 'mobile number',
     },
     rules: [
@@ -70,7 +70,7 @@ export default {
     props: {
       size: 'large',
       // eslint-disable-next-line no-unused-vars
-      prefix: h => <a-icon type="mail" class={styles.prefixIcon} />,
+      prefix: h => <m-icon type="mail" class={styles.prefixIcon} />,
       placeholder: 'captcha',
     },
     rules: [

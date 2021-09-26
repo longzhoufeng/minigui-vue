@@ -10,18 +10,18 @@ Complex error feedback.
 
 ```vue
 <template>
-  <a-result
+  <m-result
     status="error"
     title="Submission Failed"
     sub-title="Please check and modify the following information before resubmitting."
   >
     <template #extra>
-      <a-button key="console" type="primary">
+      <m-button key="console" type="primary">
         Go Console
-      </a-button>
-      <a-button key="buy">
+      </m-button>
+      <m-button key="buy">
         Buy Again
-      </a-button>
+      </m-button>
     </template>
 
     <div class="desc">
@@ -29,15 +29,15 @@ Complex error feedback.
         <strong>The content you submitted has the following error:</strong>
       </p>
       <p>
-        <a-icon :style="{ color: 'red' }" type="close-circle" /> Your account has been frozen
+        <m-icon :style="{ color: 'red' }" type="close-circle" /> Your account has been frozen
         <a>Thaw immediately &gt;</a>
       </p>
       <p>
-        <a-icon :style="{ color: 'red' }" type="close-circle" /> Your account is not yet eligible to
+        <m-icon :style="{ color: 'red' }" type="close-circle" /> Your account is not yet eligible to
         apply <a>Apply Unlock &gt;</a>
       </p>
     </div>
-  </a-result>
+  </m-result>
 </template>
 <script>
 export default {

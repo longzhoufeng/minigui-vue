@@ -13,39 +13,39 @@ You can create a basic grid system by using a single set of `Row` and `Col` grid
 ```vue
 <template>
   <div>
-    <a-row>
-      <a-col :span="12">
+    <m-row>
+      <m-col :span="12">
         col-12
-      </a-col>
-      <a-col :span="12">
+      </m-col>
+      <m-col :span="12">
         col-12
-      </a-col>
-    </a-row>
-    <a-row>
-      <a-col :span="8">
+      </m-col>
+    </m-row>
+    <m-row>
+      <m-col :span="8">
         col-8
-      </a-col>
-      <a-col :span="8">
+      </m-col>
+      <m-col :span="8">
         col-8
-      </a-col>
-      <a-col :span="8">
+      </m-col>
+      <m-col :span="8">
         col-8
-      </a-col>
-    </a-row>
-    <a-row>
-      <a-col :span="6">
+      </m-col>
+    </m-row>
+    <m-row>
+      <m-col :span="6">
         col-6
-      </a-col>
-      <a-col :span="6">
+      </m-col>
+      <m-col :span="6">
         col-6
-      </a-col>
-      <a-col :span="6">
+      </m-col>
+      <m-col :span="6">
         col-6
-      </a-col>
-      <a-col :span="6">
+      </m-col>
+      <m-col :span="6">
         col-6
-      </a-col>
-    </a-row>
+      </m-col>
+    </m-row>
   </div>
 </template>
 ```

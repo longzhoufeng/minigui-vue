@@ -10,6 +10,6 @@ Read only, can't use mouse to interact.
 
 ```vue
 <template>
-  <a-rate :default-value="2" disabled />
+  <m-rate :default-value="2" disabled />
 </template>
 ```

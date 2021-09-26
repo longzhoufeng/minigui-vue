@@ -11,20 +11,20 @@ Customize the background, border and margin styles and icon for each panel.
 ```vue
 <template>
   <div>
-    <a-collapse default-active-key="1" :bordered="false">
+    <m-collapse default-active-key="1" :bordered="false">
       <template #expandIcon="props">
-        <a-icon type="caret-right" :rotate="props.isActive ? 90 : 0" />
+        <m-icon type="caret-right" :rotate="props.isActive ? 90 : 0" />
       </template>
-      <a-collapse-panel key="1" header="This is panel header 1" :style="customStyle">
+      <m-collapse-panel key="1" header="This is panel header 1" :style="customStyle">
         <p>{{ text }}</p>
-      </a-collapse-panel>
-      <a-collapse-panel key="2" header="This is panel header 2" :style="customStyle">
+      </m-collapse-panel>
+      <m-collapse-panel key="2" header="This is panel header 2" :style="customStyle">
         <p>{{ text }}</p>
-      </a-collapse-panel>
-      <a-collapse-panel key="3" header="This is panel header 3" :style="customStyle">
+      </m-collapse-panel>
+      <m-collapse-panel key="3" header="This is panel header 3" :style="customStyle">
         <p>{{ text }}</p>
-      </a-collapse-panel>
-    </a-collapse>
+      </m-collapse-panel>
+    </m-collapse>
   </div>
 </template>
 <script>

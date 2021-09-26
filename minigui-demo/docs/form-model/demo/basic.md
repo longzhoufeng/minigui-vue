@@ -11,67 +11,67 @@ In each `form` component, you need a `form-item` field to be the container of yo
 
 ```vue
 <template>
-  <a-form-model :model="form" :label-col="labelCol" :wrapper-col="wrapperCol">
-    <a-form-model-item label="Activity name">
-      <a-input v-model="form.name" />
-    </a-form-model-item>
-    <a-form-model-item label="Activity zone">
-      <a-select v-model="form.region" placeholder="please select your zone">
-        <a-select-option value="shanghai">
+  <m-form-model :model="form" :label-col="labelCol" :wrapper-col="wrapperCol">
+    <m-form-model-item label="Activity name">
+      <m-input v-model="form.name" />
+    </m-form-model-item>
+    <m-form-model-item label="Activity zone">
+      <m-select v-model="form.region" placeholder="please select your zone">
+        <m-select-option value="shanghai">
           Zone one
-        </a-select-option>
-        <a-select-option value="beijing">
+        </m-select-option>
+        <m-select-option value="beijing">
           Zone two
-        </a-select-option>
-      </a-select>
-    </a-form-model-item>
-    <a-form-model-item label="Activity time">
-      <a-date-picker
+        </m-select-option>
+      </m-select>
+    </m-form-model-item>
+    <m-form-model-item label="Activity time">
+      <m-date-picker
         v-model="form.date1"
         show-time
         type="date"
         placeholder="Pick a date"
         style="width: 100%;"
       />
-    </a-form-model-item>
-    <a-form-model-item label="Instant delivery">
-      <a-switch v-model="form.delivery" />
-    </a-form-model-item>
-    <a-form-model-item label="Activity type">
-      <a-checkbox-group v-model="form.type">
-        <a-checkbox value="1" name="type">
+    </m-form-model-item>
+    <m-form-model-item label="Instant delivery">
+      <m-switch v-model="form.delivery" />
+    </m-form-model-item>
+    <m-form-model-item label="Activity type">
+      <m-checkbox-group v-model="form.type">
+        <m-checkbox value="1" name="type">
           Online
-        </a-checkbox>
-        <a-checkbox value="2" name="type">
+        </m-checkbox>
+        <m-checkbox value="2" name="type">
           Promotion
-        </a-checkbox>
-        <a-checkbox value="3" name="type">
+        </m-checkbox>
+        <m-checkbox value="3" name="type">
           Offline
-        </a-checkbox>
-      </a-checkbox-group>
-    </a-form-model-item>
-    <a-form-model-item label="Resources">
-      <a-radio-group v-model="form.resource">
-        <a-radio value="1">
+        </m-checkbox>
+      </m-checkbox-group>
+    </m-form-model-item>
+    <m-form-model-item label="Resources">
+      <m-radio-group v-model="form.resource">
+        <m-radio value="1">
           Sponsor
-        </a-radio>
-        <a-radio value="2">
+        </m-radio>
+        <m-radio value="2">
           Venue
-        </a-radio>
-      </a-radio-group>
-    </a-form-model-item>
-    <a-form-model-item label="Activity form">
-      <a-input v-model="form.desc" type="textarea" />
-    </a-form-model-item>
-    <a-form-model-item :wrapper-col="{ span: 14, offset: 4 }">
-      <a-button type="primary" @click="onSubmit">
+        </m-radio>
+      </m-radio-group>
+    </m-form-model-item>
+    <m-form-model-item label="Activity form">
+      <m-input v-model="form.desc" type="textarea" />
+    </m-form-model-item>
+    <m-form-model-item :wrapper-col="{ span: 14, offset: 4 }">
+      <m-button type="primary" @click="onSubmit">
         Create
-      </a-button>
-      <a-button style="margin-left: 10px;">
+      </m-button>
+      <m-button style="margin-left: 10px;">
         Cancel
-      </a-button>
-    </a-form-model-item>
-  </a-form-model>
+      </m-button>
+    </m-form-model-item>
+  </m-form-model>
 </template>
 <script>
 export default {

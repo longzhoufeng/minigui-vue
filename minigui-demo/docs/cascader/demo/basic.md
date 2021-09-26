@@ -10,7 +10,7 @@ Cascade selection box for selecting province/city/district.
 
 ```vue
 <template>
-  <a-cascader :options="options" placeholder="Please select" @change="onChange" />
+  <m-cascader :options="options" placeholder="Please select" @change="onChange" />
 </template>
 <script>
 export default {

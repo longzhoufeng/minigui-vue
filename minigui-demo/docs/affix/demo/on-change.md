@@ -10,9 +10,9 @@ Callback with affixed state.
 
 ```vue
 <template>
-  <a-affix :offset-top="120" @change="change">
-    <a-button>120px to affix top</a-button>
-  </a-affix>
+  <m-affix :offset-top="120" @change="change">
+    <m-button>120px to affix top</m-button>
+  </m-affix>
 </template>
 <script>
 export default {

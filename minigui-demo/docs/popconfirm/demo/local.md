@@ -10,8 +10,8 @@ Set `okText` and `cancelText` props to customize the button's labels.
 
 ```vue
 <template>
-  <a-popconfirm title="Are you sure？" ok-text="Yes" cancel-text="No">
+  <m-popconfirm title="Are you sure？" ok-text="Yes" cancel-text="No">
     <a href="#">Delete</a>
-  </a-popconfirm>
+  </m-popconfirm>
 </template>
 ```

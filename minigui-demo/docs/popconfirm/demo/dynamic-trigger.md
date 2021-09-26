@@ -11,7 +11,7 @@ Make it pop up under some conditions.
 ```vue
 <template>
   <div>
-    <a-popconfirm
+    <m-popconfirm
       title="Are you sure delete this task?"
       :visible="visible"
       ok-text="Yes"
@@ -21,10 +21,10 @@ Make it pop up under some conditions.
       @cancel="cancel"
     >
       <a href="#">Delete a task</a>
-    </a-popconfirm>
+    </m-popconfirm>
     <br />
     <br />
-    Whether directly execute：<a-checkbox default-checked @change="changeCondition" />
+    Whether directly execute：<m-checkbox default-checked @change="changeCondition" />
   </div>
 </template>
 <script>

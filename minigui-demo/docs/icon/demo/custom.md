@@ -5,7 +5,7 @@
 
 <us>
 #### Custom Icon
-Create a reusable Vue component by using `<a-icon :component="{...}" />`. The property `component` takes a Vue component that renders to `svg` element.
+Create a reusable Vue component by using `<m-icon :component="{...}" />`. The property `component` takes a Vue component that renders to `svg` element.
 </us>
 
 ```vue
@@ -40,7 +40,7 @@ const PandaSvg = {
 
 const HeartIcon = {
   template: `
-    <a-icon :component="HeartSvg" />
+    <m-icon :component="HeartSvg" />
   `,
   data() {
     return {
@@ -51,7 +51,7 @@ const HeartIcon = {
 
 const PandaIcon = {
   template: `
-    <a-icon :component="PandaSvg" />
+    <m-icon :component="PandaSvg" />
   `,
   data() {
     return {

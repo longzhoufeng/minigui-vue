@@ -10,7 +10,7 @@ The select list can be populated using `options` property. This is a quick and e
 
 ```vue
 <template>
-  <a-select
+  <m-select
     default-value="beijing"
     style="width: 120px"
     :options="options"

@@ -10,35 +10,35 @@ We can use Checkbox and Grid Checkbox.group, to implement complex layout
 
 ```vue
 <template>
-  <a-checkbox-group @change="onChange">
-    <a-row>
-      <a-col :span="8">
-        <a-checkbox value="A">
+  <m-checkbox-group @change="onChange">
+    <m-row>
+      <m-col :span="8">
+        <m-checkbox value="A">
           A
-        </a-checkbox>
-      </a-col>
-      <a-col :span="8">
-        <a-checkbox value="B">
+        </m-checkbox>
+      </m-col>
+      <m-col :span="8">
+        <m-checkbox value="B">
           B
-        </a-checkbox>
-      </a-col>
-      <a-col :span="8">
-        <a-checkbox value="C">
+        </m-checkbox>
+      </m-col>
+      <m-col :span="8">
+        <m-checkbox value="C">
           C
-        </a-checkbox>
-      </a-col>
-      <a-col :span="8">
-        <a-checkbox value="D">
+        </m-checkbox>
+      </m-col>
+      <m-col :span="8">
+        <m-checkbox value="D">
           D
-        </a-checkbox>
-      </a-col>
-      <a-col :span="8">
-        <a-checkbox value="E">
+        </m-checkbox>
+      </m-col>
+      <m-col :span="8">
+        <m-checkbox value="E">
           E
-        </a-checkbox>
-      </a-col>
-    </a-row>
-  </a-checkbox-group>
+        </m-checkbox>
+      </m-col>
+    </m-row>
+  </m-checkbox-group>
 </template>
 <script>
 export default {

@@ -12,16 +12,16 @@ Because the width of label is not fixed, you may need to adjust it by customizin
 
 <template>
   <div id="components-form-demo-advanced-search">
-    <a-form class="minigui-advanced-search-form" :form="form" @submit="handleSearch">
-      <a-row :gutter="24">
-        <a-col
+    <m-form class="minigui-advanced-search-form" :form="form" @submit="handleSearch">
+      <m-row :gutter="24">
+        <m-col
           v-for="i in 10"
           :key="i"
           :span="8"
           :style="{ display: i < count ? 'block' : 'none' }"
         >
-          <a-form-item :label="`Field ${i}`">
-            <a-input
+          <m-form-item :label="`Field ${i}`">
+            <m-input
               v-decorator="[
                 `field-${i}`,
                 {
@@ -35,23 +35,23 @@ Because the width of label is not fixed, you may need to adjust it by customizin
               ]"
               placeholder="placeholder"
             />
-          </a-form-item>
-        </a-col>
-      </a-row>
-      <a-row>
-        <a-col :span="24" :style="{ textAlign: 'right' }">
-          <a-button type="primary" html-type="submit">
+          </m-form-item>
+        </m-col>
+      </m-row>
+      <m-row>
+        <m-col :span="24" :style="{ textAlign: 'right' }">
+          <m-button type="primary" html-type="submit">
             Search
-          </a-button>
-          <a-button :style="{ marginLeft: '8px' }" @click="handleReset">
+          </m-button>
+          <m-button :style="{ marginLeft: '8px' }" @click="handleReset">
             Clear
-          </a-button>
+          </m-button>
           <a :style="{ marginLeft: '8px', fontSize: '12px' }" @click="toggle">
-            Collapse <a-icon :type="expand ? 'up' : 'down'" />
+            Collapse <m-icon :type="expand ? 'up' : 'down'" />
           </a>
-        </a-col>
-      </a-row>
-    </a-form>
+        </m-col>
+      </m-row>
+    </m-form>
     <div class="search-result-list">
       Search Result List
     </div>

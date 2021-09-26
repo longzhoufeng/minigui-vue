@@ -10,6 +10,6 @@ Replace the default icon with customized text.
 
 ```vue
 <template>
-  <a-alert message="Info Text" type="info" close-text="Close Now" />
+  <m-alert message="Info Text" type="info" close-text="Close Now" />
 </template>
 ```

@@ -12,16 +12,16 @@ Generating a set of Tags by array, you can add and remove dynamically.
 <template>
   <div>
     <template v-for="(tag, index) in tags">
-      <a-tooltip v-if="tag.length > 20" :key="tag" :title="tag">
-        <a-tag :key="tag" :closable="index !== 0" @close="() => handleClose(tag)">
+      <m-tooltip v-if="tag.length > 20" :key="tag" :title="tag">
+        <m-tag :key="tag" :closable="index !== 0" @close="() => handleClose(tag)">
           {{ `${tag.slice(0, 20)}...` }}
-        </a-tag>
-      </a-tooltip>
-      <a-tag v-else :key="tag" :closable="index !== 0" @close="() => handleClose(tag)">
+        </m-tag>
+      </m-tooltip>
+      <m-tag v-else :key="tag" :closable="index !== 0" @close="() => handleClose(tag)">
         {{ tag }}
-      </a-tag>
+      </m-tag>
     </template>
-    <a-input
+    <m-input
       v-if="inputVisible"
       ref="input"
       type="text"
@@ -32,9 +32,9 @@ Generating a set of Tags by array, you can add and remove dynamically.
       @blur="handleInputConfirm"
       @keyup.enter="handleInputConfirm"
     />
-    <a-tag v-else style="background: #fff; borderStyle: dashed;" @click="showInput">
-      <a-icon type="plus" /> New Tag
-    </a-tag>
+    <m-tag v-else style="background: #fff; borderStyle: dashed;" @click="showInput">
+      <m-icon type="plus" /> New Tag
+    </m-tag>
   </div>
 </template>
 <script>

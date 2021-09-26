@@ -12,17 +12,17 @@ Configurate disabled and readOnly.
 <template>
   <div>
     <div style="margin-bottom: 10px">
-      <a-mentions placeholder="this is disabled Mentions" disabled>
-        <a-mentions-option v-for="value in options" :key="value" :value="value">
+      <m-mentions placeholder="this is disabled Mentions" disabled>
+        <m-mentions-option v-for="value in options" :key="value" :value="value">
           {{ value }}
-        </a-mentions-option>
-      </a-mentions>
+        </m-mentions-option>
+      </m-mentions>
     </div>
-    <a-mentions placeholder="this is readOnly a-mentions" readonly>
-      <a-mentions-option v-for="value in options" :key="value" :value="value">
+    <m-mentions placeholder="this is readOnly a-mentions" readonly>
+      <m-mentions-option v-for="value in options" :key="value" :value="value">
         {{ value }}
-      </a-mentions-option>
-    </a-mentions>
+      </m-mentions-option>
+    </m-mentions>
   </div>
 </template>
 <script>

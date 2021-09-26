@@ -11,13 +11,13 @@ Replace the default star to other character like alphabet, digit, iconfont or ev
 ```vue
 <template>
   <div>
-    <a-rate allow-half>
-      <a-icon slot="character" type="heart" />
-    </a-rate>
+    <m-rate allow-half>
+      <m-icon slot="character" type="heart" />
+    </m-rate>
     <br />
-    <a-rate character="A" allow-half style="fontSize: 36px" />
+    <m-rate character="A" allow-half style="fontSize: 36px" />
     <br />
-    <a-rate character="好" allow-half />
+    <m-rate character="好" allow-half />
     <br />
   </div>
 </template>

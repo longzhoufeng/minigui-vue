@@ -29,9 +29,9 @@ But if you use `this.$form.createForm`, You can use any data, not just the prope
 const CustomizedForm = {
   props: ['username'],
   template: `
-    <a-form layout='inline' :form="form">
-      <a-form-item label='Username'>
-        <a-input
+    <m-form layout='inline' :form="form">
+      <m-form-item label='Username'>
+        <m-input
           v-decorator="[
             'username',
             {
@@ -39,8 +39,8 @@ const CustomizedForm = {
             }
           ]"
         />
-      </a-form-item>
-    </a-form>
+      </m-form-item>
+    </m-form>
   `,
   created() {
     this.form = this.$form.createForm(this, {

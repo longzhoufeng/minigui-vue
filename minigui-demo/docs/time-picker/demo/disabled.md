@@ -10,7 +10,7 @@ A disabled state of the `TimePicker`.
 
 ```vue
 <template>
-  <a-time-picker :default-value="moment('12:08:23', 'HH:mm:ss')" disabled />
+  <m-time-picker :default-value="moment('12:08:23', 'HH:mm:ss')" disabled />
 </template>
 <script>
 import moment from 'moment';

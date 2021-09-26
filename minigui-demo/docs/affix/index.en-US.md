@@ -15,9 +15,9 @@
 **Note:** Children of `Affix` must not have the property `position: absolute`, but you can set `position: absolute` on `Affix` itself:
 
 ```html
-<a-affix :style="{ position: 'absolute', top: y, left: x}">
+<m-affix :style="{ position: 'absolute', top: y, left: x}">
   ...
-</a-affix>
+</m-affix>
 ```
 
 ## FAQ

@@ -11,7 +11,7 @@ Used together with `vue-router`
 ```vue
 <template>
   <div>
-    <a-breadcrumb :routes="routes">
+    <m-breadcrumb :routes="routes">
       <template slot="itemRender" slot-scope="{ route, params, routes, paths }">
         <span v-if="routes.indexOf(route) === routes.length - 1">
           {{ route.breadcrumbName }}
@@ -20,7 +20,7 @@ Used together with `vue-router`
           {{ route.breadcrumbName }}
         </router-link>
       </template>
-    </a-breadcrumb>
+    </m-breadcrumb>
     <br />
     {{ $route.path }}
   </div>

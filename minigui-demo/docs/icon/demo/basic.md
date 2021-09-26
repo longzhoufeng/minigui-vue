@@ -11,12 +11,12 @@ Use tag `<Icon />` to create an icon and set its type in the `type` prop. Specif
 ```vue
 <template>
   <div class="icons-list">
-    <a-icon type="home" />
-    <a-icon type="setting" theme="filled" />
-    <a-icon type="smile" theme="outlined" />
-    <a-icon type="sync" spin />
-    <a-icon type="smile" :rotate="180" />
-    <a-icon type="loading" />
+    <m-icon type="home" />
+    <m-icon type="setting" theme="filled" />
+    <m-icon type="smile" theme="outlined" />
+    <m-icon type="sync" spin />
+    <m-icon type="smile" :rotate="180" />
+    <m-icon type="loading" />
   </div>
 </template>
 <style scoped>

@@ -13,7 +13,7 @@ This example shows how to fetch and present data from a remote server, and how t
 
 ```vue
 <template>
-  <a-table
+  <m-table
     :columns="columns"
     :row-key="record => record.login.uuid"
     :data-source="data"
@@ -22,7 +22,7 @@ This example shows how to fetch and present data from a remote server, and how t
     @change="handleTableChange"
   >
     <template slot="name" slot-scope="name"> {{ name.first }} {{ name.last }} </template>
-  </a-table>
+  </m-table>
 </template>
 <script>
 import axios from 'axios';

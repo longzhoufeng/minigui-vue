@@ -11,33 +11,33 @@ Mouse to click, focus and move in.
 ```vue
 <template>
   <div>
-    <a-popover title="Title" trigger="hover">
+    <m-popover title="Title" trigger="hover">
       <template slot="content">
         <p>Content</p>
         <p>Content</p>
       </template>
-      <a-button type="primary">
+      <m-button type="primary">
         Hover me
-      </a-button>
-    </a-popover>
-    <a-popover title="Title" trigger="focus">
+      </m-button>
+    </m-popover>
+    <m-popover title="Title" trigger="focus">
       <template slot="content">
         <p>Content</p>
         <p>Content</p>
       </template>
-      <a-button type="primary">
+      <m-button type="primary">
         Focus me
-      </a-button>
-    </a-popover>
-    <a-popover title="Title" trigger="click">
+      </m-button>
+    </m-popover>
+    <m-popover title="Title" trigger="click">
       <template slot="content">
         <p>Content</p>
         <p>Content</p>
       </template>
-      <a-button type="primary">
+      <m-button type="primary">
         Click me
-      </a-button>
-    </a-popover>
+      </m-button>
+    </m-popover>
   </div>
 </template>
 ```

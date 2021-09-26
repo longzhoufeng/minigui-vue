@@ -11,13 +11,13 @@ Basic use case. Users can select or input a date in panel.
 ```vue
 <template>
   <div>
-    <a-date-picker @change="onChange" />
+    <m-date-picker @change="onChange" />
     <br />
-    <a-month-picker placeholder="Select month" @change="onChange" />
+    <m-month-picker placeholder="Select month" @change="onChange" />
     <br />
-    <a-range-picker @change="onChange" />
+    <m-range-picker @change="onChange" />
     <br />
-    <a-week-picker placeholder="Select week" @change="onChange" />
+    <m-week-picker placeholder="Select week" @change="onChange" />
   </div>
 </template>
 <script>

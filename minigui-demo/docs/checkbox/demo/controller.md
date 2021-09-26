@@ -12,17 +12,17 @@ Communicated with other components
 <template>
   <div>
     <p :style="{ marginBottom: '20px' }">
-      <a-checkbox :checked="checked" :disabled="disabled" @change="onChange">
+      <m-checkbox :checked="checked" :disabled="disabled" @change="onChange">
         {{ label }}
-      </a-checkbox>
+      </m-checkbox>
     </p>
     <p>
-      <a-button type="primary" size="small" @click="toggleChecked">
+      <m-button type="primary" size="small" @click="toggleChecked">
         {{ !checked ? 'Check' : 'Uncheck' }}
-      </a-button>
-      <a-button :style="{ marginLeft: '10px' }" type="primary" size="small" @click="toggleDisable">
+      </m-button>
+      <m-button :style="{ marginLeft: '10px' }" type="primary" size="small" @click="toggleDisable">
         {{ !disabled ? 'Disable' : 'Enable' }}
-      </a-button>
+      </m-button>
     </p>
   </div>
 </template>

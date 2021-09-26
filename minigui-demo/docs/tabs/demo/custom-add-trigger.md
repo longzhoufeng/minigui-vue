@@ -12,15 +12,15 @@ Hide default plus icon, and bind event for customized trigger.
 <template>
   <div>
     <div :style="{ marginBottom: '16px' }">
-      <a-button @click="add">
+      <m-button @click="add">
         ADD
-      </a-button>
+      </m-button>
     </div>
-    <a-tabs v-model="activeKey" hide-add type="editable-card" @edit="onEdit">
-      <a-tab-pane v-for="pane in panes" :key="pane.key" :tab="pane.title" :closable="pane.closable">
+    <m-tabs v-model="activeKey" hide-add type="editable-card" @edit="onEdit">
+      <m-tab-pane v-for="pane in panes" :key="pane.key" :tab="pane.title" :closable="pane.closable">
         {{ pane.content }}
-      </a-tab-pane>
-    </a-tabs>
+      </m-tab-pane>
+    </m-tabs>
   </div>
 </template>
 <script>

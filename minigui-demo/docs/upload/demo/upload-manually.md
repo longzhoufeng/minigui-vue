@@ -11,10 +11,10 @@ Upload files manually after `beforeUpload` returns `false`.
 ```vue
 <template>
   <div class="clearfix">
-    <a-upload :file-list="fileList" :remove="handleRemove" :before-upload="beforeUpload">
-      <a-button> <a-icon type="upload" /> Select File </a-button>
-    </a-upload>
-    <a-button
+    <m-upload :file-list="fileList" :remove="handleRemove" :before-upload="beforeUpload">
+      <m-button> <m-icon type="upload" /> Select File </m-button>
+    </m-upload>
+    <m-button
       type="primary"
       :disabled="fileList.length === 0"
       :loading="uploading"
@@ -22,7 +22,7 @@ Upload files manually after `beforeUpload` returns `false`.
       @click="handleUpload"
     >
       {{ uploading ? 'Uploading' : 'Start Upload' }}
-    </a-button>
+    </m-button>
   </div>
 </template>
 <script>

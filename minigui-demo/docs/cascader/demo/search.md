@@ -12,7 +12,7 @@ Search and select options directly.
 
 ```vue
 <template>
-  <a-cascader
+  <m-cascader
     :options="options"
     :show-search="{ filter }"
     placeholder="Please select"

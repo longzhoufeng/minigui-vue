@@ -14,43 +14,43 @@ The `size` can be set to `large`, `small` or left unset resulting in a default s
 <template>
   <div id="components-button-demo-button-group">
     <h4>Basic</h4>
-    <a-button-group>
-      <a-button>Cancel</a-button>
-      <a-button type="primary">
+    <m-button-group>
+      <m-button>Cancel</m-button>
+      <m-button type="primary">
         OK
-      </a-button>
-    </a-button-group>
-    <a-button-group>
-      <a-button disabled>
+      </m-button>
+    </m-button-group>
+    <m-button-group>
+      <m-button disabled>
         L
-      </a-button>
-      <a-button disabled>
+      </m-button>
+      <m-button disabled>
         M
-      </a-button>
-      <a-button disabled>
+      </m-button>
+      <m-button disabled>
         R
-      </a-button>
-    </a-button-group>
-    <a-button-group>
-      <a-button type="primary">
+      </m-button>
+    </m-button-group>
+    <m-button-group>
+      <m-button type="primary">
         L
-      </a-button>
-      <a-button>M</a-button>
-      <a-button>M</a-button>
-      <a-button type="dashed">
+      </m-button>
+      <m-button>M</m-button>
+      <m-button>M</m-button>
+      <m-button type="dashed">
         R
-      </a-button>
-    </a-button-group>
+      </m-button>
+    </m-button-group>
 
     <h4>With Icon</h4>
-    <a-button-group>
-      <a-button type="primary"> <a-icon type="left" />Go back </a-button>
-      <a-button type="primary"> Go forward<a-icon type="right" /> </a-button>
-    </a-button-group>
-    <a-button-group>
-      <a-button type="primary" icon="cloud" />
-      <a-button type="primary" icon="cloud-download" />
-    </a-button-group>
+    <m-button-group>
+      <m-button type="primary"> <m-icon type="left" />Go back </m-button>
+      <m-button type="primary"> Go forward<m-icon type="right" /> </m-button>
+    </m-button-group>
+    <m-button-group>
+      <m-button type="primary" icon="cloud" />
+      <m-button type="primary" icon="cloud-download" />
+    </m-button-group>
   </div>
 </template>
 <style>

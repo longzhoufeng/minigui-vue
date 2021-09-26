@@ -10,7 +10,7 @@ Click `TimePicker`, and then we could select or input a time in panel.
 
 ```vue
 <template>
-  <a-time-picker :default-open-value="moment('00:00:00', 'HH:mm:ss')" @change="onChange" />
+  <m-time-picker :default-open-value="moment('00:00:00', 'HH:mm:ss')" @change="onChange" />
 </template>
 <script>
 import moment from 'moment';

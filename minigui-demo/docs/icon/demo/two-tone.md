@@ -11,9 +11,9 @@ Specify the property `theme` to `twoTone` to render two-tone icons. You can also
 ```vue
 <template>
   <div class="icons-list">
-    <a-icon type="smile" theme="twoTone" />
-    <a-icon type="heart" theme="twoTone" two-tone-color="#eb2f96" />
-    <a-icon type="check-circle" theme="twoTone" two-tone-color="#52c41a" />
+    <m-icon type="smile" theme="twoTone" />
+    <m-icon type="heart" theme="twoTone" two-tone-color="#eb2f96" />
+    <m-icon type="check-circle" theme="twoTone" two-tone-color="#52c41a" />
   </div>
 </template>
 <style scoped>

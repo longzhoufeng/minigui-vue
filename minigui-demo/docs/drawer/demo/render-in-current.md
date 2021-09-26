@@ -24,11 +24,11 @@ Render in current dom. custom container, check getContainer.
   >
     Render in this
     <div style="margin-top: 16px">
-      <a-button type="primary" @click="showDrawer">
+      <m-button type="primary" @click="showDrawer">
         Open
-      </a-button>
+      </m-button>
     </div>
-    <a-drawer
+    <m-drawer
       title="Basic Drawer"
       placement="right"
       :closable="false"
@@ -38,7 +38,7 @@ Render in current dom. custom container, check getContainer.
       @close="onClose"
     >
       <p>Some contents...</p>
-    </a-drawer>
+    </m-drawer>
   </div>
 </template>
 <script>

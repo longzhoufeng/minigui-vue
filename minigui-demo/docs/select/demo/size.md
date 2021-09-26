@@ -11,25 +11,25 @@ The height of the input field for the select defaults to 32px. If size is set to
 ```vue
 <template>
   <div>
-    <a-radio-group v-model="size">
-      <a-radio-button value="large">
+    <m-radio-group v-model="size">
+      <m-radio-button value="large">
         Large
-      </a-radio-button>
-      <a-radio-button value="default">
+      </m-radio-button>
+      <m-radio-button value="default">
         Default
-      </a-radio-button>
-      <a-radio-button value="small">
+      </m-radio-button>
+      <m-radio-button value="small">
         Small
-      </a-radio-button>
-    </a-radio-group>
+      </m-radio-button>
+    </m-radio-group>
     <br /><br />
-    <a-select :size="size" default-value="a1" style="width: 200px" @change="handleChange">
-      <a-select-option v-for="i in 25" :key="(i + 9).toString(36) + i">
+    <m-select :size="size" default-value="a1" style="width: 200px" @change="handleChange">
+      <m-select-option v-for="i in 25" :key="(i + 9).toString(36) + i">
         {{ (i + 9).toString(36) + i }}
-      </a-select-option>
-    </a-select>
+      </m-select-option>
+    </m-select>
     <br />
-    <a-select
+    <m-select
       mode="multiple"
       :size="size"
       placeholder="Please select"
@@ -38,12 +38,12 @@ The height of the input field for the select defaults to 32px. If size is set to
       @change="handleChange"
       @popupScroll="popupScroll"
     >
-      <a-select-option v-for="i in 25" :key="(i + 9).toString(36) + i">
+      <m-select-option v-for="i in 25" :key="(i + 9).toString(36) + i">
         {{ (i + 9).toString(36) + i }}
-      </a-select-option>
-    </a-select>
+      </m-select-option>
+    </m-select>
     <br />
-    <a-select
+    <m-select
       mode="tags"
       :size="size"
       placeholder="Please select"
@@ -51,10 +51,10 @@ The height of the input field for the select defaults to 32px. If size is set to
       style="width: 200px"
       @change="handleChange"
     >
-      <a-select-option v-for="i in 25" :key="(i + 9).toString(36) + i">
+      <m-select-option v-for="i in 25" :key="(i + 9).toString(36) + i">
         {{ (i + 9).toString(36) + i }}
-      </a-select-option>
-    </a-select>
+      </m-select-option>
+    </m-select>
   </div>
 </template>
 <script>

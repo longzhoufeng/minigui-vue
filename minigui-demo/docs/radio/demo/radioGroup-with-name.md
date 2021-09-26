@@ -10,19 +10,19 @@ Passing the `name` property to all `input[type="radio"]` that are in the same Ra
 
 ```vue
 <template>
-  <a-radio-group name="radioGroup" :default-value="1">
-    <a-radio :value="1">
+  <m-radio-group name="radioGroup" :default-value="1">
+    <m-radio :value="1">
       A
-    </a-radio>
-    <a-radio :value="2">
+    </m-radio>
+    <m-radio :value="2">
       B
-    </a-radio>
-    <a-radio :value="3">
+    </m-radio>
+    <m-radio :value="3">
       C
-    </a-radio>
-    <a-radio :value="4">
+    </m-radio>
+    <m-radio :value="4">
       D
-    </a-radio>
-  </a-radio-group>
+    </m-radio>
+  </m-radio-group>
 </template>
 ```

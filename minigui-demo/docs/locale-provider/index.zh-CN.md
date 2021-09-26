@@ -8,9 +8,9 @@ LocaleProvider 使用 Vue 的 [provide/inject](https://cn.vuejs.org/v2/api/#prov
 
 ```html
 <template>
-  <a-locale-provider :locale="zh_CN">
+  <m-locale-provider :locale="zh_CN">
     <App />
-  </a-locale-provider>
+  </m-locale-provider>
 </template>
 <script>
   import zh_CN from 'minigui-vue/lib/locale-provider/zh_CN';
@@ -33,9 +33,9 @@ LocaleProvider 使用 Vue 的 [provide/inject](https://cn.vuejs.org/v2/api/#prov
 
 ```html
 <template>
-  <a-locale-provider :locale="locales.en_US">
+  <m-locale-provider :locale="locales.en_US">
     <App />
-  </a-locale-provider>
+  </m-locale-provider>
 </template>
 <script>
   const { LocaleProvider, locales } = window.antd;

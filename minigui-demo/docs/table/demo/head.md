@@ -18,7 +18,7 @@ If a `sortOrder` or `defaultSortOrder` is specified with the value `ascend` or `
 
 ```vue
 <template>
-  <a-table :columns="columns" :data-source="data" @change="onChange" />
+  <m-table :columns="columns" :data-source="data" @change="onChange" />
 </template>
 <script>
 const columns = [

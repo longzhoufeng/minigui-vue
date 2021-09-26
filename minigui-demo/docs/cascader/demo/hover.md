@@ -10,7 +10,7 @@ Hover to expand sub menu, click to select option.
 
 ```vue
 <template>
-  <a-cascader
+  <m-cascader
     :options="options"
     :display-render="displayRender"
     expand-trigger="hover"

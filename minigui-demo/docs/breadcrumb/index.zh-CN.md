@@ -47,7 +47,7 @@ interface Route {
 
 ```html
 <template>
-  <a-breadcrumb :routes="routes">
+  <m-breadcrumb :routes="routes">
     <template slot="itemRender" slot-scope="{route, params, routes, paths}">
       <span v-if="routes.indexOf(route) === routes.length - 1">
         {{route.breadcrumbName}}
@@ -56,7 +56,7 @@ interface Route {
         {{route.breadcrumbName}}
       </router-link>
     </template>
-  </a-breadcrumb>
+  </m-breadcrumb>
 </template>
 <script>
   export default {

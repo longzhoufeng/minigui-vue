@@ -2,15 +2,15 @@
   <div>
     <h1>
       如果您正在寻找顶级的 Vue.js 开发者，请联系
-      <a-tooltip title="发送邮件到：antdv@foxmail.com">
+      <m-tooltip title="发送邮件到：antdv@foxmail.com">
         <a href="mailto:antdv@foxmail.com"> 我们 </a>
-      </a-tooltip>
+      </m-tooltip>
       ！！！
     </h1>
     <div style="margin-top: 30px;">
-      <a-list item-layout="vertical" size="large" :data-source="list">
-        <a-list-item v-show="isEffective(item.effectiveTime)" slot="renderItem" slot-scope="item">
-          <a-list-item-meta>
+      <m-list item-layout="vertical" size="large" :data-source="list">
+        <m-list-item v-show="isEffective(item.effectiveTime)" slot="renderItem" slot-scope="item">
+          <m-list-item-meta>
             <div slot="description">
               <p>工作地点：{{ item.location }}</p>
               <h3>职位描述</h3>
@@ -22,22 +22,22 @@
                 <span>{{ item.title }}(岗位 ID: {{ item.id }})</span>
               </h2>
             </div>
-          </a-list-item-meta>
+          </m-list-item-meta>
           <template slot="actions">
             <div>
-              <a-tooltip title="发送邮件到：antdv@foxmail.com">
+              <m-tooltip title="发送邮件到：antdv@foxmail.com">
                 <a :href="`mailto:antdv@foxmail.com?subject=应聘 ${item.id} 职位`">
-                  <a-icon type="link" style="margin-right: 8px" />
+                  <m-icon type="link" style="margin-right: 8px" />
                   立刻申请
                 </a>
-              </a-tooltip>
+              </m-tooltip>
 
               <span>注：邮件中请注明投递岗位 ID </span>
             </div>
           </template>
           <p v-html="item.condition" />
-        </a-list-item>
-      </a-list>
+        </m-list-item>
+      </m-list>
     </div>
   </div>
 </template>

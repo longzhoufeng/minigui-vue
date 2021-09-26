@@ -11,7 +11,7 @@ Use Drawer to quickly preview details of an object, such as those in a list.
 ```vue
 <template>
   <div>
-    <a-list
+    <m-list
       :data-source="[
         {
           name: 'Lily',
@@ -22,108 +22,108 @@ Use Drawer to quickly preview details of an object, such as those in a list.
       ]"
       bordered
     >
-      <a-list-item slot="renderItem" :key="`a-${item.id}`" slot-scope="item, index">
+      <m-list-item slot="renderItem" :key="`a-${item.id}`" slot-scope="item, index">
         <a slot="actions" @click="showDrawer">View Profile</a>
-        <a-list-item-meta description="Progresser XTech">
+        <m-list-item-meta description="Progresser XTech">
           <a slot="title" href="https://www.antdv.com/">{{ item.name }}</a>
-          <a-avatar
+          <m-avatar
             slot="avatar"
             src="https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png"
           />
-        </a-list-item-meta>
-      </a-list-item>
-    </a-list>
-    <a-drawer width="640" placement="right" :closable="false" :visible="visible" @close="onClose">
+        </m-list-item-meta>
+      </m-list-item>
+    </m-list>
+    <m-drawer width="640" placement="right" :closable="false" :visible="visible" @close="onClose">
       <p :style="[pStyle, pStyle2]">
         User Profile
       </p>
       <p :style="pStyle">
         Personal
       </p>
-      <a-row>
-        <a-col :span="12">
+      <m-row>
+        <m-col :span="12">
           <description-item title="Full Name" content="Lily" />
-        </a-col>
-        <a-col :span="12">
+        </m-col>
+        <m-col :span="12">
           <description-item title="Account" content="AntDesign@example.com" />
-        </a-col>
-      </a-row>
-      <a-row>
-        <a-col :span="12">
+        </m-col>
+      </m-row>
+      <m-row>
+        <m-col :span="12">
           <description-item title="City" content="HangZhou" />
-        </a-col>
-        <a-col :span="12">
+        </m-col>
+        <m-col :span="12">
           <description-item title="Country" content="China🇨🇳" />
-        </a-col>
-      </a-row>
-      <a-row>
-        <a-col :span="12">
+        </m-col>
+      </m-row>
+      <m-row>
+        <m-col :span="12">
           <description-item title="Birthday" content="February 2,1900" />
-        </a-col>
-        <a-col :span="12">
+        </m-col>
+        <m-col :span="12">
           <description-item title="Website" content="-" />
-        </a-col>
-      </a-row>
-      <a-row>
-        <a-col :span="12">
+        </m-col>
+      </m-row>
+      <m-row>
+        <m-col :span="12">
           <description-item
             title="Message"
             content="Make things as simple as possible but no simpler."
           />
-        </a-col>
-      </a-row>
-      <a-divider />
+        </m-col>
+      </m-row>
+      <m-divider />
       <p :style="pStyle">
         Company
       </p>
-      <a-row>
-        <a-col :span="12">
+      <m-row>
+        <m-col :span="12">
           <description-item title="Position" content="Programmer" />
-        </a-col>
-        <a-col :span="12">
+        </m-col>
+        <m-col :span="12">
           <description-item title="Responsibilities" content="Coding" />
-        </a-col>
-      </a-row>
-      <a-row>
-        <a-col :span="12">
+        </m-col>
+      </m-row>
+      <m-row>
+        <m-col :span="12">
           <description-item title="Department" content="XTech" />
-        </a-col>
-        <a-col :span="12">
+        </m-col>
+        <m-col :span="12">
           <description-item title="Supervisor">
             <a slot="content">Lin</a>
           </description-item>
-        </a-col>
-      </a-row>
-      <a-row>
-        <a-col :span="24">
+        </m-col>
+      </m-row>
+      <m-row>
+        <m-col :span="24">
           <description-item
             title="Skills"
             content="C / C + +, data structures, software engineering, operating systems, computer networks, databases, compiler theory, computer architecture, Microcomputer Principle and Interface Technology, Computer English, Java, ASP, etc."
           />
-        </a-col>
-      </a-row>
-      <a-divider />
+        </m-col>
+      </m-row>
+      <m-divider />
       <p :style="pStyle">
         Contacts
       </p>
-      <a-row>
-        <a-col :span="12">
+      <m-row>
+        <m-col :span="12">
           <description-item title="Email" content="minigui-vue@example.com" />
-        </a-col>
-        <a-col :span="12">
+        </m-col>
+        <m-col :span="12">
           <description-item title="Phone Number" content="+86 181 0000 0000" />
-        </a-col>
-      </a-row>
-      <a-row>
-        <a-col :span="24">
+        </m-col>
+      </m-row>
+      <m-row>
+        <m-col :span="24">
           <description-item title="Github">
             <a slot="content" href="https://github.com/longzhoufeng/minigui-vue">
               github.com/longzhoufeng/minigui-vue
             </a>
           </description-item>
-        </a-col>
-      </a-row>
-    </a-drawer>
+        </m-col>
+      </m-row>
+    </m-drawer>
   </div>
 </template>
 <script>

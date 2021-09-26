@@ -10,24 +10,24 @@ A basic comment with author, avatar, time and actions.
 
 ```vue
 <template>
-  <a-comment>
+  <m-comment>
     <template slot="actions">
       <span key="comment-basic-like">
-        <a-tooltip title="Like">
-          <a-icon type="like" :theme="action === 'liked' ? 'filled' : 'outlined'" @click="like" />
-        </a-tooltip>
+        <m-tooltip title="Like">
+          <m-icon type="like" :theme="action === 'liked' ? 'filled' : 'outlined'" @click="like" />
+        </m-tooltip>
         <span style="padding-left: '8px';cursor: 'auto'">
           {{ likes }}
         </span>
       </span>
       <span key="comment-basic-dislike">
-        <a-tooltip title="Dislike">
-          <a-icon
+        <m-tooltip title="Dislike">
+          <m-icon
             type="dislike"
             :theme="action === 'disliked' ? 'filled' : 'outlined'"
             @click="dislike"
           />
-        </a-tooltip>
+        </m-tooltip>
         <span style="padding-left: '8px';cursor: 'auto'">
           {{ dislikes }}
         </span>
@@ -35,7 +35,7 @@ A basic comment with author, avatar, time and actions.
       <span key="comment-basic-reply-to">Reply to</span>
     </template>
     <a slot="author">Han Solo</a>
-    <a-avatar
+    <m-avatar
       slot="avatar"
       src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
       alt="Han Solo"
@@ -45,10 +45,10 @@ A basic comment with author, avatar, time and actions.
       (Sketch and Axure), to help people create their product prototypes beautifully and
       efficiently.
     </p>
-    <a-tooltip slot="datetime" :title="moment().format('YYYY-MM-DD HH:mm:ss')">
+    <m-tooltip slot="datetime" :title="moment().format('YYYY-MM-DD HH:mm:ss')">
       <span>{{ moment().fromNow() }}</span>
-    </a-tooltip>
-  </a-comment>
+    </m-tooltip>
+  </m-comment>
 </template>
 <script>
 import moment from 'moment';

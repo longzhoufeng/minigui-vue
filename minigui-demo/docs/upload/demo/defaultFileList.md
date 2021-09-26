@@ -10,12 +10,12 @@ Use `defaultFileList` for uploaded files when page init.
 
 ```vue
 <template>
-  <a-upload
+  <m-upload
     action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
     :default-file-list="defaultFileList"
   >
-    <a-button> <a-icon type="upload" /> Upload </a-button>
-  </a-upload>
+    <m-button> <m-icon type="upload" /> Upload </m-button>
+  </m-upload>
 </template>
 <script>
 export default {

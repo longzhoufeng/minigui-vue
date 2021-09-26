@@ -13,15 +13,15 @@
 ```vue
 <template>
   <div>
-    <a-checkable-tag v-model="checked1" @change="handleChange">
+    <m-checkable-tag v-model="checked1" @change="handleChange">
       Tag1
-    </a-checkable-tag>
-    <a-checkable-tag v-model="checked2" @change="handleChange">
+    </m-checkable-tag>
+    <m-checkable-tag v-model="checked2" @change="handleChange">
       Tag2
-    </a-checkable-tag>
-    <a-checkable-tag v-model="checked3" @change="handleChange">
+    </m-checkable-tag>
+    <m-checkable-tag v-model="checked3" @change="handleChange">
       Tag3
-    </a-checkable-tag>
+    </m-checkable-tag>
   </div>
 </template>
 <script>

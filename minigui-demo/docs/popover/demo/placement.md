@@ -12,7 +12,7 @@ There are 12 `placement` options available.
 <template>
   <div id="components-popover-demo-placement">
     <div :style="{ marginLeft: `${buttonWidth}px`, whiteSpace: 'nowrap' }">
-      <a-popover placement="topLeft">
+      <m-popover placement="topLeft">
         <template slot="content">
           <p>Content</p>
           <p>Content</p>
@@ -20,9 +20,9 @@ There are 12 `placement` options available.
         <template slot="title">
           <span>Title</span>
         </template>
-        <a-button>TL</a-button>
-      </a-popover>
-      <a-popover placement="top">
+        <m-button>TL</m-button>
+      </m-popover>
+      <m-popover placement="top">
         <template slot="content">
           <p>Content</p>
           <p>Content</p>
@@ -30,9 +30,9 @@ There are 12 `placement` options available.
         <template slot="title">
           <span>Title</span>
         </template>
-        <a-button>Top</a-button>
-      </a-popover>
-      <a-popover placement="topRight">
+        <m-button>Top</m-button>
+      </m-popover>
+      <m-popover placement="topRight">
         <template slot="content">
           <p>Content</p>
           <p>Content</p>
@@ -40,11 +40,11 @@ There are 12 `placement` options available.
         <template slot="title">
           <span>Title</span>
         </template>
-        <a-button>TR</a-button>
-      </a-popover>
+        <m-button>TR</m-button>
+      </m-popover>
     </div>
     <div :style="{ width: `${buttonWidth}px`, float: 'left' }">
-      <a-popover placement="leftTop">
+      <m-popover placement="leftTop">
         <template slot="content">
           <p>Content</p>
           <p>Content</p>
@@ -52,9 +52,9 @@ There are 12 `placement` options available.
         <template slot="title">
           <span>Title</span>
         </template>
-        <a-button>LT</a-button>
-      </a-popover>
-      <a-popover placement="left">
+        <m-button>LT</m-button>
+      </m-popover>
+      <m-popover placement="left">
         <template slot="content">
           <p>Content</p>
           <p>Content</p>
@@ -62,9 +62,9 @@ There are 12 `placement` options available.
         <template slot="title">
           <span>Title</span>
         </template>
-        <a-button>Left</a-button>
-      </a-popover>
-      <a-popover placement="leftBottom">
+        <m-button>Left</m-button>
+      </m-popover>
+      <m-popover placement="leftBottom">
         <template slot="content">
           <p>Content</p>
           <p>Content</p>
@@ -72,11 +72,11 @@ There are 12 `placement` options available.
         <template slot="title">
           <span>Title</span>
         </template>
-        <a-button>LB</a-button>
-      </a-popover>
+        <m-button>LB</m-button>
+      </m-popover>
     </div>
     <div :style="{ width: `${buttonWidth}px`, marginLeft: `${buttonWidth * 4 + 24}px` }">
-      <a-popover placement="rightTop">
+      <m-popover placement="rightTop">
         <template slot="content">
           <p>Content</p>
           <p>Content</p>
@@ -84,9 +84,9 @@ There are 12 `placement` options available.
         <template slot="title">
           <span>Title</span>
         </template>
-        <a-button>RT</a-button>
-      </a-popover>
-      <a-popover placement="right">
+        <m-button>RT</m-button>
+      </m-popover>
+      <m-popover placement="right">
         <template slot="content">
           <p>Content</p>
           <p>Content</p>
@@ -94,9 +94,9 @@ There are 12 `placement` options available.
         <template slot="title">
           <span>Title</span>
         </template>
-        <a-button>Right</a-button>
-      </a-popover>
-      <a-popover placement="rightBottom">
+        <m-button>Right</m-button>
+      </m-popover>
+      <m-popover placement="rightBottom">
         <template slot="content">
           <p>Content</p>
           <p>Content</p>
@@ -104,11 +104,11 @@ There are 12 `placement` options available.
         <template slot="title">
           <span>Title</span>
         </template>
-        <a-button>RB</a-button>
-      </a-popover>
+        <m-button>RB</m-button>
+      </m-popover>
     </div>
     <div :style="{ marginLeft: `${buttonWidth}px`, clear: 'both', whiteSpace: 'nowrap' }">
-      <a-popover placement="bottomLeft">
+      <m-popover placement="bottomLeft">
         <template slot="content">
           <p>Content</p>
           <p>Content</p>
@@ -116,9 +116,9 @@ There are 12 `placement` options available.
         <template slot="title">
           <span>Title</span>
         </template>
-        <a-button>BL</a-button>
-      </a-popover>
-      <a-popover placement="bottom">
+        <m-button>BL</m-button>
+      </m-popover>
+      <m-popover placement="bottom">
         <template slot="content">
           <p>Content</p>
           <p>Content</p>
@@ -126,9 +126,9 @@ There are 12 `placement` options available.
         <template slot="title">
           <span>Title</span>
         </template>
-        <a-button>Bottom</a-button>
-      </a-popover>
-      <a-popover placement="bottomRight">
+        <m-button>Bottom</m-button>
+      </m-popover>
+      <m-popover placement="bottomRight">
         <template slot="content">
           <p>Content</p>
           <p>Content</p>
@@ -136,8 +136,8 @@ There are 12 `placement` options available.
         <template slot="title">
           <span>Title</span>
         </template>
-        <a-button>BR</a-button>
-      </a-popover>
+        <m-button>BR</m-button>
+      </m-popover>
     </div>
   </div>
 </template>

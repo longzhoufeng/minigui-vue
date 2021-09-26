@@ -11,15 +11,15 @@ Added custom rendering function, in the default `slot', you can set any componen
 ```vue
 <template>
   <div>
-    <a-date-picker v-model="time1" placeholder="Select Time" @change="onChange" @ok="onOk">
+    <m-date-picker v-model="time1" placeholder="Select Time" @change="onChange" @ok="onOk">
       <span>{{ time1 ? time1 : 'SelectTime' }}</span>
-    </a-date-picker>
+    </m-date-picker>
     <br />
-    <a-range-picker v-model="time2">
+    <m-range-picker v-model="time2">
       <span>
         {{ time2 ? time2 : '请选择' }}
       </span>
-    </a-range-picker>
+    </m-range-picker>
   </div>
 </template>
 <script>

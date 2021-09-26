@@ -10,26 +10,26 @@ Simple table with actions.
 
 ```vue
 <template>
-  <a-table :columns="columns" :data-source="data">
+  <m-table :columns="columns" :data-source="data">
     <a slot="name" slot-scope="text">{{ text }}</a>
-    <span slot="customTitle"><a-icon type="smile-o" /> Name</span>
+    <span slot="customTitle"><m-icon type="smile-o" /> Name</span>
     <span slot="tags" slot-scope="tags">
-      <a-tag
+      <m-tag
         v-for="tag in tags"
         :key="tag"
         :color="tag === 'loser' ? 'volcano' : tag.length > 5 ? 'geekblue' : 'green'"
       >
         {{ tag.toUpperCase() }}
-      </a-tag>
+      </m-tag>
     </span>
     <span slot="action" slot-scope="text, record">
       <a>Invite 一 {{ record.name }}</a>
-      <a-divider type="vertical" />
+      <m-divider type="vertical" />
       <a>Delete</a>
-      <a-divider type="vertical" />
-      <a class="minigui-dropdown-link"> More actions <a-icon type="down" /> </a>
+      <m-divider type="vertical" />
+      <a class="minigui-dropdown-link"> More actions <m-icon type="down" /> </a>
     </span>
-  </a-table>
+  </m-table>
 </template>
 <script>
 const columns = [

@@ -37,7 +37,7 @@ CustomizedForm = Form.create({})(CustomizedForm);
 
 ```html
 <template>
-  <a-form :form="form" />
+  <m-form :form="form" />
 </template>
 <script>
   export default {

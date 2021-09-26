@@ -10,6 +10,6 @@ For multi-line input.
 
 ```vue
 <template>
-  <a-textarea placeholder="Basic usage" :rows="4" />
+  <m-textarea placeholder="Basic usage" :rows="4" />
 </template>
 ```

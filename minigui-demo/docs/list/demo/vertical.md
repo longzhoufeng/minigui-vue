@@ -10,12 +10,12 @@ Setting `itemLayout` property with `vertical` to create a vertical list.
 
 ```vue
 <template>
-  <a-list item-layout="vertical" size="large" :pagination="pagination" :data-source="listData">
+  <m-list item-layout="vertical" size="large" :pagination="pagination" :data-source="listData">
     <div slot="footer"><b>ant design vue</b> footer part</div>
-    <a-list-item slot="renderItem" key="item.title" slot-scope="item, index">
+    <m-list-item slot="renderItem" key="item.title" slot-scope="item, index">
       <template v-for="{ type, text } in actions" slot="actions">
         <span :key="type">
-          <a-icon :type="type" style="margin-right: 8px" />
+          <m-icon :type="type" style="margin-right: 8px" />
           {{ text }}
         </span>
       </template>
@@ -25,13 +25,13 @@ Setting `itemLayout` property with `vertical` to create a vertical list.
         alt="logo"
         src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
       />
-      <a-list-item-meta :description="item.description">
+      <m-list-item-meta :description="item.description">
         <a slot="title" :href="item.href">{{ item.title }}</a>
-        <a-avatar slot="avatar" :src="item.avatar" />
-      </a-list-item-meta>
+        <m-avatar slot="avatar" :src="item.avatar" />
+      </m-list-item-meta>
       {{ item.content }}
-    </a-list-item>
-  </a-list>
+    </m-list-item>
+  </m-list>
 </template>
 <script>
 const listData = [];

@@ -18,11 +18,11 @@ Customized description content.
 </style>
 <template>
   <div>
-    <a-spin tip="Loading...">
+    <m-spin tip="Loading...">
       <div class="spin-content">
         我的描述文案是自定义的。。。
       </div>
-    </a-spin>
+    </m-spin>
   </div>
 </template>
 ```

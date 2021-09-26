@@ -11,31 +11,31 @@ Tab's position: left, right, top or bottom.
 ```vue
 <template>
   <div style="width: 500px">
-    <a-radio-group v-model="tabPosition" style="margin:8px">
-      <a-radio-button value="top">
+    <m-radio-group v-model="tabPosition" style="margin:8px">
+      <m-radio-button value="top">
         top
-      </a-radio-button>
-      <a-radio-button value="bottom">
+      </m-radio-button>
+      <m-radio-button value="bottom">
         bottom
-      </a-radio-button>
-      <a-radio-button value="left">
+      </m-radio-button>
+      <m-radio-button value="left">
         left
-      </a-radio-button>
-      <a-radio-button value="right">
+      </m-radio-button>
+      <m-radio-button value="right">
         right
-      </a-radio-button>
-    </a-radio-group>
-    <a-tabs default-active-key="1" :tab-position="tabPosition">
-      <a-tab-pane key="1" tab="Tab 1">
+      </m-radio-button>
+    </m-radio-group>
+    <m-tabs default-active-key="1" :tab-position="tabPosition">
+      <m-tab-pane key="1" tab="Tab 1">
         Content of Tab 1
-      </a-tab-pane>
-      <a-tab-pane key="2" tab="Tab 2">
+      </m-tab-pane>
+      <m-tab-pane key="2" tab="Tab 2">
         Content of Tab 2
-      </a-tab-pane>
-      <a-tab-pane key="3" tab="Tab 3">
+      </m-tab-pane>
+      <m-tab-pane key="3" tab="Tab 3">
         Content of Tab 3
-      </a-tab-pane>
-    </a-tabs>
+      </m-tab-pane>
+    </m-tabs>
   </div>
 </template>
 <script>

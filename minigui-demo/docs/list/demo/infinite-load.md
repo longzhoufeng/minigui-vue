@@ -16,21 +16,21 @@ The example of infinite load with [vue-infinite-scroll](https://github.com/Eleme
     :infinite-scroll-disabled="busy"
     :infinite-scroll-distance="10"
   >
-    <a-list :data-source="data">
-      <a-list-item slot="renderItem" slot-scope="item, index">
-        <a-list-item-meta :description="item.email">
+    <m-list :data-source="data">
+      <m-list-item slot="renderItem" slot-scope="item, index">
+        <m-list-item-meta :description="item.email">
           <a slot="title" :href="item.href">{{ item.name.last }}</a>
-          <a-avatar
+          <m-avatar
             slot="avatar"
             src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
           />
-        </a-list-item-meta>
+        </m-list-item-meta>
         <div>Content</div>
-      </a-list-item>
+      </m-list-item>
       <div v-if="loading && !busy" class="demo-loading-container">
-        <a-spin />
+        <m-spin />
       </div>
-    </a-list>
+    </m-list>
   </div>
 </template>
 <script>

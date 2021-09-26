@@ -11,16 +11,16 @@ Disabled part of dates and time by `disabledDate` and `disabledTime` respectivel
 ```vue
 <template>
   <div>
-    <a-date-picker
+    <m-date-picker
       format="YYYY-MM-DD HH:mm:ss"
       :disabled-date="disabledDate"
       :disabled-time="disabledDateTime"
       :show-time="{ defaultValue: moment('00:00:00', 'HH:mm:ss') }"
     />
     <br />
-    <a-month-picker :disabled-date="disabledDate" placeholder="Select month" />
+    <m-month-picker :disabled-date="disabledDate" placeholder="Select month" />
     <br />
-    <a-range-picker
+    <m-range-picker
       :disabled-date="disabledDate"
       :disabled-time="disabledRangeTime"
       :show-time="{

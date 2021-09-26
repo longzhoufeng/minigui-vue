@@ -10,7 +10,7 @@ Search the options while expanded.
 
 ```vue
 <template>
-  <a-select
+  <m-select
     show-search
     placeholder="Select a person"
     option-filter-prop="children"
@@ -20,16 +20,16 @@ Search the options while expanded.
     @blur="handleBlur"
     @change="handleChange"
   >
-    <a-select-option value="jack">
+    <m-select-option value="jack">
       Jack
-    </a-select-option>
-    <a-select-option value="lucy">
+    </m-select-option>
+    <m-select-option value="lucy">
       Lucy
-    </a-select-option>
-    <a-select-option value="tom">
+    </m-select-option>
+    <m-select-option value="tom">
       Tom
-    </a-select-option>
-  </a-select>
+    </m-select-option>
+  </m-select>
 </template>
 <script>
 export default {

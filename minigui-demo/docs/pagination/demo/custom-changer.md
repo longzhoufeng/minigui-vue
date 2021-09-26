@@ -10,7 +10,7 @@ Customize dropdown options such as adding all options
 
 ```vue
 <template>
-  <a-pagination
+  <m-pagination
     v-model="current"
     :page-size-options="pageSizeOptions"
     :total="total"
@@ -22,7 +22,7 @@ Customize dropdown options such as adding all options
       <span v-if="props.value !== '50'">{{ props.value }}条/页</span>
       <span v-if="props.value === '50'">全部</span>
     </template>
-  </a-pagination>
+  </m-pagination>
 </template>
 <script>
 export default {

@@ -11,18 +11,18 @@ You can customize the display for Steps with progress dot style.
 ```vue
 <template>
   <div>
-    <a-steps :current="1">
-      <a-popover slot="progressDot" slot-scope="{ index, status, prefixCls }">
+    <m-steps :current="1">
+      <m-popover slot="progressDot" slot-scope="{ index, status, prefixCls }">
         <template slot="content">
           <span>step {{ index }} status: {{ status }}</span>
         </template>
         <span :class="`${prefixCls}-icon-dot`" />
-      </a-popover>
-      <a-step title="Finished" description="You can hover on the dot." />
-      <a-step title="In Progress" description="You can hover on the dot." />
-      <a-step title="Waiting" description="You can hover on the dot." />
-      <a-step title="Waiting" description="You can hover on the dot." />
-    </a-steps>
+      </m-popover>
+      <m-step title="Finished" description="You can hover on the dot." />
+      <m-step title="In Progress" description="You can hover on the dot." />
+      <m-step title="Waiting" description="You can hover on the dot." />
+      <m-step title="Waiting" description="You can hover on the dot." />
+    </m-steps>
   </div>
 </template>
 ```

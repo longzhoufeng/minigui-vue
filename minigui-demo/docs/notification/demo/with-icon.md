@@ -11,18 +11,18 @@ A notification box with a icon at the left side.
 ```vue
 <template>
   <div>
-    <a-button @click="() => openNotificationWithIcon('success')">
+    <m-button @click="() => openNotificationWithIcon('success')">
       Success
-    </a-button>
-    <a-button @click="() => openNotificationWithIcon('info')">
+    </m-button>
+    <m-button @click="() => openNotificationWithIcon('info')">
       Info
-    </a-button>
-    <a-button @click="() => openNotificationWithIcon('warning')">
+    </m-button>
+    <m-button @click="() => openNotificationWithIcon('warning')">
       Warning
-    </a-button>
-    <a-button @click="() => openNotificationWithIcon('error')">
+    </m-button>
+    <m-button @click="() => openNotificationWithIcon('error')">
       Error
-    </a-button>
+    </m-button>
   </div>
 </template>
 <script>

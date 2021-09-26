@@ -4,11 +4,11 @@
     v-clipboard:success="onCopied"
     :class="justCopied === type ? 'copied' : ''"
   >
-    <a-icon :type="type" :theme="theme" />
+    <m-icon :type="type" :theme="theme" />
     <span class="anticon-class">
-      <a-badge :dot="isNew">
+      <m-badge :dot="isNew">
         {{ type }}
-      </a-badge>
+      </m-badge>
     </span>
   </li>
 </template>
@@ -17,7 +17,7 @@ import { Badge } from 'minigui-vue';
 import 'minigui-vue/es/badge/style';
 export default {
   components: {
-    'a-badge': Badge,
+    'm-badge': Badge,
   },
   props: ['type', 'isNew', 'theme', 'justCopied'],
   data() {
@@ -25,8 +25,8 @@ export default {
     return {
       text:
         theme === 'outlined'
-          ? `<a-icon type="${type}" />`
-          : `<a-icon type="${type}" theme="${theme}" />`,
+          ? `<m-icon type="${type}" />`
+          : `<m-icon type="${type}" theme="${theme}" />`,
     };
   },
   methods: {

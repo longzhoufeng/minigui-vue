@@ -10,6 +10,6 @@ Complex combination with avatar and multiple paragraphs.
 
 ```vue
 <template>
-  <a-skeleton avatar :paragraph="{ rows: 4 }" />
+  <m-skeleton avatar :paragraph="{ rows: 4 }" />
 </template>
 ```

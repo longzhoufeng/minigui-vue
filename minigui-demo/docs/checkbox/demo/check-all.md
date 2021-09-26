@@ -12,12 +12,12 @@ The `indeterminate` property can help you to achieve a 'check all' effect.
 <template>
   <div>
     <div :style="{ borderBottom: '1px solid #E9E9E9' }">
-      <a-checkbox :indeterminate="indeterminate" :checked="checkAll" @change="onCheckAllChange">
+      <m-checkbox :indeterminate="indeterminate" :checked="checkAll" @change="onCheckAllChange">
         Check all
-      </a-checkbox>
+      </m-checkbox>
     </div>
     <br />
-    <a-checkbox-group v-model="checkedList" :options="plainOptions" @change="onChange" />
+    <m-checkbox-group v-model="checkedList" :options="plainOptions" @change="onChange" />
   </div>
 </template>
 <script>

@@ -11,25 +11,25 @@ The input box comes in three sizes. `default` will be used if `size` is omitted.
 ```vue
 <template>
   <div>
-    <a-radio-group v-model="size">
-      <a-radio-button value="large">
+    <m-radio-group v-model="size">
+      <m-radio-button value="large">
         Large
-      </a-radio-button>
-      <a-radio-button value="default">
+      </m-radio-button>
+      <m-radio-button value="default">
         Default
-      </a-radio-button>
-      <a-radio-button value="small">
+      </m-radio-button>
+      <m-radio-button value="small">
         Small
-      </a-radio-button>
-    </a-radio-group>
+      </m-radio-button>
+    </m-radio-group>
     <br /><br />
-    <a-date-picker :size="size" />
+    <m-date-picker :size="size" />
     <br />
-    <a-month-picker :size="size" placeholder="Select Month" />
+    <m-month-picker :size="size" placeholder="Select Month" />
     <br />
-    <a-range-picker :size="size" />
+    <m-range-picker :size="size" />
     <br />
-    <a-week-picker :size="size" placeholder="Select Week" />
+    <m-week-picker :size="size" placeholder="Select Week" />
   </div>
 </template>
 <script>

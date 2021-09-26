@@ -10,9 +10,9 @@ The simplest usage that close the notification box after 4.5s.
 
 ```vue
 <template>
-  <a-button type="primary" @click="openNotification">
+  <m-button type="primary" @click="openNotification">
     Open the notification box
-  </a-button>
+  </m-button>
 </template>
 <script>
 export default {

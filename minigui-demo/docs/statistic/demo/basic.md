@@ -11,8 +11,8 @@ Simplest Usage.
 ```vue
 <template>
   <div>
-    <a-statistic title="Active Users" :value="112893" style="margin-right: 50px" />
-    <a-statistic title="Account Balance (CNY)" :precision="2" :value="112893" />
+    <m-statistic title="Active Users" :value="112893" style="margin-right: 50px" />
+    <m-statistic title="Account Balance (CNY)" :precision="2" :value="112893" />
   </div>
 </template>
 ```

@@ -12,33 +12,33 @@ Using template style API
 
 ```vue
 <template>
-  <a-table :data-source="data">
-    <a-table-column-group>
+  <m-table :data-source="data">
+    <m-table-column-group>
       <span slot="title" style="color: #1890ff">Name</span>
-      <a-table-column key="firstName" data-index="firstName">
+      <m-table-column key="firstName" data-index="firstName">
         <span slot="title" style="color: #1890ff">First Name</span>
-      </a-table-column>
-      <a-table-column key="lastName" title="Last Name" data-index="lastName" />
-    </a-table-column-group>
-    <a-table-column key="age" title="Age" data-index="age" />
-    <a-table-column key="address" title="Address" data-index="address" />
-    <a-table-column key="tags" title="Tags" data-index="tags">
+      </m-table-column>
+      <m-table-column key="lastName" title="Last Name" data-index="lastName" />
+    </m-table-column-group>
+    <m-table-column key="age" title="Age" data-index="age" />
+    <m-table-column key="address" title="Address" data-index="address" />
+    <m-table-column key="tags" title="Tags" data-index="tags">
       <template slot-scope="tags">
         <span>
-          <a-tag v-for="tag in tags" :key="tag" color="blue">{{ tag }}</a-tag>
+          <m-tag v-for="tag in tags" :key="tag" color="blue">{{ tag }}</m-tag>
         </span>
       </template>
-    </a-table-column>
-    <a-table-column key="action" title="Action">
+    </m-table-column>
+    <m-table-column key="action" title="Action">
       <template slot-scope="text, record">
         <span>
           <a>Action 一 {{ record.firstName }}</a>
-          <a-divider type="vertical" />
+          <m-divider type="vertical" />
           <a>Delete</a>
         </span>
       </template>
-    </a-table-column>
-  </a-table>
+    </m-table-column>
+  </m-table>
 </template>
 <script>
 const data = [

@@ -11,48 +11,48 @@ Under different screen sizes, there should be different performance
 ```vue
 <template>
   <div>
-    <a-page-header
+    <m-page-header
       style="border: 1px solid rgb(235, 237, 240)"
       title="Title"
       sub-title="This is a subtitle"
       @back="() => $router.go(-1)"
     >
       <template slot="extra">
-        <a-button key="3">
+        <m-button key="3">
           Operation
-        </a-button>
-        <a-button key="2">
+        </m-button>
+        <m-button key="2">
           Operation
-        </a-button>
-        <a-button key="1" type="primary">
+        </m-button>
+        <m-button key="1" type="primary">
           Primary
-        </a-button>
+        </m-button>
       </template>
       <template slot="footer">
-        <a-tabs default-active-key="1">
-          <a-tab-pane key="1" tab="Details" />
-          <a-tab-pane key="2" tab="Rule" />
-        </a-tabs>
+        <m-tabs default-active-key="1">
+          <m-tab-pane key="1" tab="Details" />
+          <m-tab-pane key="2" tab="Rule" />
+        </m-tabs>
       </template>
       <div class="content">
         <div class="main">
-          <a-descriptions size="small" :column="2">
-            <a-descriptions-item label="Created">
+          <m-descriptions size="small" :column="2">
+            <m-descriptions-item label="Created">
               Lili Qu
-            </a-descriptions-item>
-            <a-descriptions-item label="Association">
+            </m-descriptions-item>
+            <m-descriptions-item label="Association">
               <a>421421</a>
-            </a-descriptions-item>
-            <a-descriptions-item label="Creation Time">
+            </m-descriptions-item>
+            <m-descriptions-item label="Creation Time">
               2017-01-10
-            </a-descriptions-item>
-            <a-descriptions-item label="Effective Time">
+            </m-descriptions-item>
+            <m-descriptions-item label="Effective Time">
               2017-10-10
-            </a-descriptions-item>
-            <a-descriptions-item label="Remarks">
+            </m-descriptions-item>
+            <m-descriptions-item label="Remarks">
               Gonghu Road, Xihu District, Hangzhou, Zhejiang, China
-            </a-descriptions-item>
-          </a-descriptions>
+            </m-descriptions-item>
+          </m-descriptions>
         </div>
         <div class="extra">
           <div
@@ -62,18 +62,18 @@ Under different screen sizes, there should be different performance
               justifyContent: 'flex-end',
             }"
           >
-            <a-statistic
+            <m-statistic
               title="Status"
               value="Pending"
               :style="{
                 marginRight: '32px',
               }"
             />
-            <a-statistic title="Price" prefix="$" :value="568.08" />
+            <m-statistic title="Price" prefix="$" :value="568.08" />
           </div>
         </div>
       </div>
-    </a-page-header>
+    </m-page-header>
   </div>
 </template>
 <style>

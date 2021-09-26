@@ -56,17 +56,17 @@ Form.Item 会对唯一子元素进行劫持，并监听 `blur` 和 `change` 事�
 如果要监听的表单域不满足自动监听的条件，可以通过如下方式关联表单域：
 
 ```html
-<a-form-model-item prop="form.name" ref="name" :autoLink="false">
-  <a-input v-model="other" />
+<m-form-model-item prop="form.name" ref="name" :autoLink="false">
+  <m-input v-model="other" />
   <span>hahha</span>
   <div>
-    <a-input
+    <m-input
       v-model="form.name"
       @blur="() => {$refs.name.onFieldBlur()}"
       @change="() => {$refs.name.onFieldChange()}"
     />
   </div>
-</a-form-model-item>
+</m-form-model-item>
 ```
 
 ### 校验规则

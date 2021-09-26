@@ -10,16 +10,16 @@ Custom icon.
 
 ```vue
 <template>
-  <a-result title="Great, we have done all the operations!">
+  <m-result title="Great, we have done all the operations!">
     <template #icon>
-      <a-icon type="smile" theme="twoTone" />
+      <m-icon type="smile" theme="twoTone" />
     </template>
     <template #extra>
-      <a-button type="primary">
+      <m-button type="primary">
         Next
-      </a-button>
+      </m-button>
     </template>
-  </a-result>
+  </m-result>
 </template>
 <script>
 export default {

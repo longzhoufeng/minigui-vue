@@ -14,9 +14,9 @@ You must wrap field data with `Form.createFormField` in `mapPropsToFields`.
 
 <template>
   <div id="components-form-demo-vuex">
-    <a-form :form="form" @submit="handleSubmit">
-      <a-form-item label="Username">
-        <a-input
+    <m-form :form="form" @submit="handleSubmit">
+      <m-form-item label="Username">
+        <m-input
           v-decorator="[
             'username',
             {
@@ -24,11 +24,11 @@ You must wrap field data with `Form.createFormField` in `mapPropsToFields`.
             },
           ]"
         />
-      </a-form-item>
-      <a-button type="primary" html-type="submit">
+      </m-form-item>
+      <m-button type="primary" html-type="submit">
         Submit
-      </a-button>
-    </a-form>
+      </m-button>
+    </m-form>
   </div>
 </template>
 

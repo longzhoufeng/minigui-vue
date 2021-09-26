@@ -10,10 +10,10 @@ By setting like this: `<Steps size="small">`, you can get a mini version.
 
 ```vue
 <template>
-  <a-steps :current="1" size="small">
-    <a-step title="Finished" />
-    <a-step title="In Progress" />
-    <a-step title="Waiting" />
-  </a-steps>
+  <m-steps :current="1" size="small">
+    <m-step title="Finished" />
+    <m-step title="In Progress" />
+    <m-step title="Waiting" />
+  </m-steps>
 </template>
 ```

@@ -15,9 +15,9 @@ const IconDisplay = {
     twoTone: 'twotone',
   },
   components: {
-    ARadio: Radio,
-    ARadioGroup: Radio.Group,
-    ARadioButton: Radio.Button,
+    MRadio: Radio,
+    MRadioGroup: Radio.Group,
+    MRadioButton: Radio.Button,
   },
   data() {
     return {
@@ -81,18 +81,18 @@ const IconDisplay = {
       <div>
         <h3>{this.$t('app.docs.components.icon.pick-theme')}</h3>
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <a-radio-group value={this.theme} onChange={this.handleChangeTheme} size="large">
-            <a-radio-button value="outlined">
-              <a-icon component={OutlinedIcon} /> {this.$t('app.docs.components.icon.outlined')}
-            </a-radio-button>
-            <a-radio-button value="filled">
-              <a-icon component={FilledIcon} /> {this.$t('app.docs.components.icon.filled')}
-            </a-radio-button>
-            <a-radio-button value="twoTone">
-              <a-icon component={TwoToneIcon} /> {this.$t('app.docs.components.icon.two-tone')}
-            </a-radio-button>
-          </a-radio-group>
-          <a-input-search
+          <m-radio-group value={this.theme} onChange={this.handleChangeTheme} size="large">
+            <m-radio-button value="outlined">
+              <m-icon component={OutlinedIcon} /> {this.$t('app.docs.components.icon.outlined')}
+            </m-radio-button>
+            <m-radio-button value="filled">
+              <m-icon component={FilledIcon} /> {this.$t('app.docs.components.icon.filled')}
+            </m-radio-button>
+            <m-radio-button value="twoTone">
+              <m-icon component={TwoToneIcon} /> {this.$t('app.docs.components.icon.two-tone')}
+            </m-radio-button>
+          </m-radio-group>
+          <m-input-search
             placeholder={this.$t('app.docs.components.icon.search.placeholder')}
             style={{ marginLeft: '10px', flex: 1 }}
             allowClear

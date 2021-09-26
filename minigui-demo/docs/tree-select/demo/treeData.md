@@ -10,7 +10,7 @@ The tree structure can be populated using `treeData` property. This is a quick a
 
 ```vue
 <template>
-  <a-tree-select
+  <m-tree-select
     v-model="value"
     style="width: 100%"
     :dropdown-style="{ maxHeight: '400px', overflow: 'auto' }"
@@ -21,7 +21,7 @@ The tree structure can be populated using `treeData` property. This is a quick a
     <span v-if="key === '0-0-1'" slot="title" slot-scope="{ key, value }" style="color: #08c">
       Child Node1 {{ value }}
     </span>
-  </a-tree-select>
+  </m-tree-select>
 </template>
 
 <script>

@@ -11,9 +11,9 @@ There are three sizes of an Input box: `large` (40px)、`default` (32px) and `sm
 ```vue
 <template>
   <div class="components-input-demo-size">
-    <a-input size="large" placeholder="large size" />
-    <a-input placeholder="default size" />
-    <a-input size="small" placeholder="small size" />
+    <m-input size="large" placeholder="large size" />
+    <m-input placeholder="default size" />
+    <m-input size="small" placeholder="small size" />
   </div>
 </template>
 <style scoped>

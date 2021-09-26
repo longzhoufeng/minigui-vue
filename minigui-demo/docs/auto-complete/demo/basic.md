@@ -10,7 +10,7 @@ Basic Usage, set datasource of autocomplete with `dataSource` property.
 
 ```vue
 <template>
-  <a-auto-complete
+  <m-auto-complete
     v-model="value"
     :data-source="dataSource"
     style="width: 200px"

@@ -12,13 +12,13 @@ The vertical Slider.
 <template>
   <div style="height: 300px">
     <div style="display: inline-block;height: 300px;marginLeft: 70px">
-      <a-slider vertical :default-value="30" />
+      <m-slider vertical :default-value="30" />
     </div>
     <div style="display: inline-block;height: 300px;marginLeft: 70px">
-      <a-slider vertical range :step="10" :default-value="[20, 50]" />
+      <m-slider vertical range :step="10" :default-value="[20, 50]" />
     </div>
     <div style="display: inline-block;height: 300px;marginLeft: 70px">
-      <a-slider vertical range :marks="marks" :default-value="[26, 37]" />
+      <m-slider vertical range :marks="marks" :default-value="[26, 37]" />
     </div>
   </div>
 </template>

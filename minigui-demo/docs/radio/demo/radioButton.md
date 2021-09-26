@@ -12,52 +12,52 @@ The combination of radio button style.
 <template>
   <div>
     <div>
-      <a-radio-group v-model="value" @change="onChange">
-        <a-radio-button value="a">
+      <m-radio-group v-model="value" @change="onChange">
+        <m-radio-button value="a">
           Hangzhou
-        </a-radio-button>
-        <a-radio-button value="b">
+        </m-radio-button>
+        <m-radio-button value="b">
           Shanghai
-        </a-radio-button>
-        <a-radio-button value="c">
+        </m-radio-button>
+        <m-radio-button value="c">
           Beijing
-        </a-radio-button>
-        <a-radio-button value="d">
+        </m-radio-button>
+        <m-radio-button value="d">
           Chengdu
-        </a-radio-button>
-      </a-radio-group>
+        </m-radio-button>
+      </m-radio-group>
     </div>
     <div :style="{ marginTop: '16px' }">
-      <a-radio-group default-value="a" @change="onChange">
-        <a-radio-button value="a">
+      <m-radio-group default-value="a" @change="onChange">
+        <m-radio-button value="a">
           Hangzhou
-        </a-radio-button>
-        <a-radio-button value="b" disabled>
+        </m-radio-button>
+        <m-radio-button value="b" disabled>
           Shanghai
-        </a-radio-button>
-        <a-radio-button value="c">
+        </m-radio-button>
+        <m-radio-button value="c">
           Beijing
-        </a-radio-button>
-        <a-radio-button value="d">
+        </m-radio-button>
+        <m-radio-button value="d">
           Chengdu
-        </a-radio-button>
-      </a-radio-group>
+        </m-radio-button>
+      </m-radio-group>
     </div>
     <div :style="{ marginTop: '16px' }">
-      <a-radio-group disabled default-value="a" @change="onChange">
-        <a-radio-button value="a">
+      <m-radio-group disabled default-value="a" @change="onChange">
+        <m-radio-button value="a">
           Hangzhou
-        </a-radio-button>
-        <a-radio-button value="b">
+        </m-radio-button>
+        <m-radio-button value="b">
           Shanghai
-        </a-radio-button>
-        <a-radio-button value="c">
+        </m-radio-button>
+        <m-radio-button value="c">
           Beijing
-        </a-radio-button>
-        <a-radio-button value="d">
+        </m-radio-button>
+        <m-radio-button value="d">
           Chengdu
-        </a-radio-button>
-      </a-radio-group>
+        </m-radio-button>
+      </m-radio-group>
     </div>
   </div>
 </template>

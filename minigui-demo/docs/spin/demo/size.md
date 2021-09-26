@@ -11,9 +11,9 @@ A small `Spin` use in loading text, default `Spin` use in loading card-level blo
 ```vue
 <template>
   <div>
-    <a-spin size="small" />
-    <a-spin />
-    <a-spin size="large" />
+    <m-spin size="small" />
+    <m-spin />
+    <m-spin size="large" />
   </div>
 </template>
 ```

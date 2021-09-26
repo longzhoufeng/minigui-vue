@@ -12,52 +12,52 @@ There are three sizes available: large, medium, and small. It can coordinate wit
 <template>
   <div>
     <div>
-      <a-radio-group default-value="a" size="large">
-        <a-radio-button value="a">
+      <m-radio-group default-value="a" size="large">
+        <m-radio-button value="a">
           Hangzhou
-        </a-radio-button>
-        <a-radio-button value="b">
+        </m-radio-button>
+        <m-radio-button value="b">
           Shanghai
-        </a-radio-button>
-        <a-radio-button value="c">
+        </m-radio-button>
+        <m-radio-button value="c">
           Beijing
-        </a-radio-button>
-        <a-radio-button value="d">
+        </m-radio-button>
+        <m-radio-button value="d">
           Chengdu
-        </a-radio-button>
-      </a-radio-group>
+        </m-radio-button>
+      </m-radio-group>
     </div>
     <div :style="{ marginTop: '16px' }">
-      <a-radio-group default-value="a">
-        <a-radio-button value="a">
+      <m-radio-group default-value="a">
+        <m-radio-button value="a">
           Hangzhou
-        </a-radio-button>
-        <a-radio-button value="b">
+        </m-radio-button>
+        <m-radio-button value="b">
           Shanghai
-        </a-radio-button>
-        <a-radio-button value="c">
+        </m-radio-button>
+        <m-radio-button value="c">
           Beijing
-        </a-radio-button>
-        <a-radio-button value="d">
+        </m-radio-button>
+        <m-radio-button value="d">
           Chengdu
-        </a-radio-button>
-      </a-radio-group>
+        </m-radio-button>
+      </m-radio-group>
     </div>
     <div :style="{ marginTop: '16px' }">
-      <a-radio-group default-value="a" size="small">
-        <a-radio-button value="a">
+      <m-radio-group default-value="a" size="small">
+        <m-radio-button value="a">
           Hangzhou
-        </a-radio-button>
-        <a-radio-button value="b">
+        </m-radio-button>
+        <m-radio-button value="b">
           Shanghai
-        </a-radio-button>
-        <a-radio-button value="c">
+        </m-radio-button>
+        <m-radio-button value="c">
           Beijing
-        </a-radio-button>
-        <a-radio-button value="d">
+        </m-radio-button>
+        <m-radio-button value="d">
           Chengdu
-        </a-radio-button>
-      </a-radio-group>
+        </m-radio-button>
+      </m-radio-group>
     </div>
   </div>
 </template>

@@ -12,15 +12,15 @@ value 和 onChange 需要配合使用。也可以直接使用v-model。
 <template>
   <div>
     <p>use value and @change</p>
-    <a-time-picker :value="value" @change="onChange" />
+    <m-time-picker :value="value" @change="onChange" />
     <br />
     <br />
     <p>v-model</p>
-    <a-time-picker v-model="value" />
+    <m-time-picker v-model="value" />
     <br />
     <br />
     <p>Do not change</p>
-    <a-time-picker :value="value2" />
+    <m-time-picker :value="value2" />
   </div>
 </template>
 <script>

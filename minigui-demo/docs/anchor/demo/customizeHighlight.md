@@ -10,14 +10,14 @@ Customize the anchor highlight.
 
 ```vue
 <template>
-  <a-anchor :affix="false" :get-current-anchor="getCurrentAnchor">
-    <a-anchor-link href="#components-anchor-demo-basic" title="Basic demo" />
-    <a-anchor-link href="#components-anchor-demo-static" title="Static demo" />
-    <a-anchor-link href="#API" title="API">
-      <a-anchor-link href="#Anchor-Props" title="Anchor Props" />
-      <a-anchor-link href="#Link-Props" title="Link Props" />
-    </a-anchor-link>
-  </a-anchor>
+  <m-anchor :affix="false" :get-current-anchor="getCurrentAnchor">
+    <m-anchor-link href="#components-anchor-demo-basic" title="Basic demo" />
+    <m-anchor-link href="#components-anchor-demo-static" title="Static demo" />
+    <m-anchor-link href="#API" title="API">
+      <m-anchor-link href="#Anchor-Props" title="Anchor Props" />
+      <m-anchor-link href="#Link-Props" title="Link Props" />
+    </m-anchor-link>
+  </m-anchor>
 </template>
 <script>
 export default {

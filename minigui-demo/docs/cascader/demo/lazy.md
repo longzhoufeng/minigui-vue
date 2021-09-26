@@ -12,7 +12,7 @@ Load options lazily with `loadData`.
 
 ```vue
 <template>
-  <a-cascader
+  <m-cascader
     :options="options"
     :load-data="loadData"
     placeholder="Please select"
