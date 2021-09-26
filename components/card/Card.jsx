@@ -14,7 +14,7 @@ import { ConfigConsumerProps } from '../config-provider/configConsumerProps';
 
 const { TabPane } = Tabs;
 export default {
-  name: 'ACard',
+  name: 'MCard',
   mixins: [BaseMixin],
   props: {
     prefixCls: PropTypes.string,

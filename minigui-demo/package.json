@@ -3,9 +3,9 @@
   "title": "Minigui Vue",
   "description": "A Component Library for Vue.js",
   "scripts": {
-    "dev": "node --max_old_space_size=8096 build/dev.js",
-    "start": "cross-env PORT=3001 NODE_ENV=development node --max_old_space_size=8096 node_modules/webpack-dev-server/bin/webpack-dev-server.js --config build/webpack.dev.conf.js",
-    "site": "node --max_old_space_size=8096 scripts/run.js _site",
+    "dev": "node --max_old_space_size=10240 build/dev.js",
+    "start": "cross-env PORT=3001 NODE_ENV=development node --max_old_space_size=10240 node_modules/webpack-dev-server/bin/webpack-dev-server.js --config build/webpack.dev.conf.js",
+    "site": "node --max_old_space_size=10240 scripts/run.js _site",
     "copy": "node scripts/run.js copy-html",
     "prettier": "prettier -c --write '**/*'",
     "pretty-quick": "pretty-quick"

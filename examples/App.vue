@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a-card
+    <m-card
       title="测试"
       :tab-props="{ size: 'small' }"
       :tab-list="[
@@ -8,7 +8,7 @@
         { key: 'tab2', tab: 'tab2' },
       ]"
     />
-    <a-card
+    <m-card
       title="测试"
       :tab-props="{ size: 'large' }"
       :tab-list="[
@@ -16,7 +16,7 @@
         { key: 'tab2', tab: 'tab2' },
       ]"
     />
-    <a-card
+    <m-card
       title="测试"
       :tab-props="{}"
       :tab-list="[
@@ -24,7 +24,7 @@
         { key: 'tab2', tab: 'tab2' },
       ]"
     />
-    <a-card
+    <m-card
       title="测试"
       :tab-props="{ size: 'default' }"
       :tab-list="[
