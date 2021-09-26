@@ -20,7 +20,7 @@ If you are using [iconfont.cn](http://iconfont.cn/), you can use the icons in yo
 import { Icon } from 'minigui-vue';
 
 const IconFont = Icon.createFromIconfontCN({
-  scriptUrl: '//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js',
+  scriptUrl: '//www.minigui.com.cn/icon/icon.js',
 });
 export default {
   components: {
