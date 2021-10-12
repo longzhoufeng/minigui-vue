@@ -14,7 +14,7 @@
 
 ### SVG 图标
 
-在 `1.2.0` 之后，我们使用了 SVG 图标替换了原先的 font 图标，从而带来了以下优势：
+我们使用了 SVG 图标替换了原先的 font 图标，从而带来了以下优势：
 
 - 完全离线化使用，不需要从 CDN 下载字体文件，图标不会因为网络问题呈现方块，也无需字体文件本地部署。
 - 在低端设备上 SVG 有更好的清晰度。
@@ -47,11 +47,11 @@ Icon.getTwoToneColor(); // #eb2f96
 
 ### 自定义 font 图标
 
-在 `1.2.0` 之后，我们提供了一个 `createFromIconfontCN` 方法，方便开发者调用在 [iconfont.cn](http://iconfont.cn/) 上自行管理的图标。
+我们提供了一个 `createFromIconfontCN` 方法，方便开发者自行管理图标。
 
 ```js
 const MyIcon = Icon.createFromIconfontCN({
-  scriptUrl: '//www.minigui.com.cn/icon/icon.js', // 在 iconfont.cn 上生成
+  scriptUrl: '//www.minigui.com.cn/icon/icon.js',
 });
 new Vue({
   el: '#app',
@@ -68,12 +68,10 @@ new Vue({
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| scriptUrl | [iconfont.cn](http://iconfont.cn/) 项目在线生成的 `js` 地址 | string | - |
+| scriptUrl |项目在线生成的 `js` 地址 | string | - |
 | extraCommonProps | 给所有的 `svg` 图标 `<Icon />` 组件设置额外的属性 | `{ class, attrs, props, on, style }` | {} |
 
-在 `scriptUrl` 都设置有效的情况下，组件在渲染前会自动引入 [iconfont.cn](http://iconfont.cn/) 项目中的图标符号集，无需手动引入。
-
-见 [iconfont.cn 使用帮助](http://iconfont.cn/help/detail?spm=a313x.7781069.1998910419.15&helptype=code) 查看如何生成 `js` 地址。
+在 `scriptUrl` 都设置有效的情况下，组件在渲染前会自动引入项目中的图标符号集，无需手动引入。
 
 ### 自定义 SVG 图标
 

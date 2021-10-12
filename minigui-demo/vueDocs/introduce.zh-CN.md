@@ -43,15 +43,66 @@ $ yarn add minigui-vue
 
 > **组件库使用了 vue 的新特性`slot-scope`(2.5.0 新增), `provide / inject`(2.2.0 新增)**
 
-### 浏览器引入
+## 浏览器引入
 
 在浏览器中使用 `script` 和 `link` 标签直接引入文件，并使用全局变量 `minigui`。
 
 我们在 npm 发布包内的 `minigui-vue/dist` 目录下提供了 `minigui.js` `minigui.css` 以及 `minigui.min.js` `minigui.min.css`。
 
+```jsx
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <style>
+      [v-cloak] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app" v-cloak>
+      <div>
+        {{msg}}
+        <div>
+          <m-button type="primary"> Primary</m-button>
+          <m-button>Default</m-button>
+          <m-button type="dashed"> Dashed</m-button>
+          <m-button type="danger"> Danger</m-button>
+          <m-config-provider :auto-insert-space-in-button="true">
+            <m-button type="primary"> 按钮 </m-button>
+          </m-config-provider>
+          <m-button type="primary"> 按钮 </m-button>
+          <m-button type="link"> Link </m-button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="vue.js"></script>
+  <script src="moment.js"></script>
+  <script src="dist/minigui.min.js"></script>
+  <link href="dist/minigui.min.css" rel="stylesheet" type="text/css"/>
+  <link href="main.css" rel="stylesheet" type="text/css"/>
+  <script>
+    var vue = new Vue({
+      el: '#app',
+      data() {
+        return {msg: "this is test msg"};
+      },
+      methods: {
+        getInfo(record) {
+          alert(1234)
+        }
+      }
+    })
+  </script>
+</html>
+```
+
 > **强烈不推荐使用已构建文件**，这样无法按需加载，而且难以获得底层依赖模块的 bug 快速修复支持。
 
-> 注意：引入 minigui.js 前你需要自行引入 [moment](http://momentjs.com/)。
+> <font color=red>注意：引入 minigui.js 前你需要自行引入 [moment](http://momentjs.com/)。</font>
 
 ## 示例
 
