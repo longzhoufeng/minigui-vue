@@ -88,6 +88,9 @@ export default {
 </script>
 
 <style scope>
+#header{
+  border-bottom: 1px solid #dcdfe6;
+}
 .adblock-banner {
   position: relative;
   z-index: 100;
