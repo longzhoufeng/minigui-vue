@@ -89,7 +89,8 @@ export default {
 
 <style scope>
 #header{
-  border-bottom: 1px solid #dcdfe6;
+  /* border-bottom: 1px solid #dcdfe6; */
+  box-shadow: 0 0 0.375rem 0 rgb(0 0 0 / 25%);
 }
 .adblock-banner {
   position: relative;
